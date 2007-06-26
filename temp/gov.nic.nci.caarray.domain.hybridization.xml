@@ -21,7 +21,7 @@
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
 						<UML:TaggedValue tag="xmiver" value="Enterprise Architect XMI/UML 1.3"/>
 						<UML:TaggedValue tag="logxml" value="FALSE"/>
-						<UML:TaggedValue tag="packageFlags" value="VCCFG=svn_test;CRC=0;"/>
+						<UML:TaggedValue tag="packageFlags" value="VCCFG=svn_test;CheckedOutOffline=0;CRC=0;"/>
 						<UML:TaggedValue tag="batchsave" value="0"/>
 						<UML:TaggedValue tag="batchload" value="0"/>
 						<UML:TaggedValue tag="phase" value="1.0"/>
@@ -134,7 +134,7 @@
 								<UML:TaggedValue tag="ea_sourceType" value="Class"/>
 								<UML:TaggedValue tag="ea_targetType" value="Class"/>
 								<UML:TaggedValue tag="ea_sourceID" value="444"/>
-								<UML:TaggedValue tag="ea_targetID" value="393"/>
+								<UML:TaggedValue tag="ea_targetID" value="7342"/>
 								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={F390419A-0570-4541-964B-29A8EC8195FD}$XID;$NAM=CustomProperties$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isDerived@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=false@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={0BD26EB8-F571-4dc4-B7B7-BEAF9CB73AB4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 								<UML:TaggedValue tag="lb" value="*"/>
