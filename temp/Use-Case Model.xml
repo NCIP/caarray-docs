@@ -17,7 +17,7 @@
 						<UML:TaggedValue tag="modified" value="2007-04-05 16:13:10"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Use-Case Model.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2007-07-05 11:20:08"/>
+						<UML:TaggedValue tag="lastloaddate" value="2007-07-05 15:54:50"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-04-05 16:13:10"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
@@ -5263,11 +5263,11 @@
 				<UML:DiagramElement geometry="Left=328;Top=161;Right=553;Bottom=269;" subject="EAID_47F488CB_1220_432d_A3CA_CB3984B1487D" seqno="6" style="DUID=6FC331EE;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
-		<UML:Diagram name="My Diagram" xmi.id="EAID_A75C76EA_CDCE_4c67_BD8E_9343CD6CA6EC" diagramType="ClassDiagram" owner="EAPK_32DA8063_5EC6_4cc0_B741_C2C75A3EA16E" toolName="Enterprise Architect 2.5">
+		<UML:Diagram name="Test Diagram" xmi.id="EAID_A75C76EA_CDCE_4c67_BD8E_9343CD6CA6EC" diagramType="ClassDiagram" owner="EAPK_32DA8063_5EC6_4cc0_B741_C2C75A3EA16E" toolName="Enterprise Architect 2.5">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="version" value="1.0"/>
 				<UML:TaggedValue tag="created_date" value="2007-07-05 11:20:32"/>
-				<UML:TaggedValue tag="modified_date" value="2007-07-05 11:20:48"/>
+				<UML:TaggedValue tag="modified_date" value="2007-07-05 18:06:30"/>
 				<UML:TaggedValue tag="package" value="EAPK_32DA8063_5EC6_4cc0_B741_C2C75A3EA16E"/>
 				<UML:TaggedValue tag="type" value="Logical"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
@@ -5275,6 +5275,10 @@
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=799;DocSize.cy=1043;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=1;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=;ExplicitNavigability=0;"/>
 				<UML:TaggedValue tag="styleex" value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=0;TDurLow=0;TDurHigh=100;TDurUnit=;TDurHide=0;TConnectorNotation=;TExplicitNavigability=0;"/>
 			</UML:ModelElement.taggedValue>
+			<UML:Diagram.element>
+				<UML:DiagramElement geometry="Left=355;Top=103;Right=400;Bottom=193;" subject="EAID_D6CBD5E3_0113_4f3b_B045_3ACEB1AD84AA" seqno="1" style="DUID=A5A66DDE;"/>
+				<UML:DiagramElement geometry="Left=241;Top=95;Right=286;Bottom=185;" subject="EAID_DEB8DD62_5371_481d_9DF0_C5AA5749C0E8" seqno="2" style="DUID=3C386AC7;"/>
+			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Actors" xmi.id="EAID_F9067946_3B99_47e2_95E4_42B479E3F1F4" diagramType="UseCaseDiagram" owner="EAPK_6BDC8B86_5EC9_456c_A572_37B48183F081" toolName="Enterprise Architect 2.5">
 			<UML:ModelElement.taggedValue>
