@@ -16,7 +16,7 @@
 						<UML:TaggedValue tag="modified" value="2007-04-22 00:00:00"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="controlled_packages\caarray_domain_object_model.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2007-08-06 20:56:11"/>
+						<UML:TaggedValue tag="lastloaddate" value="2007-08-08 13:48:31"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-07-02 06:42:06"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
@@ -324,16 +324,38 @@
 							</UML:Namespace.ownedElement>
 							<UML:Collaboration.interaction/>
 						</UML:Collaboration>
+						<UML:Comment name="Note" xmi.id="EAID_5BE581FF_7F38_4531_927E_2E2B07708733" visibility="public" namespace="EAPK_705570C3_27EB_4422_81A7_0BD501534A9C">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="TODO&#xA;&#xA;Before registering model in caDSR, we have to:&#xA;&#xA;1. Add a &quot;documentation&quot; tag for each class.&#xA;2. Add a &quot;description&quot; tag for each attribute."/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Note"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_705570C3_27EB_4422_81A7_0BD501534A9C"/>
+								<UML:TaggedValue tag="date_created" value="2007-08-08 13:59:25"/>
+								<UML:TaggedValue tag="date_modified" value="2007-08-08 14:00:37"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Logical Model"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="199"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
 						<UML:Comment name="Note" xmi.id="EAID_5C23AD05_9227_46f2_839B_0429513A5815" visibility="public" namespace="EAPK_705570C3_27EB_4422_81A7_0BD501534A9C">
 							<UML:ModelElement.taggedValue>
-								<UML:TaggedValue tag="documentation" value="CHANGE HISTORY&#xA;========================&#xA;&#xA;Version 0.1&#xA;- Initial draft reviewed internally.&#xA;- Based on MAGE-TAB support with additional considerations for MIAME and caArray 1.x migration.&#xA;- Result of E1 iteration.&#xA;Version 0.2&#xA;- Added an association from Publication to Term to model the &quot;type&quot; of publication (main, reference etc.).&#xA;- Added attributes to Publication based on MAGE-OM BibliographicReference (uri, publication, publisher, editor, year, volume, issue, pages).&#xA;- Changed &quot;Investigation&quot; to &quot;Experiment&quot;, and &quot;InvestigationContact&quot; to &quot;ExperimentContact&quot;.&#xA;- Changed multiplicity of Experiment's &quot;factors&quot; to 0..*.&#xA;- Linked Experiment to Hybridization (many-to-many).&#xA;- Added unit and value to FactorValue.&#xA;- Allowed samples to have 0..* sources, extracts to have 0..* samples, and labeledextracts to have 0..* extracts.&#xA;- Added amount and unit attributes to Hybridization.&#xA;- Added association from RawArrayData to sourceImages (0..*).&#xA;- Added a defaultValue for a Parameter.&#xA;- Added a &quot;notes&quot; attribute to ProtocolApplication.&#xA;- Added an association from Protocol to CaArrayFile to allow pdf description of protocol etc.&#xA;- Expanded Characteristics into TermCharacteristics, ValueCharacteristics and well-known characteristics: Organism, OrganismPart, DiseaseState, DiseaseStaging and Age.&#xA;- Searched caDSR and made list of potential reusable CDEs. Need to work with caDSR contact and resolve ambiguities before annotating model.&#xA;&#xA;&#xA;"/>
+								<UML:TaggedValue tag="documentation" value="CHANGE HISTORY&#xA;========================&#xA;&#xA;Version 0.1&#xA;- Initial draft reviewed internally.&#xA;- Based on MAGE-TAB support with additional considerations for MIAME and caArray 1.x migration.&#xA;- Result of E1 iteration.&#xA;Version 0.2&#xA;- Added an association from Publication to Term to model the &quot;type&quot; of publication (main, reference etc.).&#xA;- Added attributes to Publication based on MAGE-OM BibliographicReference (uri, publication, publisher, editor, year, volume, issue, pages).&#xA;- Changed &quot;Investigation&quot; to &quot;Experiment&quot;, and &quot;InvestigationContact&quot; to &quot;ExperimentContact&quot;.&#xA;- Changed multiplicity of Experiment's &quot;factors&quot; to 0..*.&#xA;- Linked Experiment to Hybridization (many-to-many).&#xA;- Added unit and value to FactorValue.&#xA;- Allowed samples to have 0..* sources, extracts to have 0..* samples, and labeledextracts to have 0..* extracts.&#xA;- Added amount and unit attributes to Hybridization.&#xA;- Added association from RawArrayData to sourceImages (0..*).&#xA;- Added a defaultValue for a Parameter.&#xA;- Added a &quot;notes&quot; attribute to ProtocolApplication.&#xA;- Added an association from Protocol to CaArrayFile to allow pdf description of protocol etc.&#xA;- Expanded Characteristics into TermCharacteristics, ValueCharacteristics and well-known characteristics: Organism, OrganismPart, DiseaseState, DiseaseStaging and Age.&#xA;- Searched caDSR and made list of potential reusable CDEs. Need to work with caDSR/EVS contact before annotating model.&#xA;"/>
 								<UML:TaggedValue tag="isSpecification" value="false"/>
 								<UML:TaggedValue tag="ea_stype" value="Note"/>
 								<UML:TaggedValue tag="ea_ntype" value="0"/>
 								<UML:TaggedValue tag="version" value="1.0"/>
 								<UML:TaggedValue tag="package" value="EAPK_705570C3_27EB_4422_81A7_0BD501534A9C"/>
 								<UML:TaggedValue tag="date_created" value="2007-08-06 06:23:24"/>
-								<UML:TaggedValue tag="date_modified" value="2007-08-07 10:25:18"/>
+								<UML:TaggedValue tag="date_modified" value="2007-08-08 13:49:05"/>
 								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
 								<UML:TaggedValue tag="tagged" value="0"/>
 								<UML:TaggedValue tag="package_name" value="Logical Model"/>
@@ -342,6 +364,28 @@
 								<UML:TaggedValue tag="status" value="Proposed"/>
 								<UML:TaggedValue tag="tpos" value="0"/>
 								<UML:TaggedValue tag="ea_localid" value="184"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Comment>
+						<UML:Comment name="Note" xmi.id="EAID_84828963_4A40_4233_8CEF_B5559633B3B1" visibility="public" namespace="EAPK_705570C3_27EB_4422_81A7_0BD501534A9C">
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="documentation" value="POTENTIAL REUSABLE CDEs from caDSR:&#xA;&#xA;caArray class-&gt;attribute: CDE ID, Short Name, Long Name, Type, Length&#xA;-------------------------------------------------------------------------------&#xA;Person-&gt;firstName: 2238014, 2237860v1.0:2178533v1.0, Person First Name, java.lang.String,&#xA;Person-&gt;lastName: 2238015, 2237861v1.0:2178533v1.0, Person Last Name, java.lang.String,&#xA;&#xA;Organization-&gt;name: 2475652, 2179555v2.31:2178533v1.0, Organization Name, java.lang.String,&#xA;&#xA;Address-&gt;city: 2475714, 2179561v2.31:2178533v1.0, Address City, java.lang.String,&#xA;Address-&gt;state: 2475715, 2475518v1.0:2542179v1.0, Address United States State Text Name, CHARACTER,&#xA;Address-&gt;zip: 2475717, 2475519v1.0:2178533v1.0, Address Zip Code, java.lang.String,&#xA;Address-&gt;streetAddress: 2475713, 2475517v1.0:2178533v1.0, Address Street Address, java.lang.String,&#xA;*(Change streetAddress1 and streetAddress2 to streetAddress?)&#xA;&#xA;Contact-&gt;email: 2224383, 2224235v3.0:2178533v1.0, Contact Info Email Address, java.lang.String,&#xA;Contact-&gt;fax: 2224378, 2224230v3.0:2178533v1.0, Contact Info Fax Number, java.lang.String,&#xA;Contact-&gt;phone: 2518194, CONT_PRSN_PH_NB, Contact Person Telephone Number, Alphanumeric, length=up to 25&#xA;Contact-&gt;url: 2187488, ContactURI, URI, java.lang.String (DRAFT NEW status)&#xA;&#xA;ArrayDesign-&gt;name: 2535274, 2535058v1.0:2178533v1.0, Physical Array Design Object Name, java.lang.String,&#xA;&#xA;Image-&gt;name: 2669665, 2669510v1.0:2178533v1.0, Image Name, java.lang.String,&#xA;&#xA;Hybridization-&gt;name: 2535343, 2535126v1.0:2178533v1.0, Nucleic Acid Hybridization Name, java.lang.String,&#xA;&#xA;Experiment-&gt;name: 2438064, 2437861v1.0:2178533v1.0, Microarray Data Experiment Name, java.lang.String,&#xA;Experiment-&gt;dateOfExperiment: 2619946, 2619647v1.0:2222504v1.0, Experiment End Date, java.util.Date,&#xA;&#xA;Project: Project Name exists in caDSR, but we don't have a &quot;name&quot; attribute in our model.&#xA;&#xA;Publication-&gt;title: 2422269, ST_PUB_TITLE_NAME, Study Publication Title Name, CHARACTER, length=1-200&#xA;Publication-&gt;publication: 2422271, ST_PUB_JOURNAL_NAME, Study Publication Journal Name, CHARACTER, length=1-200&#xA;Publication-&gt;volume: 2422273, ST_PUB_VOLUME_TEXT, Study Publication Journal Name, CHARACTER, length=1-100&#xA;Publication-&gt;pubMedId: 2224328, 2224180v3.0:2178534v1.0, Scientific Publication PubMed Identifier, java.lang.Long,&#xA;*(Change pubMedId to Long?)&#xA;Publication-&gt;publisher: 2422277, ST_PUB_PUBLISH_TEXT, Study Publication Publisher Text, CHARACTER, length=1-100&#xA;Publication-&gt;pages: 2422279, ST_PUB_PAGE_TXT, Study Publication Page Text, CHARACTER, length=1-100&#xA;&#xA;Sequence-&gt;sequence: 2223795, 2223637v3.0:2178533v1.0, Nucleotide Sequence Value, java.lang.String,&#xA;&#xA;Term-&gt;value: 2519109, 2519094v1.0:2178533v1.0, Controlled Vocabulary Annotation Term, java.lang.String,&#xA;Accession-&gt;value: 2238037, 2237886v1.0:2178533v1.0, Database Entry Accession Number, java.lang.String,"/>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Note"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_705570C3_27EB_4422_81A7_0BD501534A9C"/>
+								<UML:TaggedValue tag="date_created" value="2007-08-08 13:54:10"/>
+								<UML:TaggedValue tag="date_modified" value="2007-08-08 13:54:51"/>
+								<UML:TaggedValue tag="gentype" value="&lt;none&gt;"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Logical Model"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="198"/>
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
 							</UML:ModelElement.taggedValue>
@@ -8726,35 +8770,36 @@
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="version" value="1.0"/>
 				<UML:TaggedValue tag="created_date" value="2007-07-10 10:18:22"/>
-				<UML:TaggedValue tag="modified_date" value="2007-08-06 06:27:06"/>
+				<UML:TaggedValue tag="modified_date" value="2007-08-08 14:00:20"/>
 				<UML:TaggedValue tag="package" value="EAPK_705570C3_27EB_4422_81A7_0BD501534A9C"/>
 				<UML:TaggedValue tag="type" value="Logical"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
 				<UML:TaggedValue tag="ea_localid" value="23"/>
 				<UML:TaggedValue tag="EAStyle" value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=850;DocSize.cy=1098;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=1;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;"/>
-				<UML:TaggedValue tag="styleex" value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=0;TDurLow=0;TDurHigh=100;TDurUnit=;TDurHide=0;TConnectorNotation=;TExplicitNavigability=0;"/>
+				<UML:TaggedValue tag="styleex" value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;TDurLow=0;TDurHigh=100;TDurUnit=;TDurHide=0;TConnectorNotation=;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
-				<UML:DiagramElement geometry="Left=10;Top=180;Right=150;Bottom=272;" subject="EAID_65084C9F_9856_4f37_AB9C_9F2BFF1CF9C9" seqno="1" style="DUID=07ACC255;"/>
-				<UML:DiagramElement geometry="Left=170;Top=180;Right=392;Bottom=272;" subject="EAID_39D1E867_D140_49a4_AA12_7B4C089011A0" seqno="2" style="DUID=F7593E36;"/>
-				<UML:DiagramElement geometry="Left=422;Top=180;Right=637;Bottom=270;" subject="EAID_8FBE2C97_2FA5_4034_8C35_7022CF04B4E9" seqno="3" style="DUID=326BC64C;"/>
-				<UML:DiagramElement geometry="Left=667;Top=180;Right=870;Bottom=320;" subject="EAID_8F359124_B2B1_45d7_B71B_20DC1DC8422B" seqno="4" style="DUID=8F4B7CAE;"/>
-				<UML:DiagramElement geometry="Left=900;Top=180;Right=1121;Bottom=270;" subject="EAID_D5D367E2_A5E2_4c36_9A77_4719F8809BF5" seqno="5" style="DUID=774182BB;"/>
-				<UML:DiagramElement geometry="Left=10;Top=416;Right=217;Bottom=508;" subject="EAID_9349C6B9_47CC_43c4_AA11_603BBCF94AD1" seqno="6" style="DUID=C904742B;"/>
-				<UML:DiagramElement geometry="Left=247;Top=416;Right=449;Bottom=540;" subject="EAID_DF8C96BE_CA02_4799_85F0_7F5C8D637681" seqno="7" style="DUID=C437B0A9;"/>
-				<UML:DiagramElement geometry="Left=480;Top=416;Right=709;Bottom=506;" subject="EAID_FF3EEC9D_6E81_472c_9937_B7E073A2BC91" seqno="8" style="DUID=EF7209FA;"/>
-				<UML:DiagramElement geometry="Left=10;Top=620;Right=192;Bottom=710;" subject="EAID_BD7FB365_32CF_41d3_AB99_88CF24E7CC47" seqno="9" style="DUID=D1BDC54B;"/>
-				<UML:DiagramElement geometry="Left=222;Top=620;Right=410;Bottom=712;" subject="EAID_94EBCEDE_80F8_48a1_9107_E158D02E254F" seqno="10" style="DUID=6D5FEFF4;"/>
-				<UML:DiagramElement geometry="Left=440;Top=620;Right=643;Bottom=712;" subject="EAID_F3517F47_8DED_48fc_BCE7_0E7266527786" seqno="11" style="DUID=7D733CDA;"/>
-				<UML:DiagramElement geometry="Left=673;Top=620;Right=865;Bottom=710;" subject="EAID_7936387B_3B4B_4364_8AD9_AF7969D9E778" seqno="12" style="DUID=52D0B7F7;"/>
-				<UML:DiagramElement geometry="Left=895;Top=620;Right=1059;Bottom=710;" subject="EAID_0AE3FDF4_88ED_4c60_A45D_091D3191EF8B" seqno="13" style="DUID=7C70FB89;"/>
+				<UML:DiagramElement geometry="Left=43;Top=20;Right=358;Bottom=130;" subject="EAID_5BE581FF_7F38_4531_927E_2E2B07708733" seqno="1" style="DUID=C4377273;"/>
+				<UML:DiagramElement geometry="Left=10;Top=180;Right=150;Bottom=272;" subject="EAID_65084C9F_9856_4f37_AB9C_9F2BFF1CF9C9" seqno="2" style="DUID=07ACC255;"/>
+				<UML:DiagramElement geometry="Left=170;Top=180;Right=392;Bottom=272;" subject="EAID_39D1E867_D140_49a4_AA12_7B4C089011A0" seqno="3" style="DUID=F7593E36;"/>
+				<UML:DiagramElement geometry="Left=422;Top=180;Right=637;Bottom=270;" subject="EAID_8FBE2C97_2FA5_4034_8C35_7022CF04B4E9" seqno="4" style="DUID=326BC64C;"/>
+				<UML:DiagramElement geometry="Left=667;Top=180;Right=870;Bottom=416;" subject="EAID_8F359124_B2B1_45d7_B71B_20DC1DC8422B" seqno="5" style="DUID=8F4B7CAE;"/>
+				<UML:DiagramElement geometry="Left=900;Top=180;Right=1121;Bottom=270;" subject="EAID_D5D367E2_A5E2_4c36_9A77_4719F8809BF5" seqno="6" style="DUID=774182BB;"/>
+				<UML:DiagramElement geometry="Left=10;Top=416;Right=217;Bottom=508;" subject="EAID_9349C6B9_47CC_43c4_AA11_603BBCF94AD1" seqno="7" style="DUID=C904742B;"/>
+				<UML:DiagramElement geometry="Left=247;Top=416;Right=449;Bottom=540;" subject="EAID_DF8C96BE_CA02_4799_85F0_7F5C8D637681" seqno="8" style="DUID=C437B0A9;"/>
+				<UML:DiagramElement geometry="Left=480;Top=416;Right=709;Bottom=506;" subject="EAID_FF3EEC9D_6E81_472c_9937_B7E073A2BC91" seqno="9" style="DUID=EF7209FA;"/>
+				<UML:DiagramElement geometry="Left=10;Top=620;Right=192;Bottom=710;" subject="EAID_BD7FB365_32CF_41d3_AB99_88CF24E7CC47" seqno="10" style="DUID=D1BDC54B;"/>
+				<UML:DiagramElement geometry="Left=222;Top=620;Right=410;Bottom=712;" subject="EAID_94EBCEDE_80F8_48a1_9107_E158D02E254F" seqno="11" style="DUID=6D5FEFF4;"/>
+				<UML:DiagramElement geometry="Left=440;Top=620;Right=643;Bottom=712;" subject="EAID_F3517F47_8DED_48fc_BCE7_0E7266527786" seqno="12" style="DUID=7D733CDA;"/>
+				<UML:DiagramElement geometry="Left=673;Top=620;Right=865;Bottom=710;" subject="EAID_7936387B_3B4B_4364_8AD9_AF7969D9E778" seqno="13" style="DUID=52D0B7F7;"/>
+				<UML:DiagramElement geometry="Left=895;Top=620;Right=1059;Bottom=710;" subject="EAID_0AE3FDF4_88ED_4c60_A45D_091D3191EF8B" seqno="14" style="DUID=7C70FB89;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="Model Notes" xmi.id="EAID_B2A20DF8_44F0_4bc7_9C96_EAB74EFF5DF8" diagramType="ClassDiagram" owner="EAPK_705570C3_27EB_4422_81A7_0BD501534A9C" toolName="Enterprise Architect 2.5">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="version" value="1.0"/>
 				<UML:TaggedValue tag="created_date" value="2007-08-06 06:23:14"/>
-				<UML:TaggedValue tag="modified_date" value="2007-08-07 15:14:29"/>
+				<UML:TaggedValue tag="modified_date" value="2007-08-08 14:02:42"/>
 				<UML:TaggedValue tag="package" value="EAPK_705570C3_27EB_4422_81A7_0BD501534A9C"/>
 				<UML:TaggedValue tag="type" value="Logical"/>
 				<UML:TaggedValue tag="swimlanes" value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
@@ -8763,7 +8808,8 @@
 				<UML:TaggedValue tag="styleex" value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;TDurLow=0;TDurHigh=100;TDurUnit=;TDurHide=0;TConnectorNotation=;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;"/>
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
-				<UML:DiagramElement geometry="Left=59;Top=31;Right=749;Bottom=651;" subject="EAID_5C23AD05_9227_46f2_839B_0429513A5815" seqno="1" style="DUID=A6CE7D9E;"/>
+				<UML:DiagramElement geometry="Left=63;Top=439;Right=748;Bottom=1028;" subject="EAID_84828963_4A40_4233_8CEF_B5559633B3B1" seqno="1" style="DUID=37F1A8B9;"/>
+				<UML:DiagramElement geometry="Left=59;Top=10;Right=749;Bottom=427;" subject="EAID_5C23AD05_9227_46f2_839B_0429513A5815" seqno="2" style="DUID=A6CE7D9E;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:Diagram name="gov.nih.nci.caarray.domain" xmi.id="EAID_C390EF86_1EA9_404a_8482_805DC2E9E15D" diagramType="ClassDiagram" owner="EAPK_0AE3FDF4_88ED_4c60_A45D_091D3191EF8B" toolName="Enterprise Architect 2.5">
