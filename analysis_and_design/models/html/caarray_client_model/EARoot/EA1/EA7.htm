@@ -1,0 +1,87 @@
+<html>
+<head>
+	<link href="../../ea.css" rel=stylesheet>
+	<title>Note</title>
+</head>
+
+<body>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+  <TBODY >
+	<TR>
+		<TD colspan=2 WIDTH="100%" class="Header">note: Note</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="48%" class="HeaderDetails"></TD>
+		<TD WIDTH="48%" class="HeaderDetails"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="40%" class="HeaderDetails"></TD>
+		<TD WIDTH="60%" class="HeaderDetails"></TD>
+	</TR>
+	<TR><TD colspan="2" width="100%"><HR></TD></TR>
+	</TBODY>
+</TABLE><table cellPadding=2 cellSpacing=2 width="100%">
+  <tbody>
+		<tr>
+			<td class=ObjectTitle>
+				note Note
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table class=ObjectDetails cellPadding=2 cellSpacing=2 width="100%">
+				  <tbody>
+						<tr>
+							<td width="15%" class=ObjectDetailsTopic>Author:</td>
+							<td width="85%" class=ObjectDetailsValue></td>
+						</tr>
+						<tr>
+							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 8/6/2007 6:23:24 AM; Modified: 8/10/2007 7:02:22 AM; version: 1.0; Phase: 1.0</td>
+						</tr>
+						<tr>
+							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
+							<td width="85%" class=ObjectDetailsValue>{5C23AD05-9227-46f2-839B-0429513A5815}</td>
+						</tr>
+						<tr>
+							<td colspan="2" width="100%" class=ObjectDetailsTopic>CHANGE&nbsp;<WBR>HISTORY<br>========================<br><br>Version&nbsp;<WBR>0.3<br>8/10/2007<br>[Model&nbsp;<WBR>revision&nbsp;<WBR>for&nbsp;<WBR>review&nbsp;<WBR>by&nbsp;<WBR>Analysis&nbsp;<WBR>Services&nbsp;<WBR>Best&nbsp;<WBR>Practices&nbsp;<WBR>Working&nbsp;<WBR>Group]<br>-&nbsp;<WBR>Put&nbsp;<WBR>full&nbsp;<WBR>array&nbsp;<WBR>design&nbsp;<WBR>annotation&nbsp;<WBR>(Features,&nbsp;<WBR>Reporters,&nbsp;<WBR>etc.)&nbsp;<WBR>back&nbsp;<WBR>into&nbsp;<WBR>the&nbsp;<WBR>registered&nbsp;<WBR>model.<br>-&nbsp;<WBR>Put&nbsp;<WBR>hybridization&nbsp;<WBR>data&nbsp;<WBR>classes&nbsp;<WBR>into&nbsp;<WBR>the&nbsp;<WBR>registered&nbsp;<WBR>model.<br><br>Version&nbsp;<WBR>0.2<br>8/9/2007<br>-&nbsp;<WBR>Added&nbsp;<WBR>an&nbsp;<WBR>association&nbsp;<WBR>from&nbsp;<WBR>Publication&nbsp;<WBR>to&nbsp;<WBR>Term&nbsp;<WBR>to&nbsp;<WBR>model&nbsp;<WBR>the&nbsp;<WBR>"type"&nbsp;<WBR>of&nbsp;<WBR>publication&nbsp;<WBR>(main,&nbsp;<WBR>reference&nbsp;<WBR>etc.).<br>-&nbsp;<WBR>Added&nbsp;<WBR>attributes&nbsp;<WBR>to&nbsp;<WBR>Publication&nbsp;<WBR>based&nbsp;<WBR>on&nbsp;<WBR>MAGE-OM&nbsp;<WBR>BibliographicReference&nbsp;<WBR>(uri,&nbsp;<WBR>publication,&nbsp;<WBR>publisher,&nbsp;<WBR>editor,&nbsp;<WBR>year,&nbsp;<WBR>volume,&nbsp;<WBR>issue,&nbsp;<WBR>pages).<br>-&nbsp;<WBR>Changed&nbsp;<WBR>"Investigation"&nbsp;<WBR>to&nbsp;<WBR>"Experiment",&nbsp;<WBR>and&nbsp;<WBR>"InvestigationContact"&nbsp;<WBR>to&nbsp;<WBR>"ExperimentContact".<br>-&nbsp;<WBR>Changed&nbsp;<WBR>multiplicity&nbsp;<WBR>of&nbsp;<WBR>Experiment's&nbsp;<WBR>"factors"&nbsp;<WBR>to&nbsp;<WBR>0..*.<br>-&nbsp;<WBR>Linked&nbsp;<WBR>Experiment&nbsp;<WBR>to&nbsp;<WBR>Hybridization&nbsp;<WBR>(many-to-many).<br>-&nbsp;<WBR>Added&nbsp;<WBR>unit&nbsp;<WBR>and&nbsp;<WBR>value&nbsp;<WBR>to&nbsp;<WBR>FactorValue.<br>-&nbsp;<WBR>Allowed&nbsp;<WBR>samples&nbsp;<WBR>to&nbsp;<WBR>have&nbsp;<WBR>0..*&nbsp;<WBR>sources&nbsp;<WBR>and&nbsp;<WBR>extracts&nbsp;<WBR>to&nbsp;<WBR>have&nbsp;<WBR>0..*&nbsp;<WBR>samples.<br>-&nbsp;<WBR>Removed&nbsp;<WBR>LabeledExtract.&nbsp;<WBR>Extract&nbsp;<WBR>or&nbsp;<WBR>Hybridization&nbsp;<WBR>can&nbsp;<WBR>have&nbsp;<WBR>an&nbsp;<WBR>associated&nbsp;<WBR>label.<br>-&nbsp;<WBR>Extracts&nbsp;<WBR>can&nbsp;<WBR>be&nbsp;<WBR>transformed&nbsp;<WBR>into&nbsp;<WBR>other&nbsp;<WBR>Extracts&nbsp;<WBR>(labeled&nbsp;<WBR>or&nbsp;<WBR>unlabeled).&nbsp;<WBR>This&nbsp;<WBR>satisfies&nbsp;<WBR>ChIP-chip&nbsp;<WBR>example&nbsp;<WBR>shown&nbsp;<WBR>in&nbsp;<WBR>MAGE-TAB&nbsp;<WBR>specification&nbsp;<WBR>too.<br>-&nbsp;<WBR>Added&nbsp;<WBR>amount&nbsp;<WBR>and&nbsp;<WBR>unit&nbsp;<WBR>attributes&nbsp;<WBR>to&nbsp;<WBR>Hybridization.<br>-&nbsp;<WBR>Added&nbsp;<WBR>association&nbsp;<WBR>from&nbsp;<WBR>RawArrayData&nbsp;<WBR>to&nbsp;<WBR>sourceImages&nbsp;<WBR>(0..*).<br>-&nbsp;<WBR>Added&nbsp;<WBR>a&nbsp;<WBR>defaultValue&nbsp;<WBR>for&nbsp;<WBR>a&nbsp;<WBR>Parameter.<br>-&nbsp;<WBR>Added&nbsp;<WBR>a&nbsp;<WBR>"notes"&nbsp;<WBR>attribute&nbsp;<WBR>to&nbsp;<WBR>ProtocolApplication.<br>-&nbsp;<WBR>Added&nbsp;<WBR>an&nbsp;<WBR>association&nbsp;<WBR>from&nbsp;<WBR>Protocol&nbsp;<WBR>to&nbsp;<WBR>CaArrayFile&nbsp;<WBR>to&nbsp;<WBR>allow&nbsp;<WBR>pdf&nbsp;<WBR>description&nbsp;<WBR>of&nbsp;<WBR>protocol&nbsp;<WBR>etc.<br>-&nbsp;<WBR>Expanded&nbsp;<WBR>Characteristics&nbsp;<WBR>into&nbsp;<WBR>TermCharacteristics,&nbsp;<WBR>ValueCharacteristics&nbsp;<WBR>and&nbsp;<WBR>well-known&nbsp;<WBR>characteristics:&nbsp;<WBR>Organism,&nbsp;<WBR>OrganismPart,&nbsp;<WBR>DiseaseState,&nbsp;<WBR>DiseaseStaging&nbsp;<WBR>and&nbsp;<WBR>Age.<br>-&nbsp;<WBR>Searched&nbsp;<WBR>caDSR&nbsp;<WBR>and&nbsp;<WBR>made&nbsp;<WBR>list&nbsp;<WBR>of&nbsp;<WBR>potential&nbsp;<WBR>reusable&nbsp;<WBR>CDEs.&nbsp;<WBR>Need&nbsp;<WBR>to&nbsp;<WBR>work&nbsp;<WBR>with&nbsp;<WBR>caDSR/EVS&nbsp;<WBR>contact&nbsp;<WBR>before&nbsp;<WBR>annotating&nbsp;<WBR>model.<br>-&nbsp;<WBR>Added&nbsp;<WBR>a&nbsp;<WBR>TODO&nbsp;<WBR>item&nbsp;<WBR>to&nbsp;<WBR>add&nbsp;<WBR>"documentation"&nbsp;<WBR>tags&nbsp;<WBR>for&nbsp;<WBR>all&nbsp;<WBR>classes&nbsp;<WBR>and&nbsp;<WBR>"description"&nbsp;<WBR>tags&nbsp;<WBR>for&nbsp;<WBR>all&nbsp;<WBR>attributes&nbsp;<WBR>in&nbsp;<WBR>order&nbsp;<WBR>to&nbsp;<WBR>make&nbsp;<WBR>the&nbsp;<WBR>model&nbsp;<WBR>ready&nbsp;<WBR>for&nbsp;<WBR>submission&nbsp;<WBR>to&nbsp;<WBR>caDSR.<br>-&nbsp;<WBR>Added&nbsp;<WBR>an&nbsp;<WBR>ArrayGroup&nbsp;<WBR>element.<br><br>Version&nbsp;<WBR>0.1<br>8/3/2007<br>-&nbsp;<WBR>Initial&nbsp;<WBR>draft&nbsp;<WBR>reviewed&nbsp;<WBR>internally.<br>-&nbsp;<WBR>Based&nbsp;<WBR>on&nbsp;<WBR>MAGE-TAB&nbsp;<WBR>support&nbsp;<WBR>with&nbsp;<WBR>additional&nbsp;<WBR>considerations&nbsp;<WBR>for&nbsp;<WBR>MIAME&nbsp;<WBR>and&nbsp;<WBR>caArray&nbsp;<WBR>1.x&nbsp;<WBR>migration.<br>-&nbsp;<WBR>Result&nbsp;<WBR>of&nbsp;<WBR>E1&nbsp;<WBR>iteration.<br></td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table><p><table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td width="10%" class="ObjectSubTitle">
+				Appears in:
+			</td>
+			<td width="90%">
+				<a href="EA5.htm">Model Notes</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<P/><TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
+  <TBODY >
+	<TR><TD colspan="2" width="100%"><HR></TD></TR>
+	<TR>
+		<TD colspan=2 WIDTH="100%" class="Footer">note: Note</TD>
+	</TR>
+	<TR>
+		<TD WIDTH="48%" class="FooterDetails"></TD>
+		<TD WIDTH="48%" class="FooterDetails"></TD>
+	</TR>
+	<TR>
+		<TD WIDTH="40%" class="FooterDetails"></TD>
+		<TD WIDTH="60%" class="FooterDetails"></TD>
+	</TR>
+	</TBODY>
+</TABLE> 
+</body>
+
+</html>
