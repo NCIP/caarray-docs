@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>TranscriptArrayReporter</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>Taxon</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: TranscriptArrayReporter</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: Taxon</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: TranscriptArrayReporter  
+				public   class: Taxon  
 			</td>
 		</tr>
 		<tr>
@@ -38,15 +37,15 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Project:</td>
-							<td width="85%" class=ObjectDetailsValue>Phase: 1.0; Status: Proposed; Version: 1.0; Complexity: 1</td>
+							<td width="85%" class=ObjectDetailsValue>Phase: ; Status: Proposed; Version: 1.0; Complexity: 2</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 6/26/2007 7:56:19 PM; Modified: 8/21/2007 8:41:54 AM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 10/20/2004 12:11:56 PM; Modified: 8/21/2007 8:43:53 AM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
-							<td width="85%" class=ObjectDetailsValue> Active: false; IsRoot: false; IsLeaf: false;</td>
+							<td width="85%" class=ObjectDetailsValue> Active: false; IsRoot: false; IsLeaf: true;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Extension Points:</td>
@@ -54,10 +53,10 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{0543A91C-E97A-49b5-BE7E-501BAB9144C5}</td>
+							<td width="85%" class=ObjectDetailsValue>{FF777B15-DD88-4bbc-AED2-45A4B865CBEA}</td>
 						</tr>
 						<tr>
-							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
+							<td colspan="2" width="100%" class=ObjectDetailsTopic>An&nbsp;<WBR>object&nbsp;<WBR>representing&nbsp;<WBR>the&nbsp;<WBR>various&nbsp;<WBR>names&nbsp;<WBR>(scientific,&nbsp;<WBR>common,&nbsp;<WBR>abbreviated,&nbsp;<WBR>etc.)&nbsp;<WBR>for&nbsp;<WBR>a&nbsp;<WBR>species&nbsp;<WBR>associated&nbsp;<WBR>with&nbsp;<WBR>a&nbsp;<WBR>specific&nbsp;<WBR>instance&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>Gene,&nbsp;<WBR>Chromosome,&nbsp;<WBR>Pathway,&nbsp;<WBR>Protein,&nbsp;<WBR>or&nbsp;<WBR>Tissue.</td>
 						</tr>
 					</tbody>
 				</table>
@@ -74,19 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<P/><table cellPadding=0 cellSpacing=0 width="100%">
-  <tbody>
-		<tr>
-			<td width="10%" class="ObjectSubTitle">
-				Extends:
-			</td>
-			<td width="90%">
-				<a href="EA125.htm">ArrayReporter</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +85,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA127.htm">ExonArrayReporter</a>, <a href="EA128.htm">ExpressionArrayReporter</a>, <a href="EA125.htm">ArrayReporter</a>
+				<a href="EA130.htm">Gene</a>
 			</td>
 		</tr>
 	</tbody>
@@ -110,7 +97,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA123.htm">gov.nih.nci.cabio.domain</a>
+				<a href="EA124.htm">gov.nih.nci.cabio.domain</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +110,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Generalization  link to class <a href="EA125.htm">[gov.nih.nci.cabio.domain].ArrayReporter</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link from class <a href="EA127.htm">[gov.nih.nci.cabio.domain].ExonArrayReporter</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link from class <a href="EA128.htm">[gov.nih.nci.cabio.domain].ExpressionArrayReporter</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link to class <a href="EA130.htm">[gov.nih.nci.cabio.domain].Gene</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -149,11 +136,167 @@
 		</tr>
 	</tbody>
 </table>
-<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
+	<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="Fields">Taxon</a> Attributes
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="AttribTable">
+					<TR>
+						<TD WIDTH="40%" class="AttribTableHeading">Attribute</TD>
+						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
+					</TR>
+						<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public Long</i><br><b>&nbsp;&nbsp;id</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=The identifier attached to this record in the caBIO database<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;scientificName</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The scientific name of the taxon.<br>ea_guid={D2950F13-E8A9-42c7-8ED9-73B62E32650F}<br>label=Scientific Name<br>length=0<br>lowerBound=1<br>ordered=0<br>position=0<br>precision=0<br>rose_uuid=40574E7200EB<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;ethnicityStrain</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The ethinicity strain of the taxon.<br>ea_guid={E229EF23-DD2F-4077-8E4B-1CA97EDB92FE}<br>label=Ethnicity Strain<br>length=0<br>lowerBound=1<br>ordered=0<br>position=1<br>precision=0<br>rose_uuid=40574E7200F5<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;abbreviation</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The abbreviation of the taxon.<br>ea_guid={161E4387-9C08-4150-B7C5-D10CC05E6343}<br>label=Abbreviation<br>length=0<br>lowerBound=1<br>ordered=0<br>position=2<br>precision=0<br>rose_uuid=40574E7200F6<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;commonName</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The common name of the taxon.<br>ea_guid={6AC5D164-023E-4b33-B051-1868CACC0A6B}<br>label=Common Name<br>length=0<br>lowerBound=1<br>ordered=0<br>position=3<br>precision=0<br>rose_uuid=40574E7200FF<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;bigid</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>documentation=caBIG Grid Identifier<br></TD>	
+	</TR>
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="TaggedVals">Taxon</a> Tagged Values
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
+					<TR>
+						<TD WIDTH="24%" class="OperationTableHeading">Tag</TD>
+						<TD WIDTH="24%" class="OperationTableHeading">Value</TD>
+						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
+					</TR>
+									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ca_index_class</TD>
+					<TD WIDTH="24%" class="OperationTableRow">true</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">date_created</TD>
+					<TD WIDTH="24%" class="OperationTableRow">2004-10-20 10:54:15</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">date_modified</TD>
+					<TD WIDTH="24%" class="OperationTableRow">2004-10-20 10:54:15</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">deprecation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Please be advised this class will be removed during a future release</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">An object representing the various names (scientific, common, abbreviated, etc.) for a species associated with a specific instance of a Gene, Chromosome, Pathway, Protein, or Tissue.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">An object representing the various names (scientific, common, abbreviated, etc.) for a species associated with a specific instance of a Gene, Chromosome, Pathway, Protein, or Tissue.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ea_ntype</TD>
+					<TD WIDTH="24%" class="OperationTableRow">0</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ea_stype</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Class</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">isSpecification</TD>
+					<TD WIDTH="24%" class="OperationTableRow">false</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">label</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Taxon</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">package</TD>
+					<TD WIDTH="24%" class="OperationTableRow">EAPK_F1A68F05_E8BF_424c_8F8D_33A9BEC67018</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">package_name</TD>
+					<TD WIDTH="24%" class="OperationTableRow">bean</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">persistence</TD>
+					<TD WIDTH="24%" class="OperationTableRow">transient</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">rose_uuid</TD>
+					<TD WIDTH="24%" class="OperationTableRow">40574E6F00AC</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">rose_uuid</TD>
+					<TD WIDTH="24%" class="OperationTableRow">40574E6F00AC</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">see</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Users should begin using gov.nih.nci.cabio.domain.Taxon</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">style</TD>
+					<TD WIDTH="24%" class="OperationTableRow">BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">tagged</TD>
+					<TD WIDTH="24%" class="OperationTableRow">0</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+	
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+	<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: TranscriptArrayReporter</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: Taxon</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -166,4 +309,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

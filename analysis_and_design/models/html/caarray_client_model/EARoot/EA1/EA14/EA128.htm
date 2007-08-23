@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>ExpressionArrayReporter</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>ExonArrayReporter</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: ExpressionArrayReporter</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: ExonArrayReporter</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: ExpressionArrayReporter  
+				public   class: ExonArrayReporter  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 4/23/2007 6:39:28 PM; Modified: 8/21/2007 8:41:53 AM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 6/26/2007 7:56:58 PM; Modified: 8/21/2007 8:41:54 AM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{5B0AA628-1BFF-4b12-BE79-0B40F7FF20BD}</td>
+							<td width="85%" class=ObjectDetailsValue>{31E890C2-E75F-4d3e-90DC-D40221C24E78}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -74,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>
 			</td>
 		</tr>
 	</tbody>
@@ -86,7 +85,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="EA134.htm">TranscriptArrayReporter</a>
+				<a href="EA136.htm">TranscriptArrayReporter</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA129.htm">Gene</a>, <a href="EA134.htm">TranscriptArrayReporter</a>
+				<a href="EA136.htm">TranscriptArrayReporter</a>, <a href="EA130.htm">Gene</a>, <a href="EA135.htm">Transcript</a>, <a href="EA127.htm">Exon</a>
 			</td>
 		</tr>
 	</tbody>
@@ -110,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA123.htm">gov.nih.nci.cabio.domain</a>
+				<a href="EA124.htm">gov.nih.nci.cabio.domain</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link to class <a href="EA129.htm">[gov.nih.nci.cabio.domain].Gene</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="EA134.htm">[gov.nih.nci.cabio.domain].TranscriptArrayReporter</a> &nbsp;  &nbsp;</LI>	
+							<LI>Generalization  link to class <a href="EA136.htm">[gov.nih.nci.cabio.domain].TranscriptArrayReporter</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA130.htm">[gov.nih.nci.cabio.domain].Gene</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA135.htm">[gov.nih.nci.cabio.domain].Transcript</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA127.htm">[gov.nih.nci.cabio.domain].Exon</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -153,7 +152,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">ExpressionArrayReporter</a> Attributes
+				<a Name="Fields">ExonArrayReporter</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -164,16 +163,13 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;sequenceSource</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private Long</i><br><b>&nbsp;&nbsp;probeSelectionRegionId</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;sequenceType</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private Long</i><br><b>&nbsp;&nbsp;probeCount</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;targetDescription</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;targetId</b></TD>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;strand</b></TD>
 		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>
 				</TABLE>
@@ -185,40 +181,11 @@
 	</tbody>
 </table>
 
-<table cellPadding=0 cellSpacing=0 width="100%">
-  <tbody>
-		<tr>
-			<td class="ObjectSubTitle">
-				<a Name="TaggedVals">ExpressionArrayReporter</a> Tagged Values
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
-					<TR>
-						<TD WIDTH="24%" class="OperationTableHeading">Tag</TD>
-						<TD WIDTH="24%" class="OperationTableHeading">Value</TD>
-						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
-					</TR>
-									<TR>
-					<TD WIDTH="24%" class="OperationTableRow">ca_index_class</TD>
-					<TD WIDTH="24%" class="OperationTableRow">true</TD>
-					<TD WIDTH="52%" class="OperationTableRow"></TD>
-				</TR>
-	
-				</TABLE>
-			</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-		</tr>
-	</tbody>
-</table>
-	<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
+<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: ExpressionArrayReporter</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: ExonArrayReporter</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -231,4 +198,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>Taxon</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>SNP</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: Taxon</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: SNP</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: Taxon  
+				public   class: SNP  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 10/20/2004 12:11:56 PM; Modified: 8/21/2007 8:43:53 AM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 10/20/2004 12:11:55 PM; Modified: 8/21/2007 8:42:49 AM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,10 +53,10 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{FF777B15-DD88-4bbc-AED2-45A4B865CBEA}</td>
+							<td width="85%" class=ObjectDetailsValue>{FB342557-31A8-45a0-A4C1-4590878E879F}</td>
 						</tr>
 						<tr>
-							<td colspan="2" width="100%" class=ObjectDetailsTopic>An object representing the various names (scientific, common, abbreviated, etc.) for a species associated with a specific instance of a Gene, Chromosome, Pathway, Protein, or Tissue.</td>
+							<td colspan="2" width="100%" class=ObjectDetailsTopic>An&nbsp;<WBR>object&nbsp;<WBR>representing&nbsp;<WBR>a&nbsp;<WBR>Single&nbsp;<WBR>Nucleotide&nbsp;<WBR>Polymorphism;&nbsp;<WBR>provides&nbsp;<WBR>access&nbsp;<WBR>to&nbsp;<WBR>the&nbsp;<WBR>clones&nbsp;<WBR>and&nbsp;<WBR>the&nbsp;<WBR>trace&nbsp;<WBR>files&nbsp;<WBR>from&nbsp;<WBR>which&nbsp;<WBR>it&nbsp;<WBR>was&nbsp;<WBR>identified,&nbsp;<WBR>the&nbsp;<WBR>two&nbsp;<WBR>most&nbsp;<WBR>common&nbsp;<WBR>substitutions&nbsp;<WBR>at&nbsp;<WBR>that&nbsp;<WBR>position,&nbsp;<WBR>the&nbsp;<WBR>offset&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>SNP&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>parent&nbsp;<WBR>sequence,&nbsp;<WBR>and&nbsp;<WBR>a&nbsp;<WBR>confidence&nbsp;<WBR>score.</td>
 						</tr>
 					</tbody>
 				</table>
@@ -86,7 +85,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA129.htm">Gene</a>
+				<a href="EA133.htm">SNPArrayReporter</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +97,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA123.htm">gov.nih.nci.cabio.domain</a>
+				<a href="EA124.htm">gov.nih.nci.cabio.domain</a>
 			</td>
 		</tr>
 	</tbody>
@@ -111,7 +110,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link to class <a href="EA129.htm">[gov.nih.nci.cabio.domain].Gene</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link from class <a href="EA133.htm">[gov.nih.nci.cabio.domain].SNPArrayReporter</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -141,7 +140,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">Taxon</a> Attributes
+				<a Name="Fields">SNP</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -152,23 +151,35 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public Long</i><br><b>&nbsp;&nbsp;id</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=The identifier attached to this record in the caBIO database<br></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;alleleA</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=The primary allele (variant) of this polymorphism<br></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;scientificName</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The scientific name of the taxon.<br>ea_guid={D2950F13-E8A9-42c7-8ED9-73B62E32650F}<br>label=Scientific Name<br>length=0<br>lowerBound=1<br>ordered=0<br>position=0<br>precision=0<br>rose_uuid=40574E7200EB<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;alleleB</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=The alternate allele (variant) of this polymorphism<br></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;ethnicityStrain</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The ethinicity strain of the taxon.<br>ea_guid={E229EF23-DD2F-4077-8E4B-1CA97EDB92FE}<br>label=Ethnicity Strain<br>length=0<br>lowerBound=1<br>ordered=0<br>position=1<br>precision=0<br>rose_uuid=40574E7200F5<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;abbreviation</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The abbreviation of the taxon.<br>ea_guid={161E4387-9C08-4150-B7C5-D10CC05E6343}<br>label=Abbreviation<br>length=0<br>lowerBound=1<br>ordered=0<br>position=2<br>precision=0<br>rose_uuid=40574E7200F6<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;commonName</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The common name of the taxon.<br>ea_guid={6AC5D164-023E-4b33-B051-1868CACC0A6B}<br>label=Common Name<br>length=0<br>lowerBound=1<br>ordered=0<br>position=3<br>precision=0<br>rose_uuid=40574E7200FF<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;aminoAcidChange</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;bigid</b></TD>
 		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>documentation=caBIG Grid Identifier<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;chrXPseudoAutosomalRegion</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;codingStatus</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;DBSNPID</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>documentation=The identifier used by the NCBI dbSNP database to refer to this polymorphism<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;flank</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public Long</i><br><b>&nbsp;&nbsp;id</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=The identifier attached to this record in the caBIO database<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;validationStatus</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=Indicator for whether the SNP has been validated. Options are YES/NO.<br></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -183,7 +194,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="TaggedVals">Taxon</a> Tagged Values
+				<a Name="TaggedVals">SNP</a> Tagged Values
 			</td>
 		</tr>
 		<tr>
@@ -216,12 +227,12 @@
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
-					<TD WIDTH="24%" class="OperationTableRow">An object representing the various names (scientific, common, abbreviated, etc.) for a species associated with a specific instance of a Gene, Chromosome, Pathway, Protein, or Tissue.</TD>
+					<TD WIDTH="24%" class="OperationTableRow">An object representing a Single Nucleotide Polymorphism; provides access to the clones and the trace files from which it was identified, the two most common substitutions at that position, the offset of the SNP in the parent sequence, and a confidence sco</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
-					<TD WIDTH="24%" class="OperationTableRow">An object representing the various names (scientific, common, abbreviated, etc.) for a species associated with a specific instance of a Gene, Chromosome, Pathway, Protein, or Tissue.</TD>
+					<TD WIDTH="24%" class="OperationTableRow">An object representing a Single Nucleotide Polymorphism; provides access to the clones and the trace files from which it was identified, the two most common substitutions at that position, the offset of the SNP in the parent sequence, and a confidence sco</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
@@ -241,7 +252,7 @@
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">label</TD>
-					<TD WIDTH="24%" class="OperationTableRow">Taxon</TD>
+					<TD WIDTH="24%" class="OperationTableRow">SNP</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
@@ -261,17 +272,17 @@
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">rose_uuid</TD>
-					<TD WIDTH="24%" class="OperationTableRow">40574E6F00AC</TD>
+					<TD WIDTH="24%" class="OperationTableRow">40574E6F008D</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">rose_uuid</TD>
-					<TD WIDTH="24%" class="OperationTableRow">40574E6F00AC</TD>
+					<TD WIDTH="24%" class="OperationTableRow">40574E6F008D</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">see</TD>
-					<TD WIDTH="24%" class="OperationTableRow">Users should begin using gov.nih.nci.cabio.domain.Taxon</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Users should begin using gov.nih.nci.cabio.domain.SNP</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
@@ -297,7 +308,7 @@
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: Taxon</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: SNP</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -310,4 +321,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>RemoteSearchService</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>ArrayDataSearchInterface</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">component: RemoteSearchService</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">interface: ArrayDataSearchInterface</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   component: RemoteSearchService  
+				public abstract  &lt;&lt;interface&gt;&gt; interface: ArrayDataSearchInterface  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 7/19/2007 2:25:37 PM; Modified: 8/10/2007 10:17:47 AM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 7/13/2007 3:12:19 PM; Modified: 7/13/2007 3:12:36 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{B318E3B4-20CD-444e-A253-A2C9CDF7A907}</td>
+							<td width="85%" class=ObjectDetailsValue>{4FE34AE8-7D83-4d9e-B9DA-08202F5B4768}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -74,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>
+				<a href=#Methods>Methods</a>
 			</td>
 		</tr>
 	</tbody>
@@ -82,67 +81,23 @@
 <P/><table cellPadding=0 cellSpacing=0 width="100%">
   <tbody>
 		<tr>
-			<td width="10%" class="ObjectSubTitle">
-				Implements:
+			<td class="ObjectSubTitle">
+				<a Name="Methods">ArrayDataSearchInterface</a> Methods
 			</td>
-			<td width="90%">
-				<a href="EA176.htm">SampleSearchService</a>, <a href="EA174.htm">CaArraySearchService</a>, <a href="EA175.htm">ExperimentSearchService</a>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<P/><table cellPadding=0 cellSpacing=0 width="100%">
-  <tbody>
-		<tr>
-			<td width="10%" class="ObjectSubTitle">
-				See also:
-			</td>
-			<td width="90%">
-				<a href="EA176.htm">SampleSearchService</a>, <a href="EA174.htm">CaArraySearchService</a>, <a href="EA175.htm">ExperimentSearchService</a>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<P/><table cellPadding=0 cellSpacing=0 width="100%">
-  <tbody>
-		<tr>
-			<td width="10%" class="ObjectSubTitle">
-				Appears in:
-			</td>
-			<td width="90%">
-				<a href="../EA1/EA147.htm">gov.nci.nih.caarray.client</a>, <a href="EA170.htm">gov.nih.nci.caarray.services.search</a>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<P/><table cellPadding=0 cellSpacing=0 width="100%">
-  <tbody>
-		<tr>
-			<td class="ObjectSubTitle">Connections</td>
 		</tr>
 		<tr>
 			<td>
-				<UL>
-							<LI>Realisation &lt;&lt;realize&gt;&gt; link to interface <a href="EA176.htm">[gov.nih.nci.caarray.services.search].SampleSearchService</a> &nbsp;  &nbsp;</LI>			<LI>Realisation &lt;&lt;realize&gt;&gt; link to interface <a href="EA174.htm">[gov.nih.nci.caarray.services.search].CaArraySearchService</a> &nbsp;  &nbsp;</LI>			<LI>Realisation &lt;&lt;realize&gt;&gt; link to interface <a href="EA175.htm">[gov.nih.nci.caarray.services.search].ExperimentSearchService</a> &nbsp;  &nbsp;</LI>	
-				</UL>
-			</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-		</tr>
-	</tbody>
-</table>
-<table cellPadding=0 cellSpacing=0 width="100%">
-  <tbody>
-		<tr>
-			<td class="ObjectSubTitle"><a Name="#CustomProperties">Custom Properties</a></td>
-		</tr>
-		<tr>
-			<td>
-				<UL>
-										<LI><I>isIndirectlyInstantiated</I>: true</LI>	
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
+					<TR>
+						<TD WIDTH="40%" class="OperationTableHeading">Operation</TD>
+						<TD WIDTH="60%" class="OperationTableHeading">Details</TD>
+					</TR>
+					<TR>
+	<TD WIDTH="40%" class="OperationTableRow"><i>public</i><BR><B>getArrayData</B>(<br>&nbsp;&nbsp;&nbsp;AbstractDesignElement[] elements):AbstractArrayData[]</TD>
+	<TD WIDTH="60%" class="OperationTableRow"><i>Sequential  </i><TABLE> <TR> <TD valign = "top"><i></i><span style="margin-left: .7cm;"> </span></TD><TD></TD> </TR> </TABLE></TD>
+</TR>
 
-				</UL>
+				</TABLE>
 			</td>
 		</tr>
 		<tr>
@@ -150,11 +105,12 @@
 		</tr>
 	</tbody>
 </table>
+
 <TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">component: RemoteSearchService</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">interface: ArrayDataSearchInterface</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -167,4 +123,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

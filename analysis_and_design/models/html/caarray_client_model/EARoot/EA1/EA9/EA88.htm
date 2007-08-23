@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>Project</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>FactorValue</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: Project</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: FactorValue</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: Project  
+				public   class: FactorValue  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 7/5/2007 6:13:49 PM; Modified: 7/5/2007 6:13:52 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 4/24/2007 3:41:56 PM; Modified: 4/24/2007 3:41:59 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{46E66966-128C-4bf9-A776-2FE816E3C530}</td>
+							<td width="85%" class=ObjectDetailsValue>{C08DF821-3180-4c0c-81E8-185DABC78F6A}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -74,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>
 			</td>
 		</tr>
 	</tbody>
@@ -86,7 +85,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="../EA3/EA35.htm">AbstractCaArrayEntity</a>
+				<a href="../EA3/EA36.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA89.htm">Proposal</a>, <a href="EA84.htm">Experiment</a>, <a href="../EA7/EA74.htm">CaArrayFile</a>, <a href="../EA3/EA35.htm">AbstractCaArrayEntity</a>
+				<a href="../EA13/EA121.htm">Term</a>, <a href="EA87.htm">Factor</a>, <a href="../EA8/EA80.htm">Hybridization</a>, <a href="../EA3/EA36.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -110,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="../EA7/EA72.htm">gov.nih.nci.caarray.domain.file</a>, <a href="EA80.htm">gov.nih.nci.caarray.domain.project</a>
+				<a href="../EA8/EA78.htm">gov.nih.nci.caarray.domain.hybridization</a>, <a href="EA81.htm">gov.nih.nci.caarray.domain.project</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link from class <a href="EA89.htm">[gov.nih.nci.caarray.domain.project].Proposal</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA84.htm">[gov.nih.nci.caarray.domain.project].Experiment</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA7/EA74.htm">[gov.nih.nci.caarray.domain.file].CaArrayFile</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA35.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link from class <a href="../EA8/EA80.htm">[gov.nih.nci.caarray.domain.hybridization].Hybridization</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA13/EA121.htm">[gov.nih.nci.caarray.domain.vocabulary].Term</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA87.htm">[gov.nih.nci.caarray.domain.project].Factor</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA36.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -149,11 +148,38 @@
 		</tr>
 	</tbody>
 </table>
+	<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="Fields">FactorValue</a> Attributes
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="AttribTable">
+					<TR>
+						<TD WIDTH="40%" class="AttribTableHeading">Attribute</TD>
+						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
+					</TR>
+						<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA143.htm">String</a></i><br><b>&nbsp;&nbsp;value</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+	</TR>
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
 <TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: Project</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: FactorValue</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -166,4 +192,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>QuantitationType</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>HybridizationDataValues</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: QuantitationType</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: HybridizationDataValues</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: QuantitationType  
+				public   class: HybridizationDataValues  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 7/13/2007 1:26:59 PM; Modified: 8/10/2007 9:04:36 AM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 8/10/2007 9:11:06 AM; Modified: 8/10/2007 9:11:12 AM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{F9569166-1E24-4da1-853F-58F1330B41C5}</td>
+							<td width="85%" class=ObjectDetailsValue>{FAE5FC78-4D4E-40d1-B259-A9EBA99E14DB}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -83,22 +82,10 @@
   <tbody>
 		<tr>
 			<td width="10%" class="ObjectSubTitle">
-				Extends:
-			</td>
-			<td width="90%">
-				<a href="../EA3/EA34.htm">AbstractCaArrayObject</a>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<P/><table cellPadding=0 cellSpacing=0 width="100%">
-  <tbody>
-		<tr>
-			<td width="10%" class="ObjectSubTitle">
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA63.htm">DataSet</a>, <a href="EA64.htm">DataValue</a>, <a href="EA61.htm">ArrayDataType</a>, <a href="../EA3/EA34.htm">AbstractCaArrayObject</a>
+				<a href="../EA8/EA80.htm">Hybridization</a>, <a href="EA63.htm">DataRow</a>, <a href="EA65.htm">DataValue</a>
 			</td>
 		</tr>
 	</tbody>
@@ -110,7 +97,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA59.htm">gov.nih.nci.caarray.domain.data</a>, <a href="../../EA2/EA3/EA161.htm">gov.nih.nci.caarray.services.data</a>
+				<a href="../../EA2/EA3/EA159.htm">gov.nih.nci.caarray.services.data</a>, <a href="EA60.htm">gov.nih.nci.caarray.domain.data</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +110,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link from class <a href="EA61.htm">[gov.nih.nci.caarray.domain.data].ArrayDataType</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA64.htm">[gov.nih.nci.caarray.domain.data].DataValue</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA63.htm">[gov.nih.nci.caarray.domain.data].DataSet</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA34.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayObject</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link to class <a href="../EA8/EA80.htm">[gov.nih.nci.caarray.domain.hybridization].Hybridization</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA65.htm">[gov.nih.nci.caarray.domain.data].DataValue</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA63.htm">[gov.nih.nci.caarray.domain.data].DataRow</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -153,7 +140,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">QuantitationType</a> Attributes
+				<a Name="Fields">HybridizationDataValues</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -164,10 +151,7 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;name</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA141.htm">String</a></i><br><b>&nbsp;&nbsp;type</b></TD>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private Long</i><br><b>&nbsp;&nbsp;id</b></TD>
 		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>
 				</TABLE>
@@ -183,7 +167,7 @@
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: QuantitationType</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: HybridizationDataValues</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -196,4 +180,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>SNP</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>Gene</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: SNP</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: Gene</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: SNP  
+				public   class: Gene  
 			</td>
 		</tr>
 		<tr>
@@ -42,11 +41,11 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 10/20/2004 12:11:55 PM; Modified: 8/21/2007 8:42:49 AM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 10/20/2004 12:11:56 PM; Modified: 8/21/2007 8:43:49 AM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
-							<td width="85%" class=ObjectDetailsValue> Active: false; IsRoot: false; IsLeaf: true;</td>
+							<td width="85%" class=ObjectDetailsValue> Active: false; IsRoot: false; IsLeaf: false;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Extension Points:</td>
@@ -54,10 +53,10 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{FB342557-31A8-45a0-A4C1-4590878E879F}</td>
+							<td width="85%" class=ObjectDetailsValue>{BF823464-7E68-44dc-8691-E2F36CFA45C2}</td>
 						</tr>
 						<tr>
-							<td colspan="2" width="100%" class=ObjectDetailsTopic>An object representing a Single Nucleotide Polymorphism; provides access to the clones and the trace files from which it was identified, the two most common substitutions at that position, the offset of the SNP in the parent sequence, and a confidence score.</td>
+							<td colspan="2" width="100%" class=ObjectDetailsTopic>Gene&nbsp;<WBR>objects&nbsp;<WBR>are&nbsp;<WBR>the&nbsp;<WBR>effective&nbsp;<WBR>portal&nbsp;<WBR>to&nbsp;<WBR>most&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>genomic&nbsp;<WBR>information&nbsp;<WBR>provided&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>caBIO&nbsp;<WBR>data&nbsp;<WBR>services;&nbsp;<WBR>organs,&nbsp;<WBR>diseases,&nbsp;<WBR>chromosomes,&nbsp;<WBR>pathways,&nbsp;<WBR>sequence&nbsp;<WBR>data,&nbsp;<WBR>and&nbsp;<WBR>expression&nbsp;<WBR>experiments&nbsp;<WBR>are&nbsp;<WBR>among&nbsp;<WBR>the&nbsp;<WBR>many&nbsp;<WBR>objects&nbsp;<WBR>accessible&nbsp;<WBR>via&nbsp;<WBR>a&nbsp;<WBR>gene.</td>
 						</tr>
 					</tbody>
 				</table>
@@ -86,7 +85,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA131.htm">SNPArrayReporter</a>
+				<a href="EA135.htm">Transcript</a>, <a href="EA134.htm">Taxon</a>, <a href="EA129.htm">ExpressionArrayReporter</a>, <a href="EA128.htm">ExonArrayReporter</a>, <a href="../EA1/EA28.htm">Organism</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +97,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA123.htm">gov.nih.nci.cabio.domain</a>
+				<a href="EA124.htm">gov.nih.nci.cabio.domain</a>
 			</td>
 		</tr>
 	</tbody>
@@ -111,7 +110,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link from class <a href="EA131.htm">[gov.nih.nci.cabio.domain].SNPArrayReporter</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link from class <a href="EA135.htm">[gov.nih.nci.cabio.domain].Transcript</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA134.htm">[gov.nih.nci.cabio.domain].Taxon</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA128.htm">[gov.nih.nci.cabio.domain].ExonArrayReporter</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA129.htm">[gov.nih.nci.cabio.domain].ExpressionArrayReporter</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA1/EA28.htm">[edu.georgetown.pir].Organism</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -141,7 +140,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">SNP</a> Attributes
+				<a Name="Fields">Gene</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -152,35 +151,20 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;alleleA</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=The primary allele (variant) of this polymorphism<br></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;alleleB</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=The alternate allele (variant) of this polymorphism<br></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;aminoAcidChange</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;bigid</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>documentation=caBIG Grid Identifier<br></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;chrXPseudoAutosomalRegion</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;codingStatus</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;DBSNPID</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>documentation=The identifier used by the NCBI dbSNP database to refer to this polymorphism<br></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;flank</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
-	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public Long</i><br><b>&nbsp;&nbsp;id</b></TD>
 		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=The identifier attached to this record in the caBIO database<br></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;validationStatus</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>documentation=Indicator for whether the SNP has been validated. Options are YES/NO.<br></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;fullName</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The title of the gene.<br>documentation=The title of the gene.<br>ea_guid={7DD93070-C830-4767-916A-3B7304874231}<br>label=Title<br>length=0<br>lowerBound=1<br>ordered=0<br>position=0<br>precision=0<br>rose_uuid=40574E720311<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public Long</i><br><b>&nbsp;&nbsp;clusterId</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=The cluster identification for the gene.<br>ea_guid={52EA857E-73DF-4b5f-8E2B-5EDA9AA65AD5}<br>label=Cluster Id<br>length=0<br>lowerBound=1<br>ordered=0<br>position=5<br>precision=0<br>rose_uuid=40574E720344<br>scale=0<br>type=java.lang.Long<br>upperBound=1<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;symbol</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>collection=false<br>documentation=A short name that is used to identify a particular gene.<br>ea_guid={83DA4246-4305-4a5c-BC08-7061CE65D732}<br>length=0<br>lowerBound=1<br>ordered=0<br>position=6<br>precision=0<br>rose_uuid=40574E72034D<br>scale=0<br>type=String<br>upperBound=1<br></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>public String</i><br><b>&nbsp;&nbsp;bigid</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>documentation=caBIG Grid Identifier<br></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -195,7 +179,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="TaggedVals">SNP</a> Tagged Values
+				<a Name="TaggedVals">Gene</a> Tagged Values
 			</td>
 		</tr>
 		<tr>
@@ -213,27 +197,22 @@
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">date_created</TD>
-					<TD WIDTH="24%" class="OperationTableRow">2004-10-20 10:54:15</TD>
+					<TD WIDTH="24%" class="OperationTableRow">2004-10-20 10:54:16</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">date_modified</TD>
-					<TD WIDTH="24%" class="OperationTableRow">2004-10-20 10:54:15</TD>
-					<TD WIDTH="52%" class="OperationTableRow"></TD>
-				</TR>
-					<TR>
-					<TD WIDTH="24%" class="OperationTableRow">deprecation</TD>
-					<TD WIDTH="24%" class="OperationTableRow">Please be advised this class will be removed during a future release</TD>
+					<TD WIDTH="24%" class="OperationTableRow">2004-10-20 10:54:16</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
-					<TD WIDTH="24%" class="OperationTableRow">An object representing a Single Nucleotide Polymorphism; provides access to the clones and the trace files from which it was identified, the two most common substitutions at that position, the offset of the SNP in the parent sequence, and a confidence sco</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Gene objects are the effective portal to most of the genomic information provided by the caBIO data services; organs, diseases, chromosomes, pathways, sequence data, and expression experiments are among the many objects accessible via a gene.</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
-					<TD WIDTH="24%" class="OperationTableRow">An object representing a Single Nucleotide Polymorphism; provides access to the clones and the trace files from which it was identified, the two most common substitutions at that position, the offset of the SNP in the parent sequence, and a confidence sco</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Gene objects are the effective portal to most of the genomic information provided by the caBIO data services; organs, diseases, chromosomes, pathways, sequence data, and expression experiments are among the many objects accessible via a gene.</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
@@ -253,7 +232,7 @@
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">label</TD>
-					<TD WIDTH="24%" class="OperationTableRow">SNP</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Gene</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
@@ -273,17 +252,12 @@
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">rose_uuid</TD>
-					<TD WIDTH="24%" class="OperationTableRow">40574E6F008D</TD>
+					<TD WIDTH="24%" class="OperationTableRow">40574E6F00E7</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">rose_uuid</TD>
-					<TD WIDTH="24%" class="OperationTableRow">40574E6F008D</TD>
-					<TD WIDTH="52%" class="OperationTableRow"></TD>
-				</TR>
-					<TR>
-					<TD WIDTH="24%" class="OperationTableRow">see</TD>
-					<TD WIDTH="24%" class="OperationTableRow">Users should begin using gov.nih.nci.cabio.domain.SNP</TD>
+					<TD WIDTH="24%" class="OperationTableRow">40574E6F00E7</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 					<TR>
@@ -309,7 +283,7 @@
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: SNP</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: Gene</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -322,4 +296,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>
