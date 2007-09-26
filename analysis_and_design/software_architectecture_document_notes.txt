@@ -19,9 +19,6 @@
 	- Code example
 	
 - Show relationship of projects to experiments to files
-
-- Figure 1 needs to be recaptioned "Arch. Sig. Use Cases"
-	- Undo color coding
 	
 - Add reference to Use Case Summary
 
