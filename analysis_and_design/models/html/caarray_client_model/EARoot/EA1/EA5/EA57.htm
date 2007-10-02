@@ -3,13 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="../../../ea.css" rel=stylesheet>
-<title>Address</title>
+<title>AbstractContact</title>
 </head>
 <body>
 <TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: Address</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: AbstractContact</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +25,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: Address  
+				public abstract  class: AbstractContact  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +42,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 4/22/2007 1:43:23 PM; Modified: 4/22/2007 1:43:28 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 4/22/2007 1:42:23 PM; Modified: 7/2/2007 9:51:26 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,7 +54,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{B498EACE-3774-4076-84FF-BF199250C5A3}</td>
+							<td width="85%" class=ObjectDetailsValue>{6481D2A4-0916-494a-94AB-CAE2E5490066}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -86,7 +86,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="../EA3/EA36.htm">AbstractCaArrayEntity</a>
+				<a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +98,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="../EA3/EA36.htm">AbstractCaArrayEntity</a>, <a href="EA56.htm">AbstractContact</a>
+				<a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>, <a href="../EA12/EA117.htm">Source</a>, <a href="../EA9/EA89.htm">ExperimentContact</a>, <a href="EA58.htm">Address</a>, <a href="EA60.htm">Person</a>, <a href="EA59.htm">Organization</a>
 			</td>
 		</tr>
 	</tbody>
@@ -110,7 +110,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA54.htm">gov.nih.nci.caarray.domain.contact</a>
+				<a href="EA55.htm">gov.nih.nci.caarray.domain.contact</a>, <a href="../EA9/EA84.htm">gov.nih.nci.caarray.domain.project</a>, <a href="../EA12/EA107.htm">gov.nih.nci.caarray.domain.sample</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +123,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link from class <a href="EA56.htm">[gov.nih.nci.caarray.domain.contact].AbstractContact</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA36.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>	
+							<LI>Generalization  link from class <a href="EA59.htm">[gov.nih.nci.caarray.domain.contact].Organization</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA9/EA89.htm">[gov.nih.nci.caarray.domain.project].ExperimentContact</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA12/EA117.htm">[gov.nih.nci.caarray.domain.sample].Source</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link from class <a href="EA60.htm">[gov.nih.nci.caarray.domain.contact].Person</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA37.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA58.htm">[gov.nih.nci.caarray.domain.contact].Address</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -153,7 +153,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">Address</a> Attributes
+				<a Name="Fields">AbstractContact</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -164,19 +164,16 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;streetAddress1</b></TD>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA146.htm">String</a></i><br><b>&nbsp;&nbsp;email</b></TD>
 		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;streetAddress2</b></TD>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;fax</b></TD>
 		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;city</b></TD>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;phone</b></TD>
 		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;state</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;zipCode</b></TD>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA146.htm">String</a></i><br><b>&nbsp;&nbsp;url</b></TD>
 		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>
 				</TABLE>
@@ -192,7 +189,7 @@
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: Address</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: AbstractContact</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
