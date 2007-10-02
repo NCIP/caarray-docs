@@ -1,14 +1,15 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<link href="../../../ea.css" rel=stylesheet>
-	<title>AbstractArrayData</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../../../ea.css" rel=stylesheet>
+<title>IntegerColumn</title>
 </head>
-
 <body>
-	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: AbstractArrayData</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: IntegerColumn</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -24,7 +25,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public abstract  class: AbstractArrayData  
+				public   class: IntegerColumn  
 			</td>
 		</tr>
 		<tr>
@@ -41,7 +42,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 7/13/2007 1:22:54 PM; Modified: 7/13/2007 1:24:15 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 9/27/2007 12:41:38 PM; Modified: 9/27/2007 12:41:41 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -53,7 +54,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{85811C03-8EDD-49b0-A026-02CF5CBC6912}</td>
+							<td width="85%" class=ObjectDetailsValue>{FFFA6797-A3DE-4004-86A5-693B20823EC9}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -85,7 +86,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="../EA3/EA36.htm">AbstractCaArrayEntity</a>
+				<a href="EA62.htm">AbstractDataColumn</a>
 			</td>
 		</tr>
 	</tbody>
@@ -97,7 +98,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA69.htm">DerivedArrayData</a>, <a href="EA69.htm">DerivedArrayData</a>, <a href="EA71.htm">RawArrayData</a>, <a href="../EA10/EA97.htm">ProtocolApplication</a>, <a href="../EA7/EA75.htm">CaArrayFile</a>, <a href="EA62.htm">ArrayDataType</a>, <a href="../EA3/EA36.htm">AbstractCaArrayEntity</a>
+				<a href="EA62.htm">AbstractDataColumn</a>
 			</td>
 		</tr>
 	</tbody>
@@ -109,7 +110,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA60.htm">gov.nih.nci.caarray.domain.data</a>
+				<a href="../../EA2/EA3/EA164.htm">gov.nih.nci.caarray.services.data</a>, <a href="EA60.htm">gov.nih.nci.caarray.domain.data</a>
 			</td>
 		</tr>
 	</tbody>
@@ -122,7 +123,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link to class <a href="../EA10/EA97.htm">[gov.nih.nci.caarray.domain.protocol].ProtocolApplication</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA7/EA75.htm">[gov.nih.nci.caarray.domain.file].CaArrayFile</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA62.htm">[gov.nih.nci.caarray.domain.data].ArrayDataType</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA36.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA69.htm">[gov.nih.nci.caarray.domain.data].DerivedArrayData</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link from class <a href="EA69.htm">[gov.nih.nci.caarray.domain.data].DerivedArrayData</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link from class <a href="EA71.htm">[gov.nih.nci.caarray.domain.data].RawArrayData</a> &nbsp;  &nbsp;</LI>	
+							<LI>Generalization  link to class <a href="EA62.htm">[gov.nih.nci.caarray.domain.data].AbstractDataColumn</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -152,7 +153,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">AbstractArrayData</a> Attributes
+				<a Name="Fields">IntegerColumn</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -163,7 +164,7 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA143.htm">String</a></i><br><b>&nbsp;&nbsp;name</b></TD>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private int[]</i><br><b>&nbsp;&nbsp;values</b></TD>
 		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
 	</TR>
 				</TABLE>
@@ -179,7 +180,7 @@
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: AbstractArrayData</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: IntegerColumn</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -192,5 +193,4 @@
 	</TBODY>
 </TABLE> 
 </body>
-
 </html>

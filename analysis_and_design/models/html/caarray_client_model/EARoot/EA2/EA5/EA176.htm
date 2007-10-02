@@ -3,13 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="../../../ea.css" rel=stylesheet>
-<title>SampleSearchService</title>
+<title>RemoteSearchService</title>
 </head>
 <body>
 <TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">interface: SampleSearchService</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">component: RemoteSearchService</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +25,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public abstract  &lt;&lt;interface&gt;&gt; interface: SampleSearchService  
+				public   &lt;&lt;subsystem&gt;&gt; component: RemoteSearchService  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +42,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 7/13/2007 2:20:18 PM; Modified: 8/10/2007 10:18:33 AM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 7/19/2007 2:25:37 PM; Modified: 9/25/2007 8:28:29 AM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,7 +54,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{E92C4762-2210-4e50-896C-4A8411B14C20}</td>
+							<td width="85%" class=ObjectDetailsValue>{B318E3B4-20CD-444e-A253-A2C9CDF7A907}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -74,7 +74,19 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#Methods>Methods</a>
+				<a href=#CustomProperties>Custom Properties</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<P/><table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td width="10%" class="ObjectSubTitle">
+				Implements:
+			</td>
+			<td width="90%">
+				<a href="EA180.htm">SampleSearchService</a>, <a href="EA178.htm">CaArraySearchService</a>, <a href="EA179.htm">ExperimentSearchService</a>
 			</td>
 		</tr>
 	</tbody>
@@ -86,7 +98,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA172.htm">RemoteSearchService</a>
+				<a href="EA180.htm">SampleSearchService</a>, <a href="EA178.htm">CaArraySearchService</a>, <a href="EA179.htm">ExperimentSearchService</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +110,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA170.htm">gov.nih.nci.caarray.services.search</a>
+				<a href="EA173.htm">gov.nih.nci.caarray.services.search</a>
 			</td>
 		</tr>
 	</tbody>
@@ -111,7 +123,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Realisation &lt;&lt;realize&gt;&gt; link from component <a href="EA172.htm">[gov.nih.nci.caarray.services.search].RemoteSearchService</a> &nbsp;  &nbsp;</LI>	
+							<LI>Realisation &lt;&lt;realize&gt;&gt; link to interface <a href="EA180.htm">[gov.nih.nci.caarray.services.search].SampleSearchService</a> &nbsp;  &nbsp;</LI>			<LI>Realisation &lt;&lt;realize&gt;&gt; link to interface <a href="EA178.htm">[gov.nih.nci.caarray.services.search].CaArraySearchService</a> &nbsp;  &nbsp;</LI>			<LI>Realisation &lt;&lt;realize&gt;&gt; link to interface <a href="EA179.htm">[gov.nih.nci.caarray.services.search].ExperimentSearchService</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -123,23 +135,14 @@
 <table cellPadding=0 cellSpacing=0 width="100%">
   <tbody>
 		<tr>
-			<td class="ObjectSubTitle">
-				<a Name="Methods">SampleSearchService</a> Methods
-			</td>
+			<td class="ObjectSubTitle"><a Name="#CustomProperties">Custom Properties</a></td>
 		</tr>
 		<tr>
 			<td>
-				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
-					<TR>
-						<TD WIDTH="40%" class="OperationTableHeading">Operation</TD>
-						<TD WIDTH="60%" class="OperationTableHeading">Details</TD>
-					</TR>
-					<TR>
-	<TD WIDTH="40%" class="OperationTableRow"><i>public</i><BR><B>getSamples</B>(<br>&nbsp;&nbsp;&nbsp;Term[] characteristics):Sample[]</TD>
-	<TD WIDTH="60%" class="OperationTableRow"><i>Sequential  </i><TABLE> <TR> <TD valign = "top"><i></i><span style="margin-left: .7cm;"> </span></TD><TD></TD> </TR> </TABLE></TD>
-</TR>
+				<UL>
+										<LI><I>isIndirectlyInstantiated</I>: true</LI>	
 
-				</TABLE>
+				</UL>
 			</td>
 		</tr>
 		<tr>
@@ -147,12 +150,11 @@
 		</tr>
 	</tbody>
 </table>
-
 <TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">interface: SampleSearchService</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">component: RemoteSearchService</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>

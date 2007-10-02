@@ -1,14 +1,15 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<link href="../../../ea.css" rel=stylesheet>
-	<title>gov.nih.nci.caarray.domain.sample::Organism</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../../../ea.css" rel=stylesheet>
+<title>ProtocolApplication</title>
 </head>
-
 <body>
-	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: Organism</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: ProtocolApplication</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -24,7 +25,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: Organism  
+				public   class: ProtocolApplication  
 			</td>
 		</tr>
 		<tr>
@@ -41,7 +42,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 8/7/2007 12:27:35 PM; Modified: 8/7/2007 12:27:35 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 4/22/2007 1:52:56 PM; Modified: 4/22/2007 1:53:00 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -53,7 +54,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{10F9FBF9-4671-4287-97C9-46228330292F}</td>
+							<td width="85%" class=ObjectDetailsValue>{F8CC6C9D-D280-4482-A1E6-4BA5FC513ADD}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -73,7 +74,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>
 			</td>
 		</tr>
 	</tbody>
@@ -85,7 +86,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="EA104.htm">TermCharacteristic</a>
+				<a href="../EA3/EA36.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -97,7 +98,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA104.htm">TermCharacteristic</a>
+				<a href="../EA12/EA113.htm">AbstractBioMaterial</a>, <a href="EA98.htm">ParameterValue</a>, <a href="EA99.htm">Protocol</a>, <a href="../EA4/EA50.htm">ArrayDesign</a>, <a href="../EA3/EA36.htm">AbstractCaArrayEntity</a>, <a href="../EA8/EA83.htm">Hybridization</a>, <a href="../EA6/EA71.htm">AbstractArrayData</a>, <a href="../EA6/EA73.htm">Image</a>, <a href="../EA4/EA49.htm">Array</a>
 			</td>
 		</tr>
 	</tbody>
@@ -109,7 +110,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA92.htm">gov.nih.nci.caarray.domain.sample</a>
+				<a href="../EA4/EA38.htm">gov.nih.nci.caarray.domain.array</a>, <a href="../EA6/EA60.htm">gov.nih.nci.caarray.domain.data</a>, <a href="../EA8/EA81.htm">gov.nih.nci.caarray.domain.hybridization</a>, <a href="EA95.htm">gov.nih.nci.caarray.domain.protocol</a>, <a href="../EA12/EA107.htm">gov.nih.nci.caarray.domain.sample</a>
 			</td>
 		</tr>
 	</tbody>
@@ -122,7 +123,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Generalization  link to class <a href="EA104.htm">[gov.nih.nci.caarray.domain.sample].TermCharacteristic</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link from class <a href="../EA4/EA50.htm">[gov.nih.nci.caarray.domain.array].ArrayDesign</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA4/EA49.htm">[gov.nih.nci.caarray.domain.array].Array</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA98.htm">[gov.nih.nci.caarray.domain.protocol].ParameterValue</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA99.htm">[gov.nih.nci.caarray.domain.protocol].Protocol</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA36.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA12/EA113.htm">[gov.nih.nci.caarray.domain.sample].AbstractBioMaterial</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA6/EA73.htm">[gov.nih.nci.caarray.domain.data].Image</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA6/EA71.htm">[gov.nih.nci.caarray.domain.data].AbstractArrayData</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA8/EA83.htm">[gov.nih.nci.caarray.domain.hybridization].Hybridization</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -148,11 +149,38 @@
 		</tr>
 	</tbody>
 </table>
+	<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="Fields">ProtocolApplication</a> Attributes
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="AttribTable">
+					<TR>
+						<TD WIDTH="40%" class="AttribTableHeading">Attribute</TD>
+						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
+					</TR>
+						<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA146.htm">String</a></i><br><b>&nbsp;&nbsp;notes</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+	</TR>
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
 <TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: Organism</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: ProtocolApplication</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -165,5 +193,4 @@
 	</TBODY>
 </TABLE> 
 </body>
-
 </html>
