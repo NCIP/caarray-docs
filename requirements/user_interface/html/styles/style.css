@@ -3,7 +3,10 @@
 :root 
 { overflow-y:scroll; }
 BODY, HTML
-{ margin:0; padding:0; font-family:arial,helvetica,sans-serif; color:#333; font-size:85%; background:#fff }
+{ min-width:860px; margin:0; padding:0; font-family:arial,helvetica,sans-serif; color:#333; font-size:85%; background:#fff }
+/* IE6 min-width dynamic expression (hack) */
+* html #wrapper
+{ width:expression(document.body.clientWidth <=860 ? "860px" : "100%" ); }
 :lang(en) BODY
 { font-size:87%; }
 IMG,TABLE
@@ -29,7 +32,7 @@ H1
 H2
 { font-family:arial,helvetica,sans-serif; font-weight:normal; margin:0; padding:0 0 8px 0; font-size:142%; line-height:1.2em; color:#606060 }
 H3
-{ clear:both; font-family:arial,helvetica,sans-serif; font-size:130%; line-height:1.4em; color:#98a0a9; padding:5px 0;  }
+{ clear:both; font-family:arial,helvetica,sans-serif; font-size:130%; line-height:1.4em; color:#999; padding:0 0 5px 0;  }
 H4
 { font-size:100%; color:#606060; line-height:1.4em; padding-bottom:5px;  }
 LABEL
@@ -48,6 +51,7 @@ SUP
 
 /* Template */
 
+#wrapper {  }
 #navskip
 { position:absolute; overflow:hidden; width:0; height:0 }
 #nciheader
@@ -125,8 +129,10 @@ SUP
 
 /* Content Area Styles */
 
+#contentwrapper
+{ float:left; }
 #content
-{ margin-left:175px; min-height:400px; border-left:1px solid #fff; border-top:0 }
+{ margin-left:175px; min-height:400px; border-left:1px solid #fff; }
 #content A
 { text-decoration:underline }
 #content UL
@@ -157,6 +163,14 @@ SUP
 { border-top:1px dotted #ccc; }
 .padme
 { width:95%; float:left; padding:10px }
+.normal
+{ font-weight:normal }
+.italicnormal
+{ font-style:italic; font-weight:normal }
+.white
+{ color:#fff }
+.smallwhite
+{ font-size:92%; color:#fff }
 
 
 /* Homepage Content */
@@ -212,6 +226,7 @@ SUP
 
 
 /* Page Help Area */
+
 .pagehelp
 { float:right; margin-top:-2.1em; width:12em; text-align:right; padding-right:15px }
 .pagehelp A.help
@@ -239,7 +254,7 @@ TABLE.login TD.value
 /* Tabs */
 
 UL#tabs
-{  min-width:650px; height:28px; font-weight:bold; list-style:none; margin:0; padding-left:5px; clear:both; background:url("../images/bg_tabbar.gif") repeat-x bottom; border-bottom:1px solid #999	}
+{ height:28px; font-weight:bold; list-style:none; margin:0; padding-left:5px; clear:both; background:url("../images/bg_tabbar.gif") repeat-x bottom; border-bottom:1px solid #999	}
 :lang(en) UL#tabs
 { height:30px }
 UL#tabs LI
@@ -258,10 +273,24 @@ UL#tabs LI A:focus
 { -moz-outline-style:none; }
 
 
+/* Tab Level 2 */
+
+UL#tablevel2
+{ font-size:92%; height:3em; margin-left:-14px; font-weight:bold; }
+UL#tablevel2 LI
+{ float:left;	margin:0;	padding:0 0 0 4px; text-align:center; min-height:.1%; height:20px  }
+UL#tablevel2 LI A 
+{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #fff; background:url("../images/bg_grad3d.gif") repeat-x; }
+UL#tablevel2 LI A.selected 
+{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #999; border-right:1px solid #fff; border-bottom:1px solid #fff; background:url("../images/bg_grad3d_reverse.gif") repeat-x; }
+UL#tablevel2 LI A:hover 
+{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #333; }
+
+
 /* Search Results Table */
 
 #tabboxwrapper
-{ min-width:650px; clear:both; padding:5px; background:#e0ded6; border:1px solid #999; border-top:0; }
+{ clear:both; padding:5px; background:#e0ded6; border:1px solid #999; border-top:0; }
 TABLE.searchresults
 { border-collapse:separate; border:1px solid #8a8a8a; width:100%; margin-top:-5px; clear:both; background:#fff; font-size:92% }
 TABLE.searchresults TH
@@ -276,8 +305,8 @@ TABLE.searchresults TD.title
 { font-weight:bold; }
 #content TABLE.searchresults TD A.email
 { text-decoration:none }
-TD.icon
-{ text-align:center }
+TH.actions, TD.icon, TH.icon
+{ width:1%; text-align:center }
 
 
 /* Paging */
@@ -288,6 +317,48 @@ TD.icon
 { color:#999; font-size:92%; padding:5px; text-align:center }
 .bar
 { padding:0 3px }
+.tableboxpad .pagingtop
+{ color:#dcdcdc; font-size:92%; padding:5px; text-align:right; margin-top:-2.3em; margin-bottom:.6em }
+.tableboxpad .paging
+{ color:#dcdcdc; font-size:92%; padding:5px 5px 3px 5px; text-align:center }
+
+
+/* Other Data Tables */
+
+.tableboxpad
+{ background:#b3ae9c; padding:5px; border:2px solid #fff }
+.count
+{ color:#fff; padding:5px; font-size:92% }
+TH.filterrow
+{ padding:4px 5px; border:1px solid #999; border-left:0; background:#d6dce6 url("../images/bg_th.gif"); color:#333 }
+.displayrow
+{ background:#dcdcdc }
+.displayrow TABLE
+{ border-collapse:collapse }
+.displayrow TD
+{ border:0 }
+.scrolltable
+{ overflow:auto; height:200px; background:#fff; border-right:1px solid #999; border-bottom:1px solid #999 }
+.tableboxpad .title
+{ width:45% }
+.scrolltable UL, .scrolltable LI
+{ margin:0; padding:0 }
+.leftrightwrapper
+{ margin:0 auto; width:600px }
+.leftsidetable,.rightsidetable
+{ }
+.rightsidetable
+{ padding-left:10px }
+
+
+/* Special Icons */
+
+.addlink
+{ background:url("../images/bg_grad3d.gif") repeat-x; font-size:92%; font-weight:bold; float:right; margin-top:-2.6em; width:12.3em; }
+.addlink A.add
+{ background:url("../images/ico_add.gif") no-repeat 6px 3px; display:block; height:1.4em; padding:3px 0 3px 24px; border:1px solid #ccc; text-decoration:none !important; color:#333 }
+.addlink A.add:hover
+{ border:1px solid #333 }
 
 
 /* Experiment Details */
@@ -295,25 +366,43 @@ TD.icon
 .dark
 { font-weight:bold; color:#333 }
 .boxpad
-{ padding:10px; background:#efefef }
+{ padding:10px 10px 0 10px; background:#fff; }
 .instructions
-{ font-size:92%; }
-DIV.actions
-{ text-align:center; border-top:2px solid #ccc; padding:5px; height:1.3em; color:#ccc; margin-top:10px }
+{ background:#efefef; margin:-9px -9px 0 -9px; padding:8px; font-size:92%; }
+.instructions2
+{ margin:-9px -9px 0 -9px; padding:8px; font-size:92%; }
+DIV.actions,DIV.actionsthin
+{ background:#efefef; margin:10px -9px 0 -9px; text-align:center; border-top:2px solid #ccc; border-bottom:1px solid #fff; padding:5px; height:2em; color:#ccc;  }
+DIV.actionsthin
+{ margin:0; border:2px solid #fff; border-top:0;   }
 DIV.actions A
-{ padding:0 20px }
+{ padding:0 35px 0 35px }
+DIV.actionsthin A
+{ padding:0 10px 0 10px }
+DIV.actions A:focus, DIV.actionsthin A:focus
+{ -moz-outline-style:none; }
 
 
 /* Forms */
 
 TABLE.form
-{ width:90%; margin:10px }
+{ width:90%; margin:10px auto }
+TABLE.form TH
+{ font-size:120%; color:#808080; background:#dde2ea; padding:5px; border-top:10px solid #fff; border-bottom:5px solid #fff }
 TABLE.form TD
 { padding:3px; font-size:92%; vertical-align:top }
+LABEL
+{ font-size:100%; padding:4px 0; display:block }
+LABEL.inline
+{ display:inline}
 .label
 { width:30%; text-align:right; font-weight:bold; }
+.required
+{ background:#ffc; }
+.asterisk
+{ color:#a90101; }
 .value INPUT, .value SELECT, .value TEXTAREA
-{ display:block; margin-top:-3px;  }
+{ margin-top:-3px;  }
 TD.space
 { padding:0 }
 TD.value
@@ -328,6 +417,8 @@ TD.value
 { margin:10px;  }
 .hiddenwrapper
 { background:#f5f8e8; }
+.addrow
+{ background:#efefef; padding:3px }
 .hidden
 { padding:10px 10px 35px 10px }
 .value .hidden INPUT, .value .hidden SELECT, .value .hidden TEXTAREA
