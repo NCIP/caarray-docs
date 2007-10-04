@@ -1,26 +1,6 @@
-- Need dependencies represented from API packages to domain classes
-
-- Add to change history that data representation changed
-
-- Add CSM dependency to logical, implementation, and deployment models
-
-- Color code or add notes -- which layers are user accessible
-
-- Validation logic -- Struts 2 validation
-
-- Add discussion to Grid, Remote API about data representation
-
-- Page 13, add discussion of why DataSet representation changed.
-
-- Add discussion future directions to API doco
-
 - Add discussion that Grid API is the preferred (most generally used) to access.
 
 	- Code example
-	
-- Show relationship of projects to experiments to files
-	
-- Add reference to Use Case Summary
 
 - Add discussion to why FileAccessService exists (resiliency)
 
@@ -30,34 +10,8 @@
 	
 - ProjectManagement add files, FileManagement 
 
-- Indicate that anything goes with DataRetrievalService
-
-- AbstractArrayDataHandlers keyed to array data type and version
-
-- Add diagram for DAOs and VocabService
-
-- VocabularyService
-
-- Flag 
-
-- How caArray2 differs from caArray 1.x
-
 - Break out -ilities?
 	
 	- Performance
-
-- Login 
-
-- Data Model
-
-- Dependency 
-
-- Add database to Logical Model and flag that it is generated from domain model
-
-- Add dependency to EVS to Deployment Model
-
-- Add CSM 4.0 
-
-- Add JDBC driver version
 
 - Future, perceived-to-be risks?
