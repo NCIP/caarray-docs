@@ -339,7 +339,7 @@ TH.filterrow
 { border:0 }
 .scrolltable
 { overflow:auto; height:200px; background:#fff; border-right:1px solid #999; border-bottom:1px solid #999 }
-.tableboxpad .title
+.leftrightwrapper .title
 { width:45% }
 .scrolltable UL, .scrolltable LI
 { margin:0; padding:0 }
