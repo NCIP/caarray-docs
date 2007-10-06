@@ -50,7 +50,7 @@
 								<option>(All Categories) </option>
 							</select>
 						</td>
-						<td><input type="image" src="images/btn_search_top.gif" alt="Search" onclick="window.location='searchresults.htm';"  /></td>
+						<td><input type="image" src="images/btn_search_top.gif" alt="Search"  /></td>
 					</tr>
 				</table>
 				
@@ -155,8 +155,8 @@
 								<!--Primary Tabs -->
 								
 								<ul id="tabs" class="tabs2">
-									<li><a href="experiment_edit.htm">Overview</a></li>
-									<li><a href="experiment_contacts.htm" class="active">Contacts</a></li>
+									<li><a href="experiment_edit.htm" class="active">Overview</a></li>
+									<li><a href="experiment_contacts.htm">Contacts</a></li>
 									<li><a href="experiment_annotations.htm">Annotations</a></li>
 									<li><a href="experiment_data.htm">Data</a></li>
 									<li><a href="experiment_supplemental.htm">Supplemental</a></li>
@@ -169,82 +169,72 @@
 									
 								<div id="tabboxwrapper">
 									
-									<h3>Principal Investigators / Main Point of Contact</h3>
+									<h3>Overall Experiment Characteristics</h3>
 										
 									<div class="boxpad">
 										
-										<p class="instructions">Contact information for this experiment is below. Required fields are highlighted and have <span class="required"><span class="asterisk">*</span>asterisks<span class="asterisk">*</span></span>.</p>
+										<p class="instructions">The Overall Experiment Characteristics represent the minimum set of attributes required to submit an experiment for review. </p>
 										
 										<form name="editform" id="idform" action="experimentedit_error.htm">
 										
 											<table class="form">
 												<tr>
-													<th colspan="2">Principal Investigator (P.I.)</th>
+													<td class="label">Experiment Title:</td>
+													<td class="value">Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays</td>
 												</tr>
 												<tr>
-													<td class="label"><span class="required">P.I. First Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pifn" id="pifn" value="Morris" style="width:69%;" /></td>
+													<td class="label">Status:</td>
+													<td class="value">Draft </td>
 												</tr>
 												<tr>
-													<td class="label"><span class="required">P.I. Last Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="piln" id="piln" value="Kletzl" style="width:69%;" /></td>
+													<td class="label">Experiment Identifier:</td>
+													<td class="value">kletzl-89564</td>
 												</tr>
 												<tr>
-													<td class="label"><span class="required">Title:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pttitle" id="pttitle" value="MD" style="width:69%;" /></td>
+													<td class="label">Service Type:</td>
+													<td class="value">Analysis</td>
 												</tr>
 												<tr>
-													<td class="label">Email:</td>
-													<td class="value"><input type="text" name="piemail" id="piemail" value="mkletzl1@northwestern.edu" style="width:69%;" /></td>
+													<td class="label">Assay Type:</td>
+													<td class="value">Gene Expression</td>
 												</tr>
 												<tr>
-													<td class="label">Phone:</td>
-													<td class="value"><input type="text" name="piphone" id="piphone" value="" style="width:69%;" /></td>
+													<td class="label">Manufacturer:</td>
+													<td class="value">Illumina</td>
 												</tr>
 												<tr>
-													<td class="label"><span class="required">Main P.O.C.:<span class="asterisk">*</span></span></td>
-													<td class="value">
-														<input type="radio" name="poc" id="pocyes" /><label for="poc" class="inline">Yes</label> &nbsp; 
-														<input type="radio" name="poc" id="pocno" checked="checked" /><label for="poc" class="inline">No</label>
-													</td>
-												</tr>
-												
-												<tr>
-													<td colspan="2" class="addrow">Multiple P.I.? <a href="experiment_contacts_2.htm">Add a P.I.</a></td>
-												</tr>
-												
-												
-												<tr>
-													<th colspan="2">Main Point of Contact (P.O.C.) <span class="italicnormal">(if not specified above)</span></th>
+													<td class="label">Array Design:</td>
+													<td class="value">Sentrix</td>
 												</tr>
 												<tr>
-													<td class="label"><span class="required">P.O.C. First Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pocfn" id="pocfn" value="Jane Z" style="width:69%;" /></td>
+													<td class="label">Pooled Samples:</td>
+													<td class="value">Yes</td>
 												</tr>
 												<tr>
-													<td class="label"><span class="required">P.O.C. Last Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pocln" id="pocln" value="Sahler" style="width:69%;" /></td>
+													<td class="label">Organism(s):</td>
+													<td class="value">Mouse</td>
 												</tr>
 												<tr>
-													<td class="label"><span class="required">Title:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="poctitle" id="poctitle" value="MD" style="width:69%;" /></td>
+													<td class="label">Tissue Site:</td>
+													<td class="value">Lung</td>
 												</tr>
 												<tr>
-													<td class="label">Email:</td>
-													<td class="value"><input type="text" name="pocemail" id="pocemail" value="j_sahler@umc.rochester.edu" style="width:69%;" /></td>
+													<td class="label">Tissue Type(s):</td>
+													<td class="value">total RNA</td>
 												</tr>
 												<tr>
-													<td class="label">Phone:</td>
-													<td class="value"><input type="text" name="pophone" id="pophone" value="585-222-4425" style="width:69%;" /></td>
-												</tr>												
-												
+													<td class="label">Cell Type(s):</td>
+													<td class="value">Red Blood Cell</td>
+												</tr>
+												<tr>
+													<td class="label">Disease/Conditions(s):</td>
+													<td class="value">Actinic Keratosis</td>
+												</tr>
 											</table>
 											
 											<div class="actions">												
 												
-												<a href="experiment_workspace.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="experiment_edit.htm" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
-												<a href="experiment_submit_confirm.htm" class="submit_experiment"><img src="images/btn_submit_experiment.gif" alt="Submit Experiment Proposal" /></a>
+												<a href="experiment_edit.htm" class="save"><img src="images/btn_edit.gif" alt="Save Draft" /></a>
 												
 											</div>
 											

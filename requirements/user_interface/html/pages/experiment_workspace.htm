@@ -88,20 +88,39 @@
 							<!--caArray Menu-->
 							
 							<ul class="caarraymenu">
-								<li class="liheader">caArray Menu</li>
-								<li><a href="./">Public Home</a></li>
-								<li><a href="experiment_workspace.htm" class="selected">Experiment Workspace</a></li>
+							
+								<li class="liheader">caArray</li>
+								<li><a href="./">Public Home</a></li>											
+														
+								<li class="liheader">Experiments</li>
+								<li><a href="experiment_workspace.htm" class="selected">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
-								<li class="liheader">About caArray 2.0</li>
+								<!--<li><a href="search_advanced.htm">Advanced Search</a></li>-->
+								
+								<li class="liheader">Users &amp; Groups</li>
+								<li><a href="manage_users.htm">Manage Users</a></li>
+								<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>
+								<li><a href="manage_collaborators.htm">Manage Collaborators</a></li>			
+								
+								<li class="liheader">Curation</li>
+								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
+								
+							</ul>
+							
+							<!--/caArray Menu-->		
+							
+							<!--About Menu-->
+							
+							<ul class="aboutmenu">
+								<li class="liheader">caArray 2.0 Software</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
 								<li><a href="releasenotes.htm">Release Notes</a></li>
-								<li><a href="techdocs.htm">Technical Documentation</a></li>						
+								<li><a href="techdocs.htm">Technical Documentation</a></li>		
 							</ul>
 							
-							<!--/caArray Menu-->
-		
+							<!--/About Menu-->
 						
 							<!--Quicklinks Menu-->
 							
@@ -131,7 +150,7 @@
 							
 							<div class="padme">
 														
-								<!--Search Results Tabs -->
+								<!--Tabs -->
 								
 								<ul id="tabs" class="tabs">
 									<li><a href="#workqueue" class="active">Work Queue (4)</a></li>
@@ -139,7 +158,10 @@
 									<li><a href="#public">Public Experiments (0)</a></li>								
 								</ul>
 								
-								<!--/Search Results Tabs -->
+										<div class="addlink" style="width:15em">
+											<a href="experiment_create.htm" class="add">Add a New Experiment</a>
+										</div>
+								<!--/Tabs -->
 								
 								<!-- 
 									directions on http://livepipe.net/projects/control_tabs/ 
@@ -178,7 +200,7 @@
 													<tr>
 														<th><a href="#">Experiment Title</a></th>
 														<th><a href="#">Array Type</a></th>
-														<th><a href="#">Species</a></th>
+														<th><a href="#">Organism</a></th>
 														<th><a href="#">Disease State</a></th>
 														<th><a href="#">Status</a></th>
 														<th><a href="#">Date Created</a></th>
@@ -187,46 +209,46 @@
 														<th class="actions">Edit</th>
 													</tr>
 													<tr class="odd">
-														<td class="title"><a href="#">armst-affy-arabi-316282</a></td>
+														<td class="title"><a href="experiment_details.htm">armst-affy-arabi-316282</a></td>
 														<td>Affymetrix </td>
 														<td>Mouse</td>
 														<td>Acute Lymphoblastic Leukemia, Adult</td>
 														<td>Draft</td>
 														<td>09/23/2007</td>
-														<td class="alignright"><a href="#">121</a></td>
+														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 													</tr>
 													<tr>
-														<td class="title"><a href="#">arnol-affy-chick-445002</a></td>
+														<td class="title"><a href="experiment_details.htm">arnol-affy-chick-445002</a></td>
 														<td>Affymetrix </td>
 														<td>Human</td>
 														<td>Cancer</td>
 														<td>Draft</td>
 														<td>10/01/2007</td>
-														<td class="alignright"><a href="#">121</a></td>
+														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 													</tr>													
 													<tr class="odd">
-														<td class="title"><a href="#">freij-affy-human-91666</a></td>
+														<td class="title"><a href="experiment_details.htm">freij-affy-human-91666</a></td>
 														<td>Affymetrix </td>
 														<td>Mouse</td>
 														<td>Brain Stem Glioma, Childhood</td>
 														<td>Draft</td>
 														<td>09/23/2007</td>
-														<td class="alignright"><a href="#">121</a></td>
+														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 													</tr>
 													<tr>
-														<td class="title"><a href="#">prosc-affy-mouse-450860</a></td>
+														<td class="title"><a href="experiment_details.htm">prosc-affy-mouse-450860</a></td>
 														<td>Affymetrix </td>
 														<td>Human</td>
 														<td>Cancer</td>
 														<td>Draft</td>
 														<td>10/01/2007</td>
-														<td class="alignright"><a href="#">121</a></td>
+														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 													</tr>													
@@ -261,7 +283,7 @@
 													<tr>
 														<th><a href="#">Experiment Title</a></th>
 														<th><a href="#">Array Type</a></th>
-														<th><a href="#">Species</a></th>
+														<th><a href="#">Organism</a></th>
 														<th><a href="#">Disease State</a></th>
 														<th><a href="#">Status</a></th>
 														<th><a href="#">Date Created</a></th>
@@ -270,13 +292,13 @@
 														<th class="actions">Edit</th>
 													</tr>
 													<tr class="odd">
-														<td class="title"><a href="#">armst-affy-arabi-316282</a></td>
+														<td class="title"><a href="experiment_details.htm">armst-affy-arabi-316282</a></td>
 														<td>Affymetrix </td>
 														<td>Mouse</td>
 														<td>Acute Lymphoblastic Leukemia, Adult</td>
-														<td>Draft</td>
+														<td>Completed</td>
 														<td>09/23/2007</td>
-														<td class="alignright"><a href="#">121</a></td>
+														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 													</tr>
@@ -311,7 +333,7 @@
 													<tr>
 														<th><a href="#">Experiment Title</a></th>
 														<th><a href="#">Array Type</a></th>
-														<th><a href="#">Species</a></th>
+														<th><a href="#">Organism</a></th>
 														<th><a href="#">Disease State</a></th>
 														<th><a href="#">Status</a></th>
 														<th><a href="#">Date Created</a></th>

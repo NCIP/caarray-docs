@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
-		<title>caArray - Experiment Details</title>
+		<title>caArray - Search Results</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<link rel="address bar icon" href="favicon.ico" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -50,9 +50,14 @@
 								<option>(All Categories) </option>
 							</select>
 						</td>
-						<td><input type="image" src="images/btn_search_top.gif" alt="Search" onclick="window.location='searchresults.htm';"  /></td>
+						<td><input type="image" src="images/btn_search_top.gif" alt="Search"  /></td>
 					</tr>
 				</table>
+				
+				
+				<!--<select name="searchnode" id="browsenode">
+					<option>NCICB</option>
+				</select>-->
 				
 			</div>
 			
@@ -67,7 +72,7 @@
 		
 		<div id="infobar">
 		
-			<div id="rightinfo">caArray v2.0: NCICB <span class="bar">|</span> Welcome, Matt <span class="bar">|</span> <a href="account.htm">Account</a>  <span class="bar">|</span><a href="logout.htm">Logout</a></div>
+			<div id="rightinfo"><span>caArray v2.0</span>: <span>NCICB</span></div>
 		
 		</div>
 		
@@ -90,24 +95,16 @@
 							<ul class="caarraymenu">
 							
 								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+								<li><a href="./">Public Home</a></li>
+								<li><a href="registration.htm">Register</a></li>
+								<li><a href="login.htm">Login</a></li>
+								
 								<li class="liheader">Experiments</li>
-								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
-								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
-								<!--<li><a href="search_advanced.htm">Advanced Search</a></li>-->
-								
-								<li class="liheader">Users &amp; Groups</li>
-								<li><a href="manage_users.htm">Manage Users</a></li>
-								<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>
-								<li><a href="manage_collaborators.htm">Manage Collaborators</a></li>			
-								
-								<li class="liheader">Curation</li>
-								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
+								<li><a href="search_advanced.htm" class="selected">Advanced Search</a></li>
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->
 							
 							<!--About Menu-->
 							
@@ -121,7 +118,7 @@
 							</ul>
 							
 							<!--/About Menu-->
-						
+							
 							<!--Quicklinks Menu-->
 							
 							<ul class="quicklinks">
@@ -141,92 +138,65 @@
 							
 							<!--ADD CONTENT HERE-->
 							
-							<h1>Experiment Details</h1>
-							
-							<div class="pagehelp">
-								<a href="#" class="help">Help</a>
-								<a href="#" class="print">Print</a>
-							</div>							
+							<h1>Advanced Search</h1>
 								
 							<div class="padme">
 							
-								<h2><span class="dark">Experiment:</span>	Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays</h2>
-													
-								<!--Primary Tabs -->
 								
-								<ul id="tabs" class="tabs2">
-									<li><a href="experiment_edit.htm">Overview</a></li>
-									<li><a href="experiment_contacts.htm">Contacts</a></li>
-									<li><a href="experiment_annotations.htm">Annotations</a></li>
-									<li><a href="experiment_data.htm">Data</a></li>
-									<li><a href="experiment_supplemental.htm" class="active">Supplemental</a></li>
-									<li><a href="experiment_publications.htm">Publications</a></li>
-								</ul>
 								
-								<!--/Primary Tabs -->								
-								
-								<!--Tab box-->
+									<!--Searchbox-->
 									
-								<div id="tabboxwrapper">
-																			
-									<div class="boxpad2">
+									<div id="searchboxwrapper">
 									
-										<h3>Supplemental Documents</h3>
-										
-										<div class="addlink" style="width:12.5em">
-											<a href="experiment_data_upload.htm" class="add">Upload New File(s)</a>
-										</div>
-										
-									</div>
+										<form name="searchform" id="searchform_exp">
 									
-									<div class="tableboxpad">								
-									
-										<div class="datatable">
-											
-											<p class="count">Displaying 1-1 of 1 Total.</p>
-											
-											<div class="pagingtop">													
-												&nbsp;&nbsp;
-												Page <span class="white"><strong>1</strong></span>
-												&nbsp;&nbsp;
-												&lt; Back <span class="bar">|</span> 
-												Next &gt;
-											</div>
-											
-											<table class="searchresults" cellspacing="0">													
-												<tr>													
-													<th><a href="#">File Name</a></th>
-													<th class="alignright"><a href="#">File Size</a></th>
-													<th class="icon"><a href="#">Delete</a></th>
-												</tr>
-												<tr class="odd">
-													<td class="title"><a href="#">Experiment_Presentation.ppt</a></td>
-													<td class="alignright">234 KB</td>
-													<td class="icon"><img src="images/ico_delete.gif" alt="" /></td>
-												</tr>		
+											<table class="form">
 												<tr>
-													<td class="title"><a href="#">Internal_Resource_List.doc</a></td>
-													<td class="alignright">82 KB</td>
-													<td class="icon"><img src="images/ico_delete.gif" alt="" /></td>
-												</tr>		
+													<td class="label">Experiment Title:</td>
+													<td><input type="text" name="" style="width:150px" /></td>
+													<td class="label">Platform Type:</td>
+													<td>
+														<select name="select" name="" style="width:150px">
+															<option>All</option>
+														</select>
+													</td>
+													<td class="label">Organism:</td>
+													<td>
+														<select name="select" name="" style="width:150px">
+															<option>All</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td class="label">ID:</td>
+													<td><input type="text" name="" style="width:150px" /></td>
+													<td class="label">P.I. Last Name:</td>
+													<td>
+														<select name="select" name="" style="width:150px">
+															<option>All</option>
+														</select>
+													</td>
+													<td class="label">Disease:</td>
+													<td>
+														<select name="select" name="" style="width:150px">
+															<option>All</option>
+														</select>
+													</td>
+												</tr>
 											</table>
 											
-											<div class="paging">
-												Page <span class="white"><strong>1</strong></span>
-												&nbsp;&nbsp;
-												&lt; Back <span class="bar">|</span> 
-												Next &gt;
-											</div>											
-													
-										</div>					
-													
-									</div>		
-																				
-								</div>
-										
-								<!--/Tab Box-->								
+											<div class="actions" style="margin:-5px">
+											<a href="search_results_advanced.htm"><img src="images/btn_search.gif" alt="" /></a>
+											</div>
+											
+										</form>
+									
+									</div>
+									
+								<!--/Searchbox-->
 								
-							</div>
+								
+								</div>
 							
 							<!--/ADD CONTENT HERE-->							
 							
@@ -239,8 +209,8 @@
 					</div>
 					
 				</div>
-					
-			</div>
+				
+				
 		
 		</div>
 		

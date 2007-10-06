@@ -156,8 +156,8 @@
 								
 								<ul id="tabs" class="tabs2">
 									<li><a href="experiment_edit.htm">Overview</a></li>
-									<li><a href="experiment_contacts.htm" class="active">Contacts</a></li>
-									<li><a href="experiment_annotations.htm">Annotations</a></li>
+									<li><a href="experiment_contacts.htm">Contacts</a></li>
+									<li><a href="experiment_annotations.htm" class="active">Annotations</a></li>
 									<li><a href="experiment_data.htm">Data</a></li>
 									<li><a href="experiment_supplemental.htm">Supplemental</a></li>
 									<li><a href="experiment_publications.htm">Publications</a></li>
@@ -169,89 +169,46 @@
 									
 								<div id="tabboxwrapper">
 									
-									<h3>Principal Investigators / Main Point of Contact</h3>
+									<ul id="tablevel2">
+										<li><a href="experiment_annotations.htm">Experimental Design</a></li>
+										<li><a href="experiment_annotations_sources.htm">Sources</a></li>
+										<li><a href="experiment_annotations_samples.htm">Samples</a></li>
+										<li><a href="experiment_annotations_extracts.htm">Extracts</a></li>
+										<li><a href="experiment_annotations_labeledextracts.htm" class="selected">Labeled Extracts</a></li>
+										<li><a href="experiment_annotations_hybridizations.htm">Hybridizations</a></li>
+									</ul>
 										
+									<div class="boxpad2">
+									
+										<h3>
+											<a href="experiment_annotations_labeledextracts.htm">Labeled Extracts</a> &gt; 
+											<span class="dark">LE96-1</span>
+										</h3>
+									
+									</div>
+									
 									<div class="boxpad">
 										
-										<p class="instructions">Contact information for this experiment is below. Required fields are highlighted and have <span class="required"><span class="asterisk">*</span>asterisks<span class="asterisk">*</span></span>.</p>
+										<form name="form" id="form">
 										
-										<form name="editform" id="idform" action="experimentedit_error.htm">
-										
-											<table class="form">
-												<tr>
-													<th colspan="2">Principal Investigator (P.I.)</th>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">P.I. First Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pifn" id="pifn" value="Morris" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">P.I. Last Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="piln" id="piln" value="Kletzl" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">Title:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pttitle" id="pttitle" value="MD" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Email:</td>
-													<td class="value"><input type="text" name="piemail" id="piemail" value="mkletzl1@northwestern.edu" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Phone:</td>
-													<td class="value"><input type="text" name="piphone" id="piphone" value="" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">Main P.O.C.:<span class="asterisk">*</span></span></td>
-													<td class="value">
-														<input type="radio" name="poc" id="pocyes" /><label for="poc" class="inline">Yes</label> &nbsp; 
-														<input type="radio" name="poc" id="pocno" checked="checked" /><label for="poc" class="inline">No</label>
-													</td>
-												</tr>
-												
-												<tr>
-													<td colspan="2" class="addrow">Multiple P.I.? <a href="experiment_contacts_2.htm">Add a P.I.</a></td>
-												</tr>
-												
-												
-												<tr>
-													<th colspan="2">Main Point of Contact (P.O.C.) <span class="italicnormal">(if not specified above)</span></th>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">P.O.C. First Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pocfn" id="pocfn" value="Jane Z" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">P.O.C. Last Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pocln" id="pocln" value="Sahler" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">Title:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="poctitle" id="poctitle" value="MD" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Email:</td>
-													<td class="value"><input type="text" name="pocemail" id="pocemail" value="j_sahler@umc.rochester.edu" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Phone:</td>
-													<td class="value"><input type="text" name="pophone" id="pophone" value="585-222-4425" style="width:69%;" /></td>
-												</tr>												
-												
-											</table>
+										<div>
+										form here
+										</div>
 											
 											<div class="actions">												
 												
-												<a href="experiment_workspace.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="experiment_edit.htm" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
-												<a href="experiment_submit_confirm.htm" class="submit_experiment"><img src="images/btn_submit_experiment.gif" alt="Submit Experiment Proposal" /></a>
+												<a href="experiment_annotations_labeledextracts.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
+												<a href="experiment_annotations.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
+												<a href="#" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
 												
 											</div>
 											
 										</form>
 										
 									</div>
-								
+									
+									
+										
 								</div>
 										
 								<!--/Tab Box-->								

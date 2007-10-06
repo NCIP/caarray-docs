@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
-		<title>caArray - Experiment Details</title>
+		<title>caArray - Experiment Workspace</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<link rel="address bar icon" href="favicon.ico" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -50,7 +50,7 @@
 								<option>(All Categories) </option>
 							</select>
 						</td>
-						<td><input type="image" src="images/btn_search_top.gif" alt="Search" onclick="window.location='searchresults.htm';"  /></td>
+						<td><input type="image" src="images/btn_search_top.gif" alt="Search"  /></td>
 					</tr>
 				</table>
 				
@@ -150,115 +150,44 @@
 								
 							<div class="padme">
 							
-								<h2><span class="dark">Experiment:</span>	Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays</h2>
-													
+								<h2><span class="dark">Experiment:</span>	Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays (<a href="experiment_details.htm">Details</a>)</h2>
+																			
 								<!--Primary Tabs -->
-								
-								<ul id="tabs" class="tabs2">
-									<li><a href="experiment_edit.htm">Overview</a></li>
-									<li><a href="experiment_contacts.htm" class="active">Contacts</a></li>
-									<li><a href="experiment_annotations.htm">Annotations</a></li>
-									<li><a href="experiment_data.htm">Data</a></li>
-									<li><a href="experiment_supplemental.htm">Supplemental</a></li>
-									<li><a href="experiment_publications.htm">Publications</a></li>
+						
+								<ul id="tabs" class="tabs">
+									<li><a href="experiment_properties.htm">Permissions</a></li>
+									<li><a href="experiment_properties_collaboration.htm" class="active">Collaboration Groups</a></li>
 								</ul>
 								
 								<!--/Primary Tabs -->								
 								
 								<!--Tab box-->
 									
-								<div id="tabboxwrapper">
+								<div id="tabboxwrapper">									
+										
+									<div class="boxpad2">
 									
-									<h3>Principal Investigators / Main Point of Contact</h3>
-										
-									<div class="boxpad">
-										
-										<p class="instructions">Contact information for this experiment is below. Required fields are highlighted and have <span class="required"><span class="asterisk">*</span>asterisks<span class="asterisk">*</span></span>.</p>
-										
-										<form name="editform" id="idform" action="experimentedit_error.htm">
-										
-											<table class="form">
-												<tr>
-													<th colspan="2">Principal Investigator (P.I.)</th>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">P.I. First Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pifn" id="pifn" value="Morris" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">P.I. Last Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="piln" id="piln" value="Kletzl" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">Title:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pttitle" id="pttitle" value="MD" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Email:</td>
-													<td class="value"><input type="text" name="piemail" id="piemail" value="mkletzl1@northwestern.edu" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Phone:</td>
-													<td class="value"><input type="text" name="piphone" id="piphone" value="" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">Main P.O.C.:<span class="asterisk">*</span></span></td>
-													<td class="value">
-														<input type="radio" name="poc" id="pocyes" /><label for="poc" class="inline">Yes</label> &nbsp; 
-														<input type="radio" name="poc" id="pocno" checked="checked" /><label for="poc" class="inline">No</label>
-													</td>
-												</tr>
-												
-												<tr>
-													<td colspan="2" class="addrow">Multiple P.I.? <a href="experiment_contacts_2.htm">Add a P.I.</a></td>
-												</tr>
-												
-												
-												<tr>
-													<th colspan="2">Main Point of Contact (P.O.C.) <span class="italicnormal">(if not specified above)</span></th>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">P.O.C. First Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pocfn" id="pocfn" value="Jane Z" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">P.O.C. Last Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="pocln" id="pocln" value="Sahler" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label"><span class="required">Title:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="poctitle" id="poctitle" value="MD" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Email:</td>
-													<td class="value"><input type="text" name="pocemail" id="pocemail" value="j_sahler@umc.rochester.edu" style="width:69%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Phone:</td>
-													<td class="value"><input type="text" name="pophone" id="pophone" value="585-222-4425" style="width:69%;" /></td>
-												</tr>												
-												
-											</table>
-											
-											<div class="actions">												
-												
-												<a href="experiment_workspace.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="experiment_edit.htm" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
-												<a href="experiment_submit_confirm.htm" class="submit_experiment"><img src="images/btn_submit_experiment.gif" alt="Submit Experiment Proposal" /></a>
-												
-											</div>
-											
-										</form>
+										<h3>Manage Collaboration Groups</h3>
 										
 									</div>
-								
-								</div>
+									
+									<div class="tableboxpad" style="background:#fff">								
 										
+										<p class="instructions2" style="padding:10px">Create, edit or delete collaboration groups.</p>
+
+										coming soon
+										
+										<div class="clear"></div>
+																				
+									</div>
+																				
+								</div>
+																		
 								<!--/Tab Box-->								
 								
 							</div>
 							
-							<!--/ADD CONTENT HERE-->							
+							<!--/ADD CONTENT HERE-->								
 							
 							<div class="clear"></div>							
 							
@@ -269,8 +198,8 @@
 					</div>
 					
 				</div>
-					
-			</div>
+				
+				
 		
 		</div>
 		
