@@ -32,7 +32,7 @@ H1
 H2
 { font-family:arial,helvetica,sans-serif; font-weight:normal; margin:0; padding:0 0 8px 0; font-size:142%; line-height:1.2em; color:#606060 }
 H3
-{ clear:both; font-family:arial,helvetica,sans-serif; font-size:130%; line-height:1.4em; color:#999; padding:0 0 5px 0;  }
+{ clear:both; font-family:arial,helvetica,sans-serif; font-size:130%; line-height:1.4em; color:#736f6f; padding:0 0 5px 0;  }
 H4
 { font-size:100%; color:#606060; line-height:1.4em; padding-bottom:5px;  }
 LABEL
@@ -51,7 +51,9 @@ SUP
 
 /* Template */
 
-#wrapper {  }
+#home #wrapper { min-width:952px }
+* html #home #wrapper
+{ width:expression(document.body.clientWidth <=952 ? "952px" : "100%" ); }
 #navskip
 { position:absolute; overflow:hidden; width:0; height:0 }
 #nciheader
@@ -96,6 +98,8 @@ SUP
 { width:175px }
 #topsearch TD
 { padding:2px; vertical-align:middle }
+.padme
+{ width:95%; float:left; padding:10px; max-width:1000px }
 
 
 /* Navigation */
@@ -132,13 +136,11 @@ SUP
 #contentwrapper
 { float:left; }
 #content
-{ margin-left:175px; min-height:400px; border-left:1px solid #fff; }
-#content A
-{ text-decoration:underline }
-#content UL
+{ margin-left:175px; min-height:400px; border-left:1px solid #fff }
+#home #content UL
 { padding-left:10px }
 #content UL LI
-{ background:url("../images/ico_arrow2.gif") no-repeat 0 4px; padding-left:8px; padding-bottom:10px }
+/*{ background:url("../images/ico_arrow2.gif") no-repeat 0 4px; padding-left:8px; padding-bottom:10px }*/
 .intro
 { font-size:120%; padding-right:20px; line-height:1.3em }
 .small
@@ -161,8 +163,6 @@ SUP
 { text-align:right; }
 .line
 { border-top:1px dotted #ccc; }
-.padme
-{ width:95%; float:left; padding:10px }
 .normal
 { font-weight:normal }
 .italicnormal
@@ -171,6 +171,10 @@ SUP
 { color:#fff }
 .smallwhite
 { font-size:92%; color:#fff }
+.bigbold
+{ font-size:120%; font-weight:bold; padding:2px 0 3px 0 }
+.nopad
+{ padding:0 }
 
 
 /* Homepage Content */
@@ -273,24 +277,14 @@ UL#tabs LI A:focus
 { -moz-outline-style:none; }
 
 
-/* Tab Level 2 */
-
-UL#tablevel2
-{ font-size:92%; height:3em; margin-left:-14px; font-weight:bold; }
-UL#tablevel2 LI
-{ float:left;	margin:0;	padding:0 0 0 4px; text-align:center; min-height:.1%; height:20px  }
-UL#tablevel2 LI A 
-{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #fff; background:url("../images/bg_grad3d.gif") repeat-x; }
-UL#tablevel2 LI A.selected 
-{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #999; border-right:1px solid #fff; border-bottom:1px solid #fff; background:url("../images/bg_grad3d_reverse.gif") repeat-x; }
-UL#tablevel2 LI A:hover 
-{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #333; }
-
-
 /* Search Results Table */
 
-#tabboxwrapper
+#tabboxwrapper, #searchboxwrapper
 { clear:both; padding:5px; background:#e0ded6; border:1px solid #999; border-top:0; }
+#searchboxwrapper
+{ background:#eeede8; border-top:1px solid #999; margin-top:0; margin-bottom:10px;  }
+#searchboxwrapper .actions
+{ margin:-5px }
 TABLE.searchresults
 { border-collapse:separate; border:1px solid #8a8a8a; width:100%; margin-top:-5px; clear:both; background:#fff; font-size:92% }
 TABLE.searchresults TH
@@ -307,6 +301,20 @@ TABLE.searchresults TD.title
 { text-decoration:none }
 TH.actions, TD.icon, TH.icon
 { width:1%; text-align:center }
+
+
+/* Tab Level 2 */
+
+UL#tablevel2
+{ font-size:92%; height:3em; padding:0; font-weight:bold; }
+UL#tablevel2 LI
+{ float:left;	margin:0 4px 0 0;	padding:0; text-align:center; min-height:.1%; height:20px  }
+UL#tablevel2 LI A 
+{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #fff; background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x; }
+UL#tablevel2 LI A.selected 
+{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #999; border-right:1px solid #fff; border-bottom:1px solid #fff; background:url("../images/bg_grad3d_reverse.gif") repeat-x; }
+UL#tablevel2 LI A:hover 
+{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #999; background:#fff url("../images/bg_grad3d.gif") repeat-x 0 10px; }
 
 
 /* Paging */
@@ -326,7 +334,7 @@ TH.actions, TD.icon, TH.icon
 /* Other Data Tables */
 
 .tableboxpad
-{ background:#b3ae9c; padding:5px; border:2px solid #fff }
+{ background:#b3ae9c; padding:2px; border:1px solid #fff }
 .count
 { color:#fff; padding:5px; font-size:92% }
 .tableboxpad TH.filterrow
@@ -344,13 +352,17 @@ TH.actions, TD.icon, TH.icon
 .scrolltable UL, .scrolltable LI
 { margin:0; padding:0; font-size:95%; color:#808080 }
 .leftrightwrapper
-{ margin:0 auto; width:600px }
+{ margin:0 auto; width:630px }
 .leftsidetable,.rightsidetable
 { }
 .rightsidetable
 { padding-left:10px }
 .scrolltablefooter
-{ padding:5px; background:url("../images/bg_grad3d.gif") repeat-x; text-align:right; border:1px solid #999; border-top:0 } 
+{ padding:5px; background:url("../images/bg_grad3d.gif") repeat-x; text-align:right; border:1px solid #999; border-top:0; font-size:92% } 
+TR.listhover
+{ cursor:pointer; }
+TR.listhover:hover
+{ background:#ffe }
 
 
 /* Special Icons */
@@ -358,9 +370,9 @@ TH.actions, TD.icon, TH.icon
 .addlink
 { background:url("../images/bg_grad3d.gif") repeat-x; font-size:92%; font-weight:bold; float:right; margin-top:-2.6em; width:12.3em; }
 .addlink A.add
-{ background:url("../images/ico_add.gif") no-repeat 6px 3px; display:block; height:1.4em; padding:3px 0 3px 24px; border:1px solid #ccc; text-decoration:none !important; color:#333 }
+{ background:url("../images/ico_add.gif") no-repeat 6px 3px; display:block; height:1.4em; padding:3px 0 3px 24px; border:1px solid #ccc; border-top:1px solid #fff; border-left:1px solid #fff; text-decoration:none !important; color:#333 }
 .addlink A.add:hover
-{ border:1px solid #333 }
+{ border:1px solid #999 }
 
 
 /* Experiment Details */
@@ -368,9 +380,11 @@ TH.actions, TD.icon, TH.icon
 .dark
 { font-weight:bold; color:#333 }
 .boxpad
-{ padding:10px 10px 0 10px; background:#fff; }
+{ padding:7px 7px 0 10px; background:#fff; }
+.boxpad2
+{ padding:7px 3px 0 10px; border:1px solid #fff; border-bottom:1px solid #ccc; background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x 0 -5px;  }
 .instructions
-{ background:#efefef; margin:-9px -9px 0 -9px; padding:8px; font-size:92%; }
+{ background:#efefef; border:1px solid #fff; margin:-7px -7px 0 -10px; padding:8px; font-size:92%; }
 .instructions2
 { margin:-9px -9px 0 -9px; padding:8px; font-size:92%; }
 DIV.actions,DIV.actionsthin
@@ -383,7 +397,44 @@ DIV.actionsthin A
 { padding:0 10px 0 10px }
 DIV.actions A:focus, DIV.actionsthin A:focus
 { -moz-outline-style:none; }
+.backtolist
+{ display:block; float:left; width:6em; margin-left:12em; margin-top:-2.2em; font-size:92%; }
 
+
+/* Check List */
+
+#content UL.checklist
+{ border:1px solid #999; background:url("../images/bg_shadow.gif") repeat-x fixed top ; clear:both; text-align:left; width:255px; height:100px; overflow:auto; }
+#content UL.checklist
+{ background-attachment:scroll }
+#content UL.checklist LI
+{ border-bottom:1px solid #eee; padding:0; }
+:lang(en) #content UL.checklist LI
+{ padding:2px; }
+#content UL.checklist LI INPUT
+{ margin:0 !important; padding:0; }
+#content UL.checklist LI LABEL 
+{ font-weight:normal !important; display:block; padding:0 0 0 22px; text-indent:-22px; cursor:pointer}
+#content UL.checklist LI LABEL:hover, #content UL.checklist LI LABEL.hover  
+{ background:#ffc }
+.alphanav
+{ border:1px solid #999; border-top:1px solid #ccc; background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x 0 -5px; width:255px; }
+.alphanav A:hover
+{ background:#fc0; color:#000 }
+.checklistside
+{ float:left; width:260px; }
+.selectionside
+{ float:left; width:200px; margin-left:5px }
+.selectionside UL
+{ padding:3px }
+.selectionside A 
+{ text-decoration:none; color:#666; background:url("../images/ico_checklist_remove.gif") 0 1px no-repeat; padding-left:15px; }
+.selectionside A:hover
+{ color:#333; background:url("../images/ico_checklist_remove.gif") 0 -23px no-repeat; }
+.selectionside H4
+{ padding:4px 5px; border:0; border:1px solid #999; background:#e5e5e5 url("../images/bg_grad3d.gif"); color:#333 }
+.scrolltable2
+{ overflow:auto; height:200px; background:#fff; border-right:1px solid #999; border-bottom:1px solid #999; border-left:1px solid #999; height:92px }
 
 /* Forms */
 
