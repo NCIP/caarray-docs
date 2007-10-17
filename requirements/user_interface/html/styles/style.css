@@ -117,7 +117,7 @@ SUP
 #leftnav UL A.selected:hover, #leftnav UL A.selected:focus
 { background:#D1CEC4 url("../images/ico_arrow.gif") no-repeat 7px 7px; text-decoration:none; }
 #leftnav UL A:focus 
-{ outline:none; background:#D1CEC4}
+{ outline:none; background:#D1CEC4 }
 #leftnav LI.liheader
 { background:#5c5c5c; color:#fff; padding:3px 8px; border-bottom:1px solid #fff; }
 /* Quicklinks */
@@ -279,10 +279,12 @@ UL#tabs LI A:focus
 
 /* Search Results Table */
 
-#tabboxwrapper, #searchboxwrapper
+#tabboxwrapper, #searchboxwrapper, #tabboxwrapper_notabs
 { clear:both; padding:5px; background:#e0ded6; border:1px solid #999; border-top:0; }
+#tabboxwrapper_notabs
+{ border-top:1px solid #999;  }
 #searchboxwrapper
-{ background:#eeede8; border-top:1px solid #999; margin-top:0; margin-bottom:10px;  }
+{ background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x; border-top:1px solid #999; margin-top:-8px; margin-bottom:10px;  }
 #searchboxwrapper .actions
 { margin:-5px }
 TABLE.searchresults
@@ -337,7 +339,7 @@ UL#tablevel2 LI A:hover
 { background:#b3ae9c; padding:2px; border:1px solid #fff }
 .count
 { color:#fff; padding:5px; font-size:92% }
-.tableboxpad TH.filterrow
+.tableboxpad TH.filterrow, DIV.filterrow
 { padding:4px 5px; border:0; border-bottom:1px solid #999; background:#e5e5e5 url("../images/bg_grad3d.gif"); color:#333 }
 .displayrow
 { background:#dcdcdc }
@@ -358,20 +360,26 @@ UL#tablevel2 LI A:hover
 .rightsidetable
 { padding-left:10px }
 .scrolltablefooter
-{ padding:5px; background:url("../images/bg_grad3d.gif") repeat-x; text-align:right; border:1px solid #999; border-top:0; font-size:92% } 
+{ padding:5px; background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x; text-align:right; border:1px solid #999; border-top:0; font-size:92% } 
 TR.listhover
 { cursor:pointer; }
 TR.listhover:hover
 { background:#ffe }
+DIV.filterrow2
+{ background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x; padding:3px; border:1px solid #999;  }
+DIV.filterrow2 SELECT, INPUT
+{ margin:2px }
 
 
 /* Special Icons */
 
-.addlink
+.addlink, .addlink_notabs
 { background:url("../images/bg_grad3d.gif") repeat-x; font-size:92%; font-weight:bold; float:right; margin-top:-2.6em; width:12.3em; }
-.addlink A.add
-{ background:url("../images/ico_add.gif") no-repeat 6px 3px; display:block; height:1.4em; padding:3px 0 3px 24px; border:1px solid #ccc; border-top:1px solid #fff; border-left:1px solid #fff; text-decoration:none !important; color:#333 }
-.addlink A.add:hover
+.addlink_notabs
+{ margin:0 0 5px 0;  }
+.addlink A.add, .addlink_notabs A.add
+{ background:url("../images/ico_add.gif") no-repeat 6px 3px; display:block; height:1.4em; padding:3px 0 3px 24px; border:1px solid #ccc; border-top:1px solid #efefef; border-left:1px solid #efefef; text-decoration:none !important; color:#333 }
+.addlink A.add:hover, .addlink_notabs A.add:hover
 { border:1px solid #999 }
 
 
@@ -388,9 +396,9 @@ TR.listhover:hover
 .instructions2
 { margin:-9px -9px 0 -9px; padding:8px; font-size:92%; }
 DIV.actions,DIV.actionsthin
-{ background:#efefef; margin:10px -9px 0 -9px; text-align:center; border-top:2px solid #ccc; border-bottom:1px solid #fff; padding:5px; height:2em; color:#ccc;  }
+{ background:#efefef; margin:10px -6px 0 -9px; text-align:center; border-top:2px solid #ccc; border-bottom:1px solid #fff; padding:5px; height:2em; color:#ccc;  }
 DIV.actionsthin
-{ margin:0; border:2px solid #fff; border-top:0;   }
+{ margin:0; border:2px solid #fff; border-top:0; }
 DIV.actions A
 { padding:0 35px 0 35px }
 DIV.actionsthin A
@@ -414,9 +422,11 @@ DIV.actions A:focus, DIV.actionsthin A:focus
 #content UL.checklist LI INPUT
 { margin:0 !important; padding:0; }
 #content UL.checklist LI LABEL 
-{ font-weight:normal !important; display:block; padding:0 0 0 22px; text-indent:-22px; cursor:pointer}
+{ font-weight:normal !important; display:block; padding:0 0 0 22px; text-indent:-22px; cursor:pointer }
 #content UL.checklist LI LABEL:hover, #content UL.checklist LI LABEL.hover  
 { background:#ffc }
+#content TABLE.form TD.value UL.checklist LI LABEL:focus, #content TABLE.form TD.value UL.checklist LI LABEL.hover:focus
+{ border:1px solid red }
 .alphanav
 { border:1px solid #999; border-top:1px solid #ccc; background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x 0 -5px; width:255px; }
 .alphanav A:hover
@@ -435,11 +445,18 @@ DIV.actions A:focus, DIV.actionsthin A:focus
 { padding:4px 5px; border:0; border:1px solid #999; background:#e5e5e5 url("../images/bg_grad3d.gif"); color:#333 }
 .scrolltable2
 { overflow:auto; height:200px; background:#fff; border-right:1px solid #999; border-bottom:1px solid #999; border-left:1px solid #999; height:92px }
+DIV.filterrow
+{ padding:3px; border:1px solid #999; border-bottom:0; width:249px }
+DIV.filterrow SELECT
+{ margin:0 }
+
 
 /* Forms */
 
 TABLE.form
 { width:90%; margin:10px auto }
+TABLE.form INPUT:focus, TABLE.form SELECT:focus, TABLE.form TEXTAREA:focus
+{ background:#ffc; border:1px solid #000; padding:2px }
 TABLE.form TH
 { font-size:120%; color:#808080; background:#dde2ea; padding:5px; border-top:10px solid #fff; border-bottom:5px solid #fff }
 TABLE.form TD
@@ -447,7 +464,7 @@ TABLE.form TD
 LABEL
 { font-size:100%; padding:4px 0; display:block }
 LABEL.inline
-{ display:inline}
+{ display:inline; cursor:pointer; }
 .label
 { width:30%; text-align:right; font-weight:bold; }
 .required
@@ -455,11 +472,11 @@ LABEL.inline
 .asterisk
 { color:#a90101; }
 .value INPUT, .value SELECT, .value TEXTAREA
-{ margin-top:-3px;  }
+{ margin-top:-3px; margin-left:0 }
+.value INPUT[type=radio]
+{ margin-top:0 }
 TD.space
 { padding:0 }
-TD.value
-{ }
 .value TEXTAREA
 { width:380px }
 .pad10
@@ -482,6 +499,28 @@ TD.value
 { text-decoration:underline }
 .calendaricon
 { vertical-align:middle; padding-left:5px; }
+LI.disabled, LI.disabled LABEL, .disabled
+{ color:#999; }
+INPUT.disabled
+{ background:#dcdcdc; color:#999; border:1px solid #abadb3; }
+.readonly
+{ display:block; padding:1px 2px 4px 2px }
+
+
+/* Confirmation or Error Messages */
+
+.confirm_msg
+{ background:#fff3ad; border:1px solid #d89723; padding:15px; margin-bottom:15px;  }
+.error_msg
+{ background:#fff; color:#c00; border:1px solid #c00; padding:15px; margin-bottom:15px; }
+.error_msg LABEL
+{ font-size:100%; color:#c00; text-decoration:underline }
+
+
+/* Inline Error Messages */
+
+.formErrorMsg
+{ clear:both; font-size:100%; color:#c00; font-style:italic; display:block; }
 
 
 /* Footer */
