@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
-		<title>caArray - Experiment Details</title>
+		<title>caArray - Manage Users</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<link rel="address bar icon" href="favicon.ico" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -12,6 +12,7 @@
 		
 		<script type="text/javascript" src="common/scripts/prototype.js"></script>		
 		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>
+		<script type="text/javascript" src="common/scripts/checklist.js"></script>
 		
 	</head>
 	
@@ -104,7 +105,7 @@
 								<!--<li><a href="search_advanced.htm">Advanced Search</a></li>-->
 								
 								<li class="liheader">Users &amp; Groups</li>
-								<li><a href="manage_users.htm">Manage Users</a></li>
+								<li><a href="manage_users.htm" class="selected">Manage Users</a></li>
 								<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>
 								<li><a href="manage_collaborators.htm">Manage Collaborators</a></li>			
 								
@@ -147,77 +148,134 @@
 							
 							<!--ADD CONTENT HERE-->
 							
-							<h1>Experiment Details</h1>
+							<h1>Manage Users</h1>
 							
 							<div class="pagehelp">
 								<a href="#" class="help">Help</a>
 								<a href="#" class="print">Print</a>
-							</div>							
-								
-							<div class="padme">
+							</div>
 							
-								<h2><span class="dark">Experiment:</span>	Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays</h2>
+							<div class="padme">								
 													
-								<!--Primary Tabs -->
+							<!--Results-->
 								
-								<ul id="tabs" class="tabs2">
-									<li><a href="experiment_edit.htm">Overview</a></li>
-									<li><a href="experiment_contacts.htm">Contacts</a></li>
-									<li><a href="experiment_annotations.htm" class="active">Annotations</a></li>
-									<li><a href="experiment_data.htm">Data</a></li>
-									<li><a href="experiment_supplemental.htm">Supplemental</a></li>
-									<li><a href="experiment_publications.htm">Publications</a></li>
-								</ul>
-								
-								<!--/Primary Tabs -->								
-								
-								<!--Tab box-->
+								<div id="tabboxwrapper_notabs">								
 									
-								<div id="tabboxwrapper">
-									
-									<ul id="tablevel2">
-										<li><a href="experiment_annotations.htm">Experimental Design</a></li>
-										<li><a href="experiment_annotations_sources.htm">Sources</a></li>
-										<li><a href="experiment_annotations_samples.htm">Samples</a></li>
-										<li><a href="experiment_annotations_extracts.htm" class="selected">Extracts</a></li>
-										<li><a href="experiment_annotations_labeledextracts.htm">Labeled Extracts</a></li>
-										<li><a href="experiment_annotations_hybridizations.htm">Hybridizations</a></li>
-									</ul>
-										
 									<div class="boxpad2">
-									
+								
 										<h3>
-											<a href="experiment_annotations_extracts.htm">Extracts</a> &gt; 
-											<span class="dark">E96-1</span>
+											<a href="manage_users.htm">Manage Users</a> &gt; 
+											<span class="dark">Arthur Blakey</span>
 										</h3>
 										
 									</div>
 									
 									<div class="boxpad">
 									
-										<form name="form" id="form">
+										<form name="editform" id="idform" action="">
 										
-										<div>
-										form here
-										</div>
-											
+											<table class="form">
+												<tr>
+													<th colspan="2">Security Information</th>
+												</tr>
+												<tr>
+													<td class="label">Authentication Method:</td>
+													<td class="value">LDAP Account [NCICB]</td>
+												</tr>
+												<tr>
+													<td class="label">Username:</td>
+													<td class="value">ablakey</td>
+												</tr>
+												<tr>
+													<td class="label">Password:</td>
+													<td class="value">********</td>
+												</tr>
+												<tr>
+													<td class="label">Requested Role(s):</td>
+													<td class="value">Principal Investigator</td>
+												</tr>
+												<tr>
+													<td class="label">Current Role(s):</td>
+													<td class="value">Principal Investigator</td>
+												</tr>
+												<tr>
+													<td class="label">Account Status:</td>
+													<td class="value">Active</td>
+												</tr>
+												<tr>
+													<th colspan="2">Account Details</th>
+												</tr>
+												<tr>
+													<td class="label">First Name:</td>
+													<td class="value">Arthur</td>
+												</tr>
+												<tr>
+													<td class="label">Middle Initial:</td>
+													<td class="value"></td>
+												</tr>
+												<tr>
+													<td class="label">Last Name:</td>
+													<td class="value">Blakey</td>
+												</tr>												
+												<tr>
+													<td class="label">Email:</td>
+													<td class="value"><a href="mailto:ablakey@email.com">ablakey@email.com</a></td>
+												</tr>
+												<tr>
+													<td class="label">Institution:</td>
+													<td class="value">NCICB</td>
+												</tr>
+												<tr>
+													<td class="label">Address Line 1:</td>
+													<td class="value">2617 Wooster ST</td>
+												</tr>
+												<tr>
+													<td class="label">Address Line 2:</td>
+													<td class="value"></td>
+												</tr>
+												<tr>
+													<td class="label">City:</td>
+													<td class="value">New York</td>
+												</tr>
+												<tr>
+													<td class="label">State:</td>
+													<td class="value">NY</td>
+												</tr>
+												<tr>
+													<td class="label">Postal Code:</td>
+													<td class="value">33322</td>
+												</tr>
+												<tr>
+													<td class="label">Country:</td>
+													<td class="value">United States</td>
+												</tr>
+												<tr>
+													<td class="label">Phone:</td>
+													<td class="value">111-222-3333</td>
+												</tr>
+												<tr>
+													<td class="label">Fax:</td>
+													<td class="value"></td>
+												</tr>
+											</table>
 											<div class="actions">												
 												
-												<a href="experiment_annotations_extracts.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="experiment_annotations.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
-												<a href="#" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
+												<a href="manage_users.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
+												<a href="user_edit.htm" class="edit"><img src="images/btn_edit.gif" alt="Edit" /></a>
+												<a href="manage_users.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
 												
 											</div>
-											
 										</form>
 										
-									</div>									
-										
-								</div>
-										
-								<!--/Tab Box-->								
+									</div>
+									
 								
-							</div>
+								</div>
+									
+								<!--/Results-->
+								
+								
+								</div>
 							
 							<!--/ADD CONTENT HERE-->							
 							
@@ -230,8 +288,8 @@
 					</div>
 					
 				</div>
-					
-			</div>
+				
+				
 		
 		</div>
 		

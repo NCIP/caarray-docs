@@ -48,9 +48,15 @@
 						<td>
 							<select name="searchcat" id="searchcat">
 								<option>(All Categories) </option>
+								<option>Experiment ID</option>
+								<option>Experiment Name</option>
+								<option>Manufacturer</option>
+								<option>Source Organism</option>
+								<option>Sample ID</option>
+								<option>Disease State</option>								
 							</select>
 						</td>
-						<td><input type="image" src="images/btn_search_top.gif" alt="Search"  /></td>
+						<td><input type="image" src="images/btn_search_top.gif" alt="Search" onclick="window.location='searchresults_loggedin.htm';"  /></td>
 					</tr>
 				</table>
 				
@@ -141,7 +147,7 @@
 							
 							<!--ADD CONTENT HERE-->
 							
-							<h1>Experiment Details</h1>
+							<h1>Experiment Properties</h1>
 							
 							<div class="pagehelp">
 								<a href="#" class="help">Help</a>
@@ -221,7 +227,7 @@
 														
 														<table class="searchresults" cellspacing="0">
 															<tr>													
-																<th style="height:2.5em;">Assign Rules to Access Profile</th>
+																<th style="height:2.5em;">Apply Access Profile To Experiment Contents</th>
 															</tr>
 															<tr>
 																<th class="filterrow">
@@ -232,12 +238,12 @@
 																		<option selected="selected">Read Only (Selective)</option>
 																		<option>Edit</option>
 																		<option>Edit (Selective)</option>
-																		<option>etc.</option>
+																		<option>Revoke Visibility</option>
 																	</select>
 																</th>
 															</tr>
 															<tr>
-																<th class="title">Sample Access</th>
+																<th class="title"><a href="#">Sample ID</a></th>
 															</tr>
 														</table>
 														

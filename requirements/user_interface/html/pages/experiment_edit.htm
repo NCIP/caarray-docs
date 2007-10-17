@@ -11,60 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="common/style.css" />
 		
 		<script type="text/javascript" src="common/scripts/prototype.js"></script>		
-		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>
-		
-		<script type="text/javascript">
-		//<![CDATA[
-		/*-----------------------------------------------------------+
-		 | addLoadEvent: Add event handler to body when window loads |
-		 +-----------------------------------------------------------*/
-		function addLoadEvent(func) {
-			var oldonload = window.onload;
-			
-			if (typeof window.onload != "function") {
-				window.onload = func;
-			} else {
-				window.onload = function () {
-					oldonload();
-					func();
-				}
-			}
-		}
-		
-		/*------------------------------------+
-		 | Functions to run when window loads |
-		 +------------------------------------*/
-		addLoadEvent(function () {
-			initChecklist();
-		});
-		
-		/*----------------------------------------------------------+
-		 | initChecklist: Add :hover functionality on labels for IE |
-		 +----------------------------------------------------------*/
-		function initChecklist() {
-			if (document.all && document.getElementById) {
-				// Get all unordered lists
-				var lists = document.getElementsByTagName("ul");
-				
-				for (i = 0; i < lists.length; i++) {
-					var theList = lists[i];
-					
-					// Only work with those having the class "checklist"
-					if (theList.className.indexOf("checklist") > -1) {
-						var labels = theList.getElementsByTagName("label");
-						
-						// Assign event handlers to labels within
-						for (var j = 0; j < labels.length; j++) {
-							var theLabel = labels[j];
-							theLabel.onmouseover = function() { this.className += " hover"; };
-							theLabel.onmouseout = function() { this.className = this.className.replace(" hover", ""); };
-						}
-					}
-				}
-			}
-		}
-	//]]>
-	</script>	
+		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>		
+		<script type="text/javascript" src="common/scripts/checklist.js"></script>
 		
 	</head>
 	
@@ -101,9 +49,15 @@
 						<td>
 							<select name="searchcat" id="searchcat">
 								<option>(All Categories) </option>
+								<option>Experiment ID</option>
+								<option>Experiment Name</option>
+								<option>Manufacturer</option>
+								<option>Source Organism</option>
+								<option>Sample ID</option>
+								<option>Disease State</option>								
 							</select>
 						</td>
-						<td><input type="image" src="images/btn_search_top.gif" alt="Search"  /></td>
+						<td><input type="image" src="images/btn_search_top.gif" alt="Search" onclick="window.location='searchresults_loggedin.htm';"  /></td>
 					</tr>
 				</table>
 				
@@ -249,6 +203,9 @@
 														<select name="select" id="servtyp" style="width:70%;">
 															<option>-- Please select an Service Type --</option>
 															<option selected="selected">Analysis</option>
+															<option>Full</option>
+															<option>Partial</option>
+															<option>Publish</option>
 														</select>
 													</td>
 												</tr>
@@ -258,6 +215,9 @@
 														<select name="select" id="assaytp" style="width:70%;">
 															<option>-- Please select an Assay Type --</option>
 															<option selected="selected">Gene Expression</option>
+															<option>SNP</option>
+															<option>DNA</option>
+															<option>aCGH</option>
 														</select>
 													</td>
 												</tr>
@@ -266,8 +226,12 @@
 													<td class="value">
 														<select name="select" id="manu" style="width:70%;">
 															<option>-- Please select a Manufacturer --</option>
-															<option selected="selected">Illumina</option>
-															<option>Affymetrix</option>
+															<option selected="selected">Affymetrix</option>
+															<option>Agilent (not fully supported)</option>
+															<option>GenePix (not fully supported)</option>
+															<option>Illumina</option>
+															<option>Imagene (not fully supported)</option>
+															<option>UCSF Spot (not fully supported)</option>
 															<option>Other</option>
 														</select>
 													</td>

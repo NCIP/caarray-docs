@@ -105,7 +105,7 @@
 								<!--<li><a href="search_advanced.htm">Advanced Search</a></li>-->
 								
 								<li class="liheader">Users &amp; Groups</li>
-								<li><a href="manage_users.htm">Manage Users</a></li>
+								<li><a href="manage_users.htm" class="selected">Manage Users</a></li>
 								<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>
 								<li><a href="manage_collaborators.htm">Manage Collaborators</a></li>			
 								
@@ -148,7 +148,7 @@
 							
 							<!--ADD CONTENT HERE-->
 							
-							<h1>Account</h1>
+							<h1>Manage Users</h1>
 							
 							<div class="pagehelp">
 								<a href="#" class="help">Help</a>
@@ -163,7 +163,10 @@
 									
 									<div class="boxpad2">
 								
-										<h3>Arthur Blakey</h3>
+										<h3>
+											<a href="manage_users.htm">Manage Users</a> &gt; 
+											<span class="dark">Create User</span>
+										</h3>
 										
 									</div>
 									
@@ -176,28 +179,35 @@
 													<th colspan="2">Security Information</th>
 												</tr>
 												<tr>
+													<td class="label"><span class="required">Authentication Method:<span class="asterisk">*</span></span></td>
+													<td class="value">
+														<input type="radio" name="authtp" id="authtpLDAP" checked="checked" /><label for="authtpLDAP" class="inline">LDAP Account [NCICB]</label> &nbsp;&nbsp;
+														<input type="radio" name="authtp" id="authtpDB"  /><label for="authtpDB" class="inline">Database</label>
+													</td>
+												</tr>
+												<tr>
 													<td class="label"><span class="required">Username:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="fn" id="fn" value="ablakey" style="width:30%;" class="disabled" disabled="disabled" /></td>
+													<td class="value"><input type="text" name="fn" id="fn" value="" style="width:30%;" /></td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Password:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="password" name="pw" id="pw" value="password" style="width:30%;" /></td>
+													<td class="value"><input type="password" name="pw" id="pw" value="" style="width:30%;" /></td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Re-type Password:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="password" name="pw2" id="pw2" value="password" style="width:30%;" /></td>
+													<td class="value"><input type="password" name="pw2" id="pw2" value="" style="width:30%;" /></td>
 												</tr>
 												<tr>
-													<td class="label">Current Role(s):</td>
-													<td class="value"><span class="readonly">Principal Investigator</span></td>
+													<td class="label"><span class="disabled">Requested Role(s):</span></td>
+													<td class="value"><span class="readonly">&nbsp;</span></td>
 												</tr>
 												<tr>
-													<td class="label"><span class="required">Desired Role(s):<span class="asterisk">*</span></span></td>
+													<td class="label"><span class="required">Role(s):<span class="asterisk">*</span></span></td>
 													<td class="value">
 														<ul class="checklist" style="width:50%;">
 															<!--here is a sample disabled item<li class="disabled"><a name="role_1"></a><label for="role_1"><input id="role_1" name="role_1" type="checkbox" disabled="disabled" /> System Administrator</label></li>-->
 															<li><a name="role_1"></a><label for="role_1"><input id="role_1" name="role_1" type="checkbox" /> System Administrator</label></li>
-															<li><a name="role_2"></a><label for="role_2"><input id="role_2" name="role_2" type="checkbox" checked="checked" /> Principal Investigator</label></li>
+															<li><a name="role_2"></a><label for="role_2"><input id="role_2" name="role_2" type="checkbox" /> Principal Investigator</label></li>
 															<li><a name="role_3"></a><label for="role_3"><input id="role_3" name="role_3" type="checkbox" /> Lab Administrator</label></li>
 															<li><a name="role_4"></a><label for="role_4"><input id="role_4" name="role_4" type="checkbox" /> Lab Scientist</label></li>
 															<li><a name="role_5"></a><label for="role_5"><input id="role_5" name="role_5" type="checkbox" /> Biostatistician</label></li>
@@ -205,15 +215,21 @@
 													</td>
 												</tr>
 												<tr>
-													<td class="label">Account Status:</td>
-													<td class="value"><span class="readonly">Active</span></td>
+													<td class="label"><span class="required">Account Status:<span class="asterisk">*</span></span></td>
+													<td class="value">
+														<select name="status" id="status">
+															<option>Active</option>
+															<option>Disabled</option>
+															<option>Etc.</option>
+														</select>
+													</td>
 												</tr>
 												<tr>
 													<th colspan="2">Account Details</th>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">First Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="fn" id="fn" value="Arthur" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="fn" id="fn" value="" style="width:50%;" /></td>
 												</tr>
 												<tr>
 													<td class="label">Middle Initial:</td>
@@ -221,11 +237,11 @@
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Last Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="ln" id="ln" value="Blakey" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="ln" id="ln" value="" style="width:50%;" /></td>
 												</tr>												
 												<tr>
 													<td class="label"><span class="required">Email:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="email" id="email" value="ablakey@email.com" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="email" id="email" value="" style="width:50%;" /></td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Institution:<span class="asterisk">*</span></span></td>
@@ -233,13 +249,13 @@
 													<select name="datafilter">
 															<option>--Please select an Institution--</option>
 															<option>Institution ABC</option>
-															<option selected="selected">NCICB</option>
+															<option>NCICB</option>
 														</select>
 													</td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Address Line 1:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="address1" id="address1" value="2617 Wooster ST" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="address1" id="address1" value="" style="width:50%;" /></td>
 												</tr>
 												<tr>
 													<td class="label">Address Line 2:</td>
@@ -247,78 +263,77 @@
 												</tr>
 												<tr>
 													<td class="label"><span class="required">City:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="city" id="city" value="New York" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="city" id="city" value="" style="width:50%;" /></td>
 												</tr>
 												<tr>
 													<td class="label">State:</td>
 													<td class="value">
-														<select name="user.state">
-															<option value="0">--Please select a State--</option>
-															<option value="AK">AK</option>
-															<option value="AL">AL</option>
-															<option value="AR">AR</option>
-															<option value="AS">AS</option>
-															<option value="AZ">AZ</option>
-															<option value="CA">CA</option>
-															<option value="CO">CO</option>
-															<option value="CT">CT</option>
-															<option value="DC">DC</option>
-															<option value="DE">DE</option>
-															<option value="FL">FL</option>
-															<option value="FM">FM</option>
-															<option value="GA">GA</option>
-															<option value="GU">GU</option>
-															<option value="HI">HI</option>
-															<option value="IA">IA</option>
-															<option value="ID">ID</option>
-															<option value="IL">IL</option>
-															<option value="IN">IN</option>
-															<option value="KS">KS</option>
-															<option value="KY">KY</option>
-															<option value="LA">LA</option>
-															<option value="MA">MA</option>
-															<option value="MD">MD</option>
-															<option value="ME">ME</option>
-															<option value="MH">MH</option>
-															<option value="MI">MI</option>
-															<option value="MN">MN</option>
-															<option value="MO">MO</option>
-															<option value="MP">MP</option>
-															<option value="MS">MS</option>
-															<option value="MT">MT</option>
-															<option value="NC">NC</option>
-															<option value="ND">ND</option>
-															<option value="NE">NE</option>
-															<option value="NH">NH</option>
-															<option value="NJ">NJ</option>
-															<option value="NM">NM</option>
-															<option value="NV">NV</option>
-															<option value="NY" selected="selected">NY</option>
-															<option value="OH">OH</option>
-															<option value="OK">OK</option>
-															<option value="OR">OR</option>
-															<option value="PA">PA</option>
-															<option value="PR">PR</option>
-															<option value="PW">PW</option>
-															<option value="RI">RI</option>
-															<option value="SC">SC</option>
-															<option value="SD">SD</option>
-															<option value="TN">TN</option>
-															<option value="TX">TX</option>
-															<option value="UT">UT</option>
-															<option value="VA">VA</option>
-															<option value="VI">VI</option>
-															<option value="VT">VT</option>
-															<option value="WA">WA</option>
-															<option value="WI">WI</option>
-															<option value="WV">WV</option>
-															<option value="WY">WY</option>
-														</select>
+													<select name="user.state">
+														<option value="0">--Please select a State--</option>
+														<option value="AK">AK</option>
+														<option value="AL">AL</option>
+														<option value="AR">AR</option>
+														<option value="AS">AS</option>
+														<option value="AZ">AZ</option>
+														<option value="CA">CA</option>
+														<option value="CO">CO</option>
+														<option value="CT">CT</option>
+														<option value="DC">DC</option>
+														<option value="DE">DE</option>
+														<option value="FL">FL</option>
+														<option value="FM">FM</option>
+														<option value="GA">GA</option>
+														<option value="GU">GU</option>
+														<option value="HI">HI</option>
+														<option value="IA">IA</option>
+														<option value="ID">ID</option>
+														<option value="IL">IL</option>
+														<option value="IN">IN</option>
+														<option value="KS">KS</option>
+														<option value="KY">KY</option>
+														<option value="LA">LA</option>
+														<option value="MA">MA</option>
+														<option value="MD">MD</option>
+														<option value="ME">ME</option>
+														<option value="MH">MH</option>
+														<option value="MI">MI</option>
+														<option value="MN">MN</option>
+														<option value="MO">MO</option>
+														<option value="MP">MP</option>
+														<option value="MS">MS</option>
+														<option value="MT">MT</option>
+														<option value="NC">NC</option>
+														<option value="ND">ND</option>
+														<option value="NE">NE</option>
+														<option value="NH">NH</option>
+														<option value="NJ">NJ</option>
+														<option value="NM">NM</option>
+														<option value="NV">NV</option>
+														<option value="NY">NY</option>
+														<option value="OH">OH</option>
+														<option value="OK">OK</option>
+														<option value="OR">OR</option>
+														<option value="PA">PA</option>
+														<option value="PR">PR</option>
+														<option value="PW">PW</option>
+														<option value="RI">RI</option>
+														<option value="SC">SC</option>
+														<option value="SD">SD</option>
+														<option value="TN">TN</option>
+														<option value="TX">TX</option>
+														<option value="UT">UT</option>
+														<option value="VA">VA</option>
+														<option value="VI">VI</option>
+														<option value="VT">VT</option>
+														<option value="WA">WA</option>
+														<option value="WI">WI</option>
+														<option value="WV">WV</option>
+														<option value="WY">WY</option></select>
 													</td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Postal Code:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="user.zipcode" maxlength="10" size="20" value="33322" style="size:30%" /></td>
+													<td class="value"><input type="text" name="user.zipcode" maxlength="10" size="20" value="" style="size:30%" /></td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Country:<span class="asterisk">*</span></span></td>
@@ -531,7 +546,7 @@
 															<option value="204">Ukraine</option>
 															<option value="205">United Arab Emirates</option>
 															<option value="206">United Kingdom</option>
-															<option value="207" selected="selected">United States</option>
+															<option value="207">United States</option>
 															<option value="208">Uruguay</option>
 															<option value="209">Uzbekistan</option>
 															<option value="210">Vanuatu</option>
@@ -549,7 +564,7 @@
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Phone:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="phone" maxlength="25" size="20" value="111-222-3333" style="size:30%" /></td>
+													<td class="value"><input type="text" name="phone" maxlength="25" size="20" value="" style="size:30%" /></td>
 												</tr>
 												<tr>
 													<td class="label">Fax:</td>
@@ -560,7 +575,6 @@
 												
 												<a href="manage_users.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
 												<a href="user_edit.htm" class="save"><img src="images/btn_save.gif" alt="Save" /></a>
-												<a href="manage_users.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
 												
 											</div>
 										</form>

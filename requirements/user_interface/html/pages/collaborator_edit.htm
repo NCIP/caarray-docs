@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
-		<title>caArray - Experiment Details</title>
+		<title>caArray - Experiment Properties</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<link rel="address bar icon" href="favicon.ico" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -147,7 +147,7 @@
 							
 							<!--ADD CONTENT HERE-->
 							
-							<h1>Experiment Details</h1>
+							<h1>Experiment Properties</h1>
 							
 							<div class="pagehelp">
 								<a href="#" class="help">Help</a>
@@ -156,63 +156,118 @@
 								
 							<div class="padme">
 							
-								<h2><span class="dark">Experiment:</span>	Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays</h2>
-													
+								<h2><span class="dark">Experiment:</span>	Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays (<a href="experiment_details.htm">Details</a>)</h2>
+																			
 								<!--Primary Tabs -->
-								
-								<ul id="tabs" class="tabs2">
-									<li><a href="experiment_edit.htm">Overview</a></li>
-									<li><a href="experiment_contacts.htm">Contacts</a></li>
-									<li><a href="experiment_annotations.htm" class="active">Annotations</a></li>
-									<li><a href="experiment_data.htm">Data</a></li>
-									<li><a href="experiment_supplemental.htm">Supplemental</a></li>
-									<li><a href="experiment_publications.htm">Publications</a></li>
+						
+								<ul id="tabs" class="tabs">
+									<li><a href="experiment_properties.htm">Permissions</a></li>
+									<li><a href="experiment_properties_collaboration.htm" class="active">Collaboration Groups</a></li>
 								</ul>
 								
 								<!--/Primary Tabs -->								
 								
 								<!--Tab box-->
 									
-								<div id="tabboxwrapper">
+								<div id="tabboxwrapper">									
 									
-									<ul id="tablevel2">
-										<li><a href="experiment_annotations.htm">Experimental Design</a></li>
-										<li><a href="experiment_annotations_sources.htm">Sources</a></li>
-										<li><a href="experiment_annotations_samples.htm">Samples</a></li>
-										<li><a href="experiment_annotations_extracts.htm" class="selected">Extracts</a></li>
-										<li><a href="experiment_annotations_labeledextracts.htm">Labeled Extracts</a></li>
-										<li><a href="experiment_annotations_hybridizations.htm">Hybridizations</a></li>
-									</ul>
-										
 									<div class="boxpad2">
 									
 										<h3>
-											<a href="experiment_annotations_extracts.htm">Extracts</a> &gt; 
-											<span class="dark">E96-1</span>
+											<a href="experiment_properties_collaboration.htm">Manage Collaboration Groups</a> &gt; 
+											<span class="dark">Collaborators A</span>
 										</h3>
 										
 									</div>
 									
 									<div class="boxpad">
+										<form name="editform" id="idform" action="experimentedit_error.htm">
 									
-										<form name="form" id="form">
-										
-										<div>
-										form here
-										</div>
+											<table class="form">
+												<tr>
+													<td class="label">Group Name:</td>
+													<td class="value"><input type="text" name="title" id="exptitle" value="Collaborators A" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Members:</td>
+													<td class="value">													
+														<div class="leftrightwrapper">
+															<div class="checklistside">
+																<div class="filterrow">
+																	<strong>Filter by:</strong><br />
+																	<select name="datafilter" style="width:248px">
+																		<option>(All Institutions)</option>
+																		<option>Institution ABC</option>
+																	</select>
+																</div>
+																<ul class="checklist">
+																	<li><a name="user_a"></a><label for="user_1"><input id="user_1" name="user_1" type="checkbox" /> Alonso, Alex</label></li>
+																	<li><a name="user_b"></a><label for="user_2"><input id="user_2" name="user_2" type="checkbox" /> Bruce, Issac</label></li>
+																	<li><a name="user_c"></a><label for="user_3"><input id="user_3" name="user_3" type="checkbox" /> Constanza, William</label></li>
+																	<li><a name="user_c"></a><label for="user_4"><input id="user_4" name="user_4" type="checkbox" /> Costas, Bob</label></li>
+																	<li><a name="user_g"></a><label for="user_6"><input id="user_6" name="user_6" type="checkbox" checked="checked" /> Gendleman, Brent</label></li>
+																	<li><a name="user_h"></a><label for="user_7"><input id="user_7" name="user_7" type="checkbox" /> Holt, Elizabeth</label></li>
+																	<li><a name="user_n"></a><label for="user_8"><input id="user_8" name="user_8" type="checkbox" /> Nason, Phillip</label></li>
+																	<li><a name="user_r"></a><label for="user_9"><input id="user_9" name="user_9" type="checkbox" checked="checked" /> Rehfuss, Matt</label></li>
+																	<li><a name="user_r"></a><label for="user_10"><input id="user_10" name="user_10" type="checkbox"  /> Rosenfeld, Joshua</label></li>
+																	<li><a name="user_s"></a><label for="user_11"><input id="user_11" name="user_11" type="checkbox" /> Smith, Bill</label></li>
+																	<li><a name="user_s"></a><label for="user_12"><input id="user_12" name="user_12" type="checkbox" /> Smith, John</label></li>
+																</ul>
+																<div class="alphanav">
+																	<a href="#user_a">A</a>
+																	<a href="#user_b">B</a>
+																	<a href="#user_c">C</a>
+																	<a href="#user_d">D</a>
+																	<a href="#user_e">E</a>
+																	<a href="#user_f">F</a>
+																	<a href="#user_g">G</a>
+																	<a href="#user_h">H</a>
+																	<a href="#user_i">I</a>
+																	<a href="#user_j">J</a>
+																	<a href="#user_k">K</a>
+																	<a href="#user_l">L</a>
+																	<a href="#user_m">M</a>
+																	<a href="#user_n">N</a>
+																	<a href="#user_o">O</a>
+																	<a href="#user_p">P</a>
+																	<a href="#user_q">Q</a>
+																	<a href="#user_r">R</a>
+																	<a href="#user_s">S</a>
+																	<a href="#user_t">T</a>
+																	<a href="#user_u">U</a>
+																	<a href="#user_v">V</a>
+																	<a href="#user_w">W</a>
+																	<a href="#user_x">X</a>
+																	<a href="#user_y">Y</a>
+																	<a href="#user_z">Z</a>
+																</div>															
+															</div>															
+															<div class="selectionside">															
+																<h4>You Selected</h4>
+																<div class="scrolltable2">
+																	<ul>
+																		<li><a href="#">Gendleman, Brent</a></li>
+																		<li><a href="#">Rehfuss, Matt</a></li>
+																	</ul>
+																</div>															
+															</div>															
+														</div>
+													</td>
+												</tr>
+											</table>
 											
 											<div class="actions">												
 												
-												<a href="experiment_annotations_extracts.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="experiment_annotations.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
-												<a href="#" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
+												<a href="experiment_properties_collaboration.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
+												<a href="collaborator_edit.htm" class="save"><img src="images/btn_save.gif" alt="Save" /></a>
+												<a href="experiment_properties_collaboration.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
 												
 											</div>
 											
 										</form>
 										
-									</div>									
-										
+									</div>
+								
 								</div>
 										
 								<!--/Tab Box-->								

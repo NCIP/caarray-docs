@@ -105,7 +105,7 @@
 								<!--<li><a href="search_advanced.htm">Advanced Search</a></li>-->
 								
 								<li class="liheader">Users &amp; Groups</li>
-								<li><a href="manage_users.htm">Manage Users</a></li>
+								<li><a href="manage_users.htm" class="selected">Manage Users</a></li>
 								<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>
 								<li><a href="manage_collaborators.htm">Manage Collaborators</a></li>			
 								
@@ -148,7 +148,7 @@
 							
 							<!--ADD CONTENT HERE-->
 							
-							<h1>Account</h1>
+							<h1>Manage Users</h1>
 							
 							<div class="pagehelp">
 								<a href="#" class="help">Help</a>
@@ -163,7 +163,10 @@
 									
 									<div class="boxpad2">
 								
-										<h3>Arthur Blakey</h3>
+										<h3>
+											<a href="manage_users.htm">Manage Users</a> &gt; 
+											<span class="dark">Arthur Blakey</span>
+										</h3>
 										
 									</div>
 									
@@ -174,6 +177,13 @@
 											<table class="form">
 												<tr>
 													<th colspan="2">Security Information</th>
+												</tr>
+												<tr>
+													<td class="label"><span class="required">Authentication Method:<span class="asterisk">*</span></span></td>
+													<td class="value">
+														<input type="radio" name="authtp" id="authtpLDAP" checked="checked" /><label for="authtpLDAP" class="inline">LDAP Account [NCICB]</label> &nbsp;&nbsp;
+														<input type="radio" name="authtp" id="authtpDB"  /><label for="authtpDB" class="inline">Database</label>
+													</td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Username:<span class="asterisk">*</span></span></td>
@@ -188,11 +198,11 @@
 													<td class="value"><input type="password" name="pw2" id="pw2" value="password" style="width:30%;" /></td>
 												</tr>
 												<tr>
-													<td class="label">Current Role(s):</td>
+													<td class="label"><span class="required">Requested Role(s):<span class="asterisk">*</span></span></td>
 													<td class="value"><span class="readonly">Principal Investigator</span></td>
 												</tr>
 												<tr>
-													<td class="label"><span class="required">Desired Role(s):<span class="asterisk">*</span></span></td>
+													<td class="label"><span class="required">Role(s):<span class="asterisk">*</span></span></td>
 													<td class="value">
 														<ul class="checklist" style="width:50%;">
 															<!--here is a sample disabled item<li class="disabled"><a name="role_1"></a><label for="role_1"><input id="role_1" name="role_1" type="checkbox" disabled="disabled" /> System Administrator</label></li>-->
@@ -205,8 +215,14 @@
 													</td>
 												</tr>
 												<tr>
-													<td class="label">Account Status:</td>
-													<td class="value"><span class="readonly">Active</span></td>
+													<td class="label"><span class="required">Account Status:<span class="asterisk">*</span></span></td>
+													<td class="value">
+														<select name="status" id="status">
+															<option>Active</option>
+															<option>Disabled</option>
+															<option>Etc.</option>
+														</select>
+													</td>
 												</tr>
 												<tr>
 													<th colspan="2">Account Details</th>

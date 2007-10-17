@@ -48,9 +48,15 @@
 						<td>
 							<select name="searchcat" id="searchcat">
 								<option>(All Categories) </option>
+								<option>Experiment ID</option>
+								<option>Experiment Name</option>
+								<option>Manufacturer</option>
+								<option>Source Organism</option>
+								<option>Sample ID</option>
+								<option>Disease State</option>								
 							</select>
 						</td>
-						<td><input type="image" src="images/btn_search_top.gif" alt="Search"  /></td>
+						<td><input type="image" src="images/btn_search_top.gif" alt="Search" onclick="window.location='searchresults_loggedin.htm';"  /></td>
 					</tr>
 				</table>
 				
@@ -195,6 +201,9 @@
 														<select name="select" id="servtyp" style="width:70%;">
 															<option>-- Please select an Service Type --</option>
 															<option >Analysis</option>
+															<option>Full</option>
+															<option>Partial</option>
+															<option>Publish</option>
 														</select>
 													</td>
 												</tr>
@@ -204,6 +213,9 @@
 														<select name="select" id="assaytp" style="width:70%;">
 															<option>-- Please select an Assay Type --</option>
 															<option >Gene Expression</option>
+															<option>SNP</option>
+															<option>DNA</option>
+															<option>aCGH</option>
 														</select>
 													</td>
 												</tr>
@@ -212,8 +224,12 @@
 													<td class="value">
 														<select name="select" id="manu" style="width:70%;">
 															<option>-- Please select a Manufacturer --</option>
-															<option >Illumina</option>
-															<option>Affymetrix</option>
+															<option >Affymetrix</option>
+															<option>Agilent (not fully supported)</option>
+															<option>GenePix (not fully supported)</option>
+															<option>Illumina</option>
+															<option>Imagene (not fully supported)</option>
+															<option>UCSF Spot (not fully supported)</option>
 															<option>Other</option>
 														</select>
 													</td>
