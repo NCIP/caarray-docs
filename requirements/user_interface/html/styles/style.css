@@ -458,7 +458,7 @@ TABLE.form
 TABLE.form INPUT:focus, TABLE.form SELECT:focus, TABLE.form TEXTAREA:focus
 { background:#ffc; border:1px solid #000; padding:2px }
 TABLE.form TH
-{ font-size:120%; color:#808080; background:#dde2ea; padding:5px; border-top:10px solid #fff; border-bottom:5px solid #fff }
+{ background:#858178 url("../images/bg_headerbar_tan.gif") repeat-x; font-size:125%; font-weight:bold; padding:5px; margin:0; color:#e3e6ec; border-top:15px solid #fff; border-bottom:10px solid #fff }
 TABLE.form TD
 { padding:3px; font-size:92%; vertical-align:top }
 LABEL
