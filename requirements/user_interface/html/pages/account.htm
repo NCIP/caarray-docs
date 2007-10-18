@@ -12,6 +12,7 @@
 		
 		<script type="text/javascript" src="common/scripts/prototype.js"></script>		
 		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>
+		<script type="text/javascript" src="common/scripts/showhide.js"></script>
 		<script type="text/javascript" src="common/scripts/checklist.js"></script>
 		
 	</head>
@@ -106,8 +107,8 @@
 								
 								<li class="liheader">Users &amp; Groups</li>
 								<li><a href="manage_users.htm">Manage Users</a></li>
-								<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>
-								<li><a href="manage_collaborators.htm">Manage Collaborators</a></li>			
+								<!--<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>-->
+								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
 								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
@@ -119,7 +120,7 @@
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray 2.0 Software</li>
+								<li class="liheader">caArray Software</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -163,7 +164,7 @@
 									
 									<div class="boxpad2">
 								
-										<h3>Arthur Blakey</h3>
+										<h3>Matt Rehfuss</h3>
 										
 									</div>
 									
@@ -175,9 +176,11 @@
 												<tr>
 													<th colspan="2">Security Information</th>
 												</tr>
+									
+												
 												<tr>
 													<td class="label"><span class="required">Username:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="fn" id="fn" value="ablakey" style="width:30%;" class="disabled" disabled="disabled" /></td>
+													<td class="value"><input type="text" name="un" id="un" value="mrehfuss" style="width:30%;" class="disabled" disabled="disabled" /></td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Password:<span class="asterisk">*</span></span></td>
@@ -187,6 +190,7 @@
 													<td class="label"><span class="required">Re-type Password:<span class="asterisk">*</span></span></td>
 													<td class="value"><input type="password" name="pw2" id="pw2" value="password" style="width:30%;" /></td>
 												</tr>
+															
 												<tr>
 													<td class="label">Current Role(s):</td>
 													<td class="value"><span class="readonly">Principal Investigator</span></td>
@@ -213,19 +217,19 @@
 												</tr>
 												<tr>
 													<td class="label"><span class="required">First Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="fn" id="fn" value="Arthur" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="fn" id="fn" value="Matt" style="width:50%;" /></td>
 												</tr>
 												<tr>
 													<td class="label">Middle Initial:</td>
-													<td class="value"><input type="text" name="fn" id="fn" value="" style="width:5%;" /></td>
+													<td class="value"><input type="text" name="fn" id="fn" value="Y" style="width:5%;" /></td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Last Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="ln" id="ln" value="Blakey" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="ln" id="ln" value="Rehfuss" style="width:50%;" /></td>
 												</tr>												
 												<tr>
 													<td class="label"><span class="required">Email:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="email" id="email" value="ablakey@email.com" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="email" id="email" value="matt@nonagonstudios.com" style="width:50%;" /></td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Institution:<span class="asterisk">*</span></span></td>
@@ -239,7 +243,7 @@
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Address Line 1:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="address1" id="address1" value="2617 Wooster ST" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="address1" id="address1" value="5859 15th Rd N" style="width:50%;" /></td>
 												</tr>
 												<tr>
 													<td class="label">Address Line 2:</td>
@@ -247,7 +251,7 @@
 												</tr>
 												<tr>
 													<td class="label"><span class="required">City:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="city" id="city" value="New York" style="width:50%;" /></td>
+													<td class="value"><input type="text" name="city" id="city" value="Arlington" style="width:50%;" /></td>
 												</tr>
 												<tr>
 													<td class="label">State:</td>
@@ -293,7 +297,7 @@
 															<option value="NJ">NJ</option>
 															<option value="NM">NM</option>
 															<option value="NV">NV</option>
-															<option value="NY" selected="selected">NY</option>
+															<option value="NY">NY</option>
 															<option value="OH">OH</option>
 															<option value="OK">OK</option>
 															<option value="OR">OR</option>
@@ -306,7 +310,7 @@
 															<option value="TN">TN</option>
 															<option value="TX">TX</option>
 															<option value="UT">UT</option>
-															<option value="VA">VA</option>
+															<option value="VA" selected="selected">VA</option>
 															<option value="VI">VI</option>
 															<option value="VT">VT</option>
 															<option value="WA">WA</option>
@@ -318,7 +322,7 @@
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Postal Code:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="user.zipcode" maxlength="10" size="20" value="33322" style="size:30%" /></td>
+													<td class="value"><input type="text" name="user.zipcode" maxlength="10" size="20" value="22205" style="size:30%" /></td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Country:<span class="asterisk">*</span></span></td>
@@ -549,7 +553,7 @@
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Phone:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="phone" maxlength="25" size="20" value="111-222-3333" style="size:30%" /></td>
+													<td class="value"><input type="text" name="phone" maxlength="25" size="20" value="703-534-5103" style="size:30%" /></td>
 												</tr>
 												<tr>
 													<td class="label">Fax:</td>
@@ -560,7 +564,7 @@
 												
 												<a href="manage_users.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
 												<a href="user_edit.htm" class="save"><img src="images/btn_save.gif" alt="Save" /></a>
-												<a href="manage_users.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
+												<!--<a href="manage_users.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>-->
 												
 											</div>
 										</form>

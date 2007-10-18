@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
-		<title>caArray - Manage Users</title>
+		<title>caArray - Manage Collaboration Groups</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<link rel="address bar icon" href="favicon.ico" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -106,9 +106,9 @@
 								<!--<li><a href="search_advanced.htm">Advanced Search</a></li>-->
 								
 								<li class="liheader">Users &amp; Groups</li>
-								<li><a href="manage_users.htm" class="selected">Manage Users</a></li>
+								<li><a href="manage_users.htm">Manage Users</a></li>
 								<!--<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>-->
-								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
+								<li><a href="manage_collaboration_groups.htm" class="selected">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
 								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
@@ -149,7 +149,7 @@
 							
 							<!--ADD CONTENT HERE-->
 							
-							<h1>Manage Users</h1>
+							<h1>Manage Collaboration Groups</h1>
 							
 							<div class="pagehelp">
 								<a href="#" class="help">Help</a>
@@ -165,8 +165,8 @@
 									<div class="boxpad2">
 								
 										<h3>
-											<a href="manage_users.htm">Manage Users</a> &gt; 
-											<span class="dark">Arthur Blakey</span>
+											<a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a> &gt; 
+											<span class="dark">Collaborators A</span>
 										</h3>
 										
 									</div>
@@ -177,93 +177,80 @@
 										
 											<table class="form">
 												<tr>
-													<th colspan="2">Security Information</th>
+													<td class="label">Group Name:</td>
+													<td class="value"><input type="text" name="title" id="exptitle" value="Collaborators A" style="width:50%;" /></td>
 												</tr>
 												<tr>
-													<td class="label">Authentication Method:</td>
-													<td class="value">LDAP Account [NCICB]</td>
-												</tr>
-												<tr>
-													<td class="label">Username:</td>
-													<td class="value">ablakey</td>
-												</tr>
-												<tr>
-													<td class="label">Password:</td>
-													<td class="value">********</td>
-												</tr>
-												<tr>
-													<td class="label">Requested Role(s):</td>
-													<td class="value">Principal Investigator</td>
-												</tr>
-												<tr>
-													<td class="label">Current Role(s):</td>
-													<td class="value">Principal Investigator</td>
-												</tr>
-												<tr>
-													<td class="label">Account Status:</td>
-													<td class="value">Active</td>
-												</tr>
-												<tr>
-													<th colspan="2">Account Details</th>
-												</tr>
-												<tr>
-													<td class="label">First Name:</td>
-													<td class="value">Arthur</td>
-												</tr>
-												<tr>
-													<td class="label">Middle Initial:</td>
-													<td class="value"></td>
-												</tr>
-												<tr>
-													<td class="label">Last Name:</td>
-													<td class="value">Blakey</td>
-												</tr>												
-												<tr>
-													<td class="label">Email:</td>
-													<td class="value"><a href="mailto:ablakey@email.com">ablakey@email.com</a></td>
-												</tr>
-												<tr>
-													<td class="label">Institution:</td>
-													<td class="value">NCICB</td>
-												</tr>
-												<tr>
-													<td class="label">Address Line 1:</td>
-													<td class="value">2617 Wooster ST</td>
-												</tr>
-												<tr>
-													<td class="label">Address Line 2:</td>
-													<td class="value"></td>
-												</tr>
-												<tr>
-													<td class="label">City:</td>
-													<td class="value">New York</td>
-												</tr>
-												<tr>
-													<td class="label">State:</td>
-													<td class="value">NY</td>
-												</tr>
-												<tr>
-													<td class="label">Postal Code:</td>
-													<td class="value">33322</td>
-												</tr>
-												<tr>
-													<td class="label">Country:</td>
-													<td class="value">United States</td>
-												</tr>
-												<tr>
-													<td class="label">Phone:</td>
-													<td class="value">111-222-3333</td>
-												</tr>
-												<tr>
-													<td class="label">Fax:</td>
-													<td class="value"></td>
+													<td class="label">Members:</td>
+													<td class="value">													
+														<div class="leftrightwrapper">
+															<div class="checklistside">
+																<div class="filterrow">
+																	<strong>Filter by:</strong><br />
+																	<select name="datafilter" style="width:248px">
+																		<option>(All Institutions)</option>
+																		<option>Institution ABC</option>
+																	</select>
+																</div>
+																<ul class="checklist">
+																	<li><a name="user_a"></a><label for="user_1"><input id="user_1" name="user_1" type="checkbox" /> Alonso, Alex</label></li>
+																	<li><a name="user_b"></a><label for="user_2"><input id="user_2" name="user_2" type="checkbox" /> Bruce, Issac</label></li>
+																	<li><a name="user_c"></a><label for="user_3"><input id="user_3" name="user_3" type="checkbox" /> Constanza, William</label></li>
+																	<li><a name="user_c"></a><label for="user_4"><input id="user_4" name="user_4" type="checkbox" /> Costas, Bob</label></li>
+																	<li><a name="user_g"></a><label for="user_6"><input id="user_6" name="user_6" type="checkbox" checked="checked" /> Gendleman, Brent</label></li>
+																	<li><a name="user_h"></a><label for="user_7"><input id="user_7" name="user_7" type="checkbox" /> Holt, Elizabeth</label></li>
+																	<li><a name="user_n"></a><label for="user_8"><input id="user_8" name="user_8" type="checkbox" /> Nason, Phillip</label></li>
+																	<li><a name="user_r"></a><label for="user_9"><input id="user_9" name="user_9" type="checkbox" checked="checked" /> Rehfuss, Matt</label></li>
+																	<li><a name="user_r"></a><label for="user_10"><input id="user_10" name="user_10" type="checkbox"  /> Rosenfeld, Joshua</label></li>
+																	<li><a name="user_s"></a><label for="user_11"><input id="user_11" name="user_11" type="checkbox" /> Smith, Bill</label></li>
+																	<li><a name="user_s"></a><label for="user_12"><input id="user_12" name="user_12" type="checkbox" /> Smith, John</label></li>
+																</ul>
+																<div class="alphanav">
+																	<a href="#user_a">A</a>
+																	<a href="#user_b">B</a>
+																	<a href="#user_c">C</a>
+																	<a href="#user_d">D</a>
+																	<a href="#user_e">E</a>
+																	<a href="#user_f">F</a>
+																	<a href="#user_g">G</a>
+																	<a href="#user_h">H</a>
+																	<a href="#user_i">I</a>
+																	<a href="#user_j">J</a>
+																	<a href="#user_k">K</a>
+																	<a href="#user_l">L</a>
+																	<a href="#user_m">M</a>
+																	<a href="#user_n">N</a>
+																	<a href="#user_o">O</a>
+																	<a href="#user_p">P</a>
+																	<a href="#user_q">Q</a>
+																	<a href="#user_r">R</a>
+																	<a href="#user_s">S</a>
+																	<a href="#user_t">T</a>
+																	<a href="#user_u">U</a>
+																	<a href="#user_v">V</a>
+																	<a href="#user_w">W</a>
+																	<a href="#user_x">X</a>
+																	<a href="#user_y">Y</a>
+																	<a href="#user_z">Z</a>
+																</div>															
+															</div>															
+															<div class="selectionside">															
+																<h4>You Selected</h4>
+																<div class="scrolltable2">
+																	<ul>
+																		<li><a href="#">Gendleman, Brent</a></li>
+																		<li><a href="#">Rehfuss, Matt</a></li>
+																	</ul>
+																</div>															
+															</div>															
+														</div>
+													</td>
 												</tr>
 											</table>
 											<div class="actions">												
 												
-												<a href="manage_users.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="user_edit.htm" class="edit"><img src="images/btn_edit.gif" alt="Edit" /></a>
-												<a href="manage_users.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
+												<a href="manage_collaboration_groups.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
+												<a href="manage_collaboration_groups.htm" class="save"><img src="images/btn_save.gif" alt="Save" /></a>
 												
 											</div>
 										</form>

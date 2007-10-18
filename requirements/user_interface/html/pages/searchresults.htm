@@ -12,6 +12,7 @@
 		
 		<script type="text/javascript" src="common/scripts/prototype.js"></script>		
 		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>
+		<script type="text/javascript" src="common/scripts/showhide.js"></script>
 		
 	</head>
 	
@@ -115,7 +116,7 @@
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray 2.0 Software</li>
+								<li class="liheader">caArray Software</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -191,7 +192,10 @@
 											
 											<div id="experiments">
 												
-												<p class="small">Displaying <strong>1-25</strong> of <strong>30</strong> total. <a href="search_results_advanced.htm">Narrow Your Results</a>.</p>
+												<p class="small">
+													Displaying <strong>1-25</strong> of <strong>30</strong> Total. 
+													<a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a>
+												</p>
 												
 												<div class="pagingtop">
 													Page 1 <span class="bar">|</span> <a href="#">2</a>
@@ -199,6 +203,57 @@
 													&lt; Back <span class="bar">|</span> 
 													<a href="#">Next &gt;</a>
 												</div>
+												
+												<!--Searchbox-->
+									
+													<div id="searchboxwrapper" style="display:none">
+													
+														<form name="searchform" id="searchform_exp">
+													
+															<table class="form">
+																<tr>
+																	<td class="label">Experiment Title:</td>
+																	<td><input type="text" name="" style="width:150px" /></td>
+																	<td class="label">Platform Type:</td>
+																	<td>
+																		<select name="select" name="" style="width:150px">
+																			<option>All</option>
+																		</select>
+																	</td>
+																	<td class="label">Organism:</td>
+																	<td>
+																		<select name="select" name="" style="width:150px">
+																			<option>All</option>
+																		</select>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="label">ID:</td>
+																	<td><input type="text" name="" style="width:150px" /></td>
+																	<td class="label">P.I. Last Name:</td>
+																	<td>
+																		<select name="select" name="" style="width:150px">
+																			<option>All</option>
+																		</select>
+																	</td>
+																	<td class="label">Disease:</td>
+																	<td>
+																		<select name="select" name="" style="width:150px">
+																			<option>All</option>
+																		</select>
+																	</td>
+																</tr>
+															</table>
+															
+															<div class="actions">
+																<a href="search_results_advanced.htm"><img src="images/btn_filter.gif" alt="" /></a>
+															</div>
+															
+														</form>
+													
+													</div>
+													
+												<!--/Searchbox-->
 												
 												<table class="searchresults" cellspacing="0">
 													<tr>

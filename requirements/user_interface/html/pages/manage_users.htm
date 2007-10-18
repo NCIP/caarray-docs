@@ -12,6 +12,7 @@
 		
 		<script type="text/javascript" src="common/scripts/prototype.js"></script>		
 		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>
+		<script type="text/javascript" src="common/scripts/showhide.js"></script>
 		
 	</head>
 	
@@ -105,8 +106,8 @@
 								
 								<li class="liheader">Users &amp; Groups</li>
 								<li><a href="manage_users.htm" class="selected">Manage Users</a></li>
-								<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>
-								<li><a href="manage_collaborators.htm">Manage Collaborators</a></li>			
+								<!--<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>-->
+								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
 								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
@@ -118,7 +119,7 @@
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray 2.0 Software</li>
+								<li class="liheader">caArray Software</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -156,7 +157,7 @@
 							
 							<div class="padme">
 								
-									<div class="addlink_notabs" style="width:12em">
+									<div class="addlink_notabs" style="width:11.2em">
 										<a href="user_create.htm" class="add">Add a New User</a>
 									</div>
 								
@@ -168,7 +169,10 @@
 											
 											<div id="userlist">
 												
-												<p class="small">Displaying 1-300 of 300 Total.</p>
+												<p class="small">
+													Displaying 1-300 of 300 Total.
+													<a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a>
+												</p>
 												
 												<div class="pagingtop">
 													Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a> <span class="bar">|</span> <a href="#">4</a> <span class="bar">|</span> <a href="#">5</a> <span class="bar">|</span> <a href="#">6</a> <span class="bar">|</span> <a href="#">7</a> <span class="bar">|</span> <a href="#">8</a> <span class="bar">|</span> <a href="#">9</a> <span class="bar">|</span> <a href="#">10</a> <span class="bar">|</span> <a href="#">11</a> <span class="bar">|</span> <a href="#">12</a>
@@ -179,7 +183,7 @@
 												
 												<!--Searchbox-->
 									
-													<div id="searchboxwrapper">
+													<div id="searchboxwrapper" style="display:none;">
 													
 														<form name="filterform" id="filterform">
 															

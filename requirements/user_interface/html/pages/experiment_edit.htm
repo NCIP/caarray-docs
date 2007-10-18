@@ -11,7 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="common/style.css" />
 		
 		<script type="text/javascript" src="common/scripts/prototype.js"></script>		
-		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>		
+		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>
+		<script type="text/javascript" src="common/scripts/showhide.js"></script>		
 		<script type="text/javascript" src="common/scripts/checklist.js"></script>
 		
 	</head>
@@ -106,8 +107,8 @@
 								
 								<li class="liheader">Users &amp; Groups</li>
 								<li><a href="manage_users.htm">Manage Users</a></li>
-								<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>
-								<li><a href="manage_collaborators.htm">Manage Collaborators</a></li>			
+								<!--<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>-->
+								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
 								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
@@ -119,7 +120,7 @@
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray 2.0 Software</li>
+								<li class="liheader">caArray Software</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -187,7 +188,7 @@
 											<table class="form">
 												<tr>
 													<td class="label"><span class="required">Experiment Title:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="title" id="exptitle" value="Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays" style="width:69%;" /></td>
+													<td class="value"><input type="text" name="title" id="exptitle" value="Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays" style="width:70%;" /></td>
 												</tr>
 												<tr>
 													<td class="label">Status:</td>
@@ -245,10 +246,11 @@
 														</select>
 													</td>
 												</tr>
+												
 												<tr>
 													<td class="label">Organism(s):</td>
 													<td class="value">													
-														<div class="leftrightwrapper">															
+														<div class="checklistwrapper">															
 															<div class="checklistside">														
 																<ul class="checklist">
 																	<li><a name="org_a"></a><label for="org_1"><input id="org_1" name="org_1" type="checkbox" /> Arabidopsis</label></li>
@@ -311,9 +313,9 @@
 													</td>
 												</tr>
 												<tr>
-													<td class="label">Tissue Site(s):</td>
+													<td class="label">Tissue Sites(s):</td>
 													<td class="value">													
-														<div class="leftrightwrapper">															
+														<div class="checklistwrapper">															
 															<div class="checklistside">														
 																<ul class="checklist">
 																	<li><a name="tiss_a"></a><label for="tiss_1"><input id="tiss_1" name="tiss_1" type="checkbox" /> adrenal medulla</label></li>

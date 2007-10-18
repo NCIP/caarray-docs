@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 	<head>
-		<title>caArray - Manage Users</title>
+		<title>caArray - Manage Collaboration Groups</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<link rel="address bar icon" href="favicon.ico" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -13,7 +13,6 @@
 		<script type="text/javascript" src="common/scripts/prototype.js"></script>		
 		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>
 		<script type="text/javascript" src="common/scripts/showhide.js"></script>
-		<script type="text/javascript" src="common/scripts/checklist.js"></script>
 		
 	</head>
 	
@@ -106,9 +105,9 @@
 								<!--<li><a href="search_advanced.htm">Advanced Search</a></li>-->
 								
 								<li class="liheader">Users &amp; Groups</li>
-								<li><a href="manage_users.htm" class="selected">Manage Users</a></li>
+								<li><a href="manage_users.htm">Manage Users</a></li>
 								<!--<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>-->
-								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
+								<li><a href="manage_collaboration_groups.htm" class="selected">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
 								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
@@ -149,129 +148,100 @@
 							
 							<!--ADD CONTENT HERE-->
 							
-							<h1>Manage Users</h1>
+							<h1>Manage Collaboration Groups</h1>
 							
 							<div class="pagehelp">
 								<a href="#" class="help">Help</a>
 								<a href="#" class="print">Print</a>
 							</div>
 							
-							<div class="padme">								
+							<div class="padme">
+								
+									<div class="addlink_notabs" style="width:19em">
+										<a href="collaboration_group_create.htm" class="add">Add a New Collaboration Group</a>
+									</div>
+								
+									<!--Results-->
+									
+									<div id="tabboxwrapper_notabs">
+									
+										<!--Groups-->
+											
+											<div id="groupslist">
+												
+												<p class="small">
+													Displaying 1-2 of 2 Total. 
+													<a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a>
+												</p>
+											
+												<div class="pagingtop">													
+													&nbsp;&nbsp;
+													Page <strong>1</strong>
+													&nbsp;&nbsp;
+													&lt; Back <span class="bar">|</span> 
+													Next &gt;
+												</div>
+												
+												<!--Searchbox-->
+									
+													<div id="searchboxwrapper" style="display:none;">
 													
-							<!--Results-->
-								
-								<div id="tabboxwrapper_notabs">								
-									
-									<div class="boxpad2">
-								
-										<h3>
-											<a href="manage_users.htm">Manage Users</a> &gt; 
-											<span class="dark">Arthur Blakey</span>
-										</h3>
-										
-									</div>
-									
-									<div class="boxpad">
-									
-										<form name="editform" id="idform" action="">
-										
-											<table class="form">
-												<tr>
-													<th colspan="2">Security Information</th>
-												</tr>
-												<tr>
-													<td class="label">Authentication Method:</td>
-													<td class="value">LDAP Account [NCICB]</td>
-												</tr>
-												<tr>
-													<td class="label">Username:</td>
-													<td class="value">ablakey</td>
-												</tr>
-												<tr>
-													<td class="label">Password:</td>
-													<td class="value">********</td>
-												</tr>
-												<tr>
-													<td class="label">Requested Role(s):</td>
-													<td class="value">Principal Investigator</td>
-												</tr>
-												<tr>
-													<td class="label">Current Role(s):</td>
-													<td class="value">Principal Investigator</td>
-												</tr>
-												<tr>
-													<td class="label">Account Status:</td>
-													<td class="value">Active</td>
-												</tr>
-												<tr>
-													<th colspan="2">Account Details</th>
-												</tr>
-												<tr>
-													<td class="label">First Name:</td>
-													<td class="value">Arthur</td>
-												</tr>
-												<tr>
-													<td class="label">Middle Initial:</td>
-													<td class="value"></td>
-												</tr>
-												<tr>
-													<td class="label">Last Name:</td>
-													<td class="value">Blakey</td>
-												</tr>												
-												<tr>
-													<td class="label">Email:</td>
-													<td class="value"><a href="mailto:ablakey@email.com">ablakey@email.com</a></td>
-												</tr>
-												<tr>
-													<td class="label">Institution:</td>
-													<td class="value">NCICB</td>
-												</tr>
-												<tr>
-													<td class="label">Address Line 1:</td>
-													<td class="value">2617 Wooster ST</td>
-												</tr>
-												<tr>
-													<td class="label">Address Line 2:</td>
-													<td class="value"></td>
-												</tr>
-												<tr>
-													<td class="label">City:</td>
-													<td class="value">New York</td>
-												</tr>
-												<tr>
-													<td class="label">State:</td>
-													<td class="value">NY</td>
-												</tr>
-												<tr>
-													<td class="label">Postal Code:</td>
-													<td class="value">33322</td>
-												</tr>
-												<tr>
-													<td class="label">Country:</td>
-													<td class="value">United States</td>
-												</tr>
-												<tr>
-													<td class="label">Phone:</td>
-													<td class="value">111-222-3333</td>
-												</tr>
-												<tr>
-													<td class="label">Fax:</td>
-													<td class="value"></td>
-												</tr>
-											</table>
-											<div class="actions">												
+														<form name="filterform" id="filterform">
+															
+															<table class="form">
+																<tr>
+																	<td class="label" style="width:20%">Filter by Group Name:</td>
+																	<td class="value" style="padding-left:0"><input type="text" name="" style="width:180px;" /></td>
+																	<td class="label" style="width:20%">Filter by Member Last Name:</td>
+																	<td class="value" style="padding-left:0"><input type="text" name="" style="width:180px;" /></td>
+																</tr>
+															</table>
+															
+															<div class="actions">
+																<a href="#"><img src="images/btn_filter.gif" alt="" /></a>
+															</div>
+															
+														</form>
+													
+													</div>
+													
+												<!--/Searchbox-->
 												
-												<a href="manage_users.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="user_edit.htm" class="edit"><img src="images/btn_edit.gif" alt="Edit" /></a>
-												<a href="manage_users.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
-												
+												<table class="searchresults" cellspacing="0">
+													<tr>
+														<th><a href="#">Collaboration Group Name</a></th>
+														<th>Group Members</th>
+														<th class="actions">Edit</th>
+														<th class="actions">Delete</th>
+													</tr>
+													<tr class="odd">
+														<td class="title"><a href="collaboration_group_details.htm">Collaborators A</a></td>
+														<td><a href="user_details.htm">Brent Gendleman</a>, <a href="user_details.htm">Matt Rehfuss</a></a></td>
+														<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
+													</tr>
+													<tr class="odd">
+														<td class="title"><a href="collaboration_group_details.htm">Collaborators B</a></td>
+														<td><a href="#">Arthur Blakey</a>, <a href="user_details.htm">Phillip Joe Jones</a>, <a href="user_details.htm">Jonathan Bonham</a></td>
+														<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
+													</tr>					
+												</table>
+													
+												<div class="paging">
+													Page <strong>1</strong>
+													&nbsp;&nbsp;
+													&lt; Back <span class="bar">|</span> 
+													Next &gt;
+												</div>
+														
 											</div>
-										</form>
+											
+										<!--/Groups-->
 										
-									</div>
+										
 									
-								
-								</div>
+									</div>
 									
 								<!--/Results-->
 								

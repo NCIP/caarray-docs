@@ -12,6 +12,7 @@
 		
 		<script type="text/javascript" src="common/scripts/prototype.js"></script>		
 		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>
+		<script type="text/javascript" src="common/scripts/showhide.js"></script>
 		<script type="text/javascript" src="common/scripts/checklist.js"></script>
 		
 	</head>
@@ -106,8 +107,8 @@
 								
 								<li class="liheader">Users &amp; Groups</li>
 								<li><a href="manage_users.htm" class="selected">Manage Users</a></li>
-								<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>
-								<li><a href="manage_collaborators.htm">Manage Collaborators</a></li>			
+								<!--<li><a href="manage_groups.htm">Manage Institutional Groups</a></li>-->
+								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
 								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
@@ -119,7 +120,7 @@
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray 2.0 Software</li>
+								<li class="liheader">caArray Software</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -178,16 +179,10 @@
 												<tr>
 													<th colspan="2">Security Information</th>
 												</tr>
-												<tr>
-													<td class="label"><span class="required">Authentication Method:<span class="asterisk">*</span></span></td>
-													<td class="value">
-														<input type="radio" name="authtp" id="authtpLDAP" checked="checked" /><label for="authtpLDAP" class="inline">LDAP Account [NCICB]</label> &nbsp;&nbsp;
-														<input type="radio" name="authtp" id="authtpDB"  /><label for="authtpDB" class="inline">Database</label>
-													</td>
-												</tr>
+												
 												<tr>
 													<td class="label"><span class="required">Username:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="fn" id="fn" value="" style="width:30%;" /></td>
+													<td class="value"><input type="text" name="un" id="un" value="" style="width:30%;" /></td>
 												</tr>
 												<tr>
 													<td class="label"><span class="required">Password:<span class="asterisk">*</span></span></td>

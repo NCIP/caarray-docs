@@ -12,6 +12,7 @@
 		
 		<script type="text/javascript" src="common/scripts/prototype.js"></script>		
 		<script type="text/javascript" src="common/scripts/control.tabs.js"></script>
+		<script type="text/javascript" src="common/scripts/showhide.js"></script>
 		
 	</head>
 	
@@ -115,7 +116,7 @@
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray 2.0 Software</li>
+								<li class="liheader">caArray Software</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -177,7 +178,10 @@
 											
 											<div id="experiments">
 												
-												<p class="small">Displaying <strong>1-25</strong> of <strong>30</strong> total.</p>
+												<p class="small">
+													Displaying <strong>1-25</strong> of <strong>30</strong> Total. 
+													<a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a>
+												</p>
 												
 												<div class="pagingtop">
 													Page 1 <span class="bar">|</span> <a href="#">2</a>
@@ -189,7 +193,7 @@
 												
 												<!--Searchbox-->
 									
-													<div id="searchboxwrapper">
+													<div id="searchboxwrapper" style="display:none">
 													
 														<form name="searchform" id="searchform_exp">
 													
