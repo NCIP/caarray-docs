@@ -35,8 +35,10 @@ H3
 { clear:both; font-family:arial,helvetica,sans-serif; font-size:130%; line-height:1.4em; color:#736f6f; padding:0 0 5px 0;  }
 H4
 { font-size:100%; color:#606060; line-height:1.4em; padding-bottom:5px;  }
-LABEL
+LABEL, 
 { font-size:95%; font-family:arial,helvetica,sans-serif; color:#333; font-weight:bold; font-style:normal }
+LEGEND
+{ clear:both; font-family:arial,helvetica,sans-serif; font-size:130%; line-height:1.4em; color:#333;  }
 INPUT, SELECT, TEXTAREA
 { font-family:arial,helvetica,sans-serif; color:#333; font-size:100%  }
 FORM
@@ -175,6 +177,8 @@ SUP
 { font-size:120%; font-weight:bold; padding:2px 0 3px 0 }
 .nopad
 { padding:0 }
+.bar
+{ padding:0 3px }
 
 
 /* Homepage Content */
@@ -192,7 +196,7 @@ SUP
 #browsesearchwrapper
 { margin:15px auto; width:600px}
 #browseboxhome, #searchboxhome
-{ width:295px; height:17.5em; }
+{ width:295px; height:22.5em; }
 #browseboxhome H2, #searchboxhome H2
 { background:url("../images/bg_headerbar_tan.gif") repeat-x; font-size:125%; font-weight:bold; padding:5px; margin:0; color:#e3e6ec }
 #browseboxhome
@@ -258,7 +262,9 @@ TABLE.login TD.value
 /* Tabs */
 
 UL#tabs
-{ height:28px; font-weight:bold; list-style:none; margin:0; padding-left:5px; clear:both; background:url("../images/bg_tabbar.gif") repeat-x bottom; border-bottom:1px solid #999	}
+{ height:28px; font-weight:bold; list-style:none; margin:0; padding-left:5px; clear:both; background:url("../images/bg_tabbar.gif") repeat-x bottom; border-bottom:0	}
+.padme>UL#tabs /* Border for Smart Browsers */
+{ border-bottom:1px solid #999 }
 :lang(en) UL#tabs
 { height:30px }
 UL#tabs LI
@@ -268,20 +274,22 @@ UL#tabs LI A
 .tabs2 LI A 
 { width:78px }
 UL#tabs LI A:hover 
-{	color:#333;	background-color:#fff; text-decoration:none; }
+{	color:#333;	background-color:#efeee9; text-decoration:none; }
 UL#tabs LI A.active 
-{ outline:none; color:#333; background-color:#e0ded6; border-bottom:3px solid #e0ded6; background-image:none }
+{ outline:none; color:#333; background-color:#efeee9; border-bottom:3px solid #efeee9; background-image:none }
 UL#tabs LI.active
-{ color:#333;	background-color:#e0ded6; }
+{ color:#333;	background-color:#efeee9; }
 UL#tabs LI A:focus
 { -moz-outline-style:none; }
 
 
 /* Search Results Table */
 
-#tabboxwrapper, #searchboxwrapper, #tabboxwrapper_notabs
-{ clear:both; padding:5px; background:#e0ded6; border:1px solid #999; border-top:0; }
-#tabboxwrapper_notabs
+#tabboxwrapper, #searchboxwrapper, #tabboxwrapper_notabs /* No Border for Dumb Browsers i.e. IE6 */
+{ clear:both; padding:5px; background:#e0ded6 url("../images/bg_tabboxwrapper.gif") repeat-x; border:0; height:1% }
+.padme>#tabboxwrapper, .padme>#searchboxwrapper, .padme>#tabboxwrapper_notabs /* Border for Smart Browsers */
+{ border:1px solid #999; border-top:0; }
+.padme>#tabboxwrapper_notabs /* Border for Smart Browsers*/
 { border-top:1px solid #999;  }
 #searchboxwrapper
 { background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x; border-top:1px solid #999; margin-top:-8px; margin-bottom:10px;  }
@@ -312,11 +320,11 @@ UL#tablevel2
 UL#tablevel2 LI
 { float:left;	margin:0 4px 0 0;	padding:0; text-align:center; min-height:.1%; height:20px  }
 UL#tablevel2 LI A 
-{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #fff; background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x; }
+{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #999; background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x; }
 UL#tablevel2 LI A.selected 
-{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #999; border-right:1px solid #fff; border-bottom:1px solid #fff; background:url("../images/bg_grad3d_reverse.gif") repeat-x; }
+{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #4e4e4e; border-right:1px solid #fff; border-bottom:1px solid #fff; background:url("../images/bg_grad3d_reverse.gif") repeat-x; }
 UL#tablevel2 LI A:hover 
-{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #999; background:#fff url("../images/bg_grad3d.gif") repeat-x 0 10px; }
+{	display:block; margin:0; padding:5px 10px; color:#333; text-decoration:none; border:1px solid #000; background:#fff url("../images/bg_grad3d.gif") repeat-x 0 10px; }
 
 
 /* Paging */
@@ -325,8 +333,6 @@ UL#tablevel2 LI A:hover
 { color:#999; font-size:92%; padding:5px; text-align:right; margin-top:-3em; margin-bottom:1em }
 .paging
 { color:#999; font-size:92%; padding:5px; text-align:center }
-.bar
-{ padding:0 3px }
 .tableboxpad .pagingtop
 { color:#dcdcdc; font-size:92%; padding:5px; text-align:right; margin-top:-2.3em; margin-bottom:.6em }
 .tableboxpad .paging
@@ -336,11 +342,11 @@ UL#tablevel2 LI A:hover
 /* Other Data Tables */
 
 .tableboxpad
-{ background:#b3ae9c; padding:2px; border:1px solid #fff }
+{ background:#b3ae9c; padding:2px; border:1px solid #fff; height:1%; }
 .count
 { color:#fff; padding:5px; font-size:92% }
 .tableboxpad TH.filterrow, DIV.filterrow
-{ padding:4px 5px; border:0; border-bottom:1px solid #999; background:#e5e5e5 url("../images/bg_grad3d.gif"); color:#333 }
+{ padding:4px 5px; border:0; border-bottom:1px solid #999; background:#e5e5e5 url("../images/bg_grad3d.gif"); color:#333; }
 .displayrow
 { background:#dcdcdc }
 .displayrow TABLE
@@ -354,7 +360,9 @@ UL#tablevel2 LI A:hover
 .scrolltable UL, .scrolltable LI
 { margin:0; padding:0; font-size:95%; color:#808080 }
 .leftrightwrapper
-{ margin:0 auto; width:630px }
+{ margin:0 auto; width:630px; }
+.checklistwrapper
+{ width:510px; }
 .leftsidetable,.rightsidetable
 { }
 .rightsidetable
@@ -388,11 +396,12 @@ DIV.filterrow2 SELECT, INPUT
 .dark
 { font-weight:bold; color:#333 }
 .boxpad
-{ padding:7px 7px 0 10px; background:#fff; }
+{ padding:7px 7px 0 10px; background:#fff; height:1%; }
 .boxpad2
-{ padding:7px 3px 0 10px; border:1px solid #fff; border-bottom:1px solid #ccc; background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x 0 -5px;  }
+{ padding:7px 3px 0 10px; border:1px solid #fff; border-bottom:1px solid #ccc; background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x 0 -5px; ; height:1%; }
 .instructions
 { background:#efefef; border:1px solid #fff; margin:-7px -7px 0 -10px; padding:8px; font-size:92%; }
+
 .instructions2
 { margin:-9px -9px 0 -9px; padding:8px; font-size:92%; }
 DIV.actions,DIV.actionsthin
@@ -403,8 +412,8 @@ DIV.actions A
 { padding:0 35px 0 35px }
 DIV.actionsthin A
 { padding:0 10px 0 10px }
-DIV.actions A:focus, DIV.actionsthin A:focus
-{ -moz-outline-style:none; }
+/*DIV.actions A:focus, DIV.actionsthin A:focus*/
+/*{ -moz-outline-style:none; }*/
 .backtolist
 { display:block; float:left; width:6em; margin-left:12em; margin-top:-2.2em; font-size:92%; }
 
@@ -456,17 +465,19 @@ DIV.filterrow SELECT
 TABLE.form
 { width:90%; margin:10px auto }
 TABLE.form INPUT:focus, TABLE.form SELECT:focus, TABLE.form TEXTAREA:focus
-{ background:#ffc; border:1px solid #000; padding:2px }
+{ background:#ffe; }
 TABLE.form TH
 { background:#858178 url("../images/bg_headerbar_tan.gif") repeat-x; font-size:125%; font-weight:bold; padding:5px; margin:0; color:#e3e6ec; border-top:15px solid #fff; border-bottom:10px solid #fff }
 TABLE.form TD
 { padding:3px; font-size:92%; vertical-align:top }
+TABLE.form TD TD, TABLE.form TD TD TD
+{ font-size:100%; }
 LABEL
 { font-size:100%; padding:4px 0; display:block }
 LABEL.inline
 { display:inline; cursor:pointer; }
 .label
-{ width:30%; text-align:right; font-weight:bold; }
+{ width:25%; text-align:right; font-weight:bold; }
 .required
 { background:#ffc; }
 .asterisk
