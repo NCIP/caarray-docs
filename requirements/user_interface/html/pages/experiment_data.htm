@@ -94,11 +94,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -114,12 +113,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -183,10 +191,21 @@
 										
 									<div class="boxpad2">
 									
-										<h3>Manage Data</h3>
+										<h3>
+											Manage Data
+											&nbsp;&nbsp;&nbsp;&nbsp;<span class="tiny"><b>Filter by:</b>
+												<select name="datafilter">
+													<option>All Data Files</option>
+													<option>Status: Uploaded</option>
+													<option>Status: Validated</option>
+													<option>Status: Failed Validation</option>
+													<option>Status: Imported</option>
+												</select>
+											</span>
+										</h3>
 										
-										<div class="addlink" style="width:12.5em">
-											<a href="experiment_data_upload.htm" class="add">Upload New File(s)</a>
+										<div class="addlink">
+											<a href="experiment_data_upload.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="add">Upload New File(s)</span></span></a>
 										</div>
 										
 									</div>
@@ -208,18 +227,7 @@
 												</div>
 												
 												<table class="searchresults" cellspacing="0">
-													<tr>
-														<th colspan="5" class="filterrow">
-															<b>Filter by:</b>
-															<select name="datafilter">
-																<option>All Data Files</option>
-																<option>Status: Uploaded</option>
-																<option>Status: Validated</option>
-																<option>Status: Failed Validation</option>
-																<option>Status: Imported</option>
-															</select>
-														</td>
-													</tr>
+													
 													<tr>													
 														<th class="icon"><input type="checkbox" name="chkall" id="chkall" /></th>
 														<th><a href="#">File Name</a></th>
@@ -245,8 +253,24 @@
 														<td class="icon"><input type="checkbox" name="chk" id="chk1" /></th>
 														<td class="title"><a href="experiment_hybridization_details.htm">affym-file3.chp</a></td>
 														<td>Data File</td>
-														<td><img src="images/ico_error.gif" alt="" align="absmiddle" /> <a href="experiment_data_error.htm">Failed Validation</a></td>
+														<td><img src="images/ico_error.gif" alt="" align="absmiddle" /> <a href="javascript:()" onclick="showhide('error_1'); return(false);">Failed Validation</a></td>
 														<td class="alignright">10/04/2008</td>
+													</tr>
+													<tr id="error_1" class="displayrow" style="display:none;">
+														<td colspan="5">
+															<table>
+																<tr>
+																	<td><img src="images/ico_error.gif" alt="" /></td>
+																	<td><strong>Validation Error:</strong> File Incomplete</td>
+																	<td></td>
+																</tr>
+																<tr>
+																	<td></td>
+																	<td><strong>Error Details:</strong> Line 1,237: Unexpected end of file reached.</td>
+																	<td><a href="javascript:()" onclick="showhide('error_1'); return(false);">(Hide Error Details)</a></td>
+																</tr>
+															</table>
+														</td>
 													</tr>
 													<tr>
 														<td class="icon"><input type="checkbox" name="chk" id="chk1" /></th>
@@ -311,15 +335,18 @@
 										</div>		
 											
 										<div class="actionsthin">												
-											
-											<a href="experiment_workspace.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-											<a href="#" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
-											<a href="experiment_data_validate.htm" class="validate"><img src="images/btn_validate.gif" alt="Validate" /></a>
-											<a href="experiment_data_import.htm" class="import"><img src="images/btn_import.gif" alt="Import" /></a>
-											<a href="experiment_data_associations.htm" class="manage_data"><img src="images/btn_manage_associations.gif" alt="Manage Associations" /></a>
-											
-										</div>
-									
+												
+												<del class="btnwrapper">
+													<ul id="btnrow">
+														<li><a href="experiment_workspace.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
+														<li><a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="delete">Delete</span></span></a></li>
+														<li><a href="experiment_data_validate.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="validate">Validate</span></span></a></li>
+														<li><a href="experiment_data_import.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="import">Import</span></span></a></li>
+														<li><a href="experiment_data_associations.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="manage_associations">Manage Associations</span></span></a></li>
+													</ul>
+												</del>
+												
+											</div>
 									</form>
 																				
 								</div>

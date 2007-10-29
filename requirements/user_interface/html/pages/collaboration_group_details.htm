@@ -174,35 +174,31 @@
 								
 										<h3>
 											<a href="manage_collaboration_groups.htm">Collaboration Groups</a> &gt; 
-											<span class="dark">Add a New Collaboration Group</span>
+											<span class="dark">Collaborators A</span>
 										</h3>
 										
 									</div>
 									
-									<div class="boxpad" style="padding-bottom:10px">
-									
-									<p class="instructions" style="margin-bottom:10px">First, save a Group Name. Next, add members to the group. To add a member, search for a user and click the corresponding <strong>Add icon</strong> in the column on the right.</p>
+									<div class="boxpad">
 									
 										<form name="editform" id="idform" action="">
 										
 											<table class="form">
 												<tr>
 													<td class="labelthin">Group Name:</td>
-													<td class="valuethin">
-														<input type="text" name="title" id="exptitle" value="" />
-													</td>
-													<td class="button">
-														<a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save</span></span></a>
-													</td>
+													<td class="valuethin">Collaborators A</td>
 												</tr>
 											</table>
 											
-										</form>										
-									
+										</form>
+										
 										<div class="line"></div>
-								
-										<h2 class="bolder">Add Group Members</h2>
-												
+										
+										<h2 class="bolder">
+											Members										
+											<span class="filtertext"><a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a></span>
+										</h2>
+										
 										<!--Results-->
 										
 										<div id="tabboxwrapper">
@@ -210,10 +206,10 @@
 											<!--Group Members-->
 												
 												<div id="userlist">
+													
+													<!--Searchbox-->
 												
-												<!--Searchbox-->
-												
-													<div id="searchboxwrapper">
+													<div id="searchboxwrapper" style="display:none;">
 													
 														<form name="filterform" id="filterform" action="">
 															
@@ -266,189 +262,182 @@
 														
 												<!--/Searchbox-->
 													
-													<p class="small">Displaying 1-25 of 300 Total Users in System.</p>
+													<p class="small">
+														Displaying 1-25 of 65 Total Members in Group.
+													</p>
 													
 													<div class="pagingtop">
-														Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a> <span class="bar">|</span> <a href="#">4</a> <span class="bar">|</span> <a href="#">5</a> <span class="bar">|</span> <a href="#">6</a> <span class="bar">|</span> <a href="#">7</a> <span class="bar">|</span> <a href="#">8</a> <span class="bar">|</span> <a href="#">9</a> <span class="bar">|</span> <a href="#">10</a> <span class="bar">|</span> <a href="#">11</a> <span class="bar">|</span> <a href="#">12</a>
+														Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a>
 														&nbsp;&nbsp;
 														&lt; Back <span class="bar">|</span> 
 														<a href="#">Next &gt;</a>
 													</div>
-																									
+																								
 													
 													
 													<div class="scrolltable">
 														<table class="searchresults" cellspacing="0" style="margin-top:0">
 															<tr>
-																<th><a href="#">caArray User</a></th>
+																<th><a href="#">Member Name</a></th>
 																<th><a href="#">Institution</a></th>
 																<th><a href="#">Email Address</a></th>
-																<th class="actions">Add</th>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Blakey, Arthur</a></td>
+																<td>NCICB</td>
+																<td><a href="mailto:ablakey@email.com">ablakey@email.com</a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Gendleman, Brent</a></td>
+																<td>5AM Solutions </td>
+																<td><a href="mailto:bgendleman@5amsolutions.com">bgendleman@5amsolutions.com</a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Rehfuss, Matt</a></td>
+																<td>Duke Medical Center</td>
+																<td><a href="mailto:matt@nonagonstudios.com">matt@nonagonstudios.com</a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr>
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 															<tr class="odd">
 																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
 																<td>Sample Institute </td>
 																<td><a href="mailto:email@email.com">email@email.com</a></td>
-																<td class="icon"><a href="collaboration_group_edit.htm"><img src="images/ico_add.gif" alt="Add" /></a></td>
 															</tr>
 														</table>
 													</div>
 													
 													<div class="paging">
-														Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a> <span class="bar">|</span> <a href="#">4</a> <span class="bar">|</span> <a href="#">5</a> <span class="bar">|</span> <a href="#">6</a> <span class="bar">|</span> <a href="#">7</a> <span class="bar">|</span> <a href="#">8</a> <span class="bar">|</span> <a href="#">9</a> <span class="bar">|</span> <a href="#">10</a> <span class="bar">|</span> <a href="#">11</a> <span class="bar">|</span> <a href="#">12</a>
+														Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a>
 														&nbsp;&nbsp;
 														&lt; Back <span class="bar">|</span> 
 														<a href="#">Next &gt;</a>
 													</div>
-																	
 													
-												
+															
 												</div>
 												
 												<!--/Group Members-->	
 											
+										
 											</div>
 										
-											<div class="actions" style="margin:10px -6px -10px -9px;">												
-												
+											<div class="actions">
 												<del class="btnwrapper">
 													<ul id="btnrow">
-														<li><a href="manage_collaboration_groups.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
+														<li><a href="collaboration_group_edit.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="edit">Edit</span></span></a></li>
 													</ul>
 												</del>
-												
 											</div>
-												
+											
 										</div>
 										
 									</div>
 									
+								
 								</div>
 									
 								<!--/Results-->

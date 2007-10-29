@@ -95,11 +95,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -115,7 +114,16 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
@@ -165,7 +173,7 @@
 									<div class="boxpad2">
 								
 										<h3>
-											<a href="manage_users.htm">Manage Users</a> &gt; 
+											<a href="manage_users.htm">Users</a> &gt; 
 											<span class="dark">Arthur Blakey</span>
 										</h3>
 										
@@ -215,11 +223,8 @@
 												<tr>
 													<td class="label"><span class="required">Account Status:<span class="asterisk">*</span></span></td>
 													<td class="value">
-														<select name="status" id="status">
-															<option>Active</option>
-															<option>Disabled</option>
-															<option>Etc.</option>
-														</select>
+														<input type="radio" name="radio1" id="radio1" checked="checked" /><label for="radio1" class="inline">Enabled</label> 
+														<input type="radio" name="radio1" id="radio1_disable" /><label for="radio1_disable" class="inline">Disabled</label>
 													</td>
 												</tr>
 												<tr>
@@ -570,13 +575,18 @@
 													<td class="value"><input type="text" name="fax" maxlength="25" size="20" value="" style="size:30%" /></td>
 												</tr>
 											</table>
+											
 											<div class="actions">												
 												
-												<a href="manage_users.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="user_edit.htm" class="save"><img src="images/btn_save.gif" alt="Save" /></a>
-												<a href="manage_users.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
+												<del class="btnwrapper">
+													<ul id="btnrow">
+														<li><a href="manage_users.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
+														<li><a href="user_edit.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save</span></span></a></li>
+													</ul>
+												</del>												
 												
 											</div>
+											
 										</form>
 										
 									</div>

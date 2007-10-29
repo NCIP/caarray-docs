@@ -97,26 +97,21 @@
 					
 						<div id="leftnav">
 							
-							<!--caArray Menu-->
+							<!--caArray Home-->
 							
-							<ul class="caarraymenu">
-							
-								<li class="liheader">caArray</li>
+							<div class="navheader">Welcome to caArray</div>
+							<ul class="caarraymenu">							
 								<li><a href="./">Public Home</a></li>
 								<li><a href="registration.htm">Register</a></li>
 								<li><a href="login.htm">Login</a></li>
-								
-								<li class="liheader">Experiments</li>
-								<li><a href="search_advanced.htm" class="selected">Advanced Search</a></li>
-								
 							</ul>
 							
-							<!--/caArray Menu-->
-							
+							<!--/caArray Home-->
+														
 							<!--About Menu-->
 							
-							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+							<ul class="welcomemenu">
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -150,57 +145,66 @@
 							<div class="padme">
 							
 								
+									<div id="tabboxwrapper_notabs" style="padding-bottom:0">
 								
-									<!--Searchbox-->
-									
-									<div id="searchboxwrapper">
-									
-										<form name="searchform" id="searchform_exp">
-									
-											<table class="form">
-												<tr>
-													<td class="label">Experiment Title:</td>
-													<td><input type="text" name="" style="width:150px" /></td>
-													<td class="label">Platform Type:</td>
-													<td>
-														<select name="select" name="" style="width:150px">
-															<option>All</option>
-														</select>
-													</td>
-													<td class="label">Organism:</td>
-													<td>
-														<select name="select" name="" style="width:150px">
-															<option>All</option>
-														</select>
-													</td>
-												</tr>
-												<tr>
-													<td class="label">ID:</td>
-													<td><input type="text" name="" style="width:150px" /></td>
-													<td class="label">P.I. Last Name:</td>
-													<td>
-														<select name="select" name="" style="width:150px">
-															<option>All</option>
-														</select>
-													</td>
-													<td class="label">Disease:</td>
-													<td>
-														<select name="select" name="" style="width:150px">
-															<option>All</option>
-														</select>
-													</td>
-												</tr>
-											</table>
-											
-											<div class="actions" style="margin:-5px">
-											<a href="search_results_advanced.htm"><img src="images/btn_search.gif" alt="" /></a>
-											</div>
-											
-										</form>
+										<!--Searchbox-->
+										
+										<div id="searchboxwrapper">
+										
+											<form name="searchform" id="searchform_exp">
+										
+												<table class="form">
+													<tr>
+														<td class="label">Experiment Title:</td>
+														<td><input type="text" name="" style="width:150px" /></td>
+														<td class="label">Assay Type:</td>
+														<td>
+															<select name="select" name="" style="width:150px">
+																<option>All</option>
+															</select>
+														</td>
+														<td class="label">Organism:</td>
+														<td>
+															<select name="select" name="" style="width:150px">
+																<option>All</option>
+															</select>
+														</td>
+													</tr>
+													<tr>
+														<td class="label">ID:</td>
+														<td><input type="text" name="" style="width:150px" /></td>
+														<td class="label">P.I. Last Name:</td>
+														<td>
+															<select name="select" name="" style="width:150px">
+																<option>All</option>
+															</select>
+														</td>
+														<td class="label">Disease:</td>
+														<td>
+															<select name="select" name="" style="width:150px">
+																<option>All</option>
+															</select>
+														</td>
+													</tr>
+												</table>
+												
+												<div class="actions">												
+												
+													<del class="btnwrapper">
+														<ul id="btnrow2">
+															<li><a href="search_results_advanced.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="search">Search</span></span></a></li>
+														</ul>
+													</del>												
+													
+												</div>
+												
+											</form>
 									
 									</div>
 									
 								<!--/Searchbox-->
+								
+								</div>
 								
 								
 								</div>

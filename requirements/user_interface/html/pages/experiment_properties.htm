@@ -94,11 +94,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -114,12 +113,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -170,17 +178,17 @@
 								
 								<!--Tab box-->
 									
-								<div id="tabboxwrapper_notabs">									
-										
+								<div id="tabboxwrapper_notabs">								
+									
 									<div class="boxpad2">
 									
 										<h3>Manage Experiment Permissions</h3>
 										
 									</div>
 									
-									<div class="tableboxpad" style="background:#fff; height:400px">								
+									<div class="boxpad" style="padding-bottom:10px">
 										
-										<p class="instructions2" style="padding:10px">Select an Access Profile to assign to this experiment. Assign specific rules to that profile in the box on the right.</p>
+										<p class="instructions" style="margin-bottom:10px">Select an Access Profile to assign to this experiment. Assign specific access rules down to the sample level in the box on the right.</p>
 
 										<form name="dataform" id="dataform" action="#">
 											
@@ -374,23 +382,30 @@
 													
 												</div>	
 												
-											</div>
-										
+											</div>											
+												
 										<div class="clear"></div>
 												
-												<div class="actions" style="margin:0 -2px -3px -2px;">												
-												
-													<a href="experiment_workspace.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-													<a href="#" class="savepermissions"><img src="images/btn_savepermissions.gif" alt="Save Permissions" /></a>
-													
-												</div>	
+															
+										<div class="actions" style="margin-bottom:-10px">	
+										
+											<del class="btnwrapper">
+												<ul id="btnrow">
+													<li><a href="experiment_workspace.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
+													<li><a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save</span></span></a></li>
+												</ul>
+											</del>
+											
+										</div>
+										
 										</form>
 										
 										<div class="clear"></div>
-																				
+																	
+										
 									</div>
-										<div class="clear"></div>
-																				
+									
+									<div class="clear"></div>																				
 																				
 								</div>
 																		

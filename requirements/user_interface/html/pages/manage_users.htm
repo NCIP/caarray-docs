@@ -94,11 +94,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -114,12 +113,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -157,322 +165,312 @@
 							
 							<div class="padme">
 								
-									<div class="addlink_notabs" style="width:11.2em">
-										<a href="user_create.htm" class="add">Add a New User</a>
+							
+								<!--Results-->
+								
+								<div id="tabboxwrapper_notabs">
+								
+									<div class="boxpad3">
+										<h2>
+											Users
+											<span class="filtertext"><a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a></span>
+										</h2>
+									</div>
+											
+									<div class="addlink_notabs_filterrow">
+										<a href="user_create.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="add">Add a New User</span></span></a>
 									</div>
 								
-									<!--Results-->
-									
-									<div id="tabboxwrapper_notabs">
-									
-										<!--Users-->
+									<!--Users-->
+										
+									<div id="userlist">
 											
-											<div id="userlist">
+										<!--Searchbox-->
+						
+										<div id="searchboxwrapper" style="display:none;">
+										
+											<form name="filterform" id="filterform" action="">
 												
-												<p class="small">
-													Displaying 1-300 of 300 Total.
-													<a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a>
-												</p>
-												
-												<div class="pagingtop">
-													Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a> <span class="bar">|</span> <a href="#">4</a> <span class="bar">|</span> <a href="#">5</a> <span class="bar">|</span> <a href="#">6</a> <span class="bar">|</span> <a href="#">7</a> <span class="bar">|</span> <a href="#">8</a> <span class="bar">|</span> <a href="#">9</a> <span class="bar">|</span> <a href="#">10</a> <span class="bar">|</span> <a href="#">11</a> <span class="bar">|</span> <a href="#">12</a>
-													&nbsp;&nbsp;
-													&lt; Back <span class="bar">|</span> 
-													<a href="#">Next &gt;</a>
-												</div>
-												
-												<!--Searchbox-->
-									
-													<div id="searchboxwrapper" style="display:none;">
-													
-														<form name="filterform" id="filterform">
-															
-															<table class="form">
-																<tr>
-																	<td class="label">Filter by Last Name:</td>
-																	<td class="value" style="padding-left:0"><input type="text" name="" style="width:140px;" /></td>
-																	<td class="label">Institution:</td>
-																	<td class="value">
-																		<select name="datafilter" style="width:350px">
-																			<option>(All Institutions)</option>
-																			<option>Institution ABC</option>
-																			<option>etc.</option>
-																		</select>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="label">Filter by Role:</td>
-																	<td class="value">
-																		<select name="datafilter" style="width:140px">
-																			<option>(All Roles)</option>
-																			<option>Principal Investigator</option>
-																			<option>etc.</option>
-																		</select>
-																	</td>
-																	<td class="label">Filter by Status:</td>
-																	<td class="value">
-																		<select name="datafilter" style="width:140px">
-																		<option>(All Statuses)</option>
-																		<option>Active</option>
-																		<option>etc.</option>
-																	</select>
-																	</td>
-																</tr>
-															</table>
-															
-															<div class="actions">
-																<a href="#"><img src="images/btn_filter.gif" alt="" /></a>
-															</div>
-															
-														</form>
-													
-													</div>
-													
-												<!--/Searchbox-->
-												
-												<table class="searchresults" cellspacing="0">
+												<table class="form">
 													<tr>
-														<th><a href="#">User</a></th>
-														<th><a href="#">Institution</a></th>
-														<th><a href="#">Email Address</a></th>
-														<th><a href="#">Status</a></th>
-														<th class="actions">Edit</th>
-														<th class="actions">Delete</th>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Blakey, Arthur</a></td>
-														<td>NCICB</td>
-														<td><a href="mailto:ablakey@email.com">ablakey@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
+														<td class="label" style="white-space:nowrap">Last Name:</td>
+														<td class="value" style="padding-left:0"><input type="text" name="" style="width:140px;" /></td>
+														<td class="label">Institution:</td>
+														<td class="value">
+															<select name="datafilter" style="width:350px">
+																<option>(All Institutions)</option>
+																<option>Institution ABC</option>
+																<option>etc.</option>
+															</select>
+														</td>
 													</tr>
 													<tr>
-														<td class="title"><a href="user_details.htm">Gendleman, Brent</a></td>
-														<td>5AM Solutions </td>
-														<td><a href="mailto:bgendleman@5amsolutions.com">bgendleman@5amsolutions.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Rehfuss, Matt</a></td>
-														<td>Duke Medical Center</td>
-														<td><a href="mailto:matt@nonagonstudios.com">matt@nonagonstudios.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Disabled</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr>
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
-													</tr>
-													<tr class="odd">
-														<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
-														<td>Sample Institute </td>
-														<td><a href="mailto:email@email.com">email@email.com</a></td>
-														<td>Active</td>
-														<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
-														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
+														<td class="label">Role:</td>
+														<td class="value">
+															<select name="datafilter" style="width:140px">
+																<option>(All Roles)</option>
+																<option>Principal Investigator</option>
+																<option>etc.</option>
+															</select>
+														</td>
+														<td class="label">Status:</td>
+														<td class="value">
+															<select name="datafilter" style="width:140px">
+															<option>(All Statuses)</option>
+															<option>Enabled</option>
+															<option>etc.</option>
+														</select>
+														</td>
 													</tr>
 												</table>
 												
-												<div class="paging">
-													Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a> <span class="bar">|</span> <a href="#">4</a> <span class="bar">|</span> <a href="#">5</a> <span class="bar">|</span> <a href="#">6</a> <span class="bar">|</span> <a href="#">7</a> <span class="bar">|</span> <a href="#">8</a> <span class="bar">|</span> <a href="#">9</a> <span class="bar">|</span> <a href="#">10</a> <span class="bar">|</span> <a href="#">11</a> <span class="bar">|</span> <a href="#">12</a>
-													&nbsp;&nbsp;
-													&lt; Back <span class="bar">|</span> 
-													<a href="#">Next &gt;</a>
+												<div class="actions">												
+												
+													<del class="btnwrapper">
+														<ul id="btnrow2">
+															<li><a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="filter">Filter</span></span></a></li>
+														</ul>
+													</del>												
+													
 												</div>
-														
-											</div>
+												
+											</form>
+										
+										</div>
 											
-										<!--/Users-->
+										<!--/Searchbox-->
 										
+										<!--Paging-->
 										
+										<p class="small">
+											Displaying 1-25 of 300 Total.
+										</p>
+										
+										<div class="pagingtop">
+											Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a> <span class="bar">|</span> <a href="#">4</a> <span class="bar">|</span> <a href="#">5</a> <span class="bar">|</span> <a href="#">6</a> <span class="bar">|</span> <a href="#">7</a> <span class="bar">|</span> <a href="#">8</a> <span class="bar">|</span> <a href="#">9</a> <span class="bar">|</span> <a href="#">10</a> <span class="bar">|</span> <a href="#">11</a> <span class="bar">|</span> <a href="#">12</a>
+											&nbsp;&nbsp;
+											&lt; Back <span class="bar">|</span> 
+											<a href="#">Next &gt;</a>
+										</div>
+										
+										<!--/Paging-->
+										
+										<table class="searchresults" cellspacing="0">
+											<tr>
+												<th><a href="#">User</a></th>
+												<th><a href="#">Institution</a></th>
+												<th><a href="#">Email Address</a></th>
+												<th><a href="#">Account Status</a></th>
+												<th class="actions">Edit</th>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Blakey, Arthur</a></td>
+												<td>NCICB</td>
+												<td><a href="mailto:ablakey@email.com">ablakey@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Gendleman, Brent</a></td>
+												<td>5AM Solutions </td>
+												<td><a href="mailto:bgendleman@5amsolutions.com">bgendleman@5amsolutions.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Rehfuss, Matt</a></td>
+												<td>Duke Medical Center</td>
+												<td><a href="mailto:matt@nonagonstudios.com">matt@nonagonstudios.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user_disabled.gif" alt="" class="float-left" /> Disabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr>
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+											<tr class="odd">
+												<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+												<td>Sample Institute </td>
+												<td><a href="mailto:email@email.com">email@email.com</a></td>
+												<td><img src="images/ico_user.gif" alt="" class="float-left" /> Enabled</td>
+												<td class="icon"><a href="user_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+											</tr>
+										</table>
+										
+										<div class="paging">
+											Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a> <span class="bar">|</span> <a href="#">4</a> <span class="bar">|</span> <a href="#">5</a> <span class="bar">|</span> <a href="#">6</a> <span class="bar">|</span> <a href="#">7</a> <span class="bar">|</span> <a href="#">8</a> <span class="bar">|</span> <a href="#">9</a> <span class="bar">|</span> <a href="#">10</a> <span class="bar">|</span> <a href="#">11</a> <span class="bar">|</span> <a href="#">12</a>
+											&nbsp;&nbsp;
+											&lt; Back <span class="bar">|</span> 
+											<a href="#">Next &gt;</a>
+										</div>
+												
+									</div>
+										
+									<!--/Users-->
 									
 									</div>
 									
 								<!--/Results-->
 								
-								
 								</div>
 							
+							</div>
+						
 							<!--/ADD CONTENT HERE-->							
 							
-							<div class="clear"></div>							
-							
-						</div>
-						
-						<!--/Content-->
+						<div class="clear"></div>							
 						
 					</div>
 					
+					<!--/Content-->
+					
 				</div>
-				
+					
+			</div>
+			
 				
 		
 		</div>

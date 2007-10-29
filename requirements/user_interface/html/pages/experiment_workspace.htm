@@ -94,11 +94,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm" class="selected">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -114,12 +113,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -165,8 +173,8 @@
 									<li><a href="#public">Public Experiments (0)</a></li>								
 								</ul>
 								
-								<div class="addlink" style="width:15em">
-									<a href="experiment_create.htm" class="add">Add a New Experiment</a>
+								<div class="addlink">
+									<a href="experiment_create.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="add">Add a New Experiment</span></span></a>
 								</div>
 								
 								<!--/Tabs -->
@@ -215,6 +223,7 @@
 														<th><a href="#"># Samples</a></th>
 														<th class="actions">Properties</th>
 														<th class="actions">Edit</th>
+														<th class="actions">Delete</th>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">armst-affy-arabi-316282</a></td>
@@ -226,6 +235,7 @@
 														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">arnol-affy-chick-445002</a></td>
@@ -237,6 +247,7 @@
 														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
 													</tr>													
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">freij-affy-human-91666</a></td>
@@ -248,6 +259,7 @@
 														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">prosc-affy-mouse-450860</a></td>
@@ -259,6 +271,7 @@
 														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
 													</tr>													
 												</table>
 												
@@ -327,7 +340,7 @@
 											
 											<div id="public">
 												
-												<p class="small">Displaying 1-1 of 1 Total.</p>
+												<p class="small">Displaying 0-0 of 0 Total.</p>
 												
 												<div class="pagingtop">													
 													&nbsp;&nbsp;

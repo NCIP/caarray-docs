@@ -187,8 +187,8 @@
 									<ul id="tablevel2">
 										<li><a href="experiment_annotations.htm">Experimental Design</a></li>
 										<li><a href="experiment_annotations_sources.htm">Sources</a></li>
-										<li><a href="experiment_annotations_samples.htm">Samples</a></li>
-										<li><a href="experiment_annotations_extracts.htm" class="selected">Extracts</a></li>
+										<li><a href="experiment_annotations_samples.htm" class="selected">Samples</a></li>
+										<li><a href="experiment_annotations_extracts.htm">Extracts</a></li>
 										<li><a href="experiment_annotations_labeledextracts.htm">Labeled Extracts</a></li>
 										<li><a href="experiment_annotations_hybridizations.htm">Hybridizations</a></li>
 									</ul>
@@ -196,28 +196,66 @@
 									<div class="boxpad2">
 									
 										<h3>
-											<a href="experiment_annotations_extract.htm">Extract</a> &gt; 
-											<span class="dark">E96-1</span>
+											<a href="experiment_annotations_samples.htm">Samples</a> &gt; 
+											<span class="dark">Create Sample</span>
 										</h3>
-																			
+										
 									</div>
-									
+																			
 									<div class="boxpad">
-										<!--Related Items-->
-										<form name="relatedform1" id="relatedform1" action="">										
-											<div class="line"></div>
-											<strong>Related Source:</strong>
-											<a href="experiment_source_details.htm">mouse-93452</a> <span class="bar">|</span>
-											<a href="javascript:()" onclick="showhide('relatedlist1'); return(false);">(Edit Source Relationship)</a>
-											<table class="form" id="relatedlist1" style="display:none;">
+										
+										<form name="editform" id="idform" action="">
+										
+											<table class="form">
 												<tr>
-													<td class="label">Sources:</td>
+													<td class="label"><span class="required">Sample Name:<span class="asterisk">*</span></span></td>
+													<td class="value"><input type="text" name="name" id="name" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Sample Description:</td>
+													<td class="value"><textarea name="decription" rows="3" cols="20" id="description" style="width:50%;"></textarea></td>
+												</tr>												
+												<tr>
+													<td class="label"><span class="required">Organism:<span class="asterisk">*</span></span></td>
 													<td class="value">
-														<div class="leftrightwrapper">
+														<select name="status" id="status">
+															<option>Mouse</option>
+															<option>Human</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td class="label"><span class="required">Tissue Site(s):<span class="asterisk">*</span></span></td>
+													<td class="value">
+														<ul class="checklist" style="width:50%;height:60px">
+															<li><label for="ts_1"><input id="ts_1" name="ts_1" type="checkbox" /> cerebral cortex</label></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td class="label">Cell Type(s):</td>
+													<td class="value">
+														<ul class="checklist" style="width:50%;height:60px">
+															<li><label for="ct_1"><input id="ct_1" name="ct_1" type="checkbox" /> brain tissue</label></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td class="label">Related Extracts:</td>
+													<td class="value">
+														<div class="checklistwrapper">
 															<div class="checklistside">														
 																<ul class="checklist">
-																	<li><a name="sour_m"></a><label for="sour_1"><input id="sour_1" name="sour_1" type="checkbox" checked="checked" /> mouse-93452</label></li>
-																	<li><a name="sour_m"></a><label for="sour_2"><input id="sour_2" name="sour_2" type="checkbox" /> mouse-553322</label></li>
+																	<li><a name="extr"></a><label for="samp_1"><input id="extr_1" name="extr_1" type="checkbox" /> E96-1</label></li>
+																	<li><a name="extr"></a><label for="extr_2"><input id="extr_2" name="extr_2" type="checkbox" /> E96-2</label></li>
+																	<li><a name="extr"></a><label for="extr_3"><input id="extr_3" name="extr_3" type="checkbox" /> E96-3</label></li>
+																	<li><a name="extr"></a><label for="extr_4"><input id="extr_4" name="extr_4" type="checkbox" /> E96-4</label></li>
+																	<li><a name="extr"></a><label for="extr_5"><input id="extr_5" name="extr_5" type="checkbox" /> E96-5</label></li>
+																	<li><a name="extr"></a><label for="extr_6"><input id="extr_6" name="extr_6" type="checkbox" /> E96-6</label></li>
+																	<li><a name="extr"></a><label for="extr_7"><input id="extr_7" name="extr_7" type="checkbox" /> E96-7</label></li>
+																	<li><a name="extr"></a><label for="extr_8"><input id="extr_8" name="extr_8" type="checkbox" /> E96-8</label></li>
+																	<li><a name="extr"></a><label for="extr_9"><input id="extr_9" name="extr_9" type="checkbox" /> E96-9</label></li>
+																	<li><a name="extr"></a><label for="extr_10"><input id="extr_10" name="extr_10" type="checkbox" /> E96-10</label></li>
 																</ul>
 																<div class="alphanav">
 																	<a href="#">&lt;&lt; Previous 25</a> 
@@ -226,129 +264,55 @@
 																</div>
 															</div>															
 															<div class="selectionside">															
-																<h4>Current Associations</h4>
+																<h4>You Selected</h4>
 																<div class="scrolltable2">
 																	<ul>
-																		<li><a href="#">mouse-93452</a></li>
+																		<li>Please select an item on the left.</li>
 																	</ul>
 																</div>															
 															</div>																
 														</div>		
 													</td>
 												</tr>
-											</table>
-											<div class="line"></div>											
-										</form>
-											
-										<form name="relatedform2" id="relatedform2" action="">		
-											<strong>Related Extract(s):</strong>
-											<a href="experiment_source_details.htm">E96-1</a> <span class="bar">|</span>
-											<a href="javascript:()" onclick="showhide('relatedlist2'); return(false);">(Edit Extract Relationships)</a>
-											<table class="form" id="relatedlist2" style="display:none;">
 												<tr>
-													<td class="label">Extract(s):</td>
+													<td class="label">Strain:</td>
+													<td class="value"><input type="text" name="strain" id="strain" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Developmental Stage:</td>
+													<td class="value"><input type="text" name="devstage" id="devstage" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Disease State:</td>
+													<td class="value"><input type="text" name="disease" id="disease" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Genetic Variation:</td>
+													<td class="value"><input type="text" name="geneticvar" id="geneticvar" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Genotype or Mutation Status:</td>
+													<td class="value"><input type="text" name="genostat" id="genostat" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Age:</td>
 													<td class="value">
-														<div class="leftrightwrapper">
-															<div class="checklistside">														
-																<ul class="checklist">
-																	<li><a name="extr_e"></a><label for="extr_1"><input id="extr_1" name="extr_1" type="checkbox" checked="checked" /> E96-1</label></li>
-																	<li><a name="extr_e"></a><label for="extr_2"><input id="extr_2" name="extr_2" type="checkbox" /> E96-2</label></li>
-																	<li><a name="extr_e"></a><label for="extr_3"><input id="extr_3" name="extr_3" type="checkbox" /> E96-3</label></li>
-																	<li><a name="extr_e"></a><label for="extr_4"><input id="extr_4" name="extr_4" type="checkbox" /> E96-4</label></li>
-																	<li><a name="extr_e"></a><label for="extr_5"><input id="extr_5" name="extr_5" type="checkbox" /> E96-5</label></li>
-																	<li><a name="extr_e"></a><label for="extr_6"><input id="extr_6" name="extr_6" type="checkbox" /> E96-6</label></li>
-																	<li><a name="extr_e"></a><label for="extr_7"><input id="extr_7" name="extr_7" type="checkbox" /> E96-7</label></li>
-																	<li><a name="extr_e"></a><label for="extr_8"><input id="extr_8" name="extr_8" type="checkbox" /> E96-8</label></li>
-																	<li><a name="extr_e"></a><label for="extr_9"><input id="extr_9" name="extr_9" type="checkbox" /> E96-9</label></li>
-																	<li><a name="extr_e"></a><label for="extr_10"><input id="extr_10" name="extr_10" type="checkbox" /> E96-10</label></li>
-																</ul>
-																<div class="alphanav">
-																	<a href="#">&lt;&lt; Previous 25</a> 
-																	<span class="bar">|</span>
-																	<a href="#">Next 25  &gt;&gt;</a>
-																</div>
-															</div>															
-															<div class="selectionside">
-																<h4>Current Associations</h4>
-																<div class="scrolltable2">
-																	<ul>
-																		<li><a href="#">E96-1</a></li>
-																	</ul>
-																</div>															
-															</div>																
-														</div>		
+														<input type="text" name="age" id="age" value="" style="width:5%;" class="inline" />
+														<select name="ageunit" id="ageunit" class="inline">
+															<option>Weeks</option>
+															<option>Months</option>
+															<option>Years</option>
+														</select>
 													</td>
-												</tr>
-											</table>
-											<div class="line"></div>											
-										</form>	
-										
-										<form name="relatedform3" id="relatedform3" action="">		
-											<strong>Related Hybridization(s):</strong>
-											<a href="experiment_source_details.htm">H96-1.cel</a> <span class="bar">|</span>
-											<a href="javascript:()" onclick="showhide('relatedlist3'); return(false);">(Edit Hybridization Relationships)</a>
-											<table class="form" id="relatedlist3" style="display:none;">
-												<tr>
-													<td class="label">Hybridization(s):</td>
-													<td class="value">
-														<div class="leftrightwrapper">
-															<div class="checklistside">														
-																<ul class="checklist">
-																	<li><a name="hybr_e"></a><label for="hybr_1"><input id="hybr_1" name="hybr_1" type="checkbox" checked="checked" /> H96-1.cel</label></li>
-																	<li><a name="hybr_e"></a><label for="hybr_2"><input id="hybr_2" name="hybr_2" type="checkbox" /> H96-2.cel</label></li>
-																	<li><a name="hybr_e"></a><label for="hybr_3"><input id="hybr_3" name="hybr_3" type="checkbox" /> H96-3.cel</label></li>
-																	<li><a name="hybr_e"></a><label for="hybr_4"><input id="hybr_4" name="hybr_4" type="checkbox" /> H96-4.cel</label></li>
-																	<li><a name="hybr_e"></a><label for="hybr_5"><input id="hybr_5" name="hybr_5" type="checkbox" /> H96-5.cel</label></li>
-																	<li><a name="hybr_e"></a><label for="hybr_6"><input id="hybr_6" name="hybr_6" type="checkbox" /> H96-6.cel</label></li>
-																	<li><a name="hybr_e"></a><label for="hybr_7"><input id="hybr_7" name="hybr_7" type="checkbox" /> H96-7.cel</label></li>
-																	<li><a name="hybr_e"></a><label for="hybr_8"><input id="hybr_8" name="hybr_8" type="checkbox" /> H96-8.cel</label></li>
-																	<li><a name="hybr_e"></a><label for="hybr_9"><input id="hybr_9" name="hybr_9" type="checkbox" /> H96-9.cel</label></li>
-																	<li><a name="hybr_e"></a><label for="hybr_10"><input id="hybr_10" name="hybr_10" type="checkbox" /> H96-10.cel</label></li>
-																</ul>
-																<div class="alphanav">
-																	<a href="#">&lt;&lt; Previous 25</a> 
-																	<span class="bar">|</span>
-																	<a href="#">Next 25  &gt;&gt;</a>
-																</div>
-															</div>															
-															<div class="selectionside">
-																<h4>Current Associations</h4>
-																<div class="scrolltable2">
-																	<ul>
-																		<li><a href="#">H96-1.cel</a></li>
-																	</ul>
-																</div>															
-															</div>																
-														</div>		
-													</td>
-												</tr>
-											</table>
-											<div class="line"></div>											
-										</form>
-										<!--/Related Items-->
-										
-										<form name="editform" id="idform" action="">
-										
-											<table class="form">
-												<tr>
-													<td class="label"><span class="required">Sample Name:<span class="asterisk">*</span></span></td>
-													<td class="value"><input type="text" name="name" id="name" value="G96-1" style="width:50%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Sample Description:</td>
-													<td class="value"><textarea name="decription" rows="3" cols="20" id="description" style="width:50%;">White mouse, 6.8oz</textarea></td>
 												</tr>												
-																							
-											</table>
-											
+											</table>											
+										
 											<div class="actions">												
 												
 												<del class="btnwrapper">
 													<ul id="btnrow">
-														<li><a href="experiment_annotations_extracts.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
-														<li><a href="experiment_annotations_extracts.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="delete">Delete</span></span></a></li>
-														<li><a href="experiment_edit_sample.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save Draft</span></span></a></li>
-														<li><a href="experiment_annotations_samples.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="copy">Copy</span></span></a></li>
+														<li><a href="experiment_annotations_sources.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
+														<li><a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save Draft</span></span></a></li>
 													</ul>
 												</del>
 												

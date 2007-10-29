@@ -94,11 +94,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -114,12 +113,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -189,24 +197,151 @@
 									
 										<h3>
 											<a href="experiment_annotations_sources.htm">Sources</a> &gt; 
-											<span class="dark">mouse-23472</span>
+											<span class="dark">mouse-93452</span>
 										</h3>
 										
 									</div>
-									
+																			
 									<div class="boxpad">
-									
-										<form name="form" id="form">
+										<!--Related Items-->
+										<form name="relatedform" id="relatedform" action="">										
+											<div class="line"></div>
+											<strong>Related Samples:</strong>
+											<a href="experiment_sample_details.htm">G96-1</a>,
+											<a href="experiment_sample_details.htm">G96-2</a>,  
+											<a href="experiment_sample_details.htm">G96-3</a>,   
+											<a href="experiment_sample_details.htm">G96-4</a>,   
+											<a href="experiment_sample_details.htm">G96-5</a>,   
+											<a href="experiment_sample_details.htm">G96-6</a>,   
+											<a href="experiment_sample_details.htm">G96-7</a> <span class="bar">|</span>
+											<a href="javascript:()" onclick="showhide('relatedlist'); return(false);">(Edit Sample Relationships)</a>
+											<table class="form" id="relatedlist" style="display:none;">
+												<tr>
+													<td class="label">Sample(s):</td>
+													<td class="value">
+														<div class="leftrightwrapper">
+															<div class="checklistside">														
+																<ul class="checklist">
+																	<li><a name="samp_g"></a><label for="samp_1"><input id="samp_1" name="samp_1" type="checkbox" checked="checked" /> G96-1</label></li>
+																	<li><a name="samp_g"></a><label for="samp_2"><input id="samp_2" name="samp_2" type="checkbox" checked="checked" /> G96-2</label></li>
+																	<li><a name="samp_g"></a><label for="samp_3"><input id="samp_3" name="samp_3" type="checkbox" checked="checked" /> G96-3</label></li>
+																	<li><a name="samp_g"></a><label for="samp_4"><input id="samp_4" name="samp_4" type="checkbox" checked="checked" /> G96-4</label></li>
+																	<li><a name="samp_g"></a><label for="samp_5"><input id="samp_5" name="samp_5" type="checkbox" checked="checked" /> G96-5</label></li>
+																	<li><a name="samp_g"></a><label for="samp_6"><input id="samp_6" name="samp_6" type="checkbox" checked="checked" /> G96-6</label></li>
+																	<li><a name="samp_g"></a><label for="samp_7"><input id="samp_7" name="samp_7" type="checkbox" checked="checked" /> G96-7</label></li>
+																	<li><a name="samp_g"></a><label for="samp_8"><input id="samp_8" name="samp_8" type="checkbox" /> G96-8</label></li>
+																	<li><a name="samp_g"></a><label for="samp_9"><input id="samp_9" name="samp_9" type="checkbox" /> G96-9</label></li>
+																	<li><a name="samp_g"></a><label for="samp_10"><input id="samp_10" name="samp_10" type="checkbox" /> G96-10</label></li>
+																</ul>
+																<div class="alphanav">
+																	<a href="#">&lt;&lt; Previous 25</a> 
+																	<span class="bar">|</span>
+																	<a href="#">Next 25  &gt;&gt;</a>
+																</div>
+															</div>															
+															<div class="selectionside">															
+																<h4>Current Associations</h4>
+																<div class="scrolltable2">
+																	<ul>
+																		<li><a href="#">G96-1</a></li>
+																		<li><a href="#">G96-2</a></li>
+																		<li><a href="#">G96-3</a></li>
+																		<li><a href="#">G96-4</a></li>
+																		<li><a href="#">G96-5</a></li>
+																		<li><a href="#">G96-6</a></li>
+																		<li><a href="#">G96-7</a></li>
+																	</ul>
+																</div>															
+															</div>																
+														</div>		
+													</td>
+												</tr>
+											</table>
+											<div class="line"></div>											
+										</form>
+											
 										
-										<div>
-										form here
-										</div>
+										<!--/Related Items-->
+										
+										<form name="editform" id="idform" action="">
+										
+											<table class="form">
+												<tr>
+													<td class="label"><span class="required">Source Name:<span class="asterisk">*</span></span></td>
+													<td class="value"><input type="text" name="name" id="name" value="mouse-93452" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Source Description:</td>
+													<td class="value"><textarea name="decription" rows="3" cols="20" id="description" style="width:50%;">White mouse, 6.8oz</textarea></td>
+												</tr>												
+												<tr>
+													<td class="label"><span class="required">Organism:<span class="asterisk">*</span></span></td>
+													<td class="value">
+														<select name="status" id="status">
+															<option>Mouse</option>
+															<option>Human</option>
+														</select>
+													</td>
+												</tr>
+												<tr>
+													<td class="label"><span class="required">Tissue Site(s):<span class="asterisk">*</span></span></td>
+													<td class="value">
+														<ul class="checklist" style="width:50%;height:60px">
+															<li><label for="ts_1"><input id="ts_1" name="ts_1" type="checkbox" checked="checked" /> cerebral cortex</label></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td class="label">Cell Type(s):</td>
+													<td class="value">
+														<ul class="checklist" style="width:50%;height:60px">
+															<li><label for="ct_1"><input id="ct_1" name="ct_1" type="checkbox" /> brain tissue</label></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td class="label">Strain:</td>
+													<td class="value"><input type="text" name="strain" id="strain" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Developmental Stage:</td>
+													<td class="value"><input type="text" name="devstage" id="devstage" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Disease State:</td>
+													<td class="value"><input type="text" name="disease" id="disease" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Genetic Variation:</td>
+													<td class="value"><input type="text" name="geneticvar" id="geneticvar" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Genotype or Mutation Status:</td>
+													<td class="value"><input type="text" name="genostat" id="genostat" value="" style="width:50%;" /></td>
+												</tr>
+												<tr>
+													<td class="label">Age:</td>
+													<td class="value">
+														<input type="text" name="age" id="age" value="" style="width:5%;" class="inline" />
+														<select name="ageunit" id="ageunit" class="inline">
+															<option>Weeks</option>
+															<option>Months</option>
+															<option>Years</option>
+														</select>
+													</td>
+												</tr>												
+											</table>
 											
 											<div class="actions">												
 												
-												<a href="experiment_annotations_sources.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="experiment_annotations.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
-												<a href="#" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
+												<del class="btnwrapper">
+													<ul id="btnrow">
+														<li><a href="experiment_annotations_sources.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
+														<li><a href="experiment_annotations_sources.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="delete">Delete</span></span></a></li>
+														<li><a href="experiment_annotations.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save Draft</span></span></a></li>
+														<li><a href="experiment_annotations_sources.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="copy">Copy</span></span></a></li>
+													</ul>
+												</del>
 												
 											</div>
 											

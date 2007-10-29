@@ -97,26 +97,21 @@
 					
 						<div id="leftnav">
 							
-							<!--caArray Menu-->
+							<!--caArray Home-->
 							
-							<ul class="caarraymenu">
-							
-								<li class="liheader">caArray</li>
+							<div class="navheader">Welcome to caArray</div>
+							<ul class="caarraymenu">							
 								<li><a href="./">Public Home</a></li>
 								<li><a href="registration.htm">Register</a></li>
 								<li><a href="login.htm">Login</a></li>
-								
-								<!--<li class="liheader">Experiments</li>
-								<li><a href="search_advanced.htm">Advanced Search</a></li>-->
-								
 							</ul>
 							
-							<!--/caArray Menu-->
-							
+							<!--/caArray Home-->
+														
 							<!--About Menu-->
 							
-							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+							<ul class="welcomemenu">
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -152,7 +147,7 @@
 								<h2>Results for: "<strong>microarray</strong>"</h2>
 								
 								<p class="small">
-									<strong>38 experiments</strong> found in <strong>3 categories</strong> across <strong>4 locations</strong>. 
+									<strong>38 items</strong> found in <strong>3 categories</strong> across <strong>4 locations</strong>. 
 									Display in list:
 									<select name="select" id="nodes">
 										<option>(All Locations)</option>
@@ -187,15 +182,71 @@
 									<!--Results-->
 									
 									<div id="tabboxwrapper">
-									
+										
 										<!--Experiments-->
 											
+											<p class="small"><a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a></p>
+										
 											<div id="experiments">
+											
+											<!--Searchbox-->
+									
+												<div id="searchboxwrapper" style="display:none">
 												
-												<p class="small">
-													Displaying <strong>1-25</strong> of <strong>30</strong> Total. 
-													<a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a>
-												</p>
+													<form name="searchform" id="searchform_exp">
+												
+														<table class="form">
+															<tr>
+																<td class="label">Experiment Title:</td>
+																<td><input type="text" name="" style="width:150px" /></td>
+																<td class="label">Assay Type:</td>
+																<td>
+																	<select name="select" name="" style="width:150px">
+																		<option>All</option>
+																	</select>
+																</td>
+																<td class="label">Organism:</td>
+																<td>
+																	<select name="select" name="" style="width:150px">
+																		<option>All</option>
+																	</select>
+																</td>
+															</tr>
+															<tr>
+																<td class="label">ID:</td>
+																<td><input type="text" name="" style="width:150px" /></td>
+																<td class="label">P.I. Last Name:</td>
+																<td>
+																	<select name="select" name="" style="width:150px">
+																		<option>All</option>
+																	</select>
+																</td>
+																<td class="label">Disease:</td>
+																<td>
+																	<select name="select" name="" style="width:150px">
+																		<option>All</option>
+																	</select>
+																</td>
+															</tr>
+														</table>
+														
+														<div class="actions">												
+											
+																<del class="btnwrapper">
+																	<ul id="btnrow2">
+																		<li><a href="search_results_advanced.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="filter">Filter</span></span></a></li>
+																	</ul>
+																</del>												
+																
+															</div>
+														
+													</form>
+												
+												</div>
+													
+												<!--/Searchbox-->
+												
+												<p class="small">Displaying <strong>1-25</strong> of <strong>30</strong> Total.</p>
 												
 												<div class="pagingtop">
 													Page 1 <span class="bar">|</span> <a href="#">2</a>
@@ -204,56 +255,7 @@
 													<a href="#">Next &gt;</a>
 												</div>
 												
-												<!--Searchbox-->
-									
-													<div id="searchboxwrapper" style="display:none">
-													
-														<form name="searchform" id="searchform_exp">
-													
-															<table class="form">
-																<tr>
-																	<td class="label">Experiment Title:</td>
-																	<td><input type="text" name="" style="width:150px" /></td>
-																	<td class="label">Platform Type:</td>
-																	<td>
-																		<select name="select" name="" style="width:150px">
-																			<option>All</option>
-																		</select>
-																	</td>
-																	<td class="label">Organism:</td>
-																	<td>
-																		<select name="select" name="" style="width:150px">
-																			<option>All</option>
-																		</select>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="label">ID:</td>
-																	<td><input type="text" name="" style="width:150px" /></td>
-																	<td class="label">P.I. Last Name:</td>
-																	<td>
-																		<select name="select" name="" style="width:150px">
-																			<option>All</option>
-																		</select>
-																	</td>
-																	<td class="label">Disease:</td>
-																	<td>
-																		<select name="select" name="" style="width:150px">
-																			<option>All</option>
-																		</select>
-																	</td>
-																</tr>
-															</table>
-															
-															<div class="actions">
-																<a href="search_results_advanced.htm"><img src="images/btn_filter.gif" alt="" /></a>
-															</div>
-															
-														</form>
-													
-													</div>
-													
-												<!--/Searchbox-->
+												
 												
 												<table class="searchresults" cellspacing="0">
 													<tr>

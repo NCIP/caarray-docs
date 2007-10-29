@@ -99,11 +99,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -119,12 +118,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -184,12 +192,70 @@
 									
 										<!--Experiments-->
 											
+																					<!--Experiments-->
+											
+											<p class="small"><a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a></p>
+										
 											<div id="experiments">
+											
+											<!--Searchbox-->
+									
+												<div id="searchboxwrapper" style="display:none">
 												
-												<p class="small">
-													Displaying <strong>1-25</strong> of <strong>30</strong> Total. 
-													<a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a>
-												</p>
+													<form name="searchform" id="searchform_exp">
+												
+														<table class="form">
+															<tr>
+																<td class="label">Experiment Title:</td>
+																<td><input type="text" name="" style="width:150px" /></td>
+																<td class="label">Assay Type:</td>
+																<td>
+																	<select name="select" name="" style="width:150px">
+																		<option>All</option>
+																	</select>
+																</td>
+																<td class="label">Organism:</td>
+																<td>
+																	<select name="select" name="" style="width:150px">
+																		<option>All</option>
+																	</select>
+																</td>
+															</tr>
+															<tr>
+																<td class="label">ID:</td>
+																<td><input type="text" name="" style="width:150px" /></td>
+																<td class="label">P.I. Last Name:</td>
+																<td>
+																	<select name="select" name="" style="width:150px">
+																		<option>All</option>
+																	</select>
+																</td>
+																<td class="label">Disease:</td>
+																<td>
+																	<select name="select" name="" style="width:150px">
+																		<option>All</option>
+																	</select>
+																</td>
+															</tr>
+														</table>
+														
+														<div class="actions">												
+											
+																<del class="btnwrapper">
+																	<ul id="btnrow2">
+																		<li><a href="search_results_advanced.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="filter">Filter</span></span></a></li>
+																	</ul>
+																</del>												
+																
+															</div>
+														
+													</form>
+												
+												</div>
+													
+												<!--/Searchbox-->
+												
+												<p class="small">Displaying <strong>1-25</strong> of <strong>30</strong> Total.</p>
 												
 												<div class="pagingtop">
 													Page 1 <span class="bar">|</span> <a href="#">2</a>
@@ -197,59 +263,6 @@
 													&lt; Back <span class="bar">|</span> 
 													<a href="#">Next &gt;</a>
 												</div>
-												
-												
-												<!--Searchbox-->
-									
-													<div id="searchboxwrapper" style="display:none;">
-													
-														<form name="searchform" id="searchform_exp">
-													
-															<table class="form">
-																<tr>
-																	<td class="label">Experiment Title:</td>
-																	<td><input type="text" name="" style="width:150px" /></td>
-																	<td class="label">Platform Type:</td>
-																	<td>
-																		<select name="select" name="" style="width:150px">
-																			<option>All</option>
-																		</select>
-																	</td>
-																	<td class="label">Organism:</td>
-																	<td>
-																		<select name="select" name="" style="width:150px">
-																			<option>All</option>
-																		</select>
-																	</td>
-																</tr>
-																<tr>
-																	<td class="label">ID:</td>
-																	<td><input type="text" name="" style="width:150px" /></td>
-																	<td class="label">P.I. Last Name:</td>
-																	<td>
-																		<select name="select" name="" style="width:150px">
-																			<option>All</option>
-																		</select>
-																	</td>
-																	<td class="label">Disease:</td>
-																	<td>
-																		<select name="select" name="" style="width:150px">
-																			<option>All</option>
-																		</select>
-																	</td>
-																</tr>
-															</table>
-															
-															<div class="actions">
-																<a href="search_results_advanced.htm"><img src="images/btn_filter.gif" alt="" /></a>
-															</div>
-															
-														</form>
-													
-													</div>
-													
-												<!--/Searchbox-->
-												
 												
 												
 												
@@ -288,7 +301,7 @@
 														<td>Acute Lymphoblastic Leukemia, Adult </td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">23</a></td>
 														<td>7/7/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Identification of novel E2F1-regulated g...</a></td>
@@ -300,7 +313,7 @@
 														<td>Brain Stem Glioma, Childhood</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">423</a></td>
 														<td>5/6/2005</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Interlaboratory comparability study of c...</a></td>
@@ -312,7 +325,7 @@
 														<td>Transgenic huntington disease</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">553</a></td>
 														<td>12/3/2006</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Distinctive molecular profiles of high-g...</a></td>
@@ -324,7 +337,7 @@
 														<td>Acute Lymphoblastic Leukemia, Adult </td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">23</a></td>
 														<td>7/7/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Identification of novel E2F1-regulated g...</a></td>
@@ -336,7 +349,7 @@
 														<td>Brain Stem Glioma, Childhood</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">423</a></td>
 														<td>5/6/2005</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Assembly of microarrays for genome-wide ...</a></td>
@@ -348,7 +361,7 @@
 														<td>TrkB loss from retina</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">34</a></td>
 														<td>9/6/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Distinctive molecular profiles of high-g...</a></td>
@@ -360,7 +373,7 @@
 														<td>Acute Lymphoblastic Leukemia, Adult </td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">23</a></td>
 														<td>7/7/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Identification of novel E2F1-regulated g...</a></td>
@@ -372,7 +385,7 @@
 														<td>Brain Stem Glioma, Childhood</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">423</a></td>
 														<td>5/6/2005</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Interlaboratory comparability study of c...</a></td>
@@ -384,7 +397,7 @@
 														<td>Transgenic huntington disease</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">553</a></td>
 														<td>12/3/2006</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Assembly of microarrays for genome-wide ...</a></td>
@@ -396,7 +409,7 @@
 														<td>TrkB loss from retina</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">34</a></td>
 														<td>9/6/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Distinctive molecular profiles of high-g...</a></td>
@@ -408,7 +421,7 @@
 														<td>Acute Lymphoblastic Leukemia, Adult </td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">23</a></td>
 														<td>7/7/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Identification of novel E2F1-regulated g...</a></td>
@@ -420,7 +433,7 @@
 														<td>Brain Stem Glioma, Childhood</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">423</a></td>
 														<td>5/6/2005</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Interlaboratory comparability study of c...</a></td>
@@ -432,7 +445,7 @@
 														<td>Transgenic huntington disease</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">553</a></td>
 														<td>12/3/2006</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Distinctive molecular profiles of high-g...</a></td>
@@ -444,7 +457,7 @@
 														<td>Acute Lymphoblastic Leukemia, Adult </td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">23</a></td>
 														<td>7/7/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Identification of novel E2F1-regulated g...</a></td>
@@ -456,7 +469,7 @@
 														<td>Brain Stem Glioma, Childhood</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">423</a></td>
 														<td>5/6/2005</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Assembly of microarrays for genome-wide ...</a></td>
@@ -468,7 +481,7 @@
 														<td>TrkB loss from retina</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">34</a></td>
 														<td>9/6/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Distinctive molecular profiles of high-g...</a></td>
@@ -480,7 +493,7 @@
 														<td>Acute Lymphoblastic Leukemia, Adult </td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">23</a></td>
 														<td>7/7/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Identification of novel E2F1-regulated g...</a></td>
@@ -492,6 +505,7 @@
 														<td>Brain Stem Glioma, Childhood</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">423</a></td>
 														<td>5/6/2005</td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Interlaboratory comparability study of c...</a></td>
@@ -503,7 +517,7 @@
 														<td>Transgenic huntington disease</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">553</a></td>
 														<td>12/3/2006</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Distinctive molecular profiles of high-g...</a></td>
@@ -515,7 +529,7 @@
 														<td>Acute Lymphoblastic Leukemia, Adult </td>
 														<td class="alignright"><a href="#">23</td>
 														<td>7/7/2007</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Identification of novel E2F1-regulated g...</a></td>
@@ -527,7 +541,7 @@
 														<td>Brain Stem Glioma, Childhood</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">423</a></td>
 														<td>5/6/2005</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Identification of novel E2F1-regulated g...</a></td>
@@ -539,6 +553,7 @@
 														<td>Brain Stem Glioma, Childhood</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">423</a></td>
 														<td>5/6/2005</td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 													<tr>
 														<td class="title"><a href="experiment_details.htm">Interlaboratory comparability study of c...</a></td>
@@ -550,9 +565,9 @@
 														<td>Transgenic huntington disease</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">553</a></td>
 														<td>12/3/2006</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
-													<tr>
+													<tr class="odd">
 														<td class="title"><a href="experiment_details.htm">Identification of novel E2F1-regulated g...</a></td>
 														<td>ASD-24568</td>
 														<td>SNP</td>
@@ -562,7 +577,7 @@
 														<td>Brain Stem Glioma, Childhood</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">423</a></td>
 														<td>5/6/2005</td>
-														<td class="icon"></td>
+														<td class="icon">&nbsp;</td>
 													</tr>
 												</table>
 												<div class="paging">

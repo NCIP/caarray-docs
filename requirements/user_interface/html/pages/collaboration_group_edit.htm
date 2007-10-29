@@ -95,11 +95,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -115,12 +114,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -165,95 +173,303 @@
 									<div class="boxpad2">
 								
 										<h3>
-											<a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a> &gt; 
+											<a href="manage_collaboration_groups.htm">Collaboration Groups</a> &gt; 
 											<span class="dark">Collaborators A</span>
 										</h3>
 										
 									</div>
 									
-									<div class="boxpad">
+									<div class="boxpad" style="padding-bottom:10px">
 									
 										<form name="editform" id="idform" action="">
 										
 											<table class="form">
 												<tr>
-													<td class="label">Group Name:</td>
-													<td class="value"><input type="text" name="title" id="exptitle" value="Collaborators A" style="width:50%;" /></td>
-												</tr>
-												<tr>
-													<td class="label">Members:</td>
-													<td class="value">													
-														<div class="leftrightwrapper">
-															<div class="checklistside">
-																<div class="filterrow">
-																	<strong>Filter by:</strong><br />
-																	<select name="datafilter" style="width:248px">
-																		<option>(All Institutions)</option>
-																		<option>Institution ABC</option>
-																	</select>
-																</div>
-																<ul class="checklist">
-																	<li><a name="user_a"></a><label for="user_1"><input id="user_1" name="user_1" type="checkbox" /> Alonso, Alex</label></li>
-																	<li><a name="user_b"></a><label for="user_2"><input id="user_2" name="user_2" type="checkbox" /> Bruce, Issac</label></li>
-																	<li><a name="user_c"></a><label for="user_3"><input id="user_3" name="user_3" type="checkbox" /> Constanza, William</label></li>
-																	<li><a name="user_c"></a><label for="user_4"><input id="user_4" name="user_4" type="checkbox" /> Costas, Bob</label></li>
-																	<li><a name="user_g"></a><label for="user_6"><input id="user_6" name="user_6" type="checkbox" checked="checked" /> Gendleman, Brent</label></li>
-																	<li><a name="user_h"></a><label for="user_7"><input id="user_7" name="user_7" type="checkbox" /> Holt, Elizabeth</label></li>
-																	<li><a name="user_n"></a><label for="user_8"><input id="user_8" name="user_8" type="checkbox" /> Nason, Phillip</label></li>
-																	<li><a name="user_r"></a><label for="user_9"><input id="user_9" name="user_9" type="checkbox" checked="checked" /> Rehfuss, Matt</label></li>
-																	<li><a name="user_r"></a><label for="user_10"><input id="user_10" name="user_10" type="checkbox"  /> Rosenfeld, Joshua</label></li>
-																	<li><a name="user_s"></a><label for="user_11"><input id="user_11" name="user_11" type="checkbox" /> Smith, Bill</label></li>
-																	<li><a name="user_s"></a><label for="user_12"><input id="user_12" name="user_12" type="checkbox" /> Smith, John</label></li>
-																</ul>
-																<div class="alphanav">
-																	<a href="#user_a">A</a>
-																	<a href="#user_b">B</a>
-																	<a href="#user_c">C</a>
-																	<a href="#user_d">D</a>
-																	<a href="#user_e">E</a>
-																	<a href="#user_f">F</a>
-																	<a href="#user_g">G</a>
-																	<a href="#user_h">H</a>
-																	<a href="#user_i">I</a>
-																	<a href="#user_j">J</a>
-																	<a href="#user_k">K</a>
-																	<a href="#user_l">L</a>
-																	<a href="#user_m">M</a>
-																	<a href="#user_n">N</a>
-																	<a href="#user_o">O</a>
-																	<a href="#user_p">P</a>
-																	<a href="#user_q">Q</a>
-																	<a href="#user_r">R</a>
-																	<a href="#user_s">S</a>
-																	<a href="#user_t">T</a>
-																	<a href="#user_u">U</a>
-																	<a href="#user_v">V</a>
-																	<a href="#user_w">W</a>
-																	<a href="#user_x">X</a>
-																	<a href="#user_y">Y</a>
-																	<a href="#user_z">Z</a>
-																</div>															
-															</div>															
-															<div class="selectionside">															
-																<h4>You Selected</h4>
-																<div class="scrolltable2">
-																	<ul>
-																		<li><a href="#">Gendleman, Brent</a></li>
-																		<li><a href="#">Rehfuss, Matt</a></li>
-																	</ul>
-																</div>															
-															</div>															
-														</div>
+													<td class="labelthin">Group Name:</td>
+													<td class="valuethin">
+														<input type="text" name="title" id="exptitle" value="Collaborators A" />
+													</td>
+													<td class="button">
+														<a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save</span></span></a>
 													</td>
 												</tr>
 											</table>
-											<div class="actions">												
+											
+										</form>
+										
+										<div class="line" style="margin-bottom:15px"></div>
+										
+										<h2 class="bolder">
+											Members										
+											<span class="filtertext"><a href="javascript:()" onclick="showhide('searchboxwrapper'); return(false);">Filter (Narrow) This List</a></span>
+										</h2>
 												
-												<a href="manage_collaboration_groups.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="manage_collaboration_groups.htm" class="save"><img src="images/btn_save.gif" alt="Save" /></a>
+										<div class="addlink">
+											<a href="collaboration_member_add.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="add">Add a New Group Member</span></span></a>
+										</div>
+										
+										<!--Results-->
+										
+										<div id="tabboxwrapper">
+										
+											<!--Group Members-->
+												
+												<div id="grouplist">
+												
+													<!--Searchbox-->
+												
+													<div id="searchboxwrapper" style="display:none;">
+													
+														<form name="filterform" id="filterform" action="">
+															
+															<table class="form">
+																<tr>
+																	<td class="label" style="white-space:nowrap">Last Name:</td>
+																	<td class="value" style="padding-left:0"><input type="text" name="" style="width:140px;" /></td>
+																	<td class="label">Institution:</td>
+																	<td class="value">
+																		<select name="datafilter" style="width:350px">
+																			<option>(All Institutions)</option>
+																			<option>Institution ABC</option>
+																			<option>etc.</option>
+																		</select>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="label">Role:</td>
+																	<td class="value">
+																		<select name="datafilter" style="width:140px">
+																			<option>(All Roles)</option>
+																			<option>Principal Investigator</option>
+																			<option>etc.</option>
+																		</select>
+																	</td>
+																	<td class="label">Status:</td>
+																	<td class="value">
+																		<select name="datafilter" style="width:140px">
+																		<option>(All Statuses)</option>
+																		<option>Enabled</option>
+																		<option>etc.</option>
+																	</select>
+																	</td>
+																</tr>
+															</table>
+															
+															<div class="actions">												
+												
+																<del class="btnwrapper">
+																	<ul id="btnrow2">
+																		<li><a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="filter">Filter</span></span></a></li>
+																	</ul>
+																</del>												
+																
+															</div>
+															
+														</form>
+													
+													</div>
+														
+												<!--/Searchbox-->
+													
+													<p class="small">
+														Displaying 1-25 of 65 Total Members in Group.
+													</p>
+													
+													<div class="pagingtop">
+														Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a>
+														&nbsp;&nbsp;
+														&lt; Back <span class="bar">|</span> 
+														<a href="#">Next &gt;</a>
+													</div>
+																					
+													<div class="scrolltable">
+														<table class="searchresults" cellspacing="0" style="margin-top:0">
+															<tr>
+																<th><a href="#">Member Name</a></th>
+																<th><a href="#">Institution</a></th>
+																<th><a href="#">Email Address</a></th>
+																<th><a href="#">Remove</a></th>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Blakey, Arthur</a></td>
+																<td>NCICB</td>
+																<td><a href="mailto:ablakey@email.com">ablakey@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Gendleman, Brent</a></td>
+																<td>5AM Solutions </td>
+																<td><a href="mailto:bgendleman@5amsolutions.com">bgendleman@5amsolutions.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Rehfuss, Matt</a></td>
+																<td>Duke Medical Center</td>
+																<td><a href="mailto:matt@nonagonstudios.com">matt@nonagonstudios.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr>
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+															<tr class="odd">
+																<td class="title"><a href="user_details.htm">Lastname, Firstname</a></td>
+																<td>Sample Institute </td>
+																<td><a href="mailto:email@email.com">email@email.com</a></td>
+																<td class="icon"><a href="#"><img src="images/ico_remove.gif" alt="Remove" /></a></td>
+															</tr>
+														</table>
+													</div>
+													
+													<div class="paging">
+														Page 1 <span class="bar">|</span> <a href="#">2</a> <span class="bar">|</span> <a href="#">3</a>
+														&nbsp;&nbsp;
+														&lt; Back <span class="bar">|</span> 
+														<a href="#">Next &gt;</a>
+													</div>
+													
+															
+												</div>
+												
+												<!--/Group Members-->	
+											
+										
+											</div>
+										
+											<div class="actions" style="margin:10px -6px -10px -9px;">												
+												
+												<del class="btnwrapper">
+													<ul id="btnrow">
+														<li><a href="manage_collaboration_groups.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
+														<li><a href="manage_collaboration_groups.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="delete">Delete</span></span></a></li>
+													</ul>
+												</del>												
 												
 											</div>
-										</form>
+											
+										</div>
 										
 									</div>
 									

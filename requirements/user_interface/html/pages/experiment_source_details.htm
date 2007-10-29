@@ -94,11 +94,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -114,12 +113,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -189,24 +197,82 @@
 									
 										<h3>
 											<a href="experiment_annotations_sources.htm">Sources</a> &gt; 
-											<span class="dark">mouse-23472</span>
+											<span class="dark">mouse-93452</span>
 										</h3>
 										
 									</div>
 									
 									<div class="boxpad">
-									
-										<form name="form" id="form">
+										<!--Related Items-->								
+											<div class="line"></div>
+											<strong>Related Sample(s):</strong> 
+											<a href="experiment_sample_details.htm">G96-1</a>,
+											<a href="experiment_sample_details.htm">G96-2</a>,  
+											<a href="experiment_sample_details.htm">G96-3</a>,   
+											<a href="experiment_sample_details.htm">G96-4</a>,   
+											<a href="experiment_sample_details.htm">G96-5</a>,   
+											<a href="experiment_sample_details.htm">G96-6</a>,   
+											<a href="experiment_sample_details.htm">G96-7</a>									
+											<div class="line"></div>													
 										
-										<div>
-										details here
-										</div>
+										<!--/Related Items-->
+										
+										<form name="editform" id="idform" action="">
+										
+											<table class="form">
+												<tr>
+													<td class="label">Source Name:</td>
+													<td class="value">mouse-93452</td>
+												</tr>
+												<tr>
+													<td class="label">Source Description:</td>
+													<td class="value">White mouse, 6.8oz</td>
+												</tr>												
+												<tr>
+													<td class="label">Organism:</td>
+													<td class="value">Mouse</td>
+												</tr>
+												<tr>
+													<td class="label">Tissue Site(s):</td>
+													<td class="value">cerebral cortex</td>
+												</tr>
+												<tr>
+													<td class="label">Cell Type(s):</td>
+													<td class="value">brain tissue</td>
+												</tr>
+												<tr>
+													<td class="label">Strain:</td>
+													<td class="value"></td>
+												</tr>
+												<tr>
+													<td class="label">Developmental Stage:</td>
+													<td class="value"></td>
+												</tr>
+												<tr>
+													<td class="label">Disease State:</td>
+													<td class="value"></td>
+												</tr>
+												<tr>
+													<td class="label">Genetic Variation:</td>
+													<td class="value"></td>
+												</tr>
+												<tr>
+													<td class="label">Genotype or Mutation Status:</td>
+													<td class="value"></td>
+												</tr>
+												<tr>
+													<td class="label">Age:</td>
+													<td class="value"></td>
+												</tr>												
+											</table>
 											
 											<div class="actions">												
 												
-												<a href="experiment_annotations_sources.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="experiment_annotations.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
-												<a href="#" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
+												<del class="btnwrapper">
+													<ul id="btnrow">
+														<li><a href="experiment_edit_source.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="edit">Edit</span></span></a></li>
+													</ul>
+												</del>
 												
 											</div>
 											

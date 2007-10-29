@@ -94,11 +94,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -114,12 +113,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -189,7 +197,7 @@
 									
 										<h3>Experimental Design</h3>
 										
-										<p class="instructions2">Required fields are highlighted and have <span class="required"><span class="asterisk">*</span>asterisks<span class="asterisk">*</span></span>.</p>
+										<p class="instructions">Required fields are highlighted and have <span class="required"><span class="asterisk">*</span>asterisks<span class="asterisk">*</span></span>.</p>
 										
 										<form name="editform" id="idform" action="experimentedit_error.htm">
 										
@@ -245,9 +253,13 @@
 											
 											<div class="actions">												
 												
-												<a href="experiment_workspace.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="experiment_edit.htm" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
-												<a href="experiment_submit_confirm.htm" class="submit_experiment"><img src="images/btn_submit_experiment.gif" alt="Submit Experiment Proposal" /></a>
+												<del class="btnwrapper">
+													<ul id="btnrow">
+														<li><a href="experiment_workspace.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
+														<li><a href="experiment_annotations.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save Draft</span></span></a></li>
+														<li><a href="experiment_submit_confirm.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="submit_experiment">Submit Experiment for Review</span></span></a></li>
+													</ul>
+												</del>
 												
 											</div>
 											

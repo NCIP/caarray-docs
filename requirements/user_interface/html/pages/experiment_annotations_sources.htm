@@ -94,11 +94,10 @@
 							
 							<!--caArray Menu-->
 							
-							<ul class="caarraymenu">
+							<div class="navheader">caArray Actions</div>
 							
-								<li class="liheader">caArray</li>
-								<li><a href="./">Public Home</a></li>											
-														
+							<ul class="caarraymenu">
+																			
 								<li class="liheader">Experiments</li>
 								<li><a href="experiment_workspace.htm">My Experiment Workspace</a></li>
 								<li><a href="experiment_create.htm">Create/Propose Experiment</a></li>
@@ -114,12 +113,21 @@
 								
 							</ul>
 							
-							<!--/caArray Menu-->		
+							<!--/caArray Menu-->								
+							
+							<!--caArray Home-->
+							
+							<ul class="welcomemenu">
+								<li class="liheader">Welcome to caArray</li>
+								<li><a href="./">Public Home</a></li>
+							</ul>
+							
+							<!--/caArray Home-->		
 							
 							<!--About Menu-->
 							
 							<ul class="aboutmenu">
-								<li class="liheader">caArray Software</li>
+								<li class="liheader">About caArray</li>
 								<li><a href="about.htm">What is caArray?</a></li>
 								<li><a href="install.htm">Install caArray</a></li>
 								<li><a href="userguide.htm">User Guide</a></li>
@@ -190,7 +198,7 @@
 										<h3>Sources</h3>
 										
 										<div class="addlink">
-											<a href="experiment_edit_source.htm" class="add">Add a New Source</a>
+											<a href="experiment_create_source.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="add">Add a New Source</span></span></a>
 										</div>
 										
 									</div>
@@ -214,7 +222,7 @@
 													<th><a href="#">Source Name</a></th>
 													<th><a href="#">Description</a></th>
 													<th><a href="#">Organism</a></th>
-													<th><a href="#">Related Samples</a></th>
+													<th>Related Samples</th>
 													<th class="actions">Edit</th>
 													<th class="actions">Copy</th>
 													<th class="actions">Delete</th>
@@ -223,7 +231,14 @@
 													<td class="title"><a href="experiment_source_details.htm">mouse-93452</a></td>
 													<td>White Mouse </td>
 													<td>Mouse</td>
-													<td><a href="#">view</a></td>
+													<td>
+														<a href="experiment_sample_details.htm">G96-1</a>,
+														<a href="experiment_sample_details.htm">G96-2</a>,  
+														<a href="experiment_sample_details.htm">G96-3</a>, 
+														<a href="experiment_sample_details.htm">G96-4</a>,  
+														<a href="experiment_sample_details.htm">G96-5</a>, | 
+														<a href="experiment_source_details.htm">(View All 7)</a>
+													</td>
 													<td class="icon"><a href="experiment_edit_source.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 													<td class="icon"><a href="#"><img src="images/ico_copy.gif" alt="Copy" /></a></td>
 													<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
@@ -232,7 +247,11 @@
 													<td class="title"><a href="experiment_source_details.htm">mouse-55332</a></td>
 													<td>White Mouse </td>
 													<td>Mouse</td>
-													<td><a href="#">view</a></td>
+													<td>
+														<a href="experiment_sample_details.htm">G96-8</a>,
+														<a href="experiment_sample_details.htm">G96-9</a>,  
+														<a href="experiment_sample_details.htm">G96-10</a>
+													</td>
 													<td class="icon"><a href="experiment_edit_source.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 													<td class="icon"><a href="#"><img src="images/ico_copy.gif" alt="Copy" /></a></td>
 													<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
