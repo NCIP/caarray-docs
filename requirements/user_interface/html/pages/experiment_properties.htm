@@ -109,7 +109,7 @@
 								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
-								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
+								<li><a href="import_array_designs.htm">Import Array Designs</a></li>
 								
 							</ul>
 							
@@ -188,7 +188,7 @@
 									
 									<div class="boxpad" style="padding-bottom:10px">
 										
-										<p class="instructions" style="margin-bottom:10px">Select an Access Profile to assign to this experiment. Assign specific access rules down to the sample level in the box on the right.</p>
+										<p class="instructions" style="margin-bottom:10px">Assigning an Access Profile to this experiment allows you to control who gets access. Assign specific access rules down to the sample level in the box on the right.</p>
 
 										<form name="dataform" id="dataform" action="#">
 											
@@ -199,33 +199,33 @@
 													<div class="datatable">
 														<table class="searchresults" cellspacing="0" style="height:30.6em">
 															<tr>													
-																<th colspan="2" style="height:2.5em;">Assign Access Profile to Experiment</th>
+																<th colspan="2" style="height:2.5em;">Who May Access this Experiment?</th>
 															</tr>
 															<tr class="listhover" onclick="document.getElementById ('radio1').checked=true;">
 																<td class="icon" style="border-right:0"><input type="radio" name="radio" id="radio1" checked="checked" /></td>
 																<td style="border-left:0; padding-left:0">
-																	<div class="bigbold">Public</div>
+																	<div class="bigbold">The Public</div>
 																	<p class="nopad">Anonymous users get access to the experiment according to your sub-settings.</p>
 																</td>
 															</tr>
 															<tr class="listhover" onclick="document.getElementById ('radio2').checked=true;">
 																<td class="icon" style="border-right:0"><input type="radio" name="radio" id="radio2" /></td>
 																<td style="border-left:0; padding-left:0">
-																	<div class="bigbold">Collaboration Group</div>
-																	<p class="nopad">Custom groups with specifically defined users get access to the experiment according to your sub-settings.</p>
+																	<div class="bigbold">A Collaboration Group</div>
 																	<select name="datafilter">
 																		<option> -- Please select a Collaboration Group --</option>
 																	</select>
+																	<p class="nopad">Custom groups with specifically defined users get access to the experiment according to your sub-settings.</p>																	
 																</td>
 															</tr>
-															<tr class="listhover" onclick="document.getElementById ('radio3').checked=true;">
+															<tr class="listhover"  readonly="readonly">
 																<td class="icon" style="border-right:0"><input type="radio" name="radio" id="radio3" /></td>
 																<td style="border-left:0; padding-left:0">
-																	<div class="bigbold">Institutional Group</div>
-																	<p class="nopad">Users that indicated during registration that they are a member of the host institution get access to the experiment according to your sub-settings.</p>
-																	<select name="datafilter">
+																	<div class="bigbold" style="color:#ccc">An Institutional Group</div>
+																	<select name="datafilter" readonly="readonly" style="color:#ccc">
 																		<option> -- Please select an Institution --</option>
 																	</select>
+																	<p class="nopad" style="color:#ccc">Users that indicated during registration that they are a member of the selected institution get access to the experiment according to your sub-settings.</p>
 																</td>
 															</tr>
 														</table>
@@ -239,10 +239,10 @@
 														
 														<table class="searchresults" cellspacing="0">
 															<tr>													
-																<th style="height:2.5em;">Apply Access Profile To Experiment Contents</th>
+																<th style="height:2.5em;">Control Access to Specific Contents</th>
 															</tr>
 															<tr>
-																<th class="filterrow">
+																<td class="filterrow" style="border-bottom:1px solid #999">
 																	<b>Experiment Access:</b>
 																	<select name="access">
 																		<option>None</option>
@@ -252,7 +252,7 @@
 																		<option>Edit (Selective)</option>
 																		<option>Revoke Visibility</option>
 																	</select>
-																</th>
+																</td>
 															</tr>
 															<tr>
 																<th class="title"><a href="#">Sample ID</a></th>

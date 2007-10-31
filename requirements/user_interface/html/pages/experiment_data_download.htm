@@ -109,7 +109,7 @@
 								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
-								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
+								<li><a href="import_array_designs.htm">Import Array Designs</a></li>
 								
 							</ul>
 							
@@ -206,14 +206,14 @@
 														
 														<table class="searchresults" cellspacing="0">
 															<tr>
-																<th colspan="5" class="filterrow">
+																<td colspan="5" class="filterrow" style="border-bottom:1px solid #999">
 																	<b>Filter by:</b>
 																	<select name="datafilter">
 																		<option>All Experiment Files</option>
 																		<option>Extension: .CHP</option>
 																		<option>etc.</option>
 																	</select>
-																</th>
+																</td>
 															</tr>
 															<tr>													
 																<th class="icon"><input type="checkbox" name="chkall" id="chkall" /></th>
@@ -228,14 +228,14 @@
 														
 															<table class="searchresults" cellspacing="0" style="width:362px">
 																<tr class="odd">
-																	<td class="icon"><input type="checkbox" name="chk" id="chk1" /></th>
+																	<td class="icon"><input type="checkbox" name="chk" id="chk1" checked="checked" /></th>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file1.chp</a></td>
 																	<td style="width:80px;">Data File</td>
 																	<td class="icon">.chp</td>
 																	<td class="alignright" style="width:50px">940 KB</td>
 																</tr>
 																<tr>
-																	<td class="icon"><input type="checkbox" name="chk" id="chk1" /></th>
+																	<td class="icon"><input type="checkbox" name="chk" id="chk1" checked="checked" /></th>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file2.chp</a></td>
 																	<td>Data File</td>
 																	<td class="icon">.chp</td>
@@ -306,15 +306,15 @@
 												</div>		
 												
 												<div class="rightsidetable" style="width:200px; float:left">
-													<table class="searchresults" cellspacing="0">
+													<table class="searchresults" cellspacing="0" style="margin:0">
 														<tr>
 															<th>Download Queue</th>
 														</tr>
-													</table>													
-													<div class="scrolltable" style="border-left:1px solid #ccc;">
-														<ul style="margin:0;padding:0">
-															<li style="margin:0;padding:2px"><img src="images/ico_remove.gif" alt="" align="absmiddle" />  affym-file1.chp</li>
-															<li style="margin:0;padding:2px"><img src="images/ico_remove.gif" alt="" align="absmiddle" />  affym-file2.chp</li>
+													</table>
+													<div class="scrolltable" style="border-left:1px solid #999;padding:5px">
+														<ul>
+															<li><a href="#">affym-file1.chp</a></li>
+															<li><a href="#">affym-file2.chp</a></li>
 														</ul>
 													</div>
 													<div class="scrolltablefooter"><strong>Job Size:</strong> 1880 KB</div>
@@ -324,13 +324,7 @@
 													
 											</div>
 										
-											<!--<div class="actions" style="margin:0 -7px -7px -7px; border:2px solid #fff;">												
-												
-												<a href="experiment_workspace.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="#" class="launch_job"><img src="images/btn_launchjob.gif" alt="Launch Download Job" /></a>
-												
-											</div>-->
-											<div class="actions" style="margin:0 -2px -3px -2px;">												
+											<div class="actions">												
 												
 												<del class="btnwrapper">
 													<ul id="btnrow">

@@ -109,7 +109,7 @@
 								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
-								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
+								<li><a href="import_array_designs.htm">Import Array Designs</a></li>
 								
 							</ul>
 							
@@ -199,22 +199,50 @@
 											<a href="experiment_annotations_labeledextracts.htm">Labeled Extracts</a> &gt; 
 											<span class="dark">LE96-1</span>
 										</h3>
-									
+																			
 									</div>
 									
 									<div class="boxpad">
+										<!--Related Items-->								
+											<div class="line"></div>
+											<strong>Related Source:</strong> 
+											<a href="experiment_source_details.htm">mouse-93452</a>							
+											<div class="line"></div>
+											<strong>Related Sample:</strong> 
+											<a href="experiment_sample_details.htm">G96-1</a>							
+											<div class="line"></div>
+											<strong>Related Extract:</strong>
+											<a href="experiment_extract_details.htm">E96-1</a>						
+											<div class="line"></div>
+											<strong>Related Hybridization:</strong>
+											<a href="experiment_hybridization_details.htm">H96-1</a>							
+											<div class="line"></div>													
 										
-										<form name="form" id="form">
+										<!--/Related Items-->
 										
-										<div>
-										details here
-										</div>
+										<form name="editform" id="idform" action="">
+										
+											<table class="form">
+												<tr>
+													<td class="label">Labeled Extract Name:</td>
+													<td class="value">LE96-1</td>
+												</tr>
+												<tr>
+													<td class="label">Labeled Extract Description:</td>
+													<td class="value">description here</td>
+												</tr>
+												<tr>
+													<td colspan="2">(etc)</td>
+												</tr>										
+											</table>
 											
 											<div class="actions">												
 												
-												<a href="experiment_annotations_labeledextracts.htm" class="cancel"><img src="images/btn_cancel.gif" alt="Cancel" /></a>
-												<a href="experiment_annotations.htm" class="delete"><img src="images/btn_delete.gif" alt="Delete" /></a>
-												<a href="#" class="save"><img src="images/btn_save_draft.gif" alt="Save Draft" /></a>
+												<del class="btnwrapper">
+													<ul id="btnrow">
+														<li><a href="experiment_edit_labeledextract.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="edit">Edit</span></span></a></li>
+													</ul>
+												</del>
 												
 											</div>
 											

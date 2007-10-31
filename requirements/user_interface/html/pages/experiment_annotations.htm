@@ -109,7 +109,7 @@
 								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
-								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
+								<li><a href="import_array_designs.htm">Import Array Designs</a></li>
 								
 							</ul>
 							
@@ -214,13 +214,13 @@
 												<tr>
 													<td class="alignleft">
 														<label for="expdes">Experimental Design:</label>
-														<textarea cols="40" rows="6" name="expdes" id="expdes" style="width:95%; height:120px"></textarea>
+														<textarea cols="40" rows="6" name="expdes" id="expdes" style="width:95%; height:100px"></textarea>
 													</td>												
 												</tr>													
 												<tr>
 													<td class="alignleft">
 														<label for="expqual">Experimental Quality Control Description:</label>
-														<textarea cols="40" rows="6" name="expqual" id="expqual" style="width:95%; height:120px"></textarea>
+														<textarea cols="40" rows="6" name="expqual" id="expqual" style="width:95%; height:100px"></textarea>
 													</td>												
 												</tr>
 												<tr>
@@ -237,7 +237,7 @@
 												<tr>
 													<td class="alignleft">
 														<label for="expdes">Replicate Description:</label>
-														<textarea cols="40" rows="6" name="repdesc" id="repdesc" style="width:95%; height:120px"></textarea>
+														<textarea cols="40" rows="6" name="repdesc" id="repdesc" style="width:95%; height:100px"></textarea>
 													</td>												
 												</tr>
 												<tr>
@@ -251,12 +251,98 @@
 												</tr>
 											</table>
 											
+											<div class="line" style="margin-bottom:15px"></div>
+									
+											<!--Experimental Factors-->
+											
+											<a name="experimental_factors"></a>
+											
+											<h2 class="bolder">Experimental Factors <span class="tiny">(Please add at least one Experimental Factor)</span></h2>
+											
+											
+													
+											<div class="addlink">
+												<a href="experimental_factor_create.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="add">Add New Experimental Factor</span></span></a>
+											</div>
+										
+											<div id="tabboxwrapper_notabs">
+												
+												<!--Paging-->
+									
+												<div class="pagecontrol">
+												
+													<p class="small">
+														Displaying 1-2 of 2 Total
+													</p>
+													
+													<div class="paging">
+														Page 1
+														&nbsp;&nbsp;
+														&lt; Back <span class="bar">|</span> 
+														Next &gt;
+													</div>
+										
+												</div>
+												
+												<!--/Paging-->
+												
+												<table class="searchresults" cellspacing="0" style="margin-top:0">
+													<tr>
+														<th><a href="#">Factor Name</a></th>
+														<th><a href="#">Description</a></th>
+														<th><a href="#">Category</a></th>
+														<th><a href="#">Edit</a></th>
+														<th><a href="#">Copy</a></th>
+														<th><a href="#">Delete</a></th>
+													</tr>
+													<tr class="odd">
+														<td class="title"><a href="experimental_factor_details.htm">sample factor name</a></td>
+														<td>here is a description</td>
+														<td>Factor Category</td>
+														<td class="icon"><a href="experimental_factor_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+														<td class="icon"><a href="#experimental_factors"><img src="images/ico_copy.gif" alt="Copy" /></a></td>
+														<td class="icon"><a href="#experimental_factors"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
+													</tr>
+													<tr>
+														<td class="title"><a href="experimental_factor_details.htm">another factor name 2</a></td>
+														<td>here is a description</td>
+														<td>Factor Category</td>
+														<td class="icon"><a href="experimental_factor_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
+														<td class="icon"><a href="#experimental_factors"><img src="images/ico_copy.gif" alt="Copy" /></a></td>
+														<td class="icon"><a href="#experimental_factors"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
+													</tr>
+												</table>
+												
+												<!--Paging-->
+									
+												<div class="pagecontrol">
+												
+													<p class="small">
+														Displaying 1-2 of 2 Total
+													</p>
+													
+													<div class="paging">
+														Page 1
+														&nbsp;&nbsp;
+														&lt; Back <span class="bar">|</span> 
+														Next &gt;
+													</div>
+										
+												</div>
+												
+												<!--/Paging-->
+												
+														
+											</div>
+											
+											<!--/Experimental Factors-->	
+											
 											<div class="actions">												
 												
 												<del class="btnwrapper">
 													<ul id="btnrow">
 														<li><a href="experiment_workspace.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
-														<li><a href="experiment_annotations.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save Draft</span></span></a></li>
+														<li><a href="experiment_annotations.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save</span></span></a></li>
 														<li><a href="experiment_submit_confirm.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="submit_experiment">Submit Experiment for Review</span></span></a></li>
 													</ul>
 												</del>

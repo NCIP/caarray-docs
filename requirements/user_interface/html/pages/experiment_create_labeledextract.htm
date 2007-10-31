@@ -172,9 +172,9 @@
 								<ul id="tabs" class="tabs2">
 									<li><a href="experiment_edit.htm">Overview</a></li>
 									<li><a href="experiment_contacts.htm">Contacts</a></li>
-									<li><a href="experiment_annotations.htm">Annotations</a></li>
+									<li><a href="experiment_annotations.htm" class="active">Annotations</a></li>
 									<li><a href="experiment_data.htm">Data</a></li>
-									<li><a href="experiment_supplemental.htm" class="active">Supplemental</a></li>
+									<li><a href="experiment_supplemental.htm">Supplemental</a></li>
 									<li><a href="experiment_publications.htm">Publications</a></li>
 								</ul>
 								
@@ -183,80 +183,61 @@
 								<!--Tab box-->
 									
 								<div id="tabboxwrapper">
-																			
+									
+									<ul id="tablevel2">
+										<li><a href="experiment_annotations.htm">Experimental Design</a></li>
+										<li><a href="experiment_annotations_sources.htm">Sources</a></li>
+										<li><a href="experiment_annotations_samples.htm">Samples</a></li>
+										<li><a href="experiment_annotations_extracts.htm">Extracts</a></li>
+										<li><a href="experiment_annotations_labeledextracts.htm" class="selected">Labeled Extracts</a></li>
+										<li><a href="experiment_annotations_hybridizations.htm">Hybridizations</a></li>
+									</ul>
+										
 									<div class="boxpad2">
 									
-										<h3>Supplemental Documents</h3>
+										<h3>
+											<a href="experiment_annotations_labeledextracts.htm">Labeled Extracts</a> &gt; 
+											<span class="dark">Create Labeled Extract</span>
+										</h3>
 										
-										<div class="addlink">
-											<a href="experiment_data_upload.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="add">Upload New File(s)</span></span></a>
-										</div>
-									
+									</div>
+																			
+									<div class="boxpad">
+										
+										<form name="editform" id="idform" action="">
+										
+											<table class="form">
+												<tr>
+													<td class="label"><span class="required">Labeled Extract Name:<span class="asterisk">*</span></span></td>
+													<td class="value"><input type="text" name="name" id="name" value="" style="width:50%;" /></td>
+												</tr>																		
+												<tr>
+													<td class="label">Labeled Extract Description:</td>
+													<td class="value"><textarea name="decription" rows="3" cols="20" id="description" style="width:50%;"></textarea></td>
+												</tr>
+												<tr>
+													<td class="label">(Other fields here)</td>
+													<td class="value"></td>
+												</tr>
+											</table>											
+										
+											<div class="actions">												
+												
+												<del class="btnwrapper">
+													<ul id="btnrow">
+														<li><a href="experiment_annotations_labeledextracts.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
+														<li><a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="save">Save</span></span></a></li>
+													</ul>
+												</del>
+												
+											</div>
+											
+										</form>
+										
 									</div>
 									
-									<div class="tableboxpad">								
 									
-										<div class="datatable">
-											
-											
-											<!--Paging-->
 										
-												<div class="pagecontrol">
-												
-													<p class="count">Displaying 1-2 of 2 Total.</p>
-											
-													<div class="paging">													
-														&nbsp;&nbsp;
-														Page <span class="white"><strong>1</strong></span>
-														&nbsp;&nbsp;
-														&lt; Back <span class="bar">|</span> 
-														Next &gt;
-													</div>
-												
-												</div>
-											
-											<!--/Paging-->
-										
-											<table class="searchresults" cellspacing="0">													
-												<tr>													
-													<th><a href="#">File Name</a></th>
-													<th class="alignright"><a href="#">File Size</a></th>
-													<th class="icon"><a href="#">Delete</a></th>
-												</tr>
-												<tr class="odd">
-													<td class="title"><a href="#">Experiment_Presentation.ppt</a></td>
-													<td class="alignright">234 KB</td>
-													<td class="icon"><img src="images/ico_delete.gif" alt="" /></td>
-												</tr>		
-												<tr>
-													<td class="title"><a href="#">Internal_Resource_List.doc</a></td>
-													<td class="alignright">82 KB</td>
-													<td class="icon"><img src="images/ico_delete.gif" alt="" /></td>
-												</tr>		
-											</table>
-											
-											<!--Paging-->
-										
-												<div class="pagecontrol">
-												
-													<p class="count">Displaying 1-2 of 2 Total.</p>
-											
-													<div class="paging">													
-														&nbsp;&nbsp;
-														Page <span class="white"><strong>1</strong></span>
-														&nbsp;&nbsp;
-														&lt; Back <span class="bar">|</span> 
-														Next &gt;
-													</div>
-												
-												</div>
-											
-											<!--/Paging-->					
-													
-										</div>					
-													
-									</div>		
-																				
 								</div>
 										
 								<!--/Tab Box-->								

@@ -51,7 +51,7 @@
 								<option>(All Categories) </option>
 								<option>Experiment ID</option>
 								<option>Experiment Name</option>
-								<option>Manufacturer</option>
+								<option>Assay Type</option>
 								<option>Source Organism</option>
 								<option>Sample ID</option>
 								<option>Disease State</option>								
@@ -109,7 +109,7 @@
 								<li><a href="manage_collaboration_groups.htm">Manage Collaboration Groups</a></li>			
 								
 								<li class="liheader">Curation</li>
-								<li><a href="experiment_workspace.htm">Import Array Design</a></li>
+								<li><a href="import_array_designs.htm">Import Array Designs</a></li>
 								
 							</ul>
 							
@@ -201,86 +201,110 @@
 										<!--Work Queue-->
 											
 											<div id="workqueue">
+											
+												<!--Paging-->
+										
+													<div class="pagecontrol">
+													
+														<p class="small">Displaying 1-4 of 4 Total.</p>
 												
-												<p class="small">Displaying 1-4 of 4 Total.</p>
+														<div class="paging">													
+															&nbsp;&nbsp;
+															Page 1
+															&nbsp;&nbsp;
+															&lt; Back <span class="bar">|</span> 
+															Next &gt;
+														</div>
+													
+													</div>
 												
-												<div class="pagingtop">													
-													&nbsp;&nbsp;
-													Page 1
-													&nbsp;&nbsp;
-													&lt; Back <span class="bar">|</span> 
-													Next &gt;
-												</div>
+												<!--/Paging-->
 												
 												<table class="searchresults" cellspacing="0">
 													<tr>
+														<th><a href="#" style="white-space:nowrap">Experiment ID</a></th>
 														<th><a href="#">Experiment Title</a></th>
-														<th><a href="#">Array Type</a></th>
-														<th><a href="#">Organism</a></th>
-														<th><a href="#">Disease State</a></th>
+														<th><a href="#">Assay Type</a></th>
+														<!--<th><a href="#">Organism</a></th>
+														<th><a href="#">Disease</a></th>-->
+														<th><a href="#">Samples</a></th>
 														<th><a href="#">Status</a></th>
-														<th><a href="#">Date Created</a></th>
-														<th><a href="#"># Samples</a></th>
-														<th class="actions">Properties</th>
+														<th><a href="#">Updated</a></th>
+														<th class="actions">Permissions</th>
 														<th class="actions">Edit</th>
 														<th class="actions">Delete</th>
 													</tr>
 													<tr class="odd">
-														<td class="title"><a href="experiment_details.htm">armst-affy-arabi-316282</a></td>
-														<td>Affymetrix </td>
-														<td>Mouse</td>
-														<td>Acute Lymphoblastic Leukemia, Adult</td>
+														<td class="title"><a href="experiment_details.htm">kletzl-89564</a></td>
+														<td>Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays</td>
+														<td>Gene Expression </td>
+														<!--<td>Mouse</td>
+														<td>Acute Lymphoblastic Leukemia, Adult</td>-->
+														<td class="alignright"><a href="experiment_annotations_samples.htm">10</a></td>
 														<td>Draft</td>
 														<td>09/23/2007</td>
-														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
-														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
+														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_permissions.gif" alt="Permissions" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
 													</tr>
 													<tr>
-														<td class="title"><a href="experiment_details.htm">arnol-affy-chick-445002</a></td>
-														<td>Affymetrix </td>
-														<td>Human</td>
-														<td>Cancer</td>
+														<td class="title"><a href="experiment_details.htm">kletzl-89576</a></td>
+														<td>Sample Experiment Title</td>
+														<td>Gene Expression </td>
+														<!--<td>Human</td>
+														<td>Cancer</td>-->
+														<td class="alignright"><a href="experiment_annotations_samples.htm">23</a></td>
 														<td>Draft</td>
 														<td>10/01/2007</td>
-														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
-														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
+														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_permissions.gif" alt="Permissions" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
 													</tr>													
 													<tr class="odd">
-														<td class="title"><a href="experiment_details.htm">freij-affy-human-91666</a></td>
-														<td>Affymetrix </td>
-														<td>Mouse</td>
-														<td>Brain Stem Glioma, Childhood</td>
+														<td class="title"><a href="experiment_details.htm">kletzl-89790</a></td>
+														<td>Oligonucleotide microarrays sample title</td>
+														<td>Gene Expression </td>
+														<!--<td>Mouse</td>
+														<td>Brain Stem Glioma, Childhood</td>-->
+														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
 														<td>Draft</td>
 														<td>09/23/2007</td>
-														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
-														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
+														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_permissions.gif" alt="Permissions" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
 													</tr>
 													<tr>
-														<td class="title"><a href="experiment_details.htm">prosc-affy-mouse-450860</a></td>
-														<td>Affymetrix </td>
-														<td>Human</td>
-														<td>Cancer</td>
+														<td class="title"><a href="experiment_details.htm">kletzl-90543</a></td>
+														<td>Gene expression study ABC</td>
+														<td>Gene Expression </td>
+														<!--<td>Human</td>
+														<td>Cancer</td>-->
+														<td class="alignright"><a href="experiment_annotations_samples.htm">44</a></td>
 														<td>Draft</td>
 														<td>10/01/2007</td>
-														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
-														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
+														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_permissions.gif" alt="Permissions" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 														<td class="icon"><a href="#"><img src="images/ico_delete.gif" alt="Delete" /></a></td>
 													</tr>													
 												</table>
 												
-												<div class="paging">
-													Page 1
-													&nbsp;&nbsp;
-													&lt; Back <span class="bar">|</span> 
-													Next &gt;
-												</div>
+												<!--Paging-->
+										
+													<div class="pagecontrol">
+													
+														<p class="small">Displaying 1-4 of 4 Total.</p>
+												
+														<div class="paging">													
+															&nbsp;&nbsp;
+															Page 1
+															&nbsp;&nbsp;
+															&lt; Back <span class="bar">|</span> 
+															Next &gt;
+														</div>
+													
+													</div>
+												
+												<!--/Paging-->
 														
 											</div>
 											
@@ -289,48 +313,70 @@
 										<!--Completed-->
 											
 											<div id="completed">
+											
+												<!--Paging-->
+										
+													<div class="pagecontrol">
+													
+														<p class="small">Displaying 1-1 of 1 Total.</p>
 												
-												<p class="small">Displaying 1-1 of 1 Total.</p>
+														<div class="paging">													
+															&nbsp;&nbsp;
+															Page 1
+															&nbsp;&nbsp;
+															&lt; Back <span class="bar">|</span> 
+															Next &gt;
+														</div>
+													
+													</div>
 												
-												<div class="pagingtop">													
-													&nbsp;&nbsp;
-													Page 1
-													&nbsp;&nbsp;
-													&lt; Back <span class="bar">|</span> 
-													Next &gt;
-												</div>
+												<!--/Paging-->
+												
 												
 												<table class="searchresults" cellspacing="0">
 													<tr>
-														<th><a href="#">Experiment Title</a></th>
-														<th><a href="#">Array Type</a></th>
+														<th><a href="#">ID</a></th>
+														<th><a href="#">Title</a></th>
+														<th><a href="#">Assay Type</a></th>
 														<th><a href="#">Organism</a></th>
 														<th><a href="#">Disease State</a></th>
 														<th><a href="#">Status</a></th>
-														<th><a href="#">Date Created</a></th>
-														<th><a href="#"># Samples</a></th>
+														<th><a href="#">Updated</a></th>
+														<th><a href="#">Samples</a></th>
 														<th class="actions">Properties</th>
 														<th class="actions">Edit</th>
 													</tr>
 													<tr class="odd">
-														<td class="title"><a href="experiment_details.htm">armst-affy-arabi-316282</a></td>
-														<td>Affymetrix </td>
+														<td class="title"><a href="experiment_details.htm">kletzl-89564</a></td>
+														<td>Interlaboratory comparability study of cancer gene expression...</td>
+														<td>Gene Expression </td>
 														<td>Mouse</td>
 														<td>Acute Lymphoblastic Leukemia, Adult</td>
 														<td>Completed</td>
 														<td>09/23/2007</td>
 														<td class="alignright"><a href="experiment_annotations_samples.htm">121</a></td>
-														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_properties.gif" alt="Properties" /></a></td>
+														<td class="icon"><a href="experiment_properties.htm"><img src="images/ico_permissions.gif" alt="Permissions" /></a></td>
 														<td class="icon"><a href="experiment_edit.htm"><img src="images/ico_edit.gif" alt="Edit" /></a></td>
 													</tr>
 												</table>
 												
-												<div class="paging">
-													Page 1
-													&nbsp;&nbsp;
-													&lt; Back <span class="bar">|</span> 
-													Next &gt;
-												</div>
+												<!--Paging-->
+										
+													<div class="pagecontrol">
+													
+														<p class="small">Displaying 1-1 of 1 Total.</p>
+												
+														<div class="paging">													
+															&nbsp;&nbsp;
+															Page 1
+															&nbsp;&nbsp;
+															&lt; Back <span class="bar">|</span> 
+															Next &gt;
+														</div>
+													
+													</div>
+												
+												<!--/Paging-->
 														
 											</div>
 											
@@ -340,39 +386,59 @@
 											
 											<div id="public">
 												
-												<p class="small">Displaying 0-0 of 0 Total.</p>
+												<!--Paging-->
+										
+													<div class="pagecontrol">
+													
+														<p class="small">Displaying 0-0 of 0 Total.</p>
 												
-												<div class="pagingtop">													
-													&nbsp;&nbsp;
-													Page 1
-													&nbsp;&nbsp;
-													&lt; Back <span class="bar">|</span> 
-													Next &gt;
-												</div>
+														<div class="paging">													
+															&nbsp;&nbsp;
+															Page 1
+															&nbsp;&nbsp;
+															&lt; Back <span class="bar">|</span> 
+															Next &gt;
+														</div>
+													
+													</div>
+												
+												<!--/Paging-->
 												
 												<table class="searchresults" cellspacing="0">
 													<tr>
-														<th><a href="#">Experiment Title</a></th>
-														<th><a href="#">Array Type</a></th>
+														<th><a href="#">ID</a></th>
+														<th><a href="#">Title</a></th>
+														<th><a href="#">Assay Type</a></th>
 														<th><a href="#">Organism</a></th>
 														<th><a href="#">Disease State</a></th>
 														<th><a href="#">Status</a></th>
-														<th><a href="#">Date Created</a></th>
-														<th><a href="#"># Samples</a></th>
+														<th><a href="#">Updated</a></th>
+														<th><a href="#">Samples</a></th>
 														<th class="actions">Properties</th>
 														<th class="actions">Edit</th>
 													</tr>
 													<tr class="odd">
-														<td colspan="9">There are currently no items in this list.</td>
+														<td colspan="10">There are currently no items in this list.</td>
 													</tr>
 												</table>
 												
-												<div class="paging">
-													Page 1
-													&nbsp;&nbsp;
-													&lt; Back <span class="bar">|</span> 
-													Next &gt;
-												</div>
+												<!--Paging-->
+										
+													<div class="pagecontrol">
+													
+														<p class="small">Displaying 1-1 of 1 Total.</p>
+												
+														<div class="paging">													
+															&nbsp;&nbsp;
+															Page 1
+															&nbsp;&nbsp;
+															&lt; Back <span class="bar">|</span> 
+															Next &gt;
+														</div>
+													
+													</div>
+												
+												<!--/Paging-->
 														
 											</div>
 											
