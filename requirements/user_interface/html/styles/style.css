@@ -392,11 +392,11 @@ TH.filterrow, TD.filterrow, DIV.filterrow
 .displayrow TD
 { border:0 }
 .scrolltable
-{ overflow:auto; height:200px; background:#fff; border-right:1px solid #999; border-bottom:1px solid #999; margin:5px 0 }
+{ overflow:auto; height:200px; background:#fff url("../images/bg_scrolltable.gif") repeat-y right; border:1px solid #999; margin:5px 0 }
 .datatable .scrolltable, .datatable .searchresults, .rightsidetable .scrolltable
-{ margin:0 }
+{ margin:0; background:#fff url("../images/bg_scrolltable.gif") repeat-y right;}
 .scrolltable .searchresults
-{ width:97.5%; }
+{ width:97.5%; border:0; background:#fff }
 :lang(en) .scrolltable .searchresults
 { width:99.9% }
 .leftrightwrapper .title
@@ -421,7 +421,12 @@ DIV.filterrow2
 { background:#e5e5e5 url("../images/bg_grad3d.gif") repeat-x; padding:3px; border:1px solid #999;  }
 DIV.filterrow2 SELECT, INPUT
 { margin:2px }
-
+TABLE.searchresults TD.icon INPUT, TABLE.searchresults TH.icon INPUT
+{ padding:0; margin:0 }
+.scrolltable TABLE.searchresults TD, .scrolltable TABLE.searchresults TH
+{ padding:2px; margin:0; vertical-align:middle }
+:lang(en) .scrolltable TABLE.searchresults TD, :lang(en) .scrolltable TABLE.searchresults TH
+{ padding:4px; margin:0; vertical-align:middle }
 
 /* Experiment Details */
 
@@ -496,6 +501,8 @@ A.btn SPAN SPAN
 { display:block; padding:0 0 0 20px }
 A.btn SPAN.add
 { background:url("../images/ico_add.gif") no-repeat; }
+A.btn SPAN.associate
+{ background:url("../images/ico_associate.gif") no-repeat; }
 A.btn SPAN.cancel
 { background:url("../images/ico_cancel.gif") no-repeat; }
 A.btn SPAN.copy
@@ -510,6 +517,8 @@ A.btn SPAN.import
 { background:url("../images/ico_import.gif") no-repeat; }
 A.btn SPAN.launch_download
 { background:url("../images/ico_launch_download.gif") no-repeat; }
+A.btn SPAN.login
+{ background:url("../images/ico_login.gif") no-repeat; }
 A.btn SPAN.manage_associations
 { background:url("../images/ico_manage_associations.gif") no-repeat; }
 A.btn SPAN.register
@@ -566,14 +575,14 @@ A.btn SPAN.validate
 { float:left; width:200px; margin-left:5px }
 .selectionside UL
 { padding:3px }
-.selectionside A, .scrolltable UL A
+.selectionside A, .scrolltable UL A, .scrolltable2 A
 { text-decoration:none; color:#666; background:url("../images/ico_checklist_remove.gif") 0 1px no-repeat; padding-left:15px; }
-.selectionside A:hover, .scrolltable UL A:hover
+.selectionside A:hover, .scrolltable UL A:hover, .scrolltable2 A:hover
 { color:#333; background:url("../images/ico_checklist_remove.gif") 0 -23px no-repeat; }
 .selectionside H4
 { padding:4px 5px; border:0; border:1px solid #999; background:#e5e5e5 url("../images/bg_grad3d.gif"); color:#333 }
 .scrolltable2
-{ overflow:auto; height:200px; background:#fff; border-right:1px solid #999; border-bottom:1px solid #999; border-left:1px solid #999; height:92px }
+{ overflow:auto; height:200px; background:#fff url("../images/bg_scrolltable.gif") repeat-y right; border-right:1px solid #999; border-bottom:1px solid #999; border-left:1px solid #999; height:92px }
 DIV.filterrow
 { padding:3px; border:1px solid #999; border-bottom:0; width:249px }
 DIV.filterrow SELECT
