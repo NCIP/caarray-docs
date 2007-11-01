@@ -163,7 +163,7 @@
 								<a href="#" class="print">Print</a>
 							</div>							
 								
-							<div class="padme">
+							<div class="padme" id="widepage">
 							
 								<h2><span class="dark">Experiment:</span>	Interlaboratory comparability study of cancer gene expression analysis using oligonucleotide microarrays</h2>
 													
@@ -185,119 +185,111 @@
 								<div id="tabboxwrapper">
 									
 									<ul id="tablevel2">
-										<li><a href="experiment_data.htm">Manage Data</a></li>
-										<li><a href="experiment_data_download.htm" class="selected">Download Data</a></li>
+										<li><a href="experiment_data.htm" class="selected">Manage Data</a></li>
+										<li><a href="experiment_data_download.htm">Download Data</a></li>
 									</ul>
 										
-									<div class="boxpad">
+									<div class="boxpad2">
 									
-										<h3>Download Data</h3>
-										<p class="instructions" style="margin-bottom:15px">Check the box next to data you wish to download to add it to the Download Queue.</p>
-															
+										<h3>
+											<a href="experiment_data.htm">Manage Data</a> &gt;
+											<span class="dark">Manage Associations</span>
+											
+										</h3>
 										
+									</div>
+									
+									<div class="boxpad">						
+									
+									<p class="instructions">
+										Select one or more data files, then select the sample with which they are associated. Click the Enable Associations button to save the associations.
+									</p>		
 										
 										<form name="dataform" id="dataform" action="#">
-											
+										
 											<div class="leftrightwrapper">
 											
-												<div class="leftsidetable" style="width:380px; float:left">
+												<!-- Validated Data Files-->
+												
+												<div class="leftsidetable" style="width:300px; float:left">
+												
+												<h4 class="bigbold" style="margin:10px 0">Data Files</h4>
 												
 													<div class="datatable">
 														
 														<table class="searchresults" cellspacing="0">
 															<tr>
-																<td colspan="5" class="filterrow" style="border-bottom:1px solid #999">
+																<td colspan="4" class="filterrow" style="border-bottom:1px solid #999">
 																	<b>Filter by:</b>
 																	<select name="datafilter">
-																		<option>All Experiment Files</option>
+																		<option>All Unassociated Data Files</option>
 																		<option>Extension: .CHP</option>
 																		<option>etc.</option>
 																	</select>
 																</td>
 															</tr>
 															<tr>													
-																<th class="icon"><input type="checkbox" name="chkall" id="chkall" /></th>
-																<th class="title"><a href="#">File Name</a></th>
-																<th style="width:80px;"><a href="#">Type</a></th>
-																<th class="icon"><a href="#">Ext.</a></th>
-																<th class="alignright" style="width:70px; padding-right:20px"><a href="#">Size</a></th>
+																<th class="icon" style="width:21px; border-right:0"><input type="checkbox" name="chkall" id="chkall" /></th>
+																<th class="title" style="width:235px; border-right:0"><a href="#">File Name</a></th>
+																<th class="icon" style="width:38px; border-right:0"><a href="#">Ext.</a></th>
+																<th style="width:7px; border-right:0">&nbsp;</th>
 															</tr>
 														</table>
 														
-														<div class="scrolltable">
+														<div class="scrolltable">		
 														
-															<table class="searchresults" cellspacing="0" style="width:362px">
+															<table class="searchresults" cellspacing="0" style="width:281px">
 																<tr class="odd">
-																	<td class="icon"><input type="checkbox" name="chk" id="chk1" checked="checked" /></td>
-																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file1.chp</a></td>
-																	<td style="width:80px;">Data File</td>
-																	<td class="icon">.chp</td>
-																	<td class="alignright" style="width:50px">940 KB</td>
+																	<td class="icon" style="width:21px"><input type="checkbox" name="chk" id="chk1" checked="checked" /></td>
+																	<td class="title" style="width:235px"><a href="experiment_hybridization_details.htm">affym-file1.chp</a></td>
+																	<td class="icon" style="width:38px">.chp</td>
 																</tr>
 																<tr>
-																	<td class="icon"><input type="checkbox" name="chk" id="chk2" checked="checked" /></td>
+																	<td class="icon"><input type="checkbox" name="chk" id="chk2" /></td>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file2.chp</a></td>
-																	<td>Data File</td>
 																	<td class="icon">.chp</td>
-																	<td class="alignright">940 KB</td>
 																</tr>			
 																<tr class="odd">
 																	<td class="icon"><input type="checkbox" name="chk" id="chk3" /></td>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file3.chp</a></td>
-																	<td>Data File</td>
 																	<td class="icon">.chp</td>
-																	<td class="alignright">940 KB</td>
 																</tr>
 																<tr>
 																	<td class="icon"><input type="checkbox" name="chk" id="chk4" /></td>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file4.chp</a></td>
-																	<td>Data File</td>
 																	<td class="icon">.chp</td>
-																	<td class="alignright">940 KB</td>
 																</tr>			
 																<tr class="odd">
 																	<td class="icon"><input type="checkbox" name="chk" id="chk5" /></td>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file5.chp</a></td>
-																	<td>Data File</td>
 																	<td class="icon">.chp</td>
-																	<td class="alignright">940 KB</td>
 																</tr>
 																<tr>
 																	<td class="icon"><input type="checkbox" name="chk" id="chk6" /></td>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file6.chp</a></td>
-																	<td>Data File</td>
 																	<td class="icon">.chp</td>
-																	<td class="alignright">940 KB</td>
 																</tr>			
 																<tr class="odd">
 																	<td class="icon"><input type="checkbox" name="chk" id="chk7" /></td>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file7.chp</a></td>
-																	<td>Data File</td>
 																	<td class="icon">.chp</td>
-																	<td class="alignright">940 KB</td>
 																</tr>
 																<tr>
 																	<td class="icon"><input type="checkbox" name="chk" id="chk8" /></td>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file8.chp</a></td>
-																	<td>Data File</td>
 																	<td class="icon">.chp</td>
-																	<td class="alignright">940 KB</td>
 																</tr>			
 																<tr class="odd">
 																	<td class="icon"><input type="checkbox" name="chk" id="chk9" /></td>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file9.chp</a></td>
-																	<td>Data File</td>
 																	<td class="icon">.chp</td>
-																	<td class="alignright">940 KB</td>
 																</tr>
 																<tr>
 																	<td class="icon"><input type="checkbox" name="chk" id="chk10" /></td>
 																	<td class="title"><a href="experiment_hybridization_details.htm">affym-file0.chp</a></td>
-																	<td>Data File</td>
 																	<td class="icon">.chp</td>
-																	<td class="alignright">940 KB</td>
 																</tr>			
-															</table>	
+															</table>
 														
 														</div>			
 																
@@ -305,42 +297,92 @@
 																
 												</div>		
 												
-												<div class="rightsidetable" style="width:200px; float:left">
-													<table class="searchresults" cellspacing="0" style="margin:0">
-														<tr>
-															<th>Download Queue</th>
-														</tr>
-													</table>
-													<div class="scrolltable" style="border-left:1px solid #999;padding:5px">
-														<ul>
-															<li><a href="#">affym-file1.chp</a></li>
-															<li><a href="#">affym-file2.chp</a></li>
-														</ul>
-													</div>
-													<div class="scrolltablefooter"><strong>Job Size:</strong> 1880 KB</div>
+												<!--/Validated Data Files-->
+												
+												<!--Samples-->
+												
+												<div class="leftsidetable" style="width:300px; float:right; margin-left:10px">
+												
+													<h4 class="bigbold" style="margin:10px 0">Samples</h4>
+														
+													<div class="datatable">														
+														
+														<table class="searchresults" cellspacing="0">
+															<tr>
+																<td colspan="3" class="filterrow" style="border-bottom:1px solid #999">
+																	<b>Filter by:</b>
+																	<select name="datafilter">
+																		<option>Unassociated Samples</option>
+																		<option>All Samples</option>
+																		<option>etc.</option>
+																	</select>
+																</td>
+															</tr>
+															<tr>													
+																<th class="icon" style="width:21px; border-right:0"><input type="checkbox" name="chkall" id="chkall" /></th>
+																<th class="title" style="width:235px; border-right:0"><a href="#">Sample Name</a></th>
+																<th style="width:8px; border-right:0">&nbsp;</th>
+															</tr>
+														</table>
+														
+														<div class="scrolltable">		
+														
+															<table class="searchresults" cellspacing="0" style="width:282px">
+																<tr class="odd">
+																	<td class="icon" style="width:21px"><input type="checkbox" name="chk" id="chk11" checked="checked" /></td>
+																	<td class="title" style="width:240px"><a href="experiment_sample_details.htm">G96-1</a></td>
+																</tr>
+																<tr>
+																	<td class="icon" style="width:21px"><input type="checkbox" name="chk" id="chk12" checked="checked" /></td>
+																	<td class="title" style="width:240px"><a href="experiment_sample_details.htm">G96-2</a></td>
+																</tr>			
+															</table>
+														
+														</div>			
+																
+													</div>					
+																
+												</div>		
+												
+												<!--/Samples-->
+												
+												<div class="clear"></div>												
+													
+												<table class="searchresults" cellspacing="0" style="margin:10px 0 0 0">
+													<tr>
+														<th>Associations Queue</th>
+													</tr>
+												</table>
+												
+												<div class="scrolltable2" style="border-left:1px solid #999;padding:5px">													
+													<ul>
+														<li><a href="#" class="remove">affym-file1.chp <img src="images/ico_link.gif" alt="" align="absmiddle" /> G96-1</a></li>
+														<li><a href="#" class="remove">affym-file1.chp <img src="images/ico_link.gif" alt="" align="absmiddle" /> G96-2</a></li>
+													</ul>														
 												</div>
+													
 												
 												<div class="clear"><br /><br /></div>		
 													
 											</div>
-										
+											
 											<div class="actions">												
 												
 												<del class="btnwrapper">
 													<ul id="btnrow">
 														<li><a href="experiment_data.htm" class="btn" onclick="this.blur();"><span class="btn_img"><span class="cancel">Cancel</span></span></a></li>
-														<li><a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="launch_download">Launch Download Job</span></span></a></li>
+														<li><a href="#" class="btn" onclick="this.blur();"><span class="btn_img"><span class="associate">Enable Associations</span></span></a></li>
 													</ul>
 												</del>
 												
 											</div>
 											
-										</div>
-										
-									</form>
+										</form>
+											
+									</div>												
 																				
 								</div>
-																		
+										
 								<!--/Tab Box-->								
 								
 							</div>
