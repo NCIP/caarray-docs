@@ -397,6 +397,8 @@ TH.filterrow, TD.filterrow, DIV.filterrow
 { margin:0; background:#fff url("../images/bg_scrolltable.gif") repeat-y right;}
 .scrolltable .searchresults
 { width:97.5%; border:0; background:#fff }
+.scrolltable .searchresults TR
+{ background:#fff }
 :lang(en) .scrolltable .searchresults
 { width:99.9% }
 .leftrightwrapper .title
@@ -545,6 +547,9 @@ A.btn SPAN.validate
 { margin:0 0 5px 0; }
 .addlink A.btn, .addlink_notabs A.btn, .addlink_notabs_filterrow A.btn
 { margin-right:0 }
+
+.addicon
+{ padding:2px 0 2px 17px; background:url("../images/ico_add.gif") no-repeat; }
 
 
 /* Check List */
