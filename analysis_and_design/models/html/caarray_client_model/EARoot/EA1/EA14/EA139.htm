@@ -1,12 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>ExonArrayReporter</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>gov.nih.nci.cabio.domain::ExonArrayReporter</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
 		<TD colspan=2 WIDTH="100%" class="Header">class: ExonArrayReporter</TD>
@@ -74,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA143.htm">TranscriptArrayReporter</a>, <a href="../EA4/EA48.htm">ExonProbeAnnotation</a>
+				<a href="EA143.htm">TranscriptArrayReporter</a>, <a href="../EA4/EA49.htm">ExonProbeAnnotation</a>
 			</td>
 		</tr>
 	</tbody>
@@ -110,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA136.htm">gov.nih.nci.cabio.domain</a>, <a href="../EA4/EA40.htm">gov.nih.nci.caarray.domain.array Annotations</a>
+				<a href="../EA4/EA41.htm">gov.nih.nci.caarray.domain.array Annotations</a>, <a href="EA136.htm">gov.nih.nci.cabio.domain</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Generalization  link to class <a href="EA143.htm">[gov.nih.nci.cabio.domain].TranscriptArrayReporter</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA4/EA48.htm">[gov.nih.nci.caarray.domain.array].ExonProbeAnnotation</a> &nbsp;  &nbsp;</LI>	
+							<LI>Generalization  link to class <a href="EA143.htm">[gov.nih.nci.cabio.domain].TranscriptArrayReporter</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA4/EA49.htm">[gov.nih.nci.caarray.domain.array].ExonProbeAnnotation</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -165,13 +164,13 @@
 					</TR>
 						<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private Long</i><br><b>&nbsp;&nbsp;probeSelectionRegionId</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=Unique identifier by Affymetrix for the probe selection region, a consolidated sequence region compiled from different sources of RNA sequence information, for selecting probe sets.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>Unique&nbsp;<WBR>identifier&nbsp;<WBR>by&nbsp;<WBR>Affymetrix&nbsp;<WBR>for&nbsp;<WBR>the&nbsp;<WBR>probe&nbsp;<WBR>selection&nbsp;<WBR>region,&nbsp;<WBR>a&nbsp;<WBR>consolidated&nbsp;<WBR>sequence&nbsp;<WBR>region&nbsp;<WBR>compiled&nbsp;<WBR>from&nbsp;<WBR>different&nbsp;<WBR>sources&nbsp;<WBR>of&nbsp;<WBR>RNA&nbsp;<WBR>sequence&nbsp;<WBR>information,&nbsp;<WBR>for&nbsp;<WBR>selecting&nbsp;<WBR>probe&nbsp;<WBR>sets.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private Long</i><br><b>&nbsp;&nbsp;probeCount</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=Total number of probes in the probe set.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>Total&nbsp;<WBR>number&nbsp;<WBR>of&nbsp;<WBR>probes&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>probe&nbsp;<WBR>set.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;strand</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The genomic strand of the transcript cluster the probe set is assigned to.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>genomic&nbsp;<WBR>strand&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>transcript&nbsp;<WBR>cluster&nbsp;<WBR>the&nbsp;<WBR>probe&nbsp;<WBR>set&nbsp;<WBR>is&nbsp;<WBR>assigned&nbsp;<WBR>to.</TD> </TR> </TABLE></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -182,7 +181,36 @@
 	</tbody>
 </table>
 
-<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
+<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="TaggedVals">ExonArrayReporter</a> Tagged Values
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
+					<TR>
+						<TD WIDTH="24%" class="OperationTableHeading">Tag</TD>
+						<TD WIDTH="24%" class="OperationTableHeading">Value</TD>
+						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
+					</TR>
+									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">An object to represent the features on Exon arrays designed to measure levels of RNAs containing the Exon.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+	
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+	<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
@@ -199,4 +227,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

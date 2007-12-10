@@ -1,12 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>Protocol</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>gov.nih.nci.caarray.domain.protocol::Protocol</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
 		<TD colspan=2 WIDTH="100%" class="Header">class: Protocol</TD>
@@ -74,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
 			</td>
 		</tr>
 	</tbody>
@@ -86,7 +85,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>
+				<a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA109.htm">ProtocolApplication</a>, <a href="../EA13/EA133.htm">Term</a>, <a href="EA106.htm">Parameter</a>, <a href="../EA7/EA87.htm">CaArrayFile</a>, <a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>
+				<a href="EA109.htm">ProtocolApplication</a>, <a href="../EA13/EA133.htm">Term</a>, <a href="EA106.htm">Parameter</a>, <a href="../EA7/EA89.htm">CaArrayFile</a>, <a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link to class <a href="../EA13/EA133.htm">[gov.nih.nci.caarray.domain.vocabulary].Term</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA106.htm">[gov.nih.nci.caarray.domain.protocol].Parameter</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA7/EA87.htm">[gov.nih.nci.caarray.domain.file].CaArrayFile</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA37.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA109.htm">[gov.nih.nci.caarray.domain.protocol].ProtocolApplication</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link to class <a href="../EA13/EA133.htm">[gov.nih.nci.caarray.domain.vocabulary].Term</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA106.htm">[gov.nih.nci.caarray.domain.protocol].Parameter</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA7/EA89.htm">[gov.nih.nci.caarray.domain.file].CaArrayFile</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA38.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA109.htm">[gov.nih.nci.caarray.domain.protocol].ProtocolApplication</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -165,22 +164,22 @@
 					</TR>
 						<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;name</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The common name by which this protocol is reference.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>common&nbsp;<WBR>name&nbsp;<WBR>by&nbsp;<WBR>which&nbsp;<WBR>this&nbsp;<WBR>protocol&nbsp;<WBR>is&nbsp;<WBR>reference.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;description</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=A textual definition of how the protocol is to be applied.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>textual&nbsp;<WBR>definition&nbsp;<WBR>of&nbsp;<WBR>how&nbsp;<WBR>the&nbsp;<WBR>protocol&nbsp;<WBR>is&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>applied.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;hardware</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=A textual description of any equipment required in the application of a protocol.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>textual&nbsp;<WBR>description&nbsp;<WBR>of&nbsp;<WBR>any&nbsp;<WBR>equipment&nbsp;<WBR>required&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>application&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>protocol.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;software</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=A textual description of any computer software required in the application of a protocol.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>textual&nbsp;<WBR>description&nbsp;<WBR>of&nbsp;<WBR>any&nbsp;<WBR>computer&nbsp;<WBR>software&nbsp;<WBR>required&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>application&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>protocol.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;contact</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=Persons or organizations that either defined the protocol or may otherwise be of use in answering questions related to applying the protocol.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>Persons&nbsp;<WBR>or&nbsp;<WBR>organizations&nbsp;<WBR>that&nbsp;<WBR>either&nbsp;<WBR>defined&nbsp;<WBR>the&nbsp;<WBR>protocol&nbsp;<WBR>or&nbsp;<WBR>may&nbsp;<WBR>otherwise&nbsp;<WBR>be&nbsp;<WBR>of&nbsp;<WBR>use&nbsp;<WBR>in&nbsp;<WBR>answering&nbsp;<WBR>questions&nbsp;<WBR>related&nbsp;<WBR>to&nbsp;<WBR>applying&nbsp;<WBR>the&nbsp;<WBR>protocol.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;url</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=A Uniform Resource Locator that specifies where further information about a protocol may be found.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>Uniform&nbsp;<WBR>Resource&nbsp;<WBR>Locator&nbsp;<WBR>that&nbsp;<WBR>specifies&nbsp;<WBR>where&nbsp;<WBR>further&nbsp;<WBR>information&nbsp;<WBR>about&nbsp;<WBR>a&nbsp;<WBR>protocol&nbsp;<WBR>may&nbsp;<WBR>be&nbsp;<WBR>found.</TD> </TR> </TABLE></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -191,7 +190,36 @@
 	</tbody>
 </table>
 
-<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
+<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="TaggedVals">Protocol</a> Tagged Values
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
+					<TR>
+						<TD WIDTH="24%" class="OperationTableHeading">Tag</TD>
+						<TD WIDTH="24%" class="OperationTableHeading">Value</TD>
+						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
+					</TR>
+									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">A parameterizable description of a method.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+	
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+	<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
@@ -208,4 +236,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

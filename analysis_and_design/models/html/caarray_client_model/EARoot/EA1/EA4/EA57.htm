@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>ArrayGroup</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>gov.nih.nci.caarray.domain.array::Array</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: ArrayGroup</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: Array</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: ArrayGroup  
+				public   class: Array  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 8/9/2007 11:47:32 AM; Modified: 8/18/2007 9:32:19 AM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 4/22/2007 2:07:16 PM; Modified: 4/22/2007 2:07:18 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,10 +53,10 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{0A2622E0-89B6-494e-A3A3-38DFB9610A02}</td>
+							<td width="85%" class=ObjectDetailsValue>{ACFEB0CE-0103-4b3a-954D-7951AD9F28FB}</td>
 						</tr>
 						<tr>
-							<td colspan="2" width="100%" class=ObjectDetailsTopic>Muliple&nbsp;<WBR>arrays&nbsp;<WBR>on&nbsp;<WBR>a&nbsp;<WBR>single&nbsp;<WBR>physical&nbsp;<WBR>substrate.</td>
+							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
 						</tr>
 					</tbody>
 				</table>
@@ -74,7 +73,19 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<P/><table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td width="10%" class="ObjectSubTitle">
+				Extends:
+			</td>
+			<td width="90%">
+				<a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -86,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA55.htm">Array</a>
+				<a href="../EA9/EA98.htm">Experiment</a>, <a href="../EA8/EA93.htm">Hybridization</a>, <a href="../EA10/EA109.htm">ProtocolApplication</a>, <a href="EA58.htm">ArrayDesign</a>, <a href="EA59.htm">ArrayGroup</a>, <a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA38.htm">gov.nih.nci.caarray.domain.array</a>
+				<a href="EA39.htm">gov.nih.nci.caarray.domain.array</a>, <a href="../EA8/EA91.htm">gov.nih.nci.caarray.domain.hybridization</a>, <a href="../EA9/EA94.htm">gov.nih.nci.caarray.domain.project</a>
 			</td>
 		</tr>
 	</tbody>
@@ -111,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link to class <a href="EA55.htm">[gov.nih.nci.caarray.domain.array].Array</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link from class <a href="EA59.htm">[gov.nih.nci.caarray.domain.array].ArrayGroup</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA10/EA109.htm">[gov.nih.nci.caarray.domain.protocol].ProtocolApplication</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA58.htm">[gov.nih.nci.caarray.domain.array].ArrayDesign</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA38.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA8/EA93.htm">[gov.nih.nci.caarray.domain.hybridization].Hybridization</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA9/EA98.htm">[gov.nih.nci.caarray.domain.project].Experiment</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -141,7 +152,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">ArrayGroup</a> Attributes
+				<a Name="Fields">Array</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -152,8 +163,11 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;name</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;batch</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=A short text designation that identifies the manufacture of multiple microarrays in the same print run.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>short&nbsp;<WBR>text&nbsp;<WBR>designation&nbsp;<WBR>that&nbsp;<WBR>identifies&nbsp;<WBR>the&nbsp;<WBR>manufacture&nbsp;<WBR>of&nbsp;<WBR>multiple&nbsp;<WBR>microarrays&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>same&nbsp;<WBR>print&nbsp;<WBR>run.</TD> </TR> </TABLE></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;serialNumber</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=A numeric or textual identifier provided by the array manufacturer that uniquely identifies a specifc microarray.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>numeric&nbsp;<WBR>or&nbsp;<WBR>textual&nbsp;<WBR>identifier&nbsp;<WBR>provided&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>array&nbsp;<WBR>manufacturer&nbsp;<WBR>that&nbsp;<WBR>uniquely&nbsp;<WBR>identifies&nbsp;<WBR>a&nbsp;<WBR>specifc&nbsp;<WBR>microarray.</TD> </TR> </TABLE></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -164,11 +178,40 @@
 	</tbody>
 </table>
 
-<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
+<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="TaggedVals">Array</a> Tagged Values
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
+					<TR>
+						<TD WIDTH="24%" class="OperationTableHeading">Tag</TD>
+						<TD WIDTH="24%" class="OperationTableHeading">Value</TD>
+						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
+					</TR>
+									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">A collection of microscopic features/reporters, such as DNA fragments, arrayed on a solid surface.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+	
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+	<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: ArrayGroup</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: Array</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -181,4 +224,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

@@ -1,12 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>ArrayReporter</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>gov.nih.nci.cabio.domain::ArrayReporter</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
 		<TD colspan=2 WIDTH="100%" class="Header">class: ArrayReporter</TD>
@@ -153,13 +152,13 @@
 					</TR>
 						<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private Long</i><br><b>&nbsp;&nbsp;id</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The identifier attached to this record in the caBIO database<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>identifier&nbsp;<WBR>attached&nbsp;<WBR>to&nbsp;<WBR>this&nbsp;<WBR>record&nbsp;<WBR>in&nbsp;<WBR>the&nbsp;<WBR>caBIO&nbsp;<WBR>database</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;name</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>description=The name of the reporter. This is often the manufacturer identifier for the reporter.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>name&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>reporter.&nbsp;<WBR>This&nbsp;<WBR>is&nbsp;<WBR>often&nbsp;<WBR>the&nbsp;<WBR>manufacturer&nbsp;<WBR>identifier&nbsp;<WBR>for&nbsp;<WBR>the&nbsp;<WBR>reporter.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;bigid</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>ca_index_attribute=true<br>description=caBIG Grid Identifier<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>caBIG&nbsp;<WBR>Grid&nbsp;<WBR>Identifier</TD> </TR> </TABLE></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -190,6 +189,11 @@
 					<TD WIDTH="24%" class="OperationTableRow">true</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">A generic object to represent features on a particular array platform for measuring specific biological signals, such as genotype for SNP array, and levels of gene transcription products for Expression and Exon arrays.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
 	
 				</TABLE>
 			</td>
@@ -216,4 +220,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

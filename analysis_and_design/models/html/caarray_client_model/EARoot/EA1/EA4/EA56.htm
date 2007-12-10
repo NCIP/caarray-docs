@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>ArrayDesign</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>gov.nih.nci.caarray.domain.array::SNPProbeAnnotation</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: ArrayDesign</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: SNPProbeAnnotation</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: ArrayDesign  
+				public   class: SNPProbeAnnotation  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 4/22/2007 1:21:05 PM; Modified: 4/22/2007 1:21:08 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 10/8/2007 11:39:57 AM; Modified: 10/8/2007 11:40:35 AM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{2DA6E350-00BD-4e6c-85EA-6F1D1F50BC94}</td>
+							<td width="85%" class=ObjectDetailsValue>{B471F4DF-11B2-480c-A2B3-AFEE06B826B5}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -74,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
 			</td>
 		</tr>
 	</tbody>
@@ -86,7 +85,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>
+				<a href="EA47.htm">AbstractProbeAnnotation</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="../EA14/EA141.htm">Microarray</a>, <a href="EA55.htm">Array</a>, <a href="../EA9/EA97.htm">Experiment</a>, <a href="../EA13/EA133.htm">Term</a>, <a href="../EA13/EA133.htm">Term</a>, <a href="../EA13/EA133.htm">Term</a>, <a href="../EA10/EA109.htm">ProtocolApplication</a>, <a href="../EA13/EA133.htm">Term</a>, <a href="../EA7/EA87.htm">CaArrayFile</a>, <a href="../EA5/EA63.htm">Organization</a>, <a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>, <a href="../EA1/EA28.htm">Organism</a>
+				<a href="../EA14/EA142.htm">SNPArrayReporter</a>, <a href="EA47.htm">AbstractProbeAnnotation</a>
 			</td>
 		</tr>
 	</tbody>
@@ -110,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA38.htm">gov.nih.nci.caarray.domain.array</a>, <a href="EA42.htm">gov.nih.nci.caarray.domain.array Terms</a>, <a href="../EA9/EA93.htm">gov.nih.nci.caarray.domain.project</a>
+				<a href="EA41.htm">gov.nih.nci.caarray.domain.array Annotations</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link from class <a href="../EA9/EA97.htm">[gov.nih.nci.caarray.domain.project].Experiment</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA55.htm">[gov.nih.nci.caarray.domain.array].Array</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA14/EA141.htm">[gov.nih.nci.cabio.domain].Microarray</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA13/EA133.htm">[gov.nih.nci.caarray.domain.vocabulary].Term</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA13/EA133.htm">[gov.nih.nci.caarray.domain.vocabulary].Term</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA13/EA133.htm">[gov.nih.nci.caarray.domain.vocabulary].Term</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA10/EA109.htm">[gov.nih.nci.caarray.domain.protocol].ProtocolApplication</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA13/EA133.htm">[gov.nih.nci.caarray.domain.vocabulary].Term</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA7/EA87.htm">[gov.nih.nci.caarray.domain.file].CaArrayFile</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA5/EA63.htm">[gov.nih.nci.caarray.domain.contact].Organization</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA37.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA1/EA28.htm">[edu.georgetown.pir].Organism</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link to class <a href="../EA14/EA142.htm">[gov.nih.nci.cabio.domain].SNPArrayReporter</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="EA47.htm">[gov.nih.nci.caarray.domain.array].AbstractProbeAnnotation</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -153,7 +152,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">ArrayDesign</a> Attributes
+				<a Name="Fields">SNPProbeAnnotation</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -164,11 +163,26 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;name</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;dbSNPId</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The identifier used by the NCBI dbSNP database to refer to this polymorphism.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>identifier&nbsp;<WBR>used&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>NCBI&nbsp;<WBR>dbSNP&nbsp;<WBR>database&nbsp;<WBR>to&nbsp;<WBR>refer&nbsp;<WBR>to&nbsp;<WBR>this&nbsp;<WBR>polymorphism.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;version</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private int</i><br><b>&nbsp;&nbsp;dbSNPVersion</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=Version of the dbSNP database referenced by the array annotation.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>Version&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>dbSNP&nbsp;<WBR>database&nbsp;<WBR>referenced&nbsp;<WBR>by&nbsp;<WBR>the&nbsp;<WBR>array&nbsp;<WBR>annotation.</TD> </TR> </TABLE></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;alleleA</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The primary allele (variant) of this polymorphism<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>primary&nbsp;<WBR>allele&nbsp;<WBR>(variant)&nbsp;<WBR>of&nbsp;<WBR>this&nbsp;<WBR>polymorphism</TD> </TR> </TABLE></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;alleleB</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The alternate allele (variant) of this polymorphism<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>alternate&nbsp;<WBR>allele&nbsp;<WBR>(variant)&nbsp;<WBR>of&nbsp;<WBR>this&nbsp;<WBR>polymorphism</TD> </TR> </TABLE></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA147.htm">Integer</a></i><br><b>&nbsp;&nbsp;chromosome</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The number of a specific chromosome for a specific taxon.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>number&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>specific&nbsp;<WBR>chromosome&nbsp;<WBR>for&nbsp;<WBR>a&nbsp;<WBR>specific&nbsp;<WBR>taxon.</TD> </TR> </TABLE></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA149.htm">String</a></i><br><b>&nbsp;&nbsp;flank</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The flanking sequence context of a SNP.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>flanking&nbsp;<WBR>sequence&nbsp;<WBR>context&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>SNP.</TD> </TR> </TABLE></TD>	
+	</TR>	<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private Long</i><br><b>&nbsp;&nbsp;physicalPosition</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=Defines the location on the chromosome from the 5' end that begins the SNP sequence.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>Defines&nbsp;<WBR>the&nbsp;<WBR>location&nbsp;<WBR>on&nbsp;<WBR>the&nbsp;<WBR>chromosome&nbsp;<WBR>from&nbsp;<WBR>the&nbsp;<WBR>5'&nbsp;<WBR>end&nbsp;<WBR>that&nbsp;<WBR>begins&nbsp;<WBR>the&nbsp;<WBR>SNP&nbsp;<WBR>sequence.</TD> </TR> </TABLE></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -179,11 +193,40 @@
 	</tbody>
 </table>
 
-<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
+<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="TaggedVals">SNPProbeAnnotation</a> Tagged Values
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
+					<TR>
+						<TD WIDTH="24%" class="OperationTableHeading">Tag</TD>
+						<TD WIDTH="24%" class="OperationTableHeading">Value</TD>
+						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
+					</TR>
+									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Represents the biological information associated with a probe on a SNP array designed for measuring genotypes in regard to SNPs.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+	
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+	<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: ArrayDesign</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: SNPProbeAnnotation</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -196,4 +239,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

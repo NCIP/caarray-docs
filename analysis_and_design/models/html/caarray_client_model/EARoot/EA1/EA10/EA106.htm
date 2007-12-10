@@ -1,12 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>Parameter</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>gov.nih.nci.caarray.domain.protocol::Parameter</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
 		<TD colspan=2 WIDTH="100%" class="Header">class: Parameter</TD>
@@ -74,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
 			</td>
 		</tr>
 	</tbody>
@@ -86,7 +85,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>
+				<a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA108.htm">Protocol</a>, <a href="EA107.htm">ParameterValue</a>, <a href="EA107.htm">ParameterValue</a>, <a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>
+				<a href="EA108.htm">Protocol</a>, <a href="EA107.htm">ParameterValue</a>, <a href="EA107.htm">ParameterValue</a>, <a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link to class <a href="EA107.htm">[gov.nih.nci.caarray.domain.protocol].ParameterValue</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA37.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA108.htm">[gov.nih.nci.caarray.domain.protocol].Protocol</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA107.htm">[gov.nih.nci.caarray.domain.protocol].ParameterValue</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link to class <a href="EA107.htm">[gov.nih.nci.caarray.domain.protocol].ParameterValue</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA38.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA108.htm">[gov.nih.nci.caarray.domain.protocol].Protocol</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA107.htm">[gov.nih.nci.caarray.domain.protocol].ParameterValue</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -165,7 +164,7 @@
 					</TR>
 						<TR>
 		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;name</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The common name by which a parameter is referenced.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>common&nbsp;<WBR>name&nbsp;<WBR>by&nbsp;<WBR>which&nbsp;<WBR>a&nbsp;<WBR>parameter&nbsp;<WBR>is&nbsp;<WBR>referenced.</TD> </TR> </TABLE></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -176,7 +175,36 @@
 	</tbody>
 </table>
 
-<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
+<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="TaggedVals">Parameter</a> Tagged Values
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
+					<TR>
+						<TD WIDTH="24%" class="OperationTableHeading">Tag</TD>
+						<TD WIDTH="24%" class="OperationTableHeading">Value</TD>
+						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
+					</TR>
+									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Represents a named, replaceable value in a protocol.. Examples of parameters include: scanning wavelength, laser power, centrifuge speed, multiplicative errors, the number of input nodes to a SOM, and PCR temperatures.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+	
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+	<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
@@ -193,4 +221,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>
