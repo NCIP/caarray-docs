@@ -1,0 +1,44 @@
+<project name="caArray 2.0 Silver Compliance Submission Generator" default="build-package" basedir=".">
+
+    <property name="root.dir" value="${basedir}/../../.." />
+    <property name="docs.dir" value="${root.dir}/docs" />
+    <property name="software.dir" value="${root.dir}/software" />
+    <property name="build.dir" value="${software.dir}/build" />
+    
+    <target name="build-package" depends="get-package-contents">
+        <zip destfile="caArray_2.0_silver_compliance_submission.zip">
+            <fileset dir="${basedir}">
+              	<exclude name="build.xml"/>
+              	<exclude name="caArray_2.0_silver_compliance_submission.zip"/>
+            </fileset>
+        </zip>
+    </target>
+    
+    <target name="get-package-contents">
+        <copy tofile="2. caarray_use_case_summary.doc" file="${docs.dir}/requirements/caarray_use_case_summary.doc" />
+        <copy tofile="3. caarray_software_architecture_document.doc" file="${docs.dir}/analysis_and_design/caarray_software_architecture_document.doc" />
+        <copy tofile="4a. caarray_client_model.eap" file="${docs.dir}/analysis_and_design/models/caarray_client_model.eap" />
+        <copy tofile="4b. caarray_full_model.eap" file="${docs.dir}/analysis_and_design/models/caarray.EAP" />
+        <copy tofile="5. Approved_annotated_caArray_v2_0_rv6.xmi" file="${docs.dir}/analysis_and_design/models/Approved_annotated_caArray_v2_0_rv6.xmi" />
+        <ant antfile="${build.dir}/build.xml" target="javadoc:caarray-client" dir="${software.dir}" />
+        <zip destfile="12a. caArray_api_doc_client_only.zip" basedir="${software.dir}/caarray-client.jar/target/docs/api" />
+        <ant antfile="${build.dir}/build.xml" target="javadoc" dir="${software.dir}" />
+        <zip destfile="12b. caArray_api_doc_full.zip" basedir="${build.dir}/site/docs/api" />
+    </target>
+    
+    <target name="clean">
+        <delete>
+           	<fileset dir="${basedir}">
+           	    <includesfile name="caArray_2.0_silver_compliance_submission.zip" />
+           	    <includesfile name="2. caarray_use_case_summary.doc" />
+           	    <includesfile name="3. caarray_software_architecture_document.doc" />
+		   	    <includesfile name="4a. caarray_client_model.eap" />
+		   	    <includesfile name="4b. caarray_full_model.eap" />
+		   	    <includesfile name="5. Approved_annotated_caArray_v2_0_rv6.xmi" />
+           	    <includesfile name="12a. caArray_api_doc_client_only.zip" />
+		   	    <includesfile name="12b. caArray_api_doc_full.zip" />
+           	</fileset>
+        </delete>
+    </target>
+    
+</project>
