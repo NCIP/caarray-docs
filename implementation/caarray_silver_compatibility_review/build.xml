@@ -4,16 +4,17 @@
     <property name="docs.dir" value="${root.dir}/docs" />
     <property name="software.dir" value="${root.dir}/software" />
     <property name="build.dir" value="${software.dir}/build" />
-    
+
     <target name="build-package" depends="get-package-contents">
         <zip destfile="caArray_2.0_silver_compliance_submission.zip">
             <fileset dir="${basedir}">
-              	<exclude name="build.xml"/>
-              	<exclude name="caArray_2.0_silver_compliance_submission.zip"/>
+                <exclude name="build.xml"/>
+                <exclude name="*.js"/>
+                <exclude name="caArray_2.0_silver_compliance_submission.zip"/>
             </fileset>
         </zip>
     </target>
-    
+
     <target name="get-package-contents">
         <copy tofile="02. caarray_use_case_summary.doc" file="${docs.dir}/requirements/caarray_use_case_summary.doc" />
         <copy tofile="03. caarray_software_architecture_document.doc" file="${docs.dir}/analysis_and_design/caarray_software_architecture_document.doc" />
@@ -26,20 +27,20 @@
         <ant antfile="${build.dir}/build.xml" target="javadoc" dir="${software.dir}" />
         <zip destfile="12b. caArray_api_doc_full.zip" basedir="${build.dir}/site/docs/api" />
     </target>
-    
+
     <target name="clean">
         <delete>
-           	<fileset dir="${basedir}">
-           	    <include name="caArray_2.0_silver_compliance_submission.zip" />
-           	    <include name="02. caarray_use_case_summary.doc" />
-           	    <include name="03. caarray_software_architecture_document.doc" />
-		   	    <include name="04a. caarray_client_model.eap" />
-		   	    <include name="04b. caarray_full_model.eap" />
-		   	    <include name="05. Approved_annotated_caArray_v2_0_rv6.xmi" />
-           	    <include name="12a. caArray_api_doc_client_only.zip" />
-		   	    <include name="12b. caArray_api_doc_full.zip" />
-           	</fileset>
+             <fileset dir="${basedir}">
+                 <include name="caArray_2.0_silver_compliance_submission.zip" />
+                 <include name="02. caarray_use_case_summary.doc" />
+                 <include name="03. caarray_software_architecture_document.doc" />
+             <include name="04a. caarray_client_model.eap" />
+             <include name="04b. caarray_full_model.eap" />
+             <include name="05. Approved_annotated_caArray_v2_0_rv6.xmi" />
+                 <include name="12a. caArray_api_doc_client_only.zip" />
+             <include name="12b. caArray_api_doc_full.zip" />
+             </fileset>
         </delete>
     </target>
-    
+
 </project>
