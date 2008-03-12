@@ -1,14 +1,14 @@
 <html>
 <head>
 	<link href="../../../ea.css" rel=stylesheet>
-	<title>gov.nih.nci.caarray.domain.data::DerivedArrayData</title>
+	<title>gov.nih.nci.caarray.domain.data::StringColumn</title>
 </head>
 
 <body>
 	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: DerivedArrayData</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: StringColumn</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -24,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: DerivedArrayData  
+				public   class: StringColumn  
 			</td>
 		</tr>
 		<tr>
@@ -41,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 4/24/2007 2:53:33 PM; Modified: 4/24/2007 4:17:19 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 9/27/2007 12:42:15 PM; Modified: 9/27/2007 12:42:19 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -53,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{D0C22EED-D5F1-4273-AD5E-BE8DCD387554}</td>
+							<td width="85%" class=ObjectDetailsValue>{EC51A59F-9492-442a-9208-DB6EE677627F}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -73,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#TaggedVals>Tagged Values</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
 			</td>
 		</tr>
 	</tbody>
@@ -85,7 +85,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="EA82.htm">AbstractArrayData</a>, <a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
+				<a href="EA70.htm">AbstractDataColumn</a>
 			</td>
 		</tr>
 	</tbody>
@@ -97,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="../EA8/EA93.htm">Hybridization</a>, <a href="EA82.htm">AbstractArrayData</a>, <a href="EA82.htm">AbstractArrayData</a>, <a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
+				<a href="EA70.htm">AbstractDataColumn</a>
 			</td>
 		</tr>
 	</tbody>
@@ -109,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA67.htm">gov.nih.nci.caarray.domain.data</a>, <a href="../EA8/EA91.htm">gov.nih.nci.caarray.domain.hybridization</a>
+				<a href="EA66.htm">gov.nih.nci.caarray.domain.data</a>, <a href="../../EA2/EA3/EA167.htm">gov.nih.nci.caarray.services.data</a>
 			</td>
 		</tr>
 	</tbody>
@@ -122,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link to class <a href="EA82.htm">[gov.nih.nci.caarray.domain.data].AbstractArrayData</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="EA82.htm">[gov.nih.nci.caarray.domain.data].AbstractArrayData</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA38.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA8/EA93.htm">[gov.nih.nci.caarray.domain.hybridization].Hybridization</a> &nbsp;  &nbsp;</LI>	
+							<LI>Generalization  link to class <a href="EA70.htm">[gov.nih.nci.caarray.domain.data].AbstractDataColumn</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -148,11 +148,38 @@
 		</tr>
 	</tbody>
 </table>
+	<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="Fields">StringColumn</a> Attributes
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="AttribTable">
+					<TR>
+						<TD WIDTH="40%" class="AttribTableHeading">Attribute</TD>
+						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
+					</TR>
+						<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String[]</i><br><b>&nbsp;&nbsp;values</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>CADSR_VD_ID=2425588<br>CADSR_VD_VERSION=1.0<br>CURATOR_REVIEWED=1<br>description=The ordered textual data values for the column.<br>OWNER_REVIEWED=1<br>PropertyConceptCode=C25712<br>PropertyConceptDefinition=A numerical quantity measured or assigned or computed.<br>PropertyConceptDefinitionSource=NCI<br>PropertyConceptPreferredName=Value<br>PropertyQualifierConceptCode1=C42680<br>PropertyQualifierConceptDefinition1=A logical or comprehensible arrangement of separate elements; a condition of regular or proper arrangement.<br>PropertyQualifierConceptDefinitionSource1=NCI<br>PropertyQualifierConceptPreferredName1=Order<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>ordered&nbsp;<WBR>textual&nbsp;<WBR>data&nbsp;<WBR>values&nbsp;<WBR>for&nbsp;<WBR>the&nbsp;<WBR>column.</TD> </TR> </TABLE></TD>	
+	</TR>
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
 <table cellPadding=0 cellSpacing=0 width="100%">
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="TaggedVals">DerivedArrayData</a> Tagged Values
+				<a Name="TaggedVals">StringColumn</a> Tagged Values
 			</td>
 		</tr>
 		<tr>
@@ -164,8 +191,58 @@
 						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
 					</TR>
 									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">CURATOR_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
-					<TD WIDTH="24%" class="OperationTableRow">The quantified results returned by normalizing or otherwise transforming raw array data signal values extracted from the design elements of one or many microarrays.</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Contains textual data values of a specific quantitation type for a single microarray hybridization.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptCode</TD>
+					<TD WIDTH="24%" class="OperationTableRow">C43379</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinition</TD>
+					<TD WIDTH="24%" class="OperationTableRow">An arrangement of objects one under another in a line.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinitionSource</TD>
+					<TD WIDTH="24%" class="OperationTableRow">NCI</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptPreferredName</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Column</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptCode1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">C45253</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptDefinition1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">An expression consisting of a linear sequence of symbols (characters or words or phrases).</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptDefinitionSource1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">NCI</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptPreferredName1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">String</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">OWNER_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 	
@@ -181,7 +258,7 @@
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: DerivedArrayData</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: StringColumn</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>

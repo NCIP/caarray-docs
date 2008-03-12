@@ -1,14 +1,14 @@
 <html>
 <head>
 	<link href="../../../ea.css" rel=stylesheet>
-	<title>gov.nih.nci.caarray.domain.sample::MeasurementCharacteristic</title>
+	<title>gov.nih.nci.caarray.domain.sample::LabeledExtract</title>
 </head>
 
 <body>
 	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: MeasurementCharacteristic</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: LabeledExtract</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -24,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: MeasurementCharacteristic  
+				public   class: LabeledExtract  
 			</td>
 		</tr>
 		<tr>
@@ -41,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 8/21/2007 8:52:17 AM; Modified: 8/21/2007 8:55:35 AM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 8/18/2007 10:19:49 AM; Modified: 8/18/2007 10:19:53 AM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -53,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{03B0C5F1-7B0D-43d2-87CA-1786BCD67FF8}</td>
+							<td width="85%" class=ObjectDetailsValue>{1A2B928A-2A8A-4708-838C-2BBCD4AE12E5}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -73,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#TaggedVals>Tagged Values</a>
 			</td>
 		</tr>
 	</tbody>
@@ -85,7 +85,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="EA123.htm">AbstractCharacteristic</a>
+				<a href="EA122.htm">AbstractBioMaterial</a>
 			</td>
 		</tr>
 	</tbody>
@@ -97,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA123.htm">AbstractCharacteristic</a>, <a href="../EA13/EA133.htm">Term</a>
+				<a href="../EA9/EA100.htm">Experiment</a>, <a href="../EA8/EA95.htm">Hybridization</a>, <a href="../EA6/EA78.htm">HybridizationData</a>, <a href="EA124.htm">Extract</a>, <a href="../EA13/EA131.htm">Term</a>, <a href="EA122.htm">AbstractBioMaterial</a>
 			</td>
 		</tr>
 	</tbody>
@@ -109,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA114.htm">Characteristic Hierarchy</a>
+				<a href="../EA6/EA66.htm">gov.nih.nci.caarray.domain.data</a>, <a href="../EA8/EA93.htm">gov.nih.nci.caarray.domain.hybridization</a>, <a href="../EA9/EA96.htm">gov.nih.nci.caarray.domain.project</a>, <a href="EA117.htm">gov.nih.nci.caarray.domain.sample</a>
 			</td>
 		</tr>
 	</tbody>
@@ -122,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Generalization  link to class <a href="EA123.htm">[gov.nih.nci.caarray.domain.sample].AbstractCharacteristic</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA13/EA133.htm">[gov.nih.nci.caarray.domain.vocabulary].Term</a> &nbsp;  &nbsp;</LI>	
+							<LI>Association  link from class <a href="../EA6/EA78.htm">[gov.nih.nci.caarray.domain.data].HybridizationData</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA13/EA131.htm">[gov.nih.nci.caarray.domain.vocabulary].Term</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="EA122.htm">[gov.nih.nci.caarray.domain.sample].AbstractBioMaterial</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA124.htm">[gov.nih.nci.caarray.domain.sample].Extract</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA8/EA95.htm">[gov.nih.nci.caarray.domain.hybridization].Hybridization</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA9/EA100.htm">[gov.nih.nci.caarray.domain.project].Experiment</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -148,38 +148,11 @@
 		</tr>
 	</tbody>
 </table>
-	<table cellPadding=0 cellSpacing=0 width="100%">
-  <tbody>
-		<tr>
-			<td class="ObjectSubTitle">
-				<a Name="Fields">MeasurementCharacteristic</a> Attributes
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="AttribTable">
-					<TR>
-						<TD WIDTH="40%" class="AttribTableHeading">Attribute</TD>
-						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
-					</TR>
-						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private Float</i><br><b>&nbsp;&nbsp;value</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The actual value of a quantified property of a biological material.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>actual&nbsp;<WBR>value&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>quantified&nbsp;<WBR>property&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>biological&nbsp;<WBR>material.</TD> </TR> </TABLE></TD>	
-	</TR>
-				</TABLE>
-			</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-		</tr>
-	</tbody>
-</table>
-
 <table cellPadding=0 cellSpacing=0 width="100%">
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="TaggedVals">MeasurementCharacteristic</a> Tagged Values
+				<a Name="TaggedVals">LabeledExtract</a> Tagged Values
 			</td>
 		</tr>
 		<tr>
@@ -191,8 +164,68 @@
 						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
 					</TR>
 									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">CURATOR_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
-					<TD WIDTH="24%" class="OperationTableRow">An innate property of a biological material that can be explicitly quantified.</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Extracted genomic material that has been marked with a detectable compound (these are often fluorescent or reactive moieties).</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptCode</TD>
+					<TD WIDTH="24%" class="OperationTableRow">C706</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinition</TD>
+					<TD WIDTH="24%" class="OperationTableRow">A family of macromolecules, composed of various moiety: purines, pyrimidines, phosphoric acid, and a pentose, either d-ribose or d-deoxyribose. Nucleic acids in the form either DNA or RNA was found in the chromosomes, nucleoli, mitochondria, and cytoplasm</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinition_2</TD>
+					<TD WIDTH="24%" class="OperationTableRow"> of all cells, and in viruses.  Nucleic acids are the major players in controlling cellular function and heredity. (NCI)</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinitionSource</TD>
+					<TD WIDTH="24%" class="OperationTableRow">NCI</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptPreferredName</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Nucleic Acids</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptCode1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">C2480</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptDefinition1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">A substance that is identifiable by virtue of its radioactive signature, color, or other distinguishing physical property, such as a dye, radioactive isotope, or inert chemical, that is introduced into a biological or mechanical system and can be followed</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptDefinition1_2</TD>
+					<TD WIDTH="24%" class="OperationTableRow"> through the course of a process, providing information on the pattern of events in the process or on the redistribution of the parts, elements, or events involved.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptDefinitionSource1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">NCI</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptPreferredName1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Tracer</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">OWNER_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 	
@@ -208,7 +241,7 @@
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: MeasurementCharacteristic</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: LabeledExtract</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>

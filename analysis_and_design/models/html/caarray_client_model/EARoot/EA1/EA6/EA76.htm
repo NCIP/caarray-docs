@@ -1,14 +1,14 @@
 <html>
 <head>
 	<link href="../../../ea.css" rel=stylesheet>
-	<title>gov.nih.nci.caarray.domain.data::HybridizationData</title>
+	<title>gov.nih.nci.caarray.domain.data::DoubleColumn</title>
 </head>
 
 <body>
 	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: HybridizationData</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: DoubleColumn</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -24,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: HybridizationData  
+				public   class: DoubleColumn  
 			</td>
 		</tr>
 		<tr>
@@ -41,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 9/27/2007 12:24:09 PM; Modified: 9/27/2007 12:24:15 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 10/8/2007 12:05:11 PM; Modified: 10/8/2007 12:05:17 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -53,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{35B2E4F9-303C-4057-9751-79B9581AFC09}</td>
+							<td width="85%" class=ObjectDetailsValue>{FB3AC4B6-F2DC-4b8d-A499-8363F21241BE}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -73,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#TaggedVals>Tagged Values</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
 			</td>
 		</tr>
 	</tbody>
@@ -85,7 +85,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="../EA3/EA37.htm">AbstractCaArrayObject</a>
+				<a href="EA70.htm">AbstractDataColumn</a>
 			</td>
 		</tr>
 	</tbody>
@@ -97,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA72.htm">DataSet</a>, <a href="EA69.htm">AbstractDataColumn</a>, <a href="../EA8/EA93.htm">Hybridization</a>, <a href="../EA3/EA37.htm">AbstractCaArrayObject</a>
+				<a href="EA70.htm">AbstractDataColumn</a>
 			</td>
 		</tr>
 	</tbody>
@@ -109,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="../../EA2/EA3/EA171.htm">gov.nih.nci.caarray.services.data</a>, <a href="EA67.htm">gov.nih.nci.caarray.domain.data</a>
+				<a href="EA66.htm">gov.nih.nci.caarray.domain.data</a>
 			</td>
 		</tr>
 	</tbody>
@@ -122,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link to class <a href="EA69.htm">[gov.nih.nci.caarray.domain.data].AbstractDataColumn</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="../EA8/EA93.htm">[gov.nih.nci.caarray.domain.hybridization].Hybridization</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA37.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayObject</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA72.htm">[gov.nih.nci.caarray.domain.data].DataSet</a> &nbsp;  &nbsp;</LI>	
+							<LI>Generalization  link to class <a href="EA70.htm">[gov.nih.nci.caarray.domain.data].AbstractDataColumn</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -148,11 +148,38 @@
 		</tr>
 	</tbody>
 </table>
+	<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="Fields">DoubleColumn</a> Attributes
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="AttribTable">
+					<TR>
+						<TD WIDTH="40%" class="AttribTableHeading">Attribute</TD>
+						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
+					</TR>
+						<TR>
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private double[]</i><br><b>&nbsp;&nbsp;values</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>CURATOR_REVIEWED=1<br>description=The ordered floating point data values for the column.<br>OWNER_REVIEWED=1<br>PropertyConceptCode=C25712<br>PropertyConceptDefinition=A numerical quantity measured or assigned or computed.<br>PropertyConceptDefinitionSource=NCI<br>PropertyConceptPreferredName=Value<br>PropertyQualifierConceptCode1=C42680<br>PropertyQualifierConceptDefinition1=A logical or comprehensible arrangement of separate elements; a condition of regular or proper arrangement.<br>PropertyQualifierConceptDefinitionSource1=NCI<br>PropertyQualifierConceptPreferredName1=Order<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>ordered&nbsp;<WBR>floating&nbsp;<WBR>point&nbsp;<WBR>data&nbsp;<WBR>values&nbsp;<WBR>for&nbsp;<WBR>the&nbsp;<WBR>column.</TD> </TR> </TABLE></TD>	
+	</TR>
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
 <table cellPadding=0 cellSpacing=0 width="100%">
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="TaggedVals">HybridizationData</a> Tagged Values
+				<a Name="TaggedVals">DoubleColumn</a> Tagged Values
 			</td>
 		</tr>
 		<tr>
@@ -164,8 +191,58 @@
 						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
 					</TR>
 									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">CURATOR_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
-					<TD WIDTH="24%" class="OperationTableRow">Container for the quantified values extracted from a single hybridized mircoarray.</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Contains floating point data values of a specific quantitation type for a single microarray hybridization.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptCode</TD>
+					<TD WIDTH="24%" class="OperationTableRow">C43379</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinition</TD>
+					<TD WIDTH="24%" class="OperationTableRow">An arrangement of objects one under another in a line.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinitionSource</TD>
+					<TD WIDTH="24%" class="OperationTableRow">NCI</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptPreferredName</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Column</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptCode1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">C48870</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptDefinition1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">A 64-bit floating point primitive. When wrapped in an immutable Object, it is called a Double.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptDefinitionSource1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">NCI</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptPreferredName1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Double</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">OWNER_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 	
@@ -181,7 +258,7 @@
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: HybridizationData</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: DoubleColumn</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>

@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>FileRetrievalService</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>gov.nih.nci.caarray.services.file::FileRetrievalService</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">interface: FileRetrievalService</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">component: FileRetrievalService</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public abstract  &lt;&lt;interface&gt;&gt; interface: FileRetrievalService  
+				public   &lt;&lt;subsystem&gt;&gt; component: FileRetrievalService  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 7/13/2007 1:49:54 PM; Modified: 8/23/2007 2:44:09 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 1/17/2008 1:54:13 PM; Modified: 1/17/2008 1:54:15 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,10 +53,10 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{30C897FD-1ECE-4994-B60E-879B586C3E32}</td>
+							<td width="85%" class=ObjectDetailsValue>{C0073CD4-784E-4269-8E91-FDDEFF989649}</td>
 						</tr>
 						<tr>
-							<td colspan="2" width="100%" class=ObjectDetailsTopic>Allows&nbsp;<WBR>remote&nbsp;<WBR>API&nbsp;<WBR>access&nbsp;<WBR>to&nbsp;<WBR>download&nbsp;<WBR>files&nbsp;<WBR>stored&nbsp;<WBR>in&nbsp;<WBR>caArray.</td>
+							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
 						</tr>
 					</tbody>
 				</table>
@@ -74,7 +73,19 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#Methods>Methods</a>
+				<a href=#CustomProperties>Custom Properties</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<P/><table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td width="10%" class="ObjectSubTitle">
+				Implements:
+			</td>
+			<td width="90%">
+				<a href="EA175.htm">FileRetrievalService</a>
 			</td>
 		</tr>
 	</tbody>
@@ -86,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="../EA1/EA161.htm">CaArrayServer</a>
+				<a href="EA175.htm">FileRetrievalService</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="../EA1/EA157.htm">gov.nci.nih.caarray.client</a>, <a href="EA172.htm">gov.nih.nci.caarray.services.file</a>
+				<a href="EA172.htm">gov.nih.nci.caarray.services.file</a>
 			</td>
 		</tr>
 	</tbody>
@@ -111,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link from class <a href="../EA1/EA161.htm">[gov.nci.nih.caarray.services].CaArrayServer</a> &nbsp;  &nbsp;</LI>	
+							<LI>Realisation &lt;&lt;realize&gt;&gt; link to interface <a href="EA175.htm">[gov.nih.nci.caarray.services.file].FileRetrievalService</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -123,23 +134,14 @@
 <table cellPadding=0 cellSpacing=0 width="100%">
   <tbody>
 		<tr>
-			<td class="ObjectSubTitle">
-				<a Name="Methods">FileRetrievalService</a> Methods
-			</td>
+			<td class="ObjectSubTitle"><a Name="#CustomProperties">Custom Properties</a></td>
 		</tr>
 		<tr>
 			<td>
-				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
-					<TR>
-						<TD WIDTH="40%" class="OperationTableHeading">Operation</TD>
-						<TD WIDTH="60%" class="OperationTableHeading">Details</TD>
-					</TR>
-					<TR>
-	<TD WIDTH="40%" class="OperationTableRow"><i>package</i><BR><B>readFile</B>(<br>&nbsp;&nbsp;&nbsp;CaArrayFile file):InputStream</TD>
-	<TD WIDTH="60%" class="OperationTableRow"><i>Sequential  </i><TABLE> <TR> <TD valign = "top"><i></i><span style="margin-left: .7cm;"> </span></TD><TD></TD> </TR> </TABLE><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>Returns&nbsp;<WBR>a&nbsp;<WBR>stream&nbsp;<WBR>from&nbsp;<WBR>which&nbsp;<WBR>to&nbsp;<WBR>read&nbsp;<WBR>the&nbsp;<WBR>requested&nbsp;<WBR>file's&nbsp;<WBR>contents.&nbsp;<WBR><br>@return&nbsp;<WBR>a&nbsp;<WBR>stream&nbsp;<WBR>to&nbsp;<WBR>read&nbsp;<WBR>the&nbsp;<WBR>file&nbsp;<WBR>from</TD> </TR> </TABLE></TD>
-</TR>
+				<UL>
+										<LI><I>isIndirectlyInstantiated</I>: true</LI>	
 
-				</TABLE>
+				</UL>
 			</td>
 		</tr>
 		<tr>
@@ -147,12 +149,11 @@
 		</tr>
 	</tbody>
 </table>
-
 <TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">interface: FileRetrievalService</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">component: FileRetrievalService</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -165,4 +166,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

@@ -1,15 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../../../ea.css" rel=stylesheet>
-<title>Address</title>
+	<link href="../../../ea.css" rel=stylesheet>
+	<title>gov.nih.nci.caarray.domain.contact::AbstractContact</title>
 </head>
+
 <body>
-<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
+	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: Address</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: AbstractContact</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -25,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: Address  
+				public abstract  class: AbstractContact  
 			</td>
 		</tr>
 		<tr>
@@ -42,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 4/22/2007 1:43:23 PM; Modified: 4/22/2007 1:43:28 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 4/22/2007 1:42:23 PM; Modified: 7/2/2007 9:51:26 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -54,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{B498EACE-3774-4076-84FF-BF199250C5A3}</td>
+							<td width="85%" class=ObjectDetailsValue>{6481D2A4-0916-494a-94AB-CAE2E5490066}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -74,7 +73,7 @@
 				Goto:
 			</td>
 			<td width="90%">
-				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>
+				<a href=#CustomProperties>Custom Properties</a>, <a href=#Fields>Fields</a>, <a href=#TaggedVals>Tagged Values</a>
 			</td>
 		</tr>
 	</tbody>
@@ -98,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA61.htm">AbstractContact</a>, <a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>
+				<a href="../EA12/EA126.htm">Source</a>, <a href="../EA9/EA101.htm">ExperimentContact</a>, <a href="EA63.htm">Address</a>, <a href="EA65.htm">Person</a>, <a href="EA64.htm">Organization</a>, <a href="../EA3/EA37.htm">AbstractCaArrayEntity</a>
 			</td>
 		</tr>
 	</tbody>
@@ -110,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA59.htm">gov.nih.nci.caarray.domain.contact</a>
+				<a href="EA60.htm">gov.nih.nci.caarray.domain.contact</a>, <a href="../EA9/EA96.htm">gov.nih.nci.caarray.domain.project</a>, <a href="../EA12/EA117.htm">gov.nih.nci.caarray.domain.sample</a>
 			</td>
 		</tr>
 	</tbody>
@@ -123,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link from class <a href="EA61.htm">[gov.nih.nci.caarray.domain.contact].AbstractContact</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA37.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>	
+							<LI>Generalization  link from class <a href="EA64.htm">[gov.nih.nci.caarray.domain.contact].Organization</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link from class <a href="EA65.htm">[gov.nih.nci.caarray.domain.contact].Person</a> &nbsp;  &nbsp;</LI>			<LI>Association  link to class <a href="EA63.htm">[gov.nih.nci.caarray.domain.contact].Address</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA37.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA12/EA126.htm">[gov.nih.nci.caarray.domain.sample].Source</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA9/EA101.htm">[gov.nih.nci.caarray.domain.project].ExperimentContact</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -153,7 +152,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">Address</a> Attributes
+				<a Name="Fields">AbstractContact</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -164,20 +163,17 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;streetAddress1</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA146.htm">String</a></i><br><b>&nbsp;&nbsp;email</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>CURATOR_REVIEWED=1<br>description=A text string identifier for a location to which e-mail can be delivered.<br>OWNER_REVIEWED=1<br>PropertyConceptCode=C42775<br>PropertyConceptDefinition=A text string identifier for a location to which e-mail can be delivered.<br>PropertyConceptDefinitionSource=NCI<br>PropertyConceptPreferredName=E-mail Address<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>text&nbsp;<WBR>string&nbsp;<WBR>identifier&nbsp;<WBR>for&nbsp;<WBR>a&nbsp;<WBR>location&nbsp;<WBR>to&nbsp;<WBR>which&nbsp;<WBR>e-mail&nbsp;<WBR>can&nbsp;<WBR>be&nbsp;<WBR>delivered.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;streetAddress2</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;fax</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>CURATOR_REVIEWED=1<br>description=A telephone number that is used for identifying a destination fax machine in a telephone network.<br>OWNER_REVIEWED=1<br>PropertyConceptCode=C42879<br>PropertyConceptDefinition=A telephone number that is used for identifying a destination fax machine in a telephone network.<br>PropertyConceptDefinitionSource=NCI<br>PropertyConceptPreferredName=Fax Number<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>telephone&nbsp;<WBR>number&nbsp;<WBR>that&nbsp;<WBR>is&nbsp;<WBR>used&nbsp;<WBR>for&nbsp;<WBR>identifying&nbsp;<WBR>a&nbsp;<WBR>destination&nbsp;<WBR>fax&nbsp;<WBR>machine&nbsp;<WBR>in&nbsp;<WBR>a&nbsp;<WBR>telephone&nbsp;<WBR>network.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;city</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;phone</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>CURATOR_REVIEWED=1<br>description=A telephone number that is used for person to person conversation with a party.<br>OWNER_REVIEWED=1<br>PropertyConceptCode=C40978<br>PropertyConceptDefinition=A sequence of decimal digits (0-9) that is used for identifying a destination telephone line or other device in a telephone network.<br>PropertyConceptDefinitionSource=NCI<br>PropertyConceptPreferredName=Telephone Number<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>telephone&nbsp;<WBR>number&nbsp;<WBR>that&nbsp;<WBR>is&nbsp;<WBR>used&nbsp;<WBR>for&nbsp;<WBR>person&nbsp;<WBR>to&nbsp;<WBR>person&nbsp;<WBR>conversation&nbsp;<WBR>with&nbsp;<WBR>a&nbsp;<WBR>party.</TD> </TR> </TABLE></TD>	
 	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;state</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;zipCode</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private <a href="../EA15/EA146.htm">String</a></i><br><b>&nbsp;&nbsp;url</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>CURATOR_REVIEWED=1<br>description=A Uniform Resource Locator is an Internet address which tells a browser where to find an Internet resource. (from http://www.computeruser.com)<br>OWNER_REVIEWED=1<br>PropertyConceptCode=C42743<br>PropertyConceptDefinition=The global address of documents and other resources on the World Wide Web. The first part of the address indicates what protocol to use, and the second part specifies the IP address or the domain name where the resource is located.<br>PropertyConceptDefinitionSource=NCI<br>PropertyConceptPreferredName=Uniform Resource Locator<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>Uniform&nbsp;<WBR>Resource&nbsp;<WBR>Locator&nbsp;<WBR>is&nbsp;<WBR>an&nbsp;<WBR>Internet&nbsp;<WBR>address&nbsp;<WBR>which&nbsp;<WBR>tells&nbsp;<WBR>a&nbsp;<WBR>browser&nbsp;<WBR>where&nbsp;<WBR>to&nbsp;<WBR>find&nbsp;<WBR>an&nbsp;<WBR>Internet&nbsp;<WBR>resource.&nbsp;<WBR>(from&nbsp;<WBR>http://www.computeruser.com)</TD> </TR> </TABLE></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -188,11 +184,90 @@
 	</tbody>
 </table>
 
-<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
+<table cellPadding=0 cellSpacing=0 width="100%">
+  <tbody>
+		<tr>
+			<td class="ObjectSubTitle">
+				<a Name="TaggedVals">AbstractContact</a> Tagged Values
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<TABLE align="center" BORDER=1 CELLSPACING=0 CELLPADDING=1 bordercolor="white" class="OperationTable">
+					<TR>
+						<TD WIDTH="24%" class="OperationTableHeading">Tag</TD>
+						<TD WIDTH="24%" class="OperationTableHeading">Value</TD>
+						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
+					</TR>
+									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">CURATOR_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
+					<TD WIDTH="24%" class="OperationTableRow">A party (organization or person) of interest in the application.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptCode</TD>
+					<TD WIDTH="24%" class="OperationTableRow">C25461</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinition</TD>
+					<TD WIDTH="24%" class="OperationTableRow">A person acting as a channel for communication between groups.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinitionSource</TD>
+					<TD WIDTH="24%" class="OperationTableRow">NCI</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptPreferredName</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Contact Person</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptCode1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">C42874</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptDefinition1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">A concept or idea not associated with any specific instance.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptDefinitionSource1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">NCI</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassQualifierConceptPreferredName1</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Abstract</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">OWNER_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+	
+				</TABLE>
+			</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+	<TABLE class="FooterTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: Address</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: AbstractContact</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
@@ -205,4 +280,5 @@
 	</TBODY>
 </TABLE> 
 </body>
+
 </html>

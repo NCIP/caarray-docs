@@ -1,14 +1,14 @@
 <html>
 <head>
 	<link href="../../../ea.css" rel=stylesheet>
-	<title>gov.nih.nci.caarray.domain.contact::Address</title>
+	<title>gov.nih.nci.caarray.domain.contact::Organization</title>
 </head>
 
 <body>
 	<TABLE class="HeaderTable" align="center" cellSpacing=0 cellPadding=0>
   <TBODY >
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Header">class: Address</TD>
+		<TD colspan=2 WIDTH="100%" class="Header">class: Organization</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="HeaderDetails"></TD>
@@ -24,7 +24,7 @@
   <tbody>
 		<tr>
 			<td class=ObjectTitle>
-				public   class: Address  
+				public   class: Organization  
 			</td>
 		</tr>
 		<tr>
@@ -41,7 +41,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Dates:</td>
-							<td width="85%" class=ObjectDetailsValue>Created: 4/22/2007 1:43:23 PM; Modified: 4/22/2007 1:43:28 PM;</td>
+							<td width="85%" class=ObjectDetailsValue>Created: 4/22/2007 1:42:44 PM; Modified: 4/22/2007 1:42:47 PM;</td>
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>Flags:</td>
@@ -53,7 +53,7 @@
 						</tr>
 						<tr>
 							<td width="15%" class=ObjectDetailsTopic>UUID:</td>
-							<td width="85%" class=ObjectDetailsValue>{B498EACE-3774-4076-84FF-BF199250C5A3}</td>
+							<td width="85%" class=ObjectDetailsValue>{287505D8-40F1-4194-973B-12CAC845F195}</td>
 						</tr>
 						<tr>
 							<td colspan="2" width="100%" class=ObjectDetailsTopic></td>
@@ -85,7 +85,7 @@
 				Extends:
 			</td>
 			<td width="90%">
-				<a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
+				<a href="EA62.htm">AbstractContact</a>
 			</td>
 		</tr>
 	</tbody>
@@ -97,7 +97,7 @@
 				See also:
 			</td>
 			<td width="90%">
-				<a href="EA63.htm">AbstractContact</a>, <a href="../EA3/EA38.htm">AbstractCaArrayEntity</a>
+				<a href="EA65.htm">Person</a>, <a href="EA62.htm">AbstractContact</a>, <a href="../EA4/EA57.htm">ArrayDesign</a>
 			</td>
 		</tr>
 	</tbody>
@@ -109,7 +109,7 @@
 				Appears in:
 			</td>
 			<td width="90%">
-				<a href="EA61.htm">gov.nih.nci.caarray.domain.contact</a>
+				<a href="../EA4/EA38.htm">gov.nih.nci.caarray.domain.array</a>, <a href="EA60.htm">gov.nih.nci.caarray.domain.contact</a>
 			</td>
 		</tr>
 	</tbody>
@@ -122,7 +122,7 @@
 		<tr>
 			<td>
 				<UL>
-							<LI>Association  link from class <a href="EA63.htm">[gov.nih.nci.caarray.domain.contact].AbstractContact</a> &nbsp;  &nbsp;</LI>			<LI>Generalization  link to class <a href="../EA3/EA38.htm">[gov.nih.nci.caarray.domain].AbstractCaArrayEntity</a> &nbsp;  &nbsp;</LI>	
+							<LI>Generalization  link to class <a href="EA62.htm">[gov.nih.nci.caarray.domain.contact].AbstractContact</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="EA65.htm">[gov.nih.nci.caarray.domain.contact].Person</a> &nbsp;  &nbsp;</LI>			<LI>Association  link from class <a href="../EA4/EA57.htm">[gov.nih.nci.caarray.domain.array].ArrayDesign</a> &nbsp;  &nbsp;</LI>	
 				</UL>
 			</td>
 		</tr>
@@ -152,7 +152,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="Fields">Address</a> Attributes
+				<a Name="Fields">Organization</a> Attributes
 			</td>
 		</tr>
 		<tr>
@@ -163,20 +163,8 @@
 						<TD WIDTH="60%" class="AttribTableHeading">Details</TD>
 					</TR>
 						<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;streetAddress1</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The first line of the exact address where a mail piece is intended to be delivered, including urban-style street address, rural route, and post office box.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>first&nbsp;<WBR>line&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>exact&nbsp;<WBR>address&nbsp;<WBR>where&nbsp;<WBR>a&nbsp;<WBR>mail&nbsp;<WBR>piece&nbsp;<WBR>is&nbsp;<WBR>intended&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>delivered,&nbsp;<WBR>including&nbsp;<WBR>urban-style&nbsp;<WBR>street&nbsp;<WBR>address,&nbsp;<WBR>rural&nbsp;<WBR>route,&nbsp;<WBR>and&nbsp;<WBR>post&nbsp;<WBR>office&nbsp;<WBR>box.</TD> </TR> </TABLE></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;streetAddress2</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The second line additional address text to describe where a mail piece is intended to be delivered. <br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>second&nbsp;<WBR>line&nbsp;<WBR>additional&nbsp;<WBR>address&nbsp;<WBR>text&nbsp;<WBR>to&nbsp;<WBR>describe&nbsp;<WBR>where&nbsp;<WBR>a&nbsp;<WBR>mail&nbsp;<WBR>piece&nbsp;<WBR>is&nbsp;<WBR>intended&nbsp;<WBR>to&nbsp;<WBR>be&nbsp;<WBR>delivered.&nbsp;<WBR></TD> </TR> </TABLE></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;city</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=A large and densely populated urban area; a city specified in an address.<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>large&nbsp;<WBR>and&nbsp;<WBR>densely&nbsp;<WBR>populated&nbsp;<WBR>urban&nbsp;<WBR>area;&nbsp;<WBR>a&nbsp;<WBR>city&nbsp;<WBR>specified&nbsp;<WBR>in&nbsp;<WBR>an&nbsp;<WBR>address.</TD> </TR> </TABLE></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;state</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=A component of an address that specifies a location by identification of a principal administrative unit of a country. <br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>A&nbsp;<WBR>component&nbsp;<WBR>of&nbsp;<WBR>an&nbsp;<WBR>address&nbsp;<WBR>that&nbsp;<WBR>specifies&nbsp;<WBR>a&nbsp;<WBR>location&nbsp;<WBR>by&nbsp;<WBR>identification&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>principal&nbsp;<WBR>administrative&nbsp;<WBR>unit&nbsp;<WBR>of&nbsp;<WBR>a&nbsp;<WBR>country.&nbsp;<WBR></TD> </TR> </TABLE></TD>	
-	</TR>	<TR>
-		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;zipCode</b></TD>
-		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>description=The postal code of the mailing address<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>postal&nbsp;<WBR>code&nbsp;<WBR>of&nbsp;<WBR>the&nbsp;<WBR>mailing&nbsp;<WBR>address</TD> </TR> </TABLE></TD>	
+		<TD WIDTH="40%" class="AttribTableRow" valign = "top"><i>private String</i><br><b>&nbsp;&nbsp;name</b></TD>
+		<TD WIDTH="60%" class="AttribTableRow" valign = "top"><i></i>CURATOR_REVIEWED=1<br>description=The common name by which an organization is known.<br>OWNER_REVIEWED=1<br>PropertyConceptCode=C42614<br>PropertyConceptDefinition=The words or language units by which a thing is known.<br>PropertyConceptDefinitionSource=NCI<br>PropertyConceptPreferredName=Name<br><TABLE> <TR> <TD valign="top"><i>Notes: </i><span style="margin-left: .4cm;"> </span></TD><TD>The&nbsp;<WBR>common&nbsp;<WBR>name&nbsp;<WBR>by&nbsp;<WBR>which&nbsp;<WBR>an&nbsp;<WBR>organization&nbsp;<WBR>is&nbsp;<WBR>known.</TD> </TR> </TABLE></TD>	
 	</TR>
 				</TABLE>
 			</td>
@@ -191,7 +179,7 @@
   <tbody>
 		<tr>
 			<td class="ObjectSubTitle">
-				<a Name="TaggedVals">Address</a> Tagged Values
+				<a Name="TaggedVals">Organization</a> Tagged Values
 			</td>
 		</tr>
 		<tr>
@@ -203,8 +191,38 @@
 						<TD WIDTH="52%" class="OperationTableHeading">Notes</TD>
 					</TR>
 									<TR>
+					<TD WIDTH="24%" class="OperationTableRow">CURATOR_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
 					<TD WIDTH="24%" class="OperationTableRow">documentation</TD>
-					<TD WIDTH="24%" class="OperationTableRow">Specifies a destination to which postal mail may be delivered.</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Entities such as companies, universities, government agencies of interest in the application.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptCode</TD>
+					<TD WIDTH="24%" class="OperationTableRow">C41167</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinition</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Organizational unit like a laboratory, institute or consortium.</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptDefinitionSource</TD>
+					<TD WIDTH="24%" class="OperationTableRow">NCI</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">ObjectClassConceptPreferredName</TD>
+					<TD WIDTH="24%" class="OperationTableRow">Organizational Unit</TD>
+					<TD WIDTH="52%" class="OperationTableRow"></TD>
+				</TR>
+					<TR>
+					<TD WIDTH="24%" class="OperationTableRow">OWNER_REVIEWED</TD>
+					<TD WIDTH="24%" class="OperationTableRow">1</TD>
 					<TD WIDTH="52%" class="OperationTableRow"></TD>
 				</TR>
 	
@@ -220,7 +238,7 @@
   <TBODY >
 	<TR><TD colspan="2" width="100%"><HR></TD></TR>
 	<TR>
-		<TD colspan=2 WIDTH="100%" class="Footer">class: Address</TD>
+		<TD colspan=2 WIDTH="100%" class="Footer">class: Organization</TD>
 	</TR>
 	<TR>
 		<TD WIDTH="48%" class="FooterDetails"></TD>
