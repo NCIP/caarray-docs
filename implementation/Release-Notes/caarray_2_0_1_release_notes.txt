@@ -62,13 +62,33 @@ software. Over 70 issues have been addressed with few minor enhancements.
 Highlights of caArray 2.0.1 include:
 
 
-* File Upload as a Background Process:
+* File Upload as a Background Process
 
-Upload function could take an extended period of time depending on the
-the file size.  As a convenience to our application user, upload function
-will execute as a background process allowing the user to interact with
-the application simultaneously with the upload process.
+The process of uploading files can take an extended period of time 
+depending onthe file size and number of files.  As a convenience to 
+our application users, the upload function will execute as a background 
+process allowing users to interact with the application as upload 
+occurs.
 
+* Fix for Importing Illumina SNP Array Designs
+
+Defect #12107 has been fixed such that Illumina SNP array designs can 
+be successfully imported. 
+
+* Authenticated access via the Remote Java API is now supported
+
+* Import (Not Parsed) Additional Array Designs
+
+Users can now Import these additional array design types, stored 
+unparsed in the database:
+Agilent CSV, Agilent XML, ImaGene TPL, Nimblegen NDF, UCSF Spot SPT
+
+* Download All Files from Experiments of Substantial Size
+
+If the size is greater than 150MB (after compression), the System 
+breaks up the download into batches of files, each batch with size 
+no more than 150MB.
+ 
 
 
 Defects and Feature Addressed in This Release
@@ -108,16 +128,16 @@ large designs
 *13183	Upgrade installer 2.0.1 - does not properly set security-config 
 parameters causing inability to log in following an upgrade
 
-*13206	"Mage-tab files fail import, if validation has warnings for the 
-sdrf file (refer #11790 for additional information)"
+*13206	Mage-tab files fail import, if validation has warnings for the 
+sdrf file (refer #11790 for additional information)
 
 *11717	non-browsable fields can be seen by anonymous user for a browsable 
 but not publicly readable experiment
 
 *11777	Array design file type was unrecognized
 
-*11790	"Importing IDF, SDRF, and data files without defining Array Design 
-in Experiment Overview"
+*11790	Importing IDF, SDRF, and data files without defining Array Design 
+in Experiment Overview
 
 *11976	Possible to change experiment array designs after importing data
 
@@ -125,8 +145,8 @@ in Experiment Overview"
 
 *12006	Usability - left nav menu
 
-*12117	"Authenticated access via API does not allow access to authorized, 
-non-public objects"
+*12117	Authenticated access via API does not allow access to authorized, 
+non-public objects
 
 *12161	Retract Public Experiment doesn't remove ability to download data
 
@@ -279,8 +299,8 @@ https://gforge.nci.nih.gov/tracker/?group_id=305
 * 12031	Object graph trimming/initialization leads to poor performance 
 with large data sets
 
-* 13052	"On API retrieval of DataSet, HybridizationData objects returned 
-have null ids."
+* 13052	On API retrieval of DataSet, HybridizationData objects returned 
+have null ids.
 
 * 11756	Grid Service DataSet Retrieval 10x Slower than RJAPI
 
