@@ -5,7 +5,16 @@
     xmlns:epf="http://www.eclipse.org/epf" epf:version="1.2.0" xmlns:rmc="http://www.ibm.com/rmc"
     rmc:version="7.2.0">
   <org.eclipse.epf.uma.resourcemanager:ResourceManager xmi:id="_dtrvMAG5Ed2DoeL8fl8HsQ"
-      guid="_dtrvMAG5Ed2DoeL8fl8HsQ"/>
+      guid="_dtrvMAG5Ed2DoeL8fl8HsQ">
+    <subManagers xmi:id="_JOXV0QG6Ed28r8TwSmvtJw" href="uma://_JMlNIAG6Ed28r8TwSmvtJw#_JOXV0QG6Ed28r8TwSmvtJw"/>
+    <subManagers xmi:id="_R7ZXYQG6Ed28r8TwSmvtJw" href="uma://_R6f_gAG6Ed28r8TwSmvtJw#_R7ZXYQG6Ed28r8TwSmvtJw"/>
+    <resourceDescriptors xmi:id="_JMu-IQG6Ed28r8TwSmvtJw" id="_JMlNIAG6Ed28r8TwSmvtJw"
+        uri="capabilitypatterns/analysis_and_design_discipline_workflow/model.xmi"/>
+    <resourceDescriptors xmi:id="_R6pwgQG6Ed28r8TwSmvtJw" id="_R6f_gAG6Ed28r8TwSmvtJw"
+        uri="capabilitypatterns/environment_discipline_workflow/model.xmi"/>
+    <resourceDescriptors xmi:id="_SEpdMQG-Ed28r8TwSmvtJw" id="-kMSuWjSVTaCx3pXdrcMclw"
+        uri="workproducts/process_issue.xmi"/>
+  </org.eclipse.epf.uma.resourcemanager:ResourceManager>
   <org.eclipse.epf.uma:MethodPlugin xmi:id="_dtrvIAG5Ed2DoeL8fl8HsQ" name="caarray_process_plugin"
       guid="_dtrvIAG5Ed2DoeL8fl8HsQ" briefDescription="caArray Software Development Process elemenents.">
     <methodPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dtrvIQG5Ed2DoeL8fl8HsQ"
@@ -15,7 +24,11 @@
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dtrvIwG5Ed2DoeL8fl8HsQ"
             name="Domains" guid="_dtrvIwG5Ed2DoeL8fl8HsQ"/>
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dtrvJAG5Ed2DoeL8fl8HsQ"
-            name="Disciplines" guid="_dtrvJAG5Ed2DoeL8fl8HsQ"/>
+            name="Disciplines" guid="_dtrvJAG5Ed2DoeL8fl8HsQ">
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_hUj88AG-Ed28r8TwSmvtJw"
+              name="environment_discipline" guid="_hUj88AG-Ed28r8TwSmvtJw" presentationName="Environment"
+              tasks="_lJUS4AG8Ed28r8TwSmvtJw _N1r-4AG9Ed28r8TwSmvtJw _1VIaMAG8Ed28r8TwSmvtJw"/>
+        </childPackages>
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dtrvJQG5Ed2DoeL8fl8HsQ"
             name="RoleSets" guid="_dtrvJQG5Ed2DoeL8fl8HsQ"/>
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dtrvJgG5Ed2DoeL8fl8HsQ"
@@ -34,9 +47,39 @@
         </childPackages>
       </childPackages>
       <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dtrvLAG5Ed2DoeL8fl8HsQ"
-          name="CoreContent" guid="_dtrvLAG5Ed2DoeL8fl8HsQ"/>
+          name="CoreContent" guid="_dtrvLAG5Ed2DoeL8fl8HsQ">
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_E7zpkAG8Ed28r8TwSmvtJw"
+            name="General" guid="_E7zpkAG8Ed28r8TwSmvtJw" briefDescription="Elements that apply across entire process">
+          <contentElements xsi:type="org.eclipse.epf.uma:Role" xmi:id="_JikZUAG8Ed28r8TwSmvtJw"
+              name="any_role" guid="_JikZUAG8Ed28r8TwSmvtJw" presentationName="Any Role"/>
+        </childPackages>
+        <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_IRpkAAG8Ed28r8TwSmvtJw"
+            name="Environment" guid="_IRpkAAG8Ed28r8TwSmvtJw">
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_lJUS4AG8Ed28r8TwSmvtJw"
+              name="submit_process_issue" guid="_lJUS4AG8Ed28r8TwSmvtJw" presentationName="Submit Process Issue"
+              performedBy="_JikZUAG8Ed28r8TwSmvtJw" output="_bA-7gAG9Ed28r8TwSmvtJw"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_1VIaMAG8Ed28r8TwSmvtJw"
+              name="update_process" guid="_1VIaMAG8Ed28r8TwSmvtJw" presentationName="Update Process"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_N1r-4AG9Ed28r8TwSmvtJw"
+              name="evaluate_process" guid="_N1r-4AG9Ed28r8TwSmvtJw" presentationName="Evaluate Process"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Role" xmi:id="_RL-lQAG9Ed28r8TwSmvtJw"
+              name="process_engineer" guid="_RL-lQAG9Ed28r8TwSmvtJw" presentationName="Process Engineer"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_bA-7gAG9Ed28r8TwSmvtJw"
+              name="process_issue" guid="_bA-7gAG9Ed28r8TwSmvtJw" presentationName="Process Issue">
+            <presentation xmi:id="-kMSuWjSVTaCx3pXdrcMclw" href="uma://-kMSuWjSVTaCx3pXdrcMclw#-kMSuWjSVTaCx3pXdrcMclw"/>
+          </contentElements>
+        </childPackages>
+      </childPackages>
       <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_dtrvLQG5Ed2DoeL8fl8HsQ"
-          name="CapabilityPatterns" guid="_dtrvLQG5Ed2DoeL8fl8HsQ"/>
+          name="CapabilityPatterns" guid="_dtrvLQG5Ed2DoeL8fl8HsQ">
+        <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_4Zki8AG5Ed28r8TwSmvtJw"
+            name="Discipline Workflows" guid="_4Zki8AG5Ed28r8TwSmvtJw">
+          <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_JMlNIAG6Ed28r8TwSmvtJw"
+              href="uma://_JMlNIAG6Ed28r8TwSmvtJw#_JMlNIAG6Ed28r8TwSmvtJw"/>
+          <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_R6f_gAG6Ed28r8TwSmvtJw"
+              href="uma://_R6f_gAG6Ed28r8TwSmvtJw#_R6f_gAG6Ed28r8TwSmvtJw"/>
+        </childPackages>
+      </childPackages>
     </methodPackages>
     <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_dtrvLgG5Ed2DoeL8fl8HsQ"
         name="DeliveryProcesses" guid="_dtrvLgG5Ed2DoeL8fl8HsQ"/>
