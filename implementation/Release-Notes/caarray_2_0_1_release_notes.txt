@@ -99,6 +99,14 @@ implementation notes.
 
 https://gforge.nci.nih.gov/tracker/?group_id=305
 
+*13396 Cannot delete a Sample if it is referenced in a Read Selective 
+permissions profile
+
+*13397 "Unexpected errors can lead to a perpetual, intermittent inability 
+to modify experiments or upload data"
+
+*13386 Experimental factors tab throwing an unexpected error when you 
+click on delete button 
 
 *12107	Valid Illumina SNP design files fail validation
 
