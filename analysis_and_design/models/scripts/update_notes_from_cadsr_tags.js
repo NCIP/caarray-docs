@@ -75,6 +75,7 @@ function getTaggedValue(tagName, parent) {
         }
     }
     return null;
+}
 
 function alert(message) {
     wshShell.Popup(message);
