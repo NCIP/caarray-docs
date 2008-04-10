@@ -3,7 +3,7 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:org.eclipse.epf.uma="http://www.eclipse.org/epf/uma/1.0.4/uma.ecore" xmlns:epf="http://www.eclipse.org/epf"
     epf:version="1.2.0" xmlns:rmc="http://www.ibm.com/rmc" rmc:version="7.2.0" xmi:id="_CaDJYAG6Ed28r8TwSmvtJw"
-    name="caArray Software Development Process" guid="_CaDJYAG6Ed28r8TwSmvtJw">
+    name="caArray Software Development Process" guid="_CaDJYAG6Ed28r8TwSmvtJw" version="7.2.0">
   <methodPluginSelection href="uma://_dtrvIAG5Ed2DoeL8fl8HsQ#_dtrvIAG5Ed2DoeL8fl8HsQ"/>
   <methodPackageSelection xsi:type="org.eclipse.epf.uma:ContentPackage" href="uma://_dtrvIAG5Ed2DoeL8fl8HsQ#_IRpkAAG8Ed28r8TwSmvtJw"/>
   <methodPackageSelection xsi:type="org.eclipse.epf.uma:ContentPackage" href="uma://_dtrvIAG5Ed2DoeL8fl8HsQ#_E7zpkAG8Ed28r8TwSmvtJw"/>
@@ -24,4 +24,5 @@
   <methodPackageSelection xsi:type="org.eclipse.epf.uma:ContentPackage" href="uma://_dtrvIAG5Ed2DoeL8fl8HsQ#_dtrvKQG5Ed2DoeL8fl8HsQ"/>
   <methodPackageSelection xsi:type="org.eclipse.epf.uma:ContentPackage" href="uma://_dtrvIAG5Ed2DoeL8fl8HsQ#_dtrvKAG5Ed2DoeL8fl8HsQ"/>
   <methodPackageSelection xsi:type="org.eclipse.epf.uma:ContentPackage" href="uma://_dtrvIAG5Ed2DoeL8fl8HsQ#_dtrvKgG5Ed2DoeL8fl8HsQ"/>
+  <methodPackageSelection xsi:type="org.eclipse.epf.uma:ProcessComponent" href="uma://_rZyAkAc8Ed2RmoPUb2QRIg#_rZyAkAc8Ed2RmoPUb2QRIg"/>
 </org.eclipse.epf.uma:MethodConfiguration>
