@@ -8,12 +8,15 @@
       guid="_dtrvMAG5Ed2DoeL8fl8HsQ">
     <subManagers xmi:id="_JOXV0QG6Ed28r8TwSmvtJw" href="uma://_JMlNIAG6Ed28r8TwSmvtJw#_JOXV0QG6Ed28r8TwSmvtJw"/>
     <subManagers xmi:id="_R7ZXYQG6Ed28r8TwSmvtJw" href="uma://_R6f_gAG6Ed28r8TwSmvtJw#_R7ZXYQG6Ed28r8TwSmvtJw"/>
+    <subManagers xmi:id="_rpScMAc8Ed2RmoPUb2QRIg" href="uma://_rZyAkAc8Ed2RmoPUb2QRIg#_rpScMAc8Ed2RmoPUb2QRIg"/>
     <resourceDescriptors xmi:id="_JMu-IQG6Ed28r8TwSmvtJw" id="_JMlNIAG6Ed28r8TwSmvtJw"
         uri="capabilitypatterns/analysis_and_design_discipline_workflow/model.xmi"/>
     <resourceDescriptors xmi:id="_R6pwgQG6Ed28r8TwSmvtJw" id="_R6f_gAG6Ed28r8TwSmvtJw"
         uri="capabilitypatterns/environment_discipline_workflow/model.xmi"/>
     <resourceDescriptors xmi:id="_SEpdMQG-Ed28r8TwSmvtJw" id="-kMSuWjSVTaCx3pXdrcMclw"
         uri="workproducts/process_issue.xmi"/>
+    <resourceDescriptors xmi:id="_rmKPsAc8Ed2RmoPUb2QRIg" id="_rZyAkAc8Ed2RmoPUb2QRIg"
+        uri="deliveryprocesses/caarray_process/model.xmi"/>
   </org.eclipse.epf.uma.resourcemanager:ResourceManager>
   <org.eclipse.epf.uma:MethodPlugin xmi:id="_dtrvIAG5Ed2DoeL8fl8HsQ" name="caarray_process_plugin"
       guid="_dtrvIAG5Ed2DoeL8fl8HsQ" briefDescription="caArray Software Development Process elemenents.">
@@ -28,6 +31,23 @@
           <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_hUj88AG-Ed28r8TwSmvtJw"
               name="environment_discipline" guid="_hUj88AG-Ed28r8TwSmvtJw" presentationName="Environment"
               tasks="_lJUS4AG8Ed28r8TwSmvtJw _N1r-4AG9Ed28r8TwSmvtJw _1VIaMAG8Ed28r8TwSmvtJw"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_xDwEUAc9Ed2RmoPUb2QRIg"
+              name="analysis_and_design_discipline" guid="_xDwEUAc9Ed2RmoPUb2QRIg"
+              presentationName="Analysis and Design"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_z4bycAc9Ed2RmoPUb2QRIg"
+              name="requirements_discipline" guid="_z4bycAc9Ed2RmoPUb2QRIg" presentationName="Requirements"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_23QUAAc9Ed2RmoPUb2QRIg"
+              name="implementation_discipline" guid="_23QUAAc9Ed2RmoPUb2QRIg" presentationName="Implementation"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_5SHz8Ac9Ed2RmoPUb2QRIg"
+              name="test_discipline" guid="_5SHz8Ac9Ed2RmoPUb2QRIg" presentationName="Test"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_LwnIgAc-Ed2RmoPUb2QRIg"
+              name="deployment_discipline" guid="_LwnIgAc-Ed2RmoPUb2QRIg" presentationName="Deployment"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_Oh-c4Ac-Ed2RmoPUb2QRIg"
+              name="configuration_and_change_management_discipline" guid="_Oh-c4Ac-Ed2RmoPUb2QRIg"
+              presentationName="Configuration and Change Management"/>
+          <contentElements xsi:type="org.eclipse.epf.uma:Discipline" xmi:id="_SFtpYAc-Ed2RmoPUb2QRIg"
+              name="project_management_discipline" guid="_SFtpYAc-Ed2RmoPUb2QRIg"
+              presentationName="Project Management"/>
         </childPackages>
         <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dtrvJQG5Ed2DoeL8fl8HsQ"
             name="RoleSets" guid="_dtrvJQG5Ed2DoeL8fl8HsQ"/>
@@ -82,7 +102,10 @@
       </childPackages>
     </methodPackages>
     <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_dtrvLgG5Ed2DoeL8fl8HsQ"
-        name="DeliveryProcesses" guid="_dtrvLgG5Ed2DoeL8fl8HsQ"/>
+        name="DeliveryProcesses" guid="_dtrvLgG5Ed2DoeL8fl8HsQ">
+      <childPackages xsi:type="org.eclipse.epf.uma:ProcessComponent" xmi:id="_rZyAkAc8Ed2RmoPUb2QRIg"
+          href="uma://_rZyAkAc8Ed2RmoPUb2QRIg#_rZyAkAc8Ed2RmoPUb2QRIg"/>
+    </methodPackages>
     <methodPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_dtrvLwG5Ed2DoeL8fl8HsQ"
         name="ProcessContributions" guid="_dtrvLwG5Ed2DoeL8fl8HsQ"/>
     <bases href="uma://_WCUhAO8KEdmKSqa_gSYthg#_WCUhAO8KEdmKSqa_gSYthg"/>
