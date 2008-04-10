@@ -62,8 +62,16 @@
           <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dtrvKgG5Ed2DoeL8fl8HsQ"
               name="Hidden" guid="_dtrvKgG5Ed2DoeL8fl8HsQ">
             <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="_dtrvKwG5Ed2DoeL8fl8HsQ"
-                name="Custom Categories" guid="_dtrvKwG5Ed2DoeL8fl8HsQ"/>
+                name="Custom Categories" guid="_dtrvKwG5Ed2DoeL8fl8HsQ" categorizedElements="__r7ZMAc-Ed2RmoPUb2QRIg"/>
           </childPackages>
+          <contentElements xsi:type="org.eclipse.epf.uma:CustomCategory" xmi:id="__r7ZMAc-Ed2RmoPUb2QRIg"
+              name="process_view_for_developers" guid="__r7ZMAc-Ed2RmoPUb2QRIg" presentationName="Development Process View for Developers">
+            <categorizedElements xsi:type="org.eclipse.epf.uma:DeliveryProcess" href="uma://_rZyAkAc8Ed2RmoPUb2QRIg#_rZyAkQc8Ed2RmoPUb2QRIg"/>
+            <categorizedElements xsi:type="org.eclipse.epf.uma:CapabilityPattern"
+                href="uma://_JMlNIAG6Ed28r8TwSmvtJw#_JMlNIQG6Ed28r8TwSmvtJw"/>
+            <categorizedElements xsi:type="org.eclipse.epf.uma:CapabilityPattern"
+                href="uma://_R6f_gAG6Ed28r8TwSmvtJw#_R6f_gQG6Ed28r8TwSmvtJw"/>
+          </contentElements>
         </childPackages>
       </childPackages>
       <childPackages xsi:type="org.eclipse.epf.uma:ContentPackage" xmi:id="_dtrvLAG5Ed2DoeL8fl8HsQ"
@@ -79,15 +87,20 @@
               name="submit_process_issue" guid="_lJUS4AG8Ed28r8TwSmvtJw" presentationName="Submit Process Issue"
               performedBy="_JikZUAG8Ed28r8TwSmvtJw" output="_bA-7gAG9Ed28r8TwSmvtJw"/>
           <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_1VIaMAG8Ed28r8TwSmvtJw"
-              name="update_process" guid="_1VIaMAG8Ed28r8TwSmvtJw" presentationName="Update Process"/>
+              name="update_process" guid="_1VIaMAG8Ed28r8TwSmvtJw" presentationName="Update Process"
+              mandatoryInput="_bA-7gAG9Ed28r8TwSmvtJw" output="_fvlGcAdAEd2RmoPUb2QRIg"/>
           <contentElements xsi:type="org.eclipse.epf.uma:Task" xmi:id="_N1r-4AG9Ed28r8TwSmvtJw"
               name="evaluate_process" guid="_N1r-4AG9Ed28r8TwSmvtJw" presentationName="Evaluate Process"/>
           <contentElements xsi:type="org.eclipse.epf.uma:Role" xmi:id="_RL-lQAG9Ed28r8TwSmvtJw"
-              name="process_engineer" guid="_RL-lQAG9Ed28r8TwSmvtJw" presentationName="Process Engineer"/>
+              name="process_engineer" guid="_RL-lQAG9Ed28r8TwSmvtJw" presentationName="Process Engineer"
+              responsibleFor="_fvlGcAdAEd2RmoPUb2QRIg"/>
           <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_bA-7gAG9Ed28r8TwSmvtJw"
               name="process_issue" guid="_bA-7gAG9Ed28r8TwSmvtJw" presentationName="Process Issue">
             <presentation xmi:id="-kMSuWjSVTaCx3pXdrcMclw" href="uma://-kMSuWjSVTaCx3pXdrcMclw#-kMSuWjSVTaCx3pXdrcMclw"/>
           </contentElements>
+          <contentElements xsi:type="org.eclipse.epf.uma:Artifact" xmi:id="_fvlGcAdAEd2RmoPUb2QRIg"
+              name="development_process" guid="_fvlGcAdAEd2RmoPUb2QRIg" briefDescription="The development process documented as a web site (i.e. this web site)."
+              presentationName="Development Process"/>
         </childPackages>
       </childPackages>
       <childPackages xsi:type="org.eclipse.epf.uma:ProcessPackage" xmi:id="_dtrvLQG5Ed2DoeL8fl8HsQ"
