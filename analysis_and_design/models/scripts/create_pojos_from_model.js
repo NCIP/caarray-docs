@@ -84,10 +84,19 @@ function writeClassEnd(javaFile) {
 
 function createJavaFile(package, element) {
     var directoryPath = GENERATED_JAVA_DIR + "\\" + getDirectoryPath(package);
-    if (!fso.FolderExists(directoryPath)) {
-        fso.CreateFolder(directoryPath);
-    }
+    mkdirs(directoryPath);
     return fso.CreateTextFile(directoryPath + "\\" + element.Name + ".java", true);
+}
+
+function mkdirs(path) {
+    var pathElements = path.split("\\");
+    var currentPath = pathElements[0];
+    for (i = 1; i < pathElements.length; i++) {
+        currentPath += "\\" + pathElements[i];
+        if (!fso.FolderExists(currentPath)) {
+            fso.CreateFolder(currentPath);
+        }
+    }
 }
 
 function getDirectoryPath(package) {
