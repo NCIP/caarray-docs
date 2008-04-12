@@ -44,10 +44,10 @@
  
  * 2. Your end-user documentation included with the redistribution, if any, must
  * include the following acknowledgment: This product includes software
- * developed by NCI, 5AM, Stelligent, Nonangon, and Affymetrix. If You do not 
- * include such end-user documentation, You shall include this acknowledgment 
- * in the Software itself, wherever such third-party acknowledgments normally 
- * appear.
+ * developed by NCI, 5AM Solutions, Stelligent, Nonangon Studios, and Affymetrix. 
+ * If You do not include such end-user documentation, You shall include this 
+ * acknowledgment in the Software itself, wherever such third-party acknowledgments 
+ * normally appear.
  *
  * 3. You may not use the names "5AM Solutions", "Stelligent", "Nonagon","Affymetrix", 
  * “The National Cancer Institute”, “NCI”, “Cancer Bioinformatics Grid” or “caBIG™” 
