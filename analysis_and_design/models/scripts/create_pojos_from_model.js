@@ -33,7 +33,15 @@ function writePackage(package) {
     for (var i = 0; i < package.Packages.Count; i++) {
         writePackage(package.Packages.GetAt(i));
     }
-    writeClasses(package);
+    if (isDomainModelPackage(package)) {
+        writeClasses(package);
+    }
+}
+
+function isDomainModelPackage(package) {
+    return package.Name.indexOf("edu.") == 0
+        || package.Name.indexOf("gov.nih.nci.cabio") == 0
+        || package.Name.indexOf("gov.nih.nci.caarray.domain") == 0;
 }
 
 function writeClasses(package) {
@@ -50,6 +58,7 @@ function writeClass(package, element) {
     writePackageStatement(javaFile, package);
     writeImports(javaFile, element);
     writeClassHeading(javaFile, element);
+    writeSerialVersionUid(javaFile);
     writeAttributes(javaFile, element);
     writeAssociations(javaFile, element);
     writeGettersAndSetters(javaFile, element);
@@ -62,6 +71,27 @@ function writePackageStatement(javaFile, package) {
 
 function writeImports(javaFile, element) {
     javaFile.WriteLine();
+    javaFile.WriteLine("import java.io.Serializable;");
+    javaFile.WriteLine("import java.util.Date;");
+    javaFile.WriteLine("import java.util.List;");
+    javaFile.WriteLine("import java.util.Set;");
+    for (var i = 0; i < element.Connectors.Count; i++) {
+        var connector = element.Connectors.GetAt(i);
+        if (isAssociation(connector) && isOtherEndNavigable(element, connector)) {
+            writeImportIfNecessary(javaFile, element, getOtherEndClass(element, connector));
+        }
+    }
+    for (var i = 0; i < element.BaseClasses.Count; i++) {
+        var baseClass = element.BaseClasses.GetAt(i);
+        writeImportIfNecessary(javaFile, element, baseClass);
+    }
+    javaFile.WriteLine();
+}
+
+function writeImportIfNecessary(javaFile, element, otherClass) {
+    if (otherClass.packageID != element.packageID) {
+        javaFile.WriteLine("import " + repository.getPackageByID(otherClass.packageID).Name + "." + otherClass.Name + ";");
+    }
 }
 
 function writeClassHeading(javaFile, element) {
@@ -79,8 +109,12 @@ function writeClassHeading(javaFile, element) {
     if (element.BaseClasses.Count > 0) {
         javaFile.Write(" extends " + element.BaseClasses.GetAt(0).Name);
     }
-    javaFile.Write(" {");
+    javaFile.WriteLine(" implements Serializable {");
+}
+
+function writeSerialVersionUid(javaFile, package) {
     javaFile.WriteLine();
+    javaFile.WriteLine("    private static final long serialVersionUID = 200L;");
 }
 
 function writeAttributes(javaFile, element) {
@@ -103,7 +137,26 @@ function writeAssociations(javaFile, element) {
 function writeAssociation(javaFile, element, connector) {
     var otherEnd = getOtherEnd(element, connector);
     var associatedClass = getOtherEndClass(element, connector);
-    javaFile.WriteLine("    private " + associatedClass.Name + " " + otherEnd.Role + ";");
+    javaFile.WriteLine("    private " + getAssociationFieldType(connector, otherEnd, associatedClass) + " " + otherEnd.Role + ";");
+}
+
+function getAssociationFieldType(connector, otherEnd, associatedClass) {
+    if (otherEnd.Cardinality.indexOf("*") == -1) {
+        return associatedClass.Name;
+    } else if (isOrdered(connector)) {
+        return "List<" + associatedClass.Name + ">";
+    } else {
+        return "Set<" + associatedClass.Name + ">";
+    }
+}
+
+function isOrdered(connector) {
+    for (var i = 0; i < connector.Constraints.Count; i++) {
+        if (connector.Constraints.GetAt(i).Name == "ordered") {
+            return true;
+        }
+    }
+    return false;
 }
 
 function isAssociation(connector) {
@@ -111,7 +164,9 @@ function isAssociation(connector) {
 }
 
 function isOtherEndNavigable(element, connector) {
-    return getOtherEnd(element, connector).isNavigable;
+    return "Bi-Directional" == connector.Direction
+        || ("Source -> Destination" == connector.Direction && isClientEnd(element, connector))
+        || ("Destination -> Source" == connector.Direction && !isClientEnd(element, connector));
 }
 
 function getOtherEnd(element, connector) {
@@ -124,10 +179,8 @@ function getOtherEnd(element, connector) {
 
 function getOtherEndClass(element, connector) {
     if (isClientEnd(element, connector)) {
-        log.writeInfo("Getting supplier element " + connector.SupplierID);
         return repository.GetElementByID(connector.SupplierID);
     } else {
-        log.writeInfo("Getting client element " + connector.ClientID);
         return repository.GetElementByID(connector.ClientID);
     }
 }
@@ -138,6 +191,11 @@ function isClientEnd(element, connector) {
 
 function writeGettersAndSetters(javaFile, element) {
     javaFile.WriteLine();
+    writeAttributeGettersAndSetters(javaFile, element);
+    writeAssociationGettersAndSetters(javaFile, element);
+}
+
+function writeAttributeGettersAndSetters(javaFile, element) {
     for (var i = 0; i < element.Attributes.Count; i++) {
         var attribute = element.Attributes.GetAt(i);
         var documentation;
@@ -162,6 +220,41 @@ function writeGettersAndSetters(javaFile, element) {
         javaFile.WriteLine("    }");
         javaFile.WriteLine();
     }
+}
+
+function writeAssociationGettersAndSetters(javaFile, element) {
+    for (var i = 0; i < element.Connectors.Count; i++) {
+        var connector = element.Connectors.GetAt(i);
+        if (isAssociation(connector) && isOtherEndNavigable(element, connector)) {
+            writeAssociationGetterAndSetter(javaFile, element, connector);
+        }
+    }
+}
+
+function writeAssociationGetterAndSetter(javaFile, element, connector) {
+    var otherEnd = getOtherEnd(element, connector);
+    var associatedClass = getOtherEndClass(element, connector);
+    var documentation;
+    if (!hasTaggedValue(DESCRIPTION_TAG, connector)) {
+        documentation = connector.Notes;
+    } else {
+        documentation = getTaggedValue(DESCRIPTION_TAG, connector);
+    }
+    var fieldType = getAssociationFieldType(connector, otherEnd, associatedClass);
+    javaFile.WriteLine("    /**");
+    javaFile.WriteLine("     * Getter for " + otherEnd.Role + ": " + documentation);
+    javaFile.WriteLine("     */");
+    javaFile.WriteLine("    public " + fieldType + " get" + getInitialUpper(otherEnd.Role) + "() {");
+    javaFile.WriteLine("        return " + otherEnd.Role + ";");
+    javaFile.WriteLine("    }");
+    javaFile.WriteLine();
+    javaFile.WriteLine("    /**");
+    javaFile.WriteLine("     * Setter for " + otherEnd.Role + ": " + documentation);
+    javaFile.WriteLine("     */");
+    javaFile.WriteLine("    public void set" + getInitialUpper(otherEnd.Role) + "(" + fieldType + " " + otherEnd.Role + ") {");
+    javaFile.WriteLine("        this." + otherEnd.Role + " = " + otherEnd.Role + ";");
+    javaFile.WriteLine("    }");
+    javaFile.WriteLine();
 }
 
 function getInitialUpper(value) {
