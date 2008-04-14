@@ -20,8 +20,8 @@
         <copy tofile="03. caarray_software_architecture_document.doc" file="${docs.dir}/analysis_and_design/caarray_software_architecture_document.doc" />
         <copy tofile="04a. caarray_client_model.eap" file="${docs.dir}/analysis_and_design/models/caarray_client_model.eap" />
         <copy tofile="04b. caarray_full_model.eap" file="${docs.dir}/analysis_and_design/models/caarray.EAP" />
-        <copy tofile="05. Approved_annotated_caArray_v2_0_rv6.xmi" file="${docs.dir}/analysis_and_design/models/Approved_annotated_caArray_v2_0_rv6.xmi" />
-        <copy tofile="07. caarray_uml_loader_checklist.doc" file="${docs.dir}/analysis_and_design/models/submission_form_caArray_v2_0_rv1.doc" />
+        <copy tofile="05. Approved_annotated_caArray_v2_0_rv6.xmi" file="${docs.dir}/analysis_and_design/cadsr_submissions/Approved_annotated_caArray_v2_0_rv6.xmi" />
+        <copy tofile="07. caarray_uml_loader_checklist.doc" file="${docs.dir}/analysis_and_design/cadsr_submissions/submission_form_caArray_v2_0_rv1.doc" />
         <zip destfile="12. caArray_grid_client_api_doc.zip" basedir="C:/temp/generated_java/doc" />
     </target>
 
