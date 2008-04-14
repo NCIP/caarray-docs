@@ -12,7 +12,7 @@
 				<UML:Class name="EARootClass" xmi.id="EAID_11111111_5487_4080_A7F4_41526CB0AA00" isRoot="true" isLeaf="false" isAbstract="false"/>
 				<UML:Package name="Remote API" xmi.id="EAPK_69796013_ADC0_461c_B1D6_8D5D3040C36C" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 					<UML:ModelElement.stereotype>
-						<UML:Stereotype xmi.idref="EAID_08E582CA_513F_44c7_A7D9_5882BD3B4FE0"/>
+						<UML:Stereotype xmi.idref="EAID_A4365699_E305_476a_A6F6_35994EB9CA1D"/>
 					</UML:ModelElement.stereotype>
 					<UML:ModelElement.taggedValue>
 						<UML:TaggedValue tag="ea_package_id" value="31"/>
@@ -21,7 +21,7 @@
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="isnamespace" value="1"/>
 						<UML:TaggedValue tag="xmlpath" value="controlled_packages\Remote_API.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2008-04-07 09:59:21"/>
+						<UML:TaggedValue tag="lastloaddate" value="2008-04-14 16:27:39"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-07-20 07:41:26"/>
 						<UML:TaggedValue tag="version" value="1.0"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
@@ -63,7 +63,7 @@
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
 									</UML:ModelElement.taggedValue>
 								</UML:ClassifierRole>
-								<UML:ClassifierRole name="gov.nci.nih.caarray.services" xmi.id="EAID_207864A4_5E76_402d_9866_DB164D845110" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
+								<UML:ClassifierRole name="gov.nih.nci.caarray.services" xmi.id="EAID_207864A4_5E76_402d_9866_DB164D845110" visibility="public" base="EAID_11111111_5487_4080_A7F4_41526CB0AA00">
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="isSpecification" value="false"/>
 										<UML:TaggedValue tag="ea_stype" value="Package"/>
@@ -71,7 +71,7 @@
 										<UML:TaggedValue tag="version" value="1.0"/>
 										<UML:TaggedValue tag="package" value="EAPK_69796013_ADC0_461c_B1D6_8D5D3040C36C"/>
 										<UML:TaggedValue tag="date_created" value="2007-07-19 10:16:51"/>
-										<UML:TaggedValue tag="date_modified" value="2007-08-14 11:35:26"/>
+										<UML:TaggedValue tag="date_modified" value="2008-04-14 16:27:56"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
 										<UML:TaggedValue tag="package2" value="EAID_207864A4_5E76_402d_9866_DB164D845110"/>
@@ -200,7 +200,7 @@
 							</UML:Namespace.ownedElement>
 							<UML:Collaboration.interaction/>
 						</UML:Collaboration>
-						<UML:Package name="gov.nci.nih.caarray.services" xmi.id="EAPK_207864A4_5E76_402d_9866_DB164D845110" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
+						<UML:Package name="gov.nih.nci.caarray.services" xmi.id="EAPK_207864A4_5E76_402d_9866_DB164D845110" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2007-07-19 00:00:00"/>
 								<UML:TaggedValue tag="modified" value="2007-07-19 00:00:00"/>
@@ -234,7 +234,7 @@
 										<UML:TaggedValue tag="genlinks" value="Parent=Exception;"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
-										<UML:TaggedValue tag="package_name" value="gov.nci.nih.caarray.services"/>
+										<UML:TaggedValue tag="package_name" value="gov.nih.nci.caarray.services"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="Rashmi Srinivasa"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
@@ -375,7 +375,7 @@
 										<UML:TaggedValue tag="genfile" value="%CAARRAY2_ROOT%\software\caarray-client.jar\src\main\java\gov\nih\nci\caarray\services\CaArrayServer.java"/>
 										<UML:TaggedValue tag="gentype" value="Java"/>
 										<UML:TaggedValue tag="tagged" value="0"/>
-										<UML:TaggedValue tag="package_name" value="gov.nci.nih.caarray.services"/>
+										<UML:TaggedValue tag="package_name" value="gov.nih.nci.caarray.services"/>
 										<UML:TaggedValue tag="phase" value="1.0"/>
 										<UML:TaggedValue tag="author" value="tavelae"/>
 										<UML:TaggedValue tag="complexity" value="1"/>
@@ -2528,7 +2528,7 @@
 						</UML:Package>
 						<UML:Package name="CaArraySvc" xmi.id="EAPK_30C8E490_509A_4479_B09C_F96D8A974A68" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_B61AE8C8_7A24_470d_8D75_CE00CCA346C9"/>
+								<UML:Stereotype xmi.idref="EAID_698ECF53_DA5B_4318_99D9_F9F5B7647690"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2008-04-07 00:00:00"/>
@@ -2727,7 +2727,7 @@
 								</UML:Dependency>
 								<UML:Package name="Types" xmi.id="EAPK_4CA796A9_6451_4cf5_97B2_3E952D7F94E6" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_401EC6AC_E325_49b1_91FD_5BF0BA1C9E6F"/>
+										<UML:Stereotype xmi.idref="EAID_918F8F27_C27D_4a69_8E9F_10565EA3BAAF"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2008-04-07 00:00:00"/>
@@ -4351,7 +4351,7 @@
 						</UML:Package>
 						<UML:Package name="DataService" xmi.id="EAPK_C2556440_7163_4576_B5A2_AC91C0FA1F37" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 							<UML:ModelElement.stereotype>
-								<UML:Stereotype xmi.idref="EAID_B61AE8C8_7A24_470d_8D75_CE00CCA346C9"/>
+								<UML:Stereotype xmi.idref="EAID_698ECF53_DA5B_4318_99D9_F9F5B7647690"/>
 							</UML:ModelElement.stereotype>
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="created" value="2008-04-07 00:00:00"/>
@@ -4550,7 +4550,7 @@
 								</UML:Collaboration>
 								<UML:Package name="Types" xmi.id="EAPK_49CAD3AD_BB98_4664_9BBB_049EDFFF9D0D" isRoot="false" isLeaf="false" isAbstract="false" visibility="public">
 									<UML:ModelElement.stereotype>
-										<UML:Stereotype xmi.idref="EAID_401EC6AC_E325_49b1_91FD_5BF0BA1C9E6F"/>
+										<UML:Stereotype xmi.idref="EAID_918F8F27_C27D_4a69_8E9F_10565EA3BAAF"/>
 									</UML:ModelElement.stereotype>
 									<UML:ModelElement.taggedValue>
 										<UML:TaggedValue tag="created" value="2008-04-07 00:00:00"/>
@@ -5509,13 +5509,13 @@
 						</UML:Package>
 					</UML:Namespace.ownedElement>
 				</UML:Package>
-				<UML:Stereotype xmi.id="EAID_08E582CA_513F_44c7_A7D9_5882BD3B4FE0" name="layer" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_A4365699_E305_476a_A6F6_35994EB9CA1D" name="layer" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_B61AE8C8_7A24_470d_8D75_CE00CCA346C9" name="WSDLnamespace" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_698ECF53_DA5B_4318_99D9_F9F5B7647690" name="WSDLnamespace" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
-				<UML:Stereotype xmi.id="EAID_401EC6AC_E325_49b1_91FD_5BF0BA1C9E6F" name="XSDschema" isRoot="false" isLeaf="false" isAbstract="false">
+				<UML:Stereotype xmi.id="EAID_918F8F27_C27D_4a69_8E9F_10565EA3BAAF" name="XSDschema" isRoot="false" isLeaf="false" isAbstract="false">
 					<UML:Stereotype.baseClass>Package</UML:Stereotype.baseClass>
 				</UML:Stereotype>
 				<UML:DataType xmi.id="eaxmiid32" name="wsrpw:GetResourcePropertyResponse" visibility="private" isRoot="false" isLeaf="false" isAbstract="false"/>
