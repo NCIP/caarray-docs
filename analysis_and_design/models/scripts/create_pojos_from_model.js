@@ -111,23 +111,24 @@ function isAssociation(connector) {
 }
 
 function isOtherEndNavigable(element, connector) {
-    //return getOtherEnd(element, connector).isNavigable;
-    return true;
+    return getOtherEnd(element, connector).isNavigable;
 }
 
 function getOtherEnd(element, connector) {
     if (isClientEnd(element, connector)) {
-        return element.SupplierEnd;
+        return connector.SupplierEnd;
     } else {
-        return element.ClientEnd;
+        return connector.ClientEnd;
     }
 }
 
 function getOtherEndClass(element, connector) {
     if (isClientEnd(element, connector)) {
-        return repository.GetElementByID(element.SupplierID);
+        log.writeInfo("Getting supplier element " + connector.SupplierID);
+        return repository.GetElementByID(connector.SupplierID);
     } else {
-        return repository.GetElementByID(element.ClientID);
+        log.writeInfo("Getting client element " + connector.ClientID);
+        return repository.GetElementByID(connector.ClientID);
     }
 }
 
