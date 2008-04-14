@@ -22,10 +22,7 @@
         <copy tofile="04b. caarray_full_model.eap" file="${docs.dir}/analysis_and_design/models/caarray.EAP" />
         <copy tofile="05. Approved_annotated_caArray_v2_0_rv6.xmi" file="${docs.dir}/analysis_and_design/models/Approved_annotated_caArray_v2_0_rv6.xmi" />
         <copy tofile="07. caarray_uml_loader_checklist.doc" file="${docs.dir}/analysis_and_design/models/submission_form_caArray_v2_0_rv1.doc" />
-        <ant antfile="${build.dir}/build.xml" target="javadoc:caarray-client" dir="${software.dir}" />
-        <zip destfile="12a. caArray_api_doc_client_only.zip" basedir="${software.dir}/caarray-client.jar/target/docs/api" />
-        <ant antfile="${build.dir}/build.xml" target="javadoc" dir="${software.dir}" />
-        <zip destfile="12b. caArray_api_doc_full.zip" basedir="${build.dir}/site/docs/api" />
+        <zip destfile="12. caArray_grid_client_api_doc.zip" basedir="C:/temp/generated_java/doc" />
     </target>
 
     <target name="clean">
