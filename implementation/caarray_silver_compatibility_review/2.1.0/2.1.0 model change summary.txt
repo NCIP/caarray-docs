@@ -1,5 +1,0 @@
-* AbstractBioMaterial.protocolApplications is now an ordered list (instead of a set)
-* Hybridization.protocolApplications is now an ordered list (instead of a set)
-* RawArrayData.hybridizations is now many-to-many
-* ArrayDesign.designFile is now ArrayDesign.designFiles, a many-to-many
-* Other changes as requested by the last silver review, including dropping the edu.wustl.catissuecore.domain package and the gov.nih.nci.cabio.domain.MicroArray class
