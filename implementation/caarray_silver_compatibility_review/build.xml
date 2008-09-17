@@ -31,11 +31,11 @@
                  <include name="caArray_2.0_silver_compliance_submission.zip" />
                  <include name="02. caarray_use_case_summary.doc" />
                  <include name="03. caarray_software_architecture_document.doc" />
-             <include name="04a. caarray_client_model.eap" />
-             <include name="04b. caarray_full_model.eap" />
-             <include name="05. Approved_annotated_caArray_v2_0_rv6.xmi" />
+                 <include name="04a. caarray_client_model.eap" />
+                 <include name="04b. caarray_full_model.eap" />
+                 <include name="05. Approved_annotated_caArray_v2_0_rv6.xmi" />
                  <include name="12a. caArray_api_doc_client_only.zip" />
-             <include name="12b. caArray_api_doc_full.zip" />
+                 <include name="12b. caArray_api_doc_full.zip" />
              </fileset>
         </delete>
     </target>
