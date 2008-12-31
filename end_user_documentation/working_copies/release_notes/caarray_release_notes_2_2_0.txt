@@ -46,12 +46,6 @@ Release History
     * caArray v2.0.2		-- May      2008    
     * caArray v2.0.1		-- April    2008
     * caArray v2.0.0		-- February 2008
-    * caArray v1.6		-- November 2007
-    * caArray v1.5.0.2		-- August   2007
-    * caArray v1.5.0.1		-- July     2007
-    * caArray v1.5		-- June     2007
-    * caArray v1.4		-- October  2006
-    * caArray v1.3.1		-- March    2006
 
 
 Anticipated Releases
@@ -82,12 +76,20 @@ Highlights of caArray 2.2.0 are:
   * The generated MAGE-TAB includes the relationship between biomaterials, 
     hybridizations and data files, and also characteristics of the
     biomaterials.
+  * The generated MAGE-TAB does not contain information about
+    experimental factors, protocols, publications or people.
+
 
 * Bulk-update of experiment annotations using MAGE-TAB import:
   * When a MAGE-TAB file set is being imported, the System recognizes
     references to existing biomaterials and hybridizations by name.
-  * Biomaterial linkages and characteristics can be modified in an
-    additive way via MAGE-TAB import.
+  * Biomaterial linkages can be modified in an additive way via
+    MAGE-TAB import. Existing linkages and biomaterials cannot be
+    deleted via MAGE-TAB import.
+  * Biomaterial characteristics can be modified or new characteristics
+    added via MAGE-TAB import.
+  * However, experimental factors and protocols cannot be added/changed
+    for existing biomaterials and hybridizations via MAGE-TAB import.
   * As part of the upgrade to 2.2.0, existing data will be scrubbed
     to make biomaterial and hybridization names unique within an experiment.
     In other words, all Sources with the same name (within an experiment) will
@@ -140,10 +142,6 @@ https://gforge.nci.nih.gov/tracker/?group_id=305
 
 * Image files referenced in a MAGE-TAB SDRF cannot be validated or
   imported.
-
-* The MAGE-TAB files generated using the new "Export MAGE-TAB" feature
-  do not contain information about experimental factors, protocols,
-  publications or people.
 
 * Multiple MAGE-TAB imports can result in duplicate persons in the database.
 
