@@ -140,6 +140,12 @@ https://gforge.nci.nih.gov/tracker/?group_id=305
 
 * The installer does not support configuring SSL support in JBoss.
 
+* After installing a local copy of caArray, you must go to
+  http://<IP_address_or_host_name>:<port>/caarray in order to test
+  your installation. Even if you are running the browser on the same
+  machine as your caArray installation, you cannot go to
+  http://localhost:<port>/caarray.
+
 * Image files referenced in a MAGE-TAB SDRF cannot be validated or
   imported.
 
