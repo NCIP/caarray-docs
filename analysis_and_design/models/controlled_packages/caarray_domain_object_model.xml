@@ -17,7 +17,7 @@
 						<UML:TaggedValue tag="modified" value="2007-04-22 00:00:00"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="controlled_packages\caarray_domain_object_model.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2009-02-10 18:15:24"/>
+						<UML:TaggedValue tag="lastloaddate" value="2009-02-13 11:58:50"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-07-02 06:42:06"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
@@ -16301,7 +16301,7 @@
 		<UML:TaggedValue tag="ObjectClassConceptPreferredName" xmi.id="EAID_27D1B571_3DA5_42A7_8767_CD64163E9238" value="Person" modelElement="EAID_4C063F0C_24D6_4ef2_985C_2B91C2308BB5"/>
 		<UML:TaggedValue tag="OWNER_REVIEWED" xmi.id="EAID_3742823A_C96F_4FC0_8539_CAE980AC00D7" value="1" modelElement="EAID_4C063F0C_24D6_4ef2_985C_2B91C2308BB5"/>
 		<UML:TaggedValue tag="CURATOR_REVIEWED" xmi.id="EAID_5FF6FCF7_65F4_43BF_8931_F40488C9B17A" value="1" modelElement="EAID_6481D2A4_0916_494a_94AB_CAE2E5490066"/>
-		<UML:TaggedValue tag="documentation" xmi.id="EAID_96A00F39_603D_472a_9585_98066A9B4856" value="A party (organization or person) of interest in the application acting as a channel for communication." modelElement="EAID_6481D2A4_0916_494a_94AB_CAE2E5490066"/>
+		<UML:TaggedValue tag="documentation" xmi.id="EAID_96A00F39_603D_472a_9585_98066A9B4856" value="A party (organization or person) of interest in the application involved with communication." modelElement="EAID_6481D2A4_0916_494a_94AB_CAE2E5490066"/>
 		<UML:TaggedValue tag="ObjectClassConceptCode" xmi.id="EAID_8FBC4557_B049_4274_B2E1_E0B5733934D0" value="C25461" modelElement="EAID_6481D2A4_0916_494a_94AB_CAE2E5490066"/>
 		<UML:TaggedValue tag="ObjectClassConceptDefinition" xmi.id="EAID_07E77EB5_8BB1_4A24_93F7_0AA29084C3EB" value="A person acting as a channel for communication between groups." modelElement="EAID_6481D2A4_0916_494a_94AB_CAE2E5490066"/>
 		<UML:TaggedValue tag="ObjectClassConceptDefinitionSource" xmi.id="EAID_36F8606F_238F_4BCD_BB76_C8F7C42759D3" value="NCI" modelElement="EAID_6481D2A4_0916_494a_94AB_CAE2E5490066"/>
