@@ -17,7 +17,7 @@
 						<UML:TaggedValue tag="modified" value="2007-04-22 00:00:00"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="controlled_packages\caarray_domain_object_model.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2009-04-30 15:04:19"/>
+						<UML:TaggedValue tag="lastloaddate" value="2009-05-04 13:19:22"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-07-02 06:42:06"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
@@ -12932,41 +12932,6 @@
 										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={EE7F69E5-98EC-4dad-A462-E0335177EDE4}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={FA366BC0-5CE9-4cb5-953B-23C2F4C19A37}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 									</UML:ModelElement.taggedValue>
 									<UML:Classifier.feature>
-										<UML:Attribute name="value" changeable="none" visibility="private" ownerScope="instance" targetScope="instance">
-											<UML:Attribute.initialValue>
-												<UML:Expression/>
-											</UML:Attribute.initialValue>
-											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="eaxmiid1"/>
-											</UML:StructuralFeature.type>
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="description" value="The actual argument supplied for a replaceable parameter."/>
-												<UML:TaggedValue tag="type" value="String"/>
-												<UML:TaggedValue tag="derived" value="0"/>
-												<UML:TaggedValue tag="containment" value="Not Specified"/>
-												<UML:TaggedValue tag="length" value="0"/>
-												<UML:TaggedValue tag="ordered" value="0"/>
-												<UML:TaggedValue tag="precision" value="0"/>
-												<UML:TaggedValue tag="scale" value="0"/>
-												<UML:TaggedValue tag="collection" value="false"/>
-												<UML:TaggedValue tag="position" value="0"/>
-												<UML:TaggedValue tag="lowerBound" value="1"/>
-												<UML:TaggedValue tag="upperBound" value="1"/>
-												<UML:TaggedValue tag="duplicates" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{7E742F33-D8BC-4f5c-AE7F-5CC9031AE421}"/>
-												<UML:TaggedValue tag="ea_localid" value="5370"/>
-												<UML:TaggedValue tag="styleex" value="volatile=0;"/>
-												<UML:TaggedValue tag="CADSR_DE_VERSION" value="1.0" xmi.id="EAID_186C1316_2E47_4C6E_B7DB_93F55846AFC2"/>
-												<UML:TaggedValue tag="PropertyConceptCode" value="C49100" xmi.id="EAID_335AA6DB_DE95_47D5_ABA6_FF6D74EDA060"/>
-												<UML:TaggedValue tag="PropertyConceptDefinitionSource" value="NCI" xmi.id="EAID_409543E9_89CE_4F25_970D_06D870464A54"/>
-												<UML:TaggedValue tag="OWNER_REVIEWED" value="1" xmi.id="EAID_7FB785C9_0ACE_49B8_A479_11CF0E92BA1D"/>
-												<UML:TaggedValue tag="PropertyConceptDefinition" value="The information contained in a data field.  It may represent a numeric quantity, a textual characterization, a date or time measurement, or some other state, depending on the nature of the attribute." xmi.id="EAID_8BD65AC4_85D3_48AA_BB50_B374ACFFEBB9"/>
-												<UML:TaggedValue tag="CURATOR_REVIEWED" value="1" xmi.id="EAID_A4B2C943_465A_4B33_B642_0A63B440881C"/>
-												<UML:TaggedValue tag="CADSR_DE_ID" value="2727153" xmi.id="EAID_A4D80F2E_5A2F_4840_B5DE_7039110F89F3"/>
-												<UML:TaggedValue tag="description" value="The actual argument supplied for a replaceable parameter." xmi.id="EAID_A6D625AC_34D1_4be1_88E4_B6F127957FD5"/>
-												<UML:TaggedValue tag="PropertyConceptPreferredName" value="Value" xmi.id="EAID_B9A34315_1CB4_46C1_ABD5_50EAC4CA6EBD"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Attribute>
 										<UML:Attribute name="unit" changeable="none" visibility="private" ownerScope="instance" targetScope="instance">
 											<UML:Attribute.initialValue>
 												<UML:Expression/>
@@ -16166,7 +16131,7 @@
 										<UML:TaggedValue tag="ea_localid" value="3964"/>
 										<UML:TaggedValue tag="ea_eleType" value="element"/>
 										<UML:TaggedValue tag="eventflags" value="LNK=77bc;"/>
-										<UML:TaggedValue tag="$ea_attsclassified" value="{2CC7418E-8865-4958-B885-8A551BD55886},{DA8C20F4-188C-4fd8-946E-20CCB9D58260},{327BD3CF-63D4-4e3f-AF9D-3EAFF99A754C},{7B522483-8E57-4566-90EC-82AFE6AC2B4B},{9694A343-7533-4ddc-BB20-6AB475A01A75},{D29A579D-1034-4451-A9B9-BF4909E569F4},{57BDCE21-23C3-4b5c-9C87-B9039F42B3A5},{FB42A565-381A-4abc-AEE0-44B120FEFE6B},{756E90B3-90C7-4801-8AD0-CC05E081C381},{956C1B7D-24B5-4752-A8E3-CF2CC6730E0F},{369DB3A0-2D30-48a7-B8DE-343934C211A3},{A7AACD90-7AF9-4d68-8753-8D847DCFCC39},{BDEDE09D-F107-47c9-8129-E127B2D1DD1B},{6FD4FC54-0801-4203-8E70-83A4C6402064},{6E93A5BF-A4DA-483e-A25C-8DEDACCF8700},{B0E3C784-E012-43b8-957F-3D84C028D2B0},{61D1ED8C-455E-4f80-80E4-C7C5F22C354F},{69D97BCF-98B7-41e9-9275-86729F0A1CB8},{A3D9E4B5-B435-4c31-957E-D8A8D632771A},{8756C88A-8BEA-42fe-B44F-B408C944F56E},{E19AD3D1-4ADF-4f54-B099-1D5A88FC67B5},{D3F19DAD-939F-417f-B95B-432B8B7181C9},{0EAEFBE9-9781-45f3-9CDA-95ACCFA867AD},{45CFAEB7-F691-4c6c-94B2-8AE266324D34},{5C129965-39C5-473c-91EB-A0A2FB79C96D},{E5E55940-5315-4718-BFEB-365B9711F78A},{44BB0F83-85CD-48f1-B35C-22A952FC3BA7},{96749B15-6B7C-4dfd-937C-ADF8B415CF29},{43424DC5-8229-493a-8CB1-5BED7A8DAAAD},{5FFE8142-8665-4c55-877F-E6CE7B0D6022},{CD0627BA-DF7C-482f-9044-5FEEBFBF5BFE},{3A0BEBD1-7E9C-407c-8EF7-0748B36117C8},{6840E33A-6C04-4d30-BF79-F6C0A675D504},{62884ABE-E4E7-45a0-B259-90EB9E25C6B3},{D1F9BE13-CCC6-42ff-A1DB-375249281DB8},{97AE5917-3482-4845-B549-8334D1217AEF},{611D4FE3-4A05-453b-9FCF-3101E3A919EC},{780305A5-3014-48d4-B326-34C541F38045},{7CBA6B06-0CF9-40c7-B53C-5CAECF2B927B},{587A2845-D6CC-45e3-A84C-635F8C8C7D34},{0A9653B5-3157-4892-A55F-0562B4B45405},{9BD9F68A-5295-4cbf-8B71-B7E8FE89544D},{7469D700-FA38-474f-BDEE-BECFC365870B},{21A781FD-96F1-48f1-889A-27EC84F9646B},{753D1B85-1B3E-4f34-8B27-CBA88660C2B7},{A2889A65-38B5-4d60-90A2-D3DE404829A6},{C9E09F03-4D1D-4596-903A-CD4D0DD51338},{CD2CAA5B-7CAC-495f-B0D7-3F135BF6AF5A},{57ADE9FE-7446-42b9-BB77-D88F6932F0DF},{357BEBE4-7014-4101-AF1E-19AB9B47BD80},{1129BA7E-058F-498c-9AA0-D1D9A9D901B3},{10398400-AF5F-4742-8475-C4F27E55DBD1},{4B2395B0-818A-44b7-B8AD-730C7097CC52},{1E1BE326-C879-4005-9E2B-065C59DDAD6E},{67943EBF-9D7A-48ce-B4BD-C6CF0BB494D6},{01633192-46DC-4f12-B4D4-7E9E626F4452},{2CAE47CA-230E-40a8-A3B3-6DE3F614B433},{C981C9D4-EB0A-4675-8326-7FC27FDD9E18},{394BDB2E-E845-4681-B382-462FD3FEAFAE},{4DF4F708-D655-42cb-BF1A-16F89C364A9D},{4DE3AB89-93EF-420e-A5F7-E45BC209AE1A},{E9D65241-793C-45c2-8410-EA70A1E5F0F0},{2D81EE25-D9E6-4630-B4D4-F0A67E2D1EA5},{20DF7553-B824-4611-9E2E-F299525C3C58},{69F9F6D8-3F1F-4277-B930-E09C8C6594F9},{6A3EA9A4-83AE-4d24-A4FF-0B378B5DE41E},{8DC5534D-11F6-437b-8574-F31A7EB5040C},{06EFE8C2-6B09-4611-B985-7DA48EB45B54},{152B11EC-69A4-4326-B60E-67EEF377ABC5},{9C8E918B-CC87-4a30-B201-B1E9A3B3A964},{D6B3297C-5503-4833-B17D-4E4E80A363CD},{A31C1D32-6469-488f-AF3D-8C5961DA0C3A},{9A597FA5-C2D1-4611-BEAB-15807DEFBD95},{1B3BC477-170E-4aba-8090-AAB4CA0C3209},{1D6AEE27-7299-4aae-A073-B6E65DBCD76E},{BC7E4645-3DCB-4285-8410-E6C75D531F81},{DAB1F9F5-19BF-41a5-BF2E-D9FED12A42CA},{973EF9EC-78B1-454c-801F-F752126FAAFE},{BCBDDE2A-3EF6-4a30-83CC-C164A9267960},{60D1D11D-A3C5-4bb2-A097-B7E864E59FFF},{47B12711-A209-4fdb-9520-082BA67DE152},{B85B22B3-37F4-47db-9DEC-D0F51158D146},{CCB9FB76-C29F-4d28-A0FE-50A4FECDBE2F},{C0E26442-D32B-4ab3-9A85-592D68B57680}"/>
+										<UML:TaggedValue tag="$ea_attsclassified" value="{327BD3CF-63D4-4e3f-AF9D-3EAFF99A754C},{DA8C20F4-188C-4fd8-946E-20CCB9D58260},{2CC7418E-8865-4958-B885-8A551BD55886},{7B522483-8E57-4566-90EC-82AFE6AC2B4B},{A3D9E4B5-B435-4c31-957E-D8A8D632771A},{7CBA6B06-0CF9-40c7-B53C-5CAECF2B927B},{61D1ED8C-455E-4f80-80E4-C7C5F22C354F},{FB42A565-381A-4abc-AEE0-44B120FEFE6B},{9694A343-7533-4ddc-BB20-6AB475A01A75},{6E93A5BF-A4DA-483e-A25C-8DEDACCF8700},{57BDCE21-23C3-4b5c-9C87-B9039F42B3A5},{756E90B3-90C7-4801-8AD0-CC05E081C381},{956C1B7D-24B5-4752-A8E3-CF2CC6730E0F},{369DB3A0-2D30-48a7-B8DE-343934C211A3},{A7AACD90-7AF9-4d68-8753-8D847DCFCC39},{69D97BCF-98B7-41e9-9275-86729F0A1CB8},{6840E33A-6C04-4d30-BF79-F6C0A675D504},{D3F19DAD-939F-417f-B95B-432B8B7181C9},{0EAEFBE9-9781-45f3-9CDA-95ACCFA867AD},{45CFAEB7-F691-4c6c-94B2-8AE266324D34},{5C129965-39C5-473c-91EB-A0A2FB79C96D},{E5E55940-5315-4718-BFEB-365B9711F78A},{0A9653B5-3157-4892-A55F-0562B4B45405},{96749B15-6B7C-4dfd-937C-ADF8B415CF29},{B0E3C784-E012-43b8-957F-3D84C028D2B0},{5FFE8142-8665-4c55-877F-E6CE7B0D6022},{44BB0F83-85CD-48f1-B35C-22A952FC3BA7},{3A0BEBD1-7E9C-407c-8EF7-0748B36117C8},{43424DC5-8229-493a-8CB1-5BED7A8DAAAD},{62884ABE-E4E7-45a0-B259-90EB9E25C6B3},{D1F9BE13-CCC6-42ff-A1DB-375249281DB8},{97AE5917-3482-4845-B549-8334D1217AEF},{611D4FE3-4A05-453b-9FCF-3101E3A919EC},{780305A5-3014-48d4-B326-34C541F38045},{8DC5534D-11F6-437b-8574-F31A7EB5040C},{8756C88A-8BEA-42fe-B44F-B408C944F56E},{BDEDE09D-F107-47c9-8129-E127B2D1DD1B},{E19AD3D1-4ADF-4f54-B099-1D5A88FC67B5},{CD0627BA-DF7C-482f-9044-5FEEBFBF5BFE},{2D81EE25-D9E6-4630-B4D4-F0A67E2D1EA5},{4B2395B0-818A-44b7-B8AD-730C7097CC52},{1129BA7E-058F-498c-9AA0-D1D9A9D901B3},{9A597FA5-C2D1-4611-BEAB-15807DEFBD95},{21A781FD-96F1-48f1-889A-27EC84F9646B},{753D1B85-1B3E-4f34-8B27-CBA88660C2B7},{A2889A65-38B5-4d60-90A2-D3DE404829A6},{C9E09F03-4D1D-4596-903A-CD4D0DD51338},{CD2CAA5B-7CAC-495f-B0D7-3F135BF6AF5A},{6A3EA9A4-83AE-4d24-A4FF-0B378B5DE41E},{357BEBE4-7014-4101-AF1E-19AB9B47BD80},{47B12711-A209-4fdb-9520-082BA67DE152},{10398400-AF5F-4742-8475-C4F27E55DBD1},{9BD9F68A-5295-4cbf-8B71-B7E8FE89544D},{1E1BE326-C879-4005-9E2B-065C59DDAD6E},{67943EBF-9D7A-48ce-B4BD-C6CF0BB494D6},{394BDB2E-E845-4681-B382-462FD3FEAFAE},{4DF4F708-D655-42cb-BF1A-16F89C364A9D},{4DE3AB89-93EF-420e-A5F7-E45BC209AE1A},{E9D65241-793C-45c2-8410-EA70A1E5F0F0},{57ADE9FE-7446-42b9-BB77-D88F6932F0DF},{C0E26442-D32B-4ab3-9A85-592D68B57680},{D29A579D-1034-4451-A9B9-BF4909E569F4},{1D6AEE27-7299-4aae-A073-B6E65DBCD76E},{69F9F6D8-3F1F-4277-B930-E09C8C6594F9},{7469D700-FA38-474f-BDEE-BECFC365870B},{06EFE8C2-6B09-4611-B985-7DA48EB45B54},{587A2845-D6CC-45e3-A84C-635F8C8C7D34},{152B11EC-69A4-4326-B60E-67EEF377ABC5},{9C8E918B-CC87-4a30-B201-B1E9A3B3A964},{CCB9FB76-C29F-4d28-A0FE-50A4FECDBE2F},{A31C1D32-6469-488f-AF3D-8C5961DA0C3A},{B85B22B3-37F4-47db-9DEC-D0F51158D146},{1B3BC477-170E-4aba-8090-AAB4CA0C3209},{20DF7553-B824-4611-9E2E-F299525C3C58},{BC7E4645-3DCB-4285-8410-E6C75D531F81},{DAB1F9F5-19BF-41a5-BF2E-D9FED12A42CA},{973EF9EC-78B1-454c-801F-F752126FAAFE},{BCBDDE2A-3EF6-4a30-83CC-C164A9267960},{60D1D11D-A3C5-4bb2-A097-B7E864E59FFF},{6FD4FC54-0801-4203-8E70-83A4C6402064},{D6B3297C-5503-4833-B17D-4E4E80A363CD}"/>
 										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
 										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={8D077FE0-4120-408e-8323-E8C7D9C79FC4}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={5E8067FA-7404-4d47-B73C-68E1E2A510AE}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 									</UML:ModelElement.taggedValue>
@@ -16427,125 +16392,6 @@
 								<UML:TaggedValue tag="ea_stype" value="Public"/>
 							</UML:ModelElement.taggedValue>
 							<UML:Namespace.ownedElement>
-								<UML:Class name="AssayType" xmi.id="EAID_07E8D985_D3E2_4d25_A283_953DF671D250" visibility="public" namespace="EAPK_FA2E5A6A_BE02_4495_833A_715E4F403C83" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
-									<UML:ModelElement.stereotype>
-										<UML:Stereotype name="CADSR Value Domain"/>
-									</UML:ModelElement.stereotype>
-									<UML:ModelElement.taggedValue>
-										<UML:TaggedValue tag="isSpecification" value="false"/>
-										<UML:TaggedValue tag="ea_stype" value="Class"/>
-										<UML:TaggedValue tag="ea_ntype" value="0"/>
-										<UML:TaggedValue tag="version" value="1.0"/>
-										<UML:TaggedValue tag="package" value="EAPK_FA2E5A6A_BE02_4495_833A_715E4F403C83"/>
-										<UML:TaggedValue tag="date_created" value="2007-12-04 08:31:39"/>
-										<UML:TaggedValue tag="date_modified" value="2007-12-04 08:32:00"/>
-										<UML:TaggedValue tag="gentype" value="Java"/>
-										<UML:TaggedValue tag="tagged" value="0"/>
-										<UML:TaggedValue tag="package_name" value="ValueDomains"/>
-										<UML:TaggedValue tag="phase" value="1.0"/>
-										<UML:TaggedValue tag="complexity" value="1"/>
-										<UML:TaggedValue tag="status" value="Proposed"/>
-										<UML:TaggedValue tag="stereotype" value="CADSR Value Domain"/>
-										<UML:TaggedValue tag="tpos" value="0"/>
-										<UML:TaggedValue tag="ea_localid" value="3967"/>
-										<UML:TaggedValue tag="ea_eleType" value="element"/>
-										<UML:TaggedValue tag="eventflags" value="ATT=e6a9;"/>
-										<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
-										<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={114EF18D-7F01-4e46-84EB-3B94FA4D7E4F}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={07E8D985-D3E2-4d25-A283-953DF671D250}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={2BB12A1B-2EEB-45d7-AD64-C42B65022078}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@STEREO;Name=CADSR Value Domain;GUID={62BDECF7-04EC-4112-B5D6-59BCC4BBECD9};@ENDSTEREO;$DES;$CLT={07E8D985-D3E2-4d25-A283-953DF671D250}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
-									</UML:ModelElement.taggedValue>
-									<UML:Classifier.feature>
-										<UML:Attribute name="geneExpression" changeable="none" visibility="private" ownerScope="instance" targetScope="instance">
-											<UML:Attribute.initialValue>
-												<UML:Expression/>
-											</UML:Attribute.initialValue>
-											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_5E8067FA_7404_4d47_B73C_68E1E2A510AE"/>
-											</UML:StructuralFeature.type>
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="type" value="String"/>
-												<UML:TaggedValue tag="derived" value="0"/>
-												<UML:TaggedValue tag="containment" value="Not Specified"/>
-												<UML:TaggedValue tag="length" value="0"/>
-												<UML:TaggedValue tag="ordered" value="0"/>
-												<UML:TaggedValue tag="precision" value="0"/>
-												<UML:TaggedValue tag="scale" value="0"/>
-												<UML:TaggedValue tag="collection" value="false"/>
-												<UML:TaggedValue tag="position" value="0"/>
-												<UML:TaggedValue tag="lowerBound" value="1"/>
-												<UML:TaggedValue tag="upperBound" value="1"/>
-												<UML:TaggedValue tag="duplicates" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{01633192-46DC-4f12-B4D4-7E9E626F4452}"/>
-												<UML:TaggedValue tag="ea_localid" value="5409"/>
-												<UML:TaggedValue tag="styleex" value="volatile=0;"/>
-												<UML:TaggedValue tag="ValueMeaningConceptDefinitionSource" value="NCI" xmi.id="EAID_169FC070_471D_487B_AD6C_FF1726EB9964"/>
-												<UML:TaggedValue tag="ValueMeaningConceptPreferredName" value="Gene Expression" xmi.id="EAID_2315DA15_12E5_4075_9F93_75ABD4B1381F"/>
-												<UML:TaggedValue tag="ValueMeaningConceptDefinition" value="Typically involves transcription of genetically encoded information into an intermediary message (messenger RNA) and subsequent translation into a functional protein." xmi.id="EAID_282294B8_EA85_4629_8568_0993061C54C9"/>
-												<UML:TaggedValue tag="OWNER_REVIEWED" value="1" xmi.id="EAID_5746C4CE_4FAB_487A_8708_CBC53F09D5CC"/>
-												<UML:TaggedValue tag="ValueMeaningConceptCode" value="C16608" xmi.id="EAID_5809E16F_E45B_47C4_823D_5CE551901430"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Attribute>
-										<UML:Attribute name="snp" changeable="none" visibility="private" ownerScope="instance" targetScope="instance">
-											<UML:Attribute.initialValue>
-												<UML:Expression/>
-											</UML:Attribute.initialValue>
-											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_5E8067FA_7404_4d47_B73C_68E1E2A510AE"/>
-											</UML:StructuralFeature.type>
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="type" value="String"/>
-												<UML:TaggedValue tag="derived" value="0"/>
-												<UML:TaggedValue tag="containment" value="Not Specified"/>
-												<UML:TaggedValue tag="length" value="0"/>
-												<UML:TaggedValue tag="ordered" value="0"/>
-												<UML:TaggedValue tag="precision" value="0"/>
-												<UML:TaggedValue tag="scale" value="0"/>
-												<UML:TaggedValue tag="collection" value="false"/>
-												<UML:TaggedValue tag="position" value="1"/>
-												<UML:TaggedValue tag="lowerBound" value="1"/>
-												<UML:TaggedValue tag="upperBound" value="1"/>
-												<UML:TaggedValue tag="duplicates" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{2CAE47CA-230E-40a8-A3B3-6DE3F614B433}"/>
-												<UML:TaggedValue tag="ea_localid" value="5410"/>
-												<UML:TaggedValue tag="styleex" value="volatile=0;"/>
-												<UML:TaggedValue tag="ValueMeaningConceptDefinition" value="A variation of a single nucleotide at a specific location of the genome due to base substitution, present at an appreciable frequency between individuals of a single interbreeding population." xmi.id="EAID_4FFD96B2_FC6C_48F5_ACA3_B43D4AF2B82A"/>
-												<UML:TaggedValue tag="ValueMeaningConceptPreferredName" value="Single Nucleotide Polymorphism" xmi.id="EAID_75EC8211_E261_4836_9F05_2C19D7F568FE"/>
-												<UML:TaggedValue tag="ValueMeaningConceptDefinitionSource" value="NCI" xmi.id="EAID_89067300_00A0_4A72_9855_71C905FAF2C3"/>
-												<UML:TaggedValue tag="ValueMeaningConceptCode" value="C18279" xmi.id="EAID_971DD21E_6939_4D67_9321_73EEE98AE076"/>
-												<UML:TaggedValue tag="OWNER_REVIEWED" value="1" xmi.id="EAID_F12106E9_449E_4EDF_BFB9_8B9DC921FF5E"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Attribute>
-										<UML:Attribute name="exon" changeable="none" visibility="private" ownerScope="instance" targetScope="instance">
-											<UML:Attribute.initialValue>
-												<UML:Expression/>
-											</UML:Attribute.initialValue>
-											<UML:StructuralFeature.type>
-												<UML:Classifier xmi.idref="EAID_5E8067FA_7404_4d47_B73C_68E1E2A510AE"/>
-											</UML:StructuralFeature.type>
-											<UML:ModelElement.taggedValue>
-												<UML:TaggedValue tag="type" value="String"/>
-												<UML:TaggedValue tag="derived" value="0"/>
-												<UML:TaggedValue tag="containment" value="Not Specified"/>
-												<UML:TaggedValue tag="length" value="0"/>
-												<UML:TaggedValue tag="ordered" value="0"/>
-												<UML:TaggedValue tag="precision" value="0"/>
-												<UML:TaggedValue tag="scale" value="0"/>
-												<UML:TaggedValue tag="collection" value="false"/>
-												<UML:TaggedValue tag="position" value="1000"/>
-												<UML:TaggedValue tag="lowerBound" value="1"/>
-												<UML:TaggedValue tag="upperBound" value="1"/>
-												<UML:TaggedValue tag="duplicates" value="0"/>
-												<UML:TaggedValue tag="ea_guid" value="{C981C9D4-EB0A-4675-8326-7FC27FDD9E18}"/>
-												<UML:TaggedValue tag="ea_localid" value="5411"/>
-												<UML:TaggedValue tag="styleex" value="volatile=0;"/>
-												<UML:TaggedValue tag="OWNER_REVIEWED" value="1" xmi.id="EAID_35887239_8BB4_485C_86AE_44C10D6730E3"/>
-												<UML:TaggedValue tag="ValueMeaningConceptCode" value="C13231" xmi.id="EAID_38BA972F_83AE_4E0E_98FE_8B4E7A7F6AD8"/>
-												<UML:TaggedValue tag="ValueMeaningConceptDefinition" value="The sequences of a gene that are present in the final, mature, spliced messenger RNA molecule from that gene." xmi.id="EAID_7151631B_7C15_4389_9D14_48F456EE4268"/>
-												<UML:TaggedValue tag="ValueMeaningConceptPreferredName" value="Exon" xmi.id="EAID_E712C03F_1368_4A57_86D3_D53E6FF11507"/>
-												<UML:TaggedValue tag="ValueMeaningConceptDefinitionSource" value="NCI" xmi.id="EAID_F8547028_2473_43D8_BCBC_69B43EDE84A4"/>
-											</UML:ModelElement.taggedValue>
-										</UML:Attribute>
-									</UML:Classifier.feature>
-								</UML:Class>
 								<UML:Class name="DesignElementType" xmi.id="EAID_B3E7CEF3_AFAD_4ac0_B2F8_CE2B3DF732C1" visibility="public" namespace="EAPK_FA2E5A6A_BE02_4495_833A_715E4F403C83" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
 									<UML:ModelElement.stereotype>
 										<UML:Stereotype name="CADSR Value Domain"/>
@@ -18219,13 +18065,6 @@
 		<UML:TaggedValue tag="ObjectClassConceptDefinitionSource" xmi.id="EAID_86A2EF6F_4C8E_4D38_A92E_3D4BA0313D85" value="NCI" modelElement="EAID_F0D7B246_3A8A_4388_A33A_B2F397702D53"/>
 		<UML:TaggedValue tag="ObjectClassConceptPreferredName" xmi.id="EAID_B54740C6_394E_43F7_8CEC_6A19E580BFF4" value="Boolean" modelElement="EAID_F0D7B246_3A8A_4388_A33A_B2F397702D53"/>
 		<UML:TaggedValue tag="OWNER_REVIEWED" xmi.id="EAID_8E0BBF1C_A9BC_4C39_B522_CC5D4EA50002" value="1" modelElement="EAID_F0D7B246_3A8A_4388_A33A_B2F397702D53"/>
-		<UML:TaggedValue tag="CADSR_ConceptualDomainPublicID" xmi.id="EAID_3960EC1C_0683_4eaa_A208_626AC2EF87E8" value="2435019" modelElement="EAID_07E8D985_D3E2_4d25_A283_953DF671D250"/>
-		<UML:TaggedValue tag="CADSR_ConceptualDomainVersion" xmi.id="EAID_DEF8AAC4_B686_4c9f_AD07_6BFF9D275CE3" value="1.0" modelElement="EAID_07E8D985_D3E2_4d25_A283_953DF671D250"/>
-		<UML:TaggedValue tag="CADSR_RepresentationPublicID" xmi.id="EAID_8C51D335_9476_42d8_93C9_788A0F67E1CE" value="2234813" modelElement="EAID_07E8D985_D3E2_4d25_A283_953DF671D250"/>
-		<UML:TaggedValue tag="CADSR_RepresentationVersion" xmi.id="EAID_3163C9FC_21ED_4576_BA65_207D4F7ED0F7" value="1.0" modelElement="EAID_07E8D985_D3E2_4d25_A283_953DF671D250"/>
-		<UML:TaggedValue tag="CADSR_ValueDomainDatatype" xmi.id="EAID_E63014CE_160F_4a65_9705_9747500B8327" value="java.lang.String" modelElement="EAID_07E8D985_D3E2_4d25_A283_953DF671D250"/>
-		<UML:TaggedValue tag="CADSR_ValueDomainDefinition" xmi.id="EAID_20F81CD2_3B6E_4c44_A87D_C2F1EF43F516" value="Specifies the biological information reported by a microarray." modelElement="EAID_07E8D985_D3E2_4d25_A283_953DF671D250"/>
-		<UML:TaggedValue tag="CADSR_ValueDomainType" xmi.id="EAID_EA75AF71_5570_42a9_BBAF_A1E06FD16841" value="E" modelElement="EAID_07E8D985_D3E2_4d25_A283_953DF671D250"/>
 		<UML:TaggedValue tag="CADSR_ConceptualDomainPublicID" xmi.id="EAID_C111A4C1_6646_4f71_9261_9F6F95617874" value="2435019" modelElement="EAID_B3E7CEF3_AFAD_4ac0_B2F8_CE2B3DF732C1"/>
 		<UML:TaggedValue tag="CADSR_ConceptualDomainVersion" xmi.id="EAID_535F860C_23E4_4f63_B09E_B0E6689AA72A" modelElement="EAID_B3E7CEF3_AFAD_4ac0_B2F8_CE2B3DF732C1"/>
 		<UML:TaggedValue tag="CADSR_ConceptualDomainVersion" xmi.id="EAID_5DEA7A61_31A6_4c16_9304_1F49BBDD301D" value="1.0" modelElement="EAID_B3E7CEF3_AFAD_4ac0_B2F8_CE2B3DF732C1"/>
@@ -18249,7 +18088,6 @@
 			</UML:ModelElement.taggedValue>
 			<UML:Diagram.element>
 				<UML:DiagramElement geometry="Left=290;Top=80;Right=416;Bottom=160;" subject="EAID_B3E7CEF3_AFAD_4ac0_B2F8_CE2B3DF732C1" seqno="1" style="DUID=9404C476;"/>
-				<UML:DiagramElement geometry="Left=80;Top=80;Right=218;Bottom=160;" subject="EAID_07E8D985_D3E2_4d25_A283_953DF671D250" seqno="2" style="DUID=FE8096CA;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
 		<UML:DiagramElement geometry="Left=234;Top=588;Right=345;Bottom=658;" subject="EAID_257D6510_776D_428d_A09A_E105EEBE1C6A" seqno="6" style="DUID=FE1B3E38;">
