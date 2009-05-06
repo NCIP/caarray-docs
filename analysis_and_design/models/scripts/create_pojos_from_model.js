@@ -12,7 +12,7 @@ main();
 
 function main() {
     repository = WScript.CreateObject("EA.Repository")
-    var fileOpened = repository.OpenFile("C:\\ncicb_svn\\caarray2\\docs\\analysis_and_design\\models\\caarray_client_model.eap")
+    var fileOpened = repository.OpenFile("C:\\ncicb_svn\\caarray2\\docs\\analysis_and_design\\models\\caarray_internal_model.eap")
     if (!fileOpened) {
         alert("Unable to open model file");
         return;
