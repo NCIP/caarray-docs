@@ -17,7 +17,7 @@
 						<UML:TaggedValue tag="modified" value="2007-02-21 11:54:28"/>
 						<UML:TaggedValue tag="iscontrolled" value="TRUE"/>
 						<UML:TaggedValue tag="xmlpath" value="Component Model.xml"/>
-						<UML:TaggedValue tag="lastloaddate" value="2009-07-08 12:27:08"/>
+						<UML:TaggedValue tag="lastloaddate" value="2009-07-10 11:35:51"/>
 						<UML:TaggedValue tag="lastsavedate" value="2007-02-21 11:54:28"/>
 						<UML:TaggedValue tag="isprotected" value="FALSE"/>
 						<UML:TaggedValue tag="usedtd" value="FALSE"/>
@@ -1490,6 +1490,32 @@
 								<UML:TaggedValue tag="virtualInheritance" value="0"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Dependency>
+						<UML:Class name="CaArraySvc_v1_0-client.jar" xmi.id="EAID_BBB1D25D_5F2F_4fd6_B731_3FCE04234ED1" visibility="public" namespace="EAPK_855A7C78_4CF9_4daa_A2A8_14E68BC55942" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="artifact"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Artifact"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_855A7C78_4CF9_4daa_A2A8_14E68BC55942"/>
+								<UML:TaggedValue tag="date_created" value="2009-07-10 11:36:06"/>
+								<UML:TaggedValue tag="date_modified" value="2009-07-10 11:36:06"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Component Model"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="artifact"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="18149"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={EAFCFAF3-F60D-421b-8A4D-BDE6483A87A7}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@STEREO;Name=artifact;GUID={61B5C5B2-5805-420b-AC1D-CE8CB404A29A};@ENDSTEREO;$DES;$CLT={BBB1D25D-5F2F-4fd6-B731-3FCE04234ED1}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={7EDD2AA4-6A7E-498d-875C-9752161A90D0}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=fileName@ENDNAME;@TYPE=String@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={BBB1D25D-5F2F-4fd6-B731-3FCE04234ED1}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
 						<UML:Component name="struts2-core-2.0.9.jar" xmi.id="EAID_C49F2799_9674_4f60_9E8D_7FAE965ED156" visibility="public" namespace="EAPK_855A7C78_4CF9_4daa_A2A8_14E68BC55942" isRoot="false" isLeaf="false" isAbstract="false">
 							<UML:ModelElement.taggedValue>
 								<UML:TaggedValue tag="isSpecification" value="false"/>
@@ -1665,6 +1691,32 @@
 								<UML:TaggedValue tag="ea_eleType" value="element"/>
 								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
 								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={98C7321E-937F-4029-AD2F-C85E0ABDED5D}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=fileName@ENDNAME;@TYPE=String@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={D19AC1C9-BC7B-4d22-A260-97CE9AEA76E9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={8A1A71A3-08EF-480f-A276-5D869ED42037}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@STEREO;Name=artifact;GUID={61B5C5B2-5805-420b-AC1D-CE8CB404A29A};@ENDSTEREO;$DES;$CLT={D19AC1C9-BC7B-4d22-A260-97CE9AEA76E9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+							</UML:ModelElement.taggedValue>
+						</UML:Class>
+						<UML:Class name="CaArraySvc-client.jar (legacy)" xmi.id="EAID_DA5D3010_C22E_4a76_925B_B78DE9B49BDA" visibility="public" namespace="EAPK_855A7C78_4CF9_4daa_A2A8_14E68BC55942" isRoot="false" isLeaf="false" isAbstract="false">
+							<UML:ModelElement.stereotype>
+								<UML:Stereotype name="artifact"/>
+							</UML:ModelElement.stereotype>
+							<UML:ModelElement.taggedValue>
+								<UML:TaggedValue tag="isSpecification" value="false"/>
+								<UML:TaggedValue tag="ea_stype" value="Artifact"/>
+								<UML:TaggedValue tag="ea_ntype" value="0"/>
+								<UML:TaggedValue tag="version" value="1.0"/>
+								<UML:TaggedValue tag="package" value="EAPK_855A7C78_4CF9_4daa_A2A8_14E68BC55942"/>
+								<UML:TaggedValue tag="date_created" value="2009-07-10 11:37:19"/>
+								<UML:TaggedValue tag="date_modified" value="2009-07-10 11:44:16"/>
+								<UML:TaggedValue tag="gentype" value="Java"/>
+								<UML:TaggedValue tag="tagged" value="0"/>
+								<UML:TaggedValue tag="package_name" value="Component Model"/>
+								<UML:TaggedValue tag="phase" value="1.0"/>
+								<UML:TaggedValue tag="complexity" value="1"/>
+								<UML:TaggedValue tag="status" value="Proposed"/>
+								<UML:TaggedValue tag="stereotype" value="artifact"/>
+								<UML:TaggedValue tag="tpos" value="0"/>
+								<UML:TaggedValue tag="ea_localid" value="18150"/>
+								<UML:TaggedValue tag="ea_eleType" value="element"/>
+								<UML:TaggedValue tag="style" value="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=0;HSwimLanes=0;BorderStyle=0;"/>
+								<UML:TaggedValue tag="$ea_xref_property" value="$XREFPROP=$XID={59C91749-2305-4acd-A56B-E8FFD578485D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@STEREO;Name=artifact;GUID={61B5C5B2-5805-420b-AC1D-CE8CB404A29A};@ENDSTEREO;$DES;$CLT={DA5D3010-C22E-4a76-925B-B78DE9B49BDA}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;$XREFPROP=$XID={605FD1FA-9789-42a9-824E-DEE2895D602A}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=fileName@ENDNAME;@TYPE=String@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={DA5D3010-C22E-4a76-925B-B78DE9B49BDA}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 							</UML:ModelElement.taggedValue>
 						</UML:Class>
 						<UML:Component name="myfaces-impl-1.1.5.jar" xmi.id="EAID_DFD84817_5C2F_4431_B509_2BD6046D248B" visibility="public" namespace="EAPK_855A7C78_4CF9_4daa_A2A8_14E68BC55942" isRoot="false" isLeaf="false" isAbstract="false">
@@ -2903,17 +2955,37 @@
 				<UML:DiagramElement geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;Path=;" subject="EAID_5AB4232E_8A6B_4c0e_9880_A215E9302F47" style="Mode=3;EOID=24B46831;SOID=0898A5D2;Hidden=0;"/>
 			</UML:Diagram.element>
 		</UML:Diagram>
-		<UML:DiagramElement geometry="Left=299;Top=145;Right=465;Bottom=180;" subject="EAID_4AD69475_9928_4039_B0BA_EE95DD91BD64" seqno="3" style="DUID=B3C591DA;">
+		<UML:DiagramElement geometry="Left=299;Top=145;Right=465;Bottom=180;" subject="EAID_4AD69475_9928_4039_B0BA_EE95DD91BD64" seqno="8" style="DUID=B3C591DA;">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
 			</UML:ModelElement.taggedValue>
 		</UML:DiagramElement>
-		<UML:DiagramElement geometry="Left=356;Top=94;Right=512;Bottom=130;" subject="EAID_7E536FB1_9632_412e_94C8_A0549BF96024" seqno="1" style="DUID=D3EE55AC;">
+		<UML:DiagramElement geometry="Left=356;Top=94;Right=512;Bottom=130;" subject="EAID_7E536FB1_9632_412e_94C8_A0549BF96024" seqno="6" style="DUID=D3EE55AC;">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
 			</UML:ModelElement.taggedValue>
 		</UML:DiagramElement>
-		<UML:DiagramElement geometry="Left=351;Top=422;Right=441;Bottom=472;" subject="EAID_CF5C057C_CB7A_4a29_8260_535B8CD31E94" seqno="8" style="DUID=A3783EEE;">
+		<UML:DiagramElement geometry="Left=23;Top=465;Right=186;Bottom=494;" subject="EAID_835F3852_F0DA_413d_BE88_3C592DA5C04F" seqno="4" style="DUID=A739735D;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="Left=29;Top=499;Right=156;Bottom=523;" subject="EAID_8F675D6D_0998_4cb6_A0AA_6D1C6A74E48B" seqno="5" style="DUID=D9378036;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="Left=17;Top=122;Right=162;Bottom=144;" subject="EAID_BBB1D25D_5F2F_4fd6_B731_3FCE04234ED1" seqno="3" style="DUID=5E6D6500;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="Left=351;Top=422;Right=441;Bottom=472;" subject="EAID_CF5C057C_CB7A_4a29_8260_535B8CD31E94" seqno="13" style="DUID=A3783EEE;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="Left=21;Top=154;Right=135;Bottom=179;" subject="EAID_DA5D3010_C22E_4a76_925B_B78DE9B49BDA" seqno="2" style="DUID=9C63BA32;">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
 			</UML:ModelElement.taggedValue>
@@ -2923,9 +2995,33 @@
 				<UML:TaggedValue tag="diagram_guid" value="EAID_987F7E83_2E49_4fe5_B437_41ADD9A00218"/>
 			</UML:ModelElement.taggedValue>
 		</UML:DiagramElement>
-		<UML:DiagramElement geometry="Left=610;Top=410;Right=730;Bottom=480;" subject="EAID_E3F187E7_DE3B_4fc4_918C_C911D1518CAF" seqno="9" style="DUID=07C071C0;">
+		<UML:DiagramElement geometry="Left=610;Top=410;Right=730;Bottom=480;" subject="EAID_E3F187E7_DE3B_4fc4_918C_C911D1518CAF" seqno="14" style="DUID=07C071C0;">
 			<UML:ModelElement.taggedValue>
 				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;" subject="EAID_7581EE21_2B26_4746_8013_2F93EE8CA055" style="Mode=3;EOID=D9378036;SOID=B3C591DA;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
+				<UML:TaggedValue tag="hidden" value="255"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;" subject="EAID_84636A57_5976_4322_B516_C24B0AEA393F" style="Mode=3;EOID=A739735D;SOID=D3EE55AC;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
+				<UML:TaggedValue tag="hidden" value="255"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;" subject="EAID_84636A57_5976_4322_B516_C24B0AEA393F" style="Mode=3;EOID=A739735D;SOID=D3EE55AC;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
+				<UML:TaggedValue tag="hidden" value="255"/>
+			</UML:ModelElement.taggedValue>
+		</UML:DiagramElement>
+		<UML:DiagramElement geometry="EDGE=3;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;" subject="EAID_7581EE21_2B26_4746_8013_2F93EE8CA055" style="Mode=3;EOID=D9378036;SOID=B3C591DA;">
+			<UML:ModelElement.taggedValue>
+				<UML:TaggedValue tag="diagram_guid" value="EAID_CA22A5DB_1518_430d_B62D_6DC95291FCC7"/>
+				<UML:TaggedValue tag="hidden" value="255"/>
 			</UML:ModelElement.taggedValue>
 		</UML:DiagramElement>
 		<UML:DiagramElement geometry="EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;" subject="EAID_9B409FED_8881_4592_A356_447E971705CB" style="Mode=2;EOID=07C071C0;SOID=A3783EEE;">
