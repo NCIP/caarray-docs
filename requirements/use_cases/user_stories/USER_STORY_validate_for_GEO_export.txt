@@ -19,7 +19,7 @@ As a caArray user, I want to validate my experiment to make sure it is eligible 
 
 3. Validating protocols:
 
-EXTRACT = Look at the protocols between Sample and Extract for one that has type (Term.value) = "extract" or "extraction"
+EXTRACT = Look at the protocols between Sample and Extract for one that has type (Term.value) = "nucleic_acid_extraction", "extract" or "extraction"
 LABEL = Look at the protocols between Extract and LabeledExtract for one that has type (Term.value) = "labeling"
 HYBRIDIZATION = Look at the protocols between LabeledExtract and Hybridization for one that has type (Term.value) = "hybridization"
 SCAN = Look at the protocols associated with the Hybridization for one that has type (Term.value) = "scan"
