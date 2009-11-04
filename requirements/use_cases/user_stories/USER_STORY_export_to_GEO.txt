@@ -12,7 +12,7 @@ The experiment must pass the validation routine that makes sure that all the inf
 * The system validates that the experiment is suitable for GEO SOFT export.
 * The system generates a text file in SOFT format containing overall experiment information as well as sample-data relationships and annotations as described below.
 * The system zips up the generated SOFT file along with the data files (CHP data files referenced in the !Sample_table sections as well as other files referenced in the !Sample_supplementary_file sections of the SOFT file).
-* The system allows the user to save the zip package to the user's local machine.
+* The system allows the user to save the zipped-up package to the user's local machine.
 
 3. The GEO SOFT file format:
 
@@ -83,14 +83,7 @@ The generated GEO SOFT text file (e.g., expt_public_identifier.soft.txt) will ha
 
 4.3 Data and supplementary files
 In addition to the SOFT file generated as described above, all CHP files as well as all files referenced in any !Sample_supplementary_file section must be included in the overall zip.
-However, if there are many large files, this zip may exceed the limit of 2GB. In this case, caArray should generate multiple smaller zips, making sure that the size of any one zip does not exceed 2GB. The overall zip should contain these multiple zips as well as a text file instructing the user to submit to GEO using their "FTP deposit" feature rather than the "direct deposit" feature.
-E.g., overall zip contains:
-   * The generated GEO SOFT text file (e.g., expt_public_identifier.soft.txt)
-   * expt_public_identifier_files_01.zip
-   * expt_public_identifier_files_02.zip
-   * expt_public_identifier_files_03.zip
-   * expt_public_identifier_files_04.zip
-   * README.txt (explaining that the user must submit to GEO using FTP rather than direct deposit, since the file set is too large)
+However, if there are many large files, this zip may exceed the limit of 2GB. In this case, caArray should create a tar.gz package instead, and include a text file in the package, instructing the user to submit to GEO using their "FTP deposit" feature rather than the "direct deposit" feature.
 Note that all of the following files must be included:
 * raw files
 * derived data files other than CHP (e.g., level 3 copy number files)
