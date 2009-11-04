@@ -1,0 +1,26 @@
+USER STORY: Validate for GEO export
+
+As a caArray user, I want to validate my experiment to make sure it is eligible for submission to the GEO repository.
+
+1. Flow:
+
+* In the context of an experiment, the user chooses to validate for GEO export.
+* The System validates that the experiment is suitable for GEO SOFT export, according to the following rules:
+  + The array provider should be Affymetrix.
+  + All array designs associated with the experiment must be ones for which the System has the GEO accession.
+  + It must be a single-channel experiment, i.e., there must be one-to-one links at every point of the Source-Sample-Ext-LE-Hyb chain.
+  + Every hybridization must have at least one raw data file.
+  + Every hybridization must have a derived data file of type AFFYMETRIX_CHP.
+  + The following protocols must be present: extract, label, hybridization, scan and data processing. (The following section explains how to test for these protocols.)
+  + There must be at least 1 characteristic or factor value that is present in every biomaterial-hybridization chain. Note that "characteristic" includes the special characteristics tissueSite, diseaseState, cellType and externalId.
+  + For every chain, the Material Type of the extract or labeled extract must be present.
+  + For every chain, the label of the LabeledExtract must have a non-empty non-null value.
+* The System informs the user of the result of the validation, and provides the list of errors if the validation did not succeed.
+
+3. Validating protocols:
+
+EXTRACT = Look at the protocols between Sample and Extract for one that has type (Term.value) = "extract" or "extraction"
+LABEL = Look at the protocols between Extract and LabeledExtract for one that has type (Term.value) = "labeling"
+HYBRIDIZATION = Look at the protocols between LabeledExtract and Hybridization for one that has type (Term.value) = "hybridization"
+SCAN = Look at the protocols associated with the Hybridization for one that has type (Term.value) = "scan"
+DATA PROCESSING = Look at the protocols associated with the raw ArrayData objects in the chain; there must be at least 1 protocol (of any type) present.
