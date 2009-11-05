@@ -19,6 +19,7 @@ The experiment must pass the validation routine that makes sure that all the inf
 The generated GEO SOFT text file (e.g., expt_public_identifier.soft.txt) will have several Sample sections (one per hybridization) followed by one Series section (for overall experiment information). The following sections describe how to translate a caArray experiment into these sections.
 
 4. Translating caArray information into GEO SOFT:
+(TBD: INTERPRET TEXT AS UTF-8?)
 
 4.1 the Series section: Overall experiment information
 
@@ -28,7 +29,7 @@ The generated GEO SOFT text file (e.g., expt_public_identifier.soft.txt) will ha
    E.g., !Series_title = GBM Copy Number Analysis
 !Series_summary = <experiment description from caArray> (if description doesn't exist, use experiment title)
    E.g., !Series_summary = My Analysis for Copy Number for GBM using Agilent Human Genome CGH Microarray Kit 24K
-!Series_overall_design = <experimental design Term values from caArray, separated by semicolon, each including term source in parantheis> (if experimental design doesn't exist, use experiment description)
+!Series_overall_design = <experimental design Term values from caArray, separated by semicolon, each including term source in paranthesis> (if experimental design doesn't exist, use experiment description)
    E.g., !Series_overall_design = comparative_genome_hybridization_design (MGED Ontology); disease_state_design (MGED Ontology)
 !Series_pubmed_id = <publication.pubmedId from caArray> (if no publications, omit this row altogether; if multiple publications, add multiple !Series_pubmed_id rows)
    E.g., !Series_pubmed_id = 16210585
@@ -48,23 +49,24 @@ The generated GEO SOFT text file (e.g., expt_public_identifier.soft.txt) will ha
    E.g., ^SAMPLE=TCGA-00134-22
 !Sample_title = <hybridization name from caArray>
    E.g., !Sample_title = TCGA-00134-22
-!Sample_description = <hybridization description from caArray> (use hybridization name if description doesn't exist)
-   E.g., !Sample_description = TCGA-00134-22
+!Sample_description = <hybridization description from caArray> (use corresponding Sample name or names if description doesn't exist)
+   E.g., !Sample_description = TCGA-Sample-00134, TCGA-Sample-00135
 !Sample_supplementary_file = <name of raw or non-CHP derived data file associated with this hyb from caArray> (if multiple files, use multiple !Sample_supplementary_file rows)
    E.g., !Sample_supplementary_file = TCGA-00134-22.CEL
          !Sample_supplementary_file = TCGA-00134-22_copy_number.txt
 !Sample_table = <name of CHP derived data file associated with this hyb from caArray> (mandatory)
    E.g., !Sample_table = TCGA-00134-22.CHP
-!Sample_source_name = <name of associated source in caArray> (will be unambiguous because of the single channel restriction)
+!Sample_source_name = <name of associated source in caArray> (TBD: HOW TO SPECIFY MULTIPLE SOURCES IF POOLING?)
    E.g., !Sample_source_name = TCGA-00134
 !Sample_organism = <organism scientific name associated with the Source or Sample for this hyb> (first try Source's organism, if null, try Sample's organism, if null use experiment's organism)
    E.g., !Sample_organism = Mus musculus
+   Note: In case of pooling, there may be multiple organisms. Use multiple !Sample_organism rows in this case.
 !Sample_treatment_protocol = <protocol name : protocol description from caArray> (look at all protocols in the Source...Hybridization chain for one that has type (Term.value) = "treatment"; if there is none, omit this row; if there are multiple treatment protocols, include them all separated by semicolon)
    E.g., !Sample_treatment_protocol = mskcc.org:split:HG-CGH-244A:01 : Promega reference genomic DNA was aliquoted at full concentrations into separate tubes
 !Sample_growth_protocol = <protocol name : protocol description from caArray> (look at all protocols in the Source...Hybridization chain for one that has type (Term.value) = "growth"; if there is none, omit this row; if there are multiple growth protocols, include them all separated by semicolon)
-!Sample_extract_protocol = <protocol name : protocol description from caArray> (look at the protocols between Sample and Extract for one that has type (Term.value) = "nucleic_acid_extraction", "extract" or "extraction"; mandatory; if there are multiple extract protocols, include them all separated by semicolon)
-!Sample_label_protocol = <protocol name : protocol description from caArray> (look at the protocols between Extract and LabeledExtract for one that has type (Term.value) = "labeling"; mandatory; if there are multiple labeling protocols, include them all separated by semicolon)
-!Sample_hyb_protocol = <protocol name : protocol description from caArray> (look at the protocols between LabeledExtract and Hybridization for one that has type (Term.value) = "hybridization"; mandatory; if there are multiple hybridization protocols, include them all separated by semicolon)
+!Sample_extract_protocol = <protocol name : protocol description from caArray> (look at the protocols in the Source...Hybridization chain for one that has type (Term.value) = "nucleic_acid_extraction"; mandatory; if there are multiple extract protocols, include them all separated by semicolon)
+!Sample_label_protocol = <protocol name : protocol description from caArray> (look at the protocols in the Source...Hybridization chain for one that has type (Term.value) = "labeling"; mandatory; if there are multiple labeling protocols, include them all separated by semicolon)
+!Sample_hyb_protocol = <protocol name : protocol description from caArray> (look at the protocols in the Source...Hybridization chain for one that has type (Term.value) = "hybridization"; mandatory; if there are multiple hybridization protocols, include them all separated by semicolon)
 !Sample_scan_protocol = <protocol name : protocol description from caArray> (look at the protocols associated with the Hybridization for one that has type (Term.value) = "scan" or "image_acquisition"; mandatory; if there are multiple hybridization protocols, include them all separated by semicolon)
 !Sample_data_processing = <protocol name : protocol description from caArray> (look at the protocols associated with the raw ArrayData objects in the chain; mandatory; if there are multiple such protocols, include them all separated by semicolon)
 !Sample_label = <label of the LabeledExtract associated with this hyb> (mandatory)
@@ -80,6 +82,7 @@ The generated GEO SOFT text file (e.g., expt_public_identifier.soft.txt) will ha
 !Sample_molecule = <materialType of the corresponding Extract (or of the LabeledExtract if Extract doesn't have a materialType), but translated to GEO material type> (mandatory; GEO allowed values are: total RNA, genomic DNA, polyA RNA, cytoplasmic RNA, nuclear RNA, protein, and other.)
    E.g., !Sample_molecule = total RNA
    Note: See file caArray-GEO_material_type_mappings.xls for mapping between caArray and GEO material types. (Please ignore case while matching.)
+   Note: This is unlikely, but in the pooling case, if there are multiple extracts associated with the same hyb, and if they have different material types, use multiple !Sample_molecule rows.
 
 4.3 Data and supplementary files
 In addition to the SOFT file generated as described above, all CHP files as well as all files referenced in any !Sample_supplementary_file section must be included in the overall zip.
