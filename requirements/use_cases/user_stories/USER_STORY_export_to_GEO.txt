@@ -19,7 +19,7 @@ The experiment must pass the validation routine that makes sure that all the inf
 The generated GEO SOFT text file (e.g., expt_public_identifier.soft.txt) will have several Sample sections (one per hybridization) followed by one Series section (for overall experiment information). The following sections describe how to translate a caArray experiment into these sections.
 
 4. Translating caArray information into GEO SOFT:
-(TBD: INTERPRET TEXT AS UTF-8?)
+(Note: GEO interprets text as UTF-8.)
 
 4.1 the Series section: Overall experiment information
 
@@ -49,14 +49,14 @@ The generated GEO SOFT text file (e.g., expt_public_identifier.soft.txt) will ha
    E.g., ^SAMPLE=TCGA-00134-22
 !Sample_title = <hybridization name from caArray>
    E.g., !Sample_title = TCGA-00134-22
-!Sample_description = <hybridization description from caArray> (use corresponding Sample name or names if description doesn't exist)
+!Sample_description = <hybridization description from caArray> (use corresponding Sample name or names if hybridization description doesn't exist)
    E.g., !Sample_description = TCGA-Sample-00134, TCGA-Sample-00135
 !Sample_supplementary_file = <name of raw or non-CHP derived data file associated with this hyb from caArray> (if multiple files, use multiple !Sample_supplementary_file rows)
    E.g., !Sample_supplementary_file = TCGA-00134-22.CEL
          !Sample_supplementary_file = TCGA-00134-22_copy_number.txt
 !Sample_table = <name of CHP derived data file associated with this hyb from caArray> (mandatory)
    E.g., !Sample_table = TCGA-00134-22.CHP
-!Sample_source_name = <name of associated source in caArray> (TBD: HOW TO SPECIFY MULTIPLE SOURCES IF POOLING?)
+!Sample_source_name = <name of associated source in caArray> (In the case of pooling, there may be multiple Sources, and all the names must be specified in a semi-colon-delimited list.)
    E.g., !Sample_source_name = TCGA-00134
 !Sample_organism = <organism scientific name associated with the Source or Sample for this hyb> (first try Source's organism, if null, try Sample's organism, if null use experiment's organism)
    E.g., !Sample_organism = Mus musculus
@@ -79,6 +79,10 @@ The generated GEO SOFT text file (e.g., expt_public_identifier.soft.txt) will ha
    E.g., !Sample_characteristics = Age: 30-40
          !Sample_characteristics = Tumor Grading: 2
          !Sample_characteristics = Histologic Diagnosis: Acute Myeloid Leukemia
+(In case of pooling, it is possible to have multiple values for the same characteristic category. Include multiple rows in this case.
+   E.g., !Sample_characteristics = OrganismPart: Liver
+         !Sample_characteristics = OrganismPart: Kidney
+)
 !Sample_molecule = <materialType of the corresponding Extract (or of the LabeledExtract if Extract doesn't have a materialType), but translated to GEO material type> (mandatory; GEO allowed values are: total RNA, genomic DNA, polyA RNA, cytoplasmic RNA, nuclear RNA, protein, and other.)
    E.g., !Sample_molecule = total RNA
    Note: See file caArray-GEO_material_type_mappings.xls for mapping between caArray and GEO material types. (Please ignore case while matching.)
