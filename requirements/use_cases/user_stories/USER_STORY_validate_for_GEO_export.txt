@@ -6,7 +6,7 @@ As a caArray user, I want to validate my experiment to make sure it is eligible 
 
 * In the context of an experiment, the user chooses to validate for GEO export.
 * The System validates that the experiment is suitable for GEO SOFT export, according to the following rules:
-  + The array provider should be Affymetrix.
+  + The experiment must have at least one array design and the provider for the array designs must be Affymetrix.
   + All array designs associated with the experiment must be ones for which the System has the GEO accession.
   + Every hybridization must have at least one raw data file.
   + Every hybridization must have a derived data file of type AFFYMETRIX_CHP.
