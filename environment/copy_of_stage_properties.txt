@@ -1,6 +1,6 @@
 jboss.home=/usr/local/jboss405/server/ncicb-caarray
 jboss.temp.dir=/tmp
-jboss.server.hostname=cbapp-p1001.nci.nih.gov
+jboss.server.hostname=cbapp-s1001.nci.nih.gov
 jboss.server.port=19280
 jboss.server.jndi.port=8080
 jboss.server.name=ncicb-caarray
