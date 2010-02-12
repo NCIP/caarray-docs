@@ -1,0 +1,44 @@
+USER STORY: Parse Illumina Sample Probe Profile
+
+As a Data Owner, I want to import an Illumina Sample Probe Profile file in TXT format and associate it to biomaterials in the context of a gene expression assay type.
+
+1. Flow:
+
+* The user (Data Owner) uploads a file into an experiment and changes the file type to "Illumina Sample Probe Profile TXT".
+* The user chooses to import the file (possibly along with other files). Note that just like for Illumina Data CSV files, importing with MAGE-TAB does not make sense for this file type, since the hybridization names are inferred from the file content.
+* The system parses and validates the file to make sure:
+  + the experiment is of gene expression assay type
+  + the right array design is associated with the experiment (e.g., "Array Content = MouseRef-8_V1_1_R2_11234312_A.bgx.xml" means that the array design MouseRef-8_V1_1_R2_11234312_A in BGX/TXT format should be associated with the experiment)
+  + the mandatory columns in section 2 of this user story are present.
+  + every Probe_Id/ID_REF or TargetID value in the data file can be correlated to the Probe_Id or Target in the array design.
+
+2. Columns expected in the Sample Probe Profile TXT file:
+
+* The "AVG_Signal" and "Detection"/"Detection Pval" columns are mandatory.
+* If the corresponding array design is in BGX/TXT format, then the "Probe_Id"/"ID_REF" column is mandatory. (The underscore in "Probe_Id" is important; "ProbeID" is not the same thing.)
+* If the corresponding array design is in "Illumina Design CSV" format, then the "TargetID" column is mandatory.
+* Case is unimportant in the column names.
+* The order of columns is unimportant.
+* Additional columns not described in this section may be present and should be ignored while parsing.
+* There are 2 variants re: how the hybridization names are present in the file: "samplename.quantitationtype" or "quantitationtype-samplename". Both should be supported. E.g.:
+   TargetID	ProbeID	MIN_Signal-1745080067_B	AVG_Signal-1745080067_B	MAX_Signal-1745080067_B	NARRAYS-1745080067_B	ARRAY_STDEV-1745080067_B	BEAD_STDEV-1745080067_B	Avg_NBEADS-1745080067_B	Detection-1745080067_B	MIN_Signal-1745080067_A	AVG_Signal-1745080067_A	MAX_Signal-1745080067_A	NARRAYS-1745080067_A	ARRAY_STDEV-1745080067_A	BEAD_STDEV-1745080067_A	Avg_NBEADS-1745080067_A	Detection-1745080067_A
+   0610005I04	580022	164.9	164.9	164.9	1	NaN	61.030	33	0.51703	164.9	164.9	164.9	1	NaN	57.871	29	0.73723
+<OR>
+   TargetID	ProbeID	Patient 1-Tumor.AVG_Signal	Patient 1-Tumor.NARRAYS	Patient 1-Tumor.ARRAY_STDEV	Patient 1-Tumor.Detection Pval	Patient 1-Tumor.BEAD_STDERR	Patient 1-Tumor.Avg_NBEADS	Patient 2-Tumor.AVG_Signal	Patient 2-Tumor.NARRAYS	Patient 2-Tumor.ARRAY_STDEV	Patient 2-Tumor.Detection Pval	Patient 2-Tumor.BEAD_STDERR	Patient 2-Tumor.Avg_NBEADS
+   150003412	20605	111.1856	1	NaN	0	6.041573	36	87.39001	1	NaN	0	6.327084	33
+
+once in the file:
+  TargetID                          **** mandatory if the corresponding array design is in "Illumina Design CSV" format ****
+  ProbeID
+  Probe_Id/ID_REF                   **** mandatory if the corresponding array design is in BGX/TXT format ****
+once for each hybridization:
+  MIN_Signal
+  AVG_Signal                        **** mandatory ****
+  MAX_Signal
+  NARRAYS
+  ARRAY_STDEV
+  BEAD_STDEV
+  Avg_NBEADS
+  Detection or Detection Pval or DetectionPval       **** mandatory ****
+
+Example files are provided.

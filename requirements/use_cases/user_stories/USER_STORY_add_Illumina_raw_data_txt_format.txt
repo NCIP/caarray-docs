@@ -1,0 +1,73 @@
+USER STORY: Add Illumina raw data TXT format
+
+As a Data Owner, I want to import an Illumina raw data file in TXT format and associate it to biomaterials.
+
+1. Flow:
+
+* The user (Data Owner) uploads a file into an experiment and changes the file type to "Illumina Raw Data TXT".
+* The user chooses to import the file (possibly along with other files), either with or without a corresponding MAGE-TAB file set.
+* The system does not parse or validate the file, but imports it, following the usual flow for "Imported, not Parsed" files.
+
+2. Implementation Notes:
+
+* There is currently an "Illumina Data TXT" format which is always considered to be derived. This needs to be split up into an "Illumina Raw Data TXT" and an "Illumina Derived Data TXT" format, since there is currently no way to designate a single file type to be both raw and derived. This is similar to what we've implemented for Agilent TXT.
+* Retrofitting old TXT files into the right category is covered under a separate user story.
+
+3. Examples of file formats that the user may import under this category: (Not necessary for implementation purposes, but provided here as FYI, and to record the various file types that could be designated as "raw" data in Illumina.)
+---------------------------
+Gene expression:
+
+   Code		Grn		GrnX		GrnY
+   10008	237		2179		13472.52
+<OR>
+   Illumicode	N	Mean GRN	Dev GRN   10243	63	212		66
+<OR>
+   Code		Grn
+   10243	246
+<OR>
+   TargetID	Patient 1-Tumor.AVG_Signal	Patient 1-Tumor.Detection Pval	Patient 1-Tumor.BEAD_STDERR	Patient 1-Tumor.Avg_NBEADS	Patient 2-Tumor.AVG_Signal	Patient 2-Tumor.Detection Pval	Patient 2-Tumor.BEAD_STDERR	Patient 2-Tumor.Avg_NBEADS
+   10243	165.5088	0	5.748619	36	139.116	0	5.944588	33	223.1929
+<OR>
+   TargetID	ProbeID	Patient 1-Tumor.AVG_Signal	Patient 1-Tumor.Detection Pval	Patient 1-Tumor.BEAD_STDERR	Patient 1-Tumor.Avg_NBEADS	Patient 2-Tumor.AVG_Signal	Patient 2-Tumor.Detection Pval	Patient 2-Tumor.BEAD_STDERR	Patient 2-Tumor.Avg_NBEADS
+   15262	20605	165.5088	0	5.748619	36	139.116	0	5.944588	33	223.1929
+
+GEO formats:
+   ID_REF	VALUE		STDERR		BEADN	PVAL
+   ILMN_1809034	293.3069	15.08965	33	0
+<OR>
+   ID_REF	4067190001_A.AVG_Signal	4067190001_A.Avg_NBEADS	4067190001_A.BEAD_STDERR	4067190001_A.Detection Pval	4067190001_B.AVG_Signal	4067190001_B.Avg_NBEADS	4067190001_B.BEAD_STDERR	4067190001_B.Detection Pval
+   ILMN_10000	57.94664	44	2.389365	0.008633094	76.03063	38	2.599764	0
+<OR>
+   ID_REF	4115569039_A.AVG_Signal	4115569039_A.Detection Pval	4115569039_A.BEAD_STDERR	4115569039_B.AVG_Signal	4115569039_B.Detection Pval	4115569039_B.BEAD_STDERR
+   ILMN_1809034	11.15409	0.2358757	7.260395	29.51751	0.1991525	10.08778
+<OR>
+   ID_REF	Sample1		DetectionPval	Sample2		DetectionPval
+   ILMN_1343291	44400.7554	0.005095	38083.40171	0.000727
+<OR>
+   ID_REF	Sample1		Detection	Sample2		Detection
+   ILMN_1343291	44400.7554	P		38083.40171	P
+<OR>
+   ID_REF		101P	102P
+   ILMN_1725528		275.1	225.4
+<OR>
+   ID_REF	HOb_506:1	Detection	HOb_506:2	Detection
+   ILMN_1725528	274.3192	0	244.191	0.004237288	691.1529
+
+ArrayExpress formats:
+      CompositeSequence Identifier	CompositeSequence Name	Database ebi.ac.uk:Database:hugo	Database ebi.ac.uk:Database:refseq	BeadStudio:AVG_Signal
+   ebi.ac.uk:MIAMExpress:CompositeSequence:A-MEXP-525.GI_10047089-S	GI_10047089-S	SMPX	NM_014332.1	73.17712
+<OR>
+   PROBE_ID	AVG_SM2	STDEV_SM2	Avg_NSM2	DetectionSM2	AVG_SM3	STDEV_SM3	Avg_NSM3	DetectionSM3
+   GI_10047089-S	67.5	5.9	29	0.48129032	70.3	5.9	37	0.52516129
+
+---------------------------
+Genotyping:
+
+   Index	Name	Address	Chr	Position	GenTrain Score	Frac A	Frac C	Frac G	Frac T	VUB05-HD P90.GType	VUB05-HD P90.Score	VUB05-HD P90.Theta	VUB05-HD P90.R	VUB05-HD P90.LOH Score	VUB05-HD P90.B Allele Freq	VUB05-HD P90.X Raw	VUB05-HD P90.Y Raw	VUB05-HD P90.X	VUB05-HD P90.Y	VUB05-HD P90.Log R Ratio	VUB05-HD P90.Top Alleles	VUB05-HD P90.Import Calls	VUB05-HD P90.Concordance	VUB05-HD P90.Orig Call	VUB05-HD P90.CNV Value	VUB05-HD P90.CNV Confidence	Manifest
+   1	rs10000010	900010475	4	21227772	0.9008809	0.295082	0.2213115	0.1557377	0.3278688	AA	0.9368909	0.001795416	1.093222	0	0.00133256	7172	67	1.090148	0.003074479	0.2127786	AA		-1		 	 	HumanHap300v2_A
+<OR>
+   Name	BT3.X Raw	BT3.X	BT3.Y Raw	BT3.Y	BT1.X Raw	BT1.X	BT1.Y Raw	BT1.Y
+   MitoA10045G	21420	6.107964	668	0.06040201	25660	4.565998	671	0.04202502
+<OR>
+   Name	Address	GSM322220.X Raw	GSM322220.Y Raw	GSM322220.X	GSM322220.Y	GSM322221.X Raw	GSM322221.Y Raw	GSM322221.X	GSM322221.Y
+   rs10000010	900010475	1536	3103	0.4553051	0.608036	166	4602	0.01831561	0.939289

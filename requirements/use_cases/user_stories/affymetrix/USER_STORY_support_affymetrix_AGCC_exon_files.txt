@@ -1,0 +1,11 @@
+USER STORY: Support Affymetrix AGCC exon files
+
+As a Curator or Data Owner, I want to import Affymetrix AGCC CEL and CHP files into an exon experiment in caArray so that the data values can be parsed and associated with probe sets.
+
+1. Flow:
+* The flow is the same as the current data file import of CEL and CHP files in an exon experiment, but it needs to be tested with AGCC CEL and CHP files from exon assays.
+* Note: The Affy library we use for parsing Affymetrix files should be upgraded to Affx Fusion 1.1.0.
+
+2. Example files:
+
+* Look under example_files/exon for CEL and CHP files in AGCC format.

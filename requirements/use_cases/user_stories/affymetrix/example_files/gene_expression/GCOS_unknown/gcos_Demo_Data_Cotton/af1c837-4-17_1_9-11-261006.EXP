@@ -1,0 +1,29 @@
+Affymetrix GeneChip Experiment Information
+Version	1
+
+[Sample Info]
+Chip Type	Cotton
+Chip Lot	
+Operator	gtanim
+Sample Type	cRNA
+Description	
+Project	Wilson
+Comments	
+Solution Type	
+Solution Lot	
+
+[Fluidics]
+Protocol	
+Completed
+Station	
+Module	
+Hybridize Date	Nov 28 2006 05:48PM
+
+[Scanner]
+Pixel Size	1.56
+Filter	
+Scan Temperature	
+Scan Date	Nov 28 2006 05:48PM
+Scanner ID	50206820
+Number of Scans	1
+Scanner Type	M10
