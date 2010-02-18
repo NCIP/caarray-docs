@@ -1,29 +1,17 @@
 USER STORY: Support Affymetrix AGCC CEL files
 
-As a Curator or Data Owner, I want to import Affymetrix AGCC CEL files
-into caArray so that the data values can be parsed and associated with
-probe sets.
+As a Curator or Data Owner, I want to import Affymetrix AGCC CEL files into caArray so that the data values can be parsed and associated with probe sets.
 
 1. Flow:
-* The flow is the same as the current data file import of CEL files, but
-  the parser should be able to read the CHP file and parse it differently
-  depending on the file format.
-* Note: The Affy library we use for parsing Affymetrix files should be
-  upgraded to Affx Fusion 1.1.0.
+* The flow is the same as the current data file import of CEL files, but the parser should be able to read the CHP file and parse it differently depending on the file format.
+* Note: The Affy library we use for parsing Affymetrix files should be upgraded to Affx Fusion 1.1.0.
 
 2. CEL file formats:
-* The old ASCII format is currently unsupported, and also outdated. We
-  don't have to support it.
-* The GCOS binary/XDA format (version 1): Fusion 1.1 should parse this;
-  test with the CEL files provided under
-  example_files/gene_expression/GCOS*/.
-* The Command Console/AGCC/Calvin format (version 1): Fusion 1.1 should
-  parse this; test with the CEL files provided under
-  example_files/gene_expression/AGCC. Quantitation types are the same as
-  for GCOS.
+* The old ASCII format is currently unsupported, and also outdated. We don't have to support it.
+* The GCOS binary/XDA format (version 1): Fusion 1.1 should parse this; test with the CEL files provided under example_files/gene_expression/GCOS*/.
+* The Command Console/AGCC/Calvin format (version 1): Fusion 1.1 should parse this; test with the CEL files provided under example_files/gene_expression/AGCC. Quantitation types are the same as for GCOS.
 
 3. Fusion library:
-
 The top level Fusion object to use is FusionCELData.
 The CEL file contains intensity data organized by X/Y feature coordinate.
 Included in the file is the name of the algorithm and the parameters used to create the file.
@@ -31,16 +19,12 @@ Included in the file is the name of the algorithm and the parameters used to cre
 The workflow for reading a CEL file is:
    1. Create a FusionCELData object.
    2. Set the full path name of the input CEL file using the SetFileName() function.
-   3. Read the file using the Read() function. A false boolean value may be
-      passed into the function if mask and outlier data are not to be read.
+   3. Read the file using the Read() function. A false boolean value may be passed into the function if mask and outlier data are not to be read.
    4. Use the GetParameters() function to retrieve the list of algorithm parameters.
    5. Use the GetAlg() function to retrieve the name of the algorithm used to create the CEL file.
-   6. Use GetEntry() to retrieve the intensity, standard deviation and
-      pixel count for a given feature; OR GetIntensity() to retrieve just the
-      intensity value.
+   6. Use GetEntry() to retrieve the intensity, standard deviation and pixel count for a given feature; OR GetIntensity() to retrieve just the intensity value.
 
 4. Example files:
 
 * Look under example_files/gene_expression for CEL files from different versions of GCOS and AGCC.
-* Have been unable to find example AGCC CHP files from any of the public databases or other sources. Waiting to hear back from Affy tech support.
 

@@ -115,5 +115,10 @@ Gene expression:
 
 Genotyping:
 
-* Have been unable to find example CHP files from any of the public databases or other sources. Waiting to hear back from Affy tech support.
+* You should be able to order a HAPMAP data set, which includes chp files from here:
+  http://www.affymetrix.com/support/technical/sample_data/genomewide_snp6_data.affx
+
+* SNP 5.0 chp file:
+  http://www.affymetrix.com/support/technical/sample_data/genomewide_snp5_data.affx
+
 

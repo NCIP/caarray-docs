@@ -46,3 +46,6 @@ The algorithm used can be CN4 or CN5.
 
 * NCI CBIIT caArray experiment id: liu-00268 (private experiment; so please don't make the files public in any way during testing)
   See supplemental files: *.CN5.cnchp
+
+* More CNCHP files are here:
+  http://www.affymetrix.com/support/technical/sample_data/gtc_cytogenetic_data.affx
