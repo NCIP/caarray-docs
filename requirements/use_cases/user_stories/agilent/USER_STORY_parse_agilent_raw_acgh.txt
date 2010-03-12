@@ -1,0 +1,48 @@
+USER STORY: Parse Agilent Raw TXT for aCGH assays
+
+As a Data Owner, I want to import an Agilent raw data file in TXT format and associate it to biomaterials in the context of an aCGH assay.
+
+1. Flow:
+
+* The user (Data Owner) uploads a file into an aCGH experiment and changes the file type to "Agilent Raw TXT".
+* The user chooses to import the file (possibly along with other files).
+* The system parses and validates the file to make sure:
+  + the file conforms to the expected format (see section 2).
+  + every probe name in the data file can be correlated to a probe name in the array design.
+* If the file passes validation, then the data values for the appropriate quantitation types (see section 2) are stored and associated to probes.
+* If the file fails validation, the file ends up in the Import Failed state.
+
+2. Expected format of the TXT file:
+
+* The file is a plain text file with tab-delimited values.
+* There 3 sections in the file: FEPARAMS, STATS and FEATURES. The first 2 sections may not be present (configurable in the Agilent Feature Extraction software output). In any case, we are interested in only the FEATURES section.
+* The FEATURES section itself has 3 header rows: TYPE, FEATURES and DATA.
+* Ignore the TYPE header row. For our purposes, the data type of each quantitation type is predefined and static.
+* The columns we are interested in are:
+  ProbeName             (String)
+  LogRatio              (float)
+  LogRatioError         (float)
+  PValueLogRatio        (float)
+  gProcessedSignal      (float)
+  rProcessedSignal      (float)
+  gProcessedSigError    (float)
+  rProcessedSigError    (float)
+  gMedianSignal         (float)
+  rMedianSignal         (float)
+* The ProbeName and LogRatio columns are mandatory, and must have non-null, non-empty values.
+* The same ProbeName may be present in multiple rows since probes are replicated. But it is safe to assume that the values for all quantitation types will be the same for all replicates.
+* Case is unimportant in the column names.
+* The order of columns is unimportant.
+* Additional columns not described in this section will be present and should be ignored while parsing.
+* The values for the quantitation types should be associated with PhysicalProbes.
+* Explanation of key quantitation types:
+  + "gProcessedSignal" and "rProcessedSignal" are the Cy3 and Cy5 processed signals.
+  + "LogRatio" is the base10 log ratio (rProcessedSignal/gProcessedSignal).
+  + "PValueLogRatio" is the significance level of the calculated log ratio.
+
+3. Example files:
+
+Example files are under example_files/raw_txt/aCGH/:
+* US22502676_252252210158_S01_CGH_105_Dec08_1_4.txt is a raw TXT file that uses the array design 022522_D_F_20090107.xml.
+
+
