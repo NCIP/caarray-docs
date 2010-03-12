@@ -1,0 +1,55 @@
+USER STORY: Parse Agilent xml gene expression array designs
+
+As a Curator or Data Owner, I want to import an Agilent gene expression array design in "GEML pattern file" (xml) format so that the array design can be associated to experiments and data files.
+
+1. Flow:
+
+* The user (Curator or Data Owner) chooses to import a new array design.
+* The system allows "Agilent GEML/xml" as one of the options for the file type.
+* The user chooses the Agilent GEML/xml format and selects a file in that format.
+* The system parses the file:
+  + The GEML pattern file is an xml file that contains one "reporter" element for each array feature.
+  + Each "reporter" element in turn contains a "feature" element and a "biosequence_ref" element. E.g.,
+    <reporter name="A_24_P329635" active_sequence="GGATAAAATGGTACAATCTTAGTGAATGGGAATTGGAATCAAAAGAGTTTGCTGTCCTTC" start_coord="8480">
+      <biosequence_ref identifier="A_24_P329635" database="agp" species="H. sapiens"></biosequence_ref>
+      <feature number="38">
+        <position x="4.699" y="0.0" units="mm"></position>
+      </feature>
+    </reporter>
+  + There is an optional "grid_layout" element that defines the number of features. If there is, the system validates that there are feature_count_x * feature_count_y "reporter" elements; otherwise the file is incomplete/invalid.
+    E.g., <grid_layout feature_count_x="85" feature_count_y="532"> means that there should be 85*532=45220 "reporter" elements.
+  + For each "feature" element, the system creates a Feature object. The Agilent GEML format defines floating point "x" and "y" coordinates for each feature instead of integer column, row, block column and block row numbers. The domain model will have to be augmented to allow x and y coordinates for a Feature, and also a feature number.
+  + For each unique "reporter", the system creates a PhysicalProbe. (The probe name/identifier is in the "name" attribute of the "reporter" element, and also in the "identifier" attribute of the "biosequence_ref" element. ("A_24_P329635" in the above example.)
+  + The same PhysicalProbe may be repeated at multiple feature locations.
+  + The probe name/identifier must always be non-empty, except for the case where the reporter's control_type attribute is set to "ignore".
+  + If control_type=ignore, then the probe name may be empty or "NA*". E.g.,
+    <reporter control_type="ignore" name="NA" start_coord="0">
+      <biosequence_ref identifier="NA" database="agc" species="H. sapiens"></biosequence_ref>
+      <feature number="6035">
+        <position x="10.668" y="2.5663219465478875" units="mm"></position>
+      </feature>
+    </reporter>
+  + All probes with control_type="pos" should be grouped into a "positive controls" probe group, all probes with control_type="neg" should be grouped into a "negative controls" probe group, and all probes with control_type="ignore" should be grouped into an "ignore" probe group.
+  + Probe annotations are available in "biosequence" elements - one for each PhysicalProbe. The database accession identifier in the "agp" database identifies the probe. E.g.,
+  <biosequence species="H. sapiens" description="Homo sapiens peroxisomal biogenesis factor 1 (PEX1), mRNA [NM_000466]" primary_name="PEX1">
+    <accession database="agp" identifier="A_23_P20045"></accession>
+    .....
+  </biosequence>
+  + The control probes don't have any annotation. Ignore all biosequence elements with control_type="pos" or "neg".
+  + A non-control probe may have annotations describing its accession number in 0 or more of the following databases: ref, ens (Ensembl), gb (GenBank) and thc. In addition, the same probe may be mapped to multiple accession numbers in the same database. E.g.,
+  <biosequence species="H. sapiens" description="Homo sapiens peroxisomal biogenesis factor 1 (PEX1), mRNA [NM_000466]" primary_name="PEX1">
+    <accession database="agp" identifier="A_23_P20045"></accession>
+    <accession database="ref" identifier="NM_000466"></accession>
+    <accession database="ens" identifier="ENST00000248633"></accession>
+    <accession database="gb" identifier="AB052091"></accession>
+    <accession database="gb" identifier="AB052092"></accession>
+  </biosequence>
+  + The caArray domain model allows storage of a single GenBank accession number in ExpressionProbeAnnotation->Gene.genbankAccession, but storing multiple accession numbers is <TBD>.
+  + The caArray domain model allows storage of a single Ensembl accession number in ExpressionProbeAnnotation->Gene. ensemblgeneID, but storing multiple accession numbers is TBD.
+  + Whether to change the model to be able to store the RefSeq accession number of a Gene is <TBD>.
+* The import fails if the file fails any of the validation rules above.
+* If the import passes, the features, probes and probe groups are successfully stored in the database.
+
+3. Example files:
+
+Sample Agilent GEML/xml files are under agilent/example_files/array_design/gene_expression/*.xml.
