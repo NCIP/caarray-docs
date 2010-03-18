@@ -46,11 +46,12 @@ As a Curator or Data Owner, I want to import an Agilent aCGH array design in "GE
         <other name="IsHomFiltered" value="0"></other>
         <other name="NumPMHits" value="1"></other>
       </gene>
-  + The system stores the gene and chromosome information in aCGHProbeAnnotation (new class).
-  + The domain model allows storage of a single GenBank accession number in aCGHProbeAnnotation->Gene.genbankAccession, but storing multiple accession numbers is <TBD>.
-  + The domain model allows storage of a single Ensembl accession number in aCGHProbeAnnotation->Gene.ensemblgeneID, but storing multiple accession numbers is TBD.
-  + <TBD>: storing the RefSeq accession number.
-  + The chromosome number, start position and end position is parsed from the <other name="probe_mappings" value="chr2:127680689-127680748"></other> element.
+  + The system stores the gene and chromosome information in ExpressionProbeAnnotation.
+  + The system stores the first GenBank accession number in ExpressionProbeAnnotation->Gene.genbankAccession.
+  + The system stores the first Ensembl accession number in ExpressionProbeAnnotation->Gene.ensemblgeneID.
+  + The model needs to be augmented to store other accession numbers. Suggest making this generic by allowing a number of accession + database combinations. (These would store additional GenBank accession numbers, additional Ensembl accession numbers, and also other accession numbers we find in the array design file - e.g., from databases "ref" and "thc".)
+  + The chromosome number, start position and end position is parsed from the <other name="probe_mappings" value="chr2:127680689-127680748"></other> element. Suggest adding chromosome information to ExpressionProbeAnnotation: chromosome number (1-22, X, Y), long startPosition, long endPosition.
+* Note: There is already some chromosome information in SNPProbeAnnotation, but that has a single number for physicalPosition, since it refers to the position of a single allele. It also has a flank / strand direction (+/-). ExonProbeAnnotation, on the other hand, has a "start", "stop" and "strand". We should probably standardize and consolidate all of the chromosome information for probes in the parent class.
 * The import fails if the file fails any of the validation rules above.
 * If the import passes, the features, probes and probe groups are successfully stored in the database.
 
