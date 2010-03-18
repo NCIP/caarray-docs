@@ -7,6 +7,7 @@ As a Data Owner, I want to import an Agilent raw data file in TXT format and ass
 * The user (Data Owner) uploads a file into an aCGH experiment and changes the file type to "Agilent Raw TXT".
 * The user chooses to import the file (possibly along with other files).
 * The system parses and validates the file to make sure:
+  + There is a MAGE-TAB IDF and SDRF included with the import. (The SDRF is needed because this is in essence a 2-colour design.)
   + the file conforms to the expected format (see section 2).
   + every probe name in the data file can be correlated to a probe name in the array design.
 * If the file passes validation, then the data values for the appropriate quantitation types (see section 2) are stored and associated to probes.

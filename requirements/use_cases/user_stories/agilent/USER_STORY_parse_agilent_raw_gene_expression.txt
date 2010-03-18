@@ -9,6 +9,7 @@ As a Data Owner, I want to import an Agilent raw data file in TXT format and ass
 * The system parses and validates the file to make sure:
   + the file conforms to the expected format (see section 2).
   + every probe name in the data file can be correlated to a probe name in the array design.
+  + IF THIS IS A 2-COLOUR EXPT (identified by quantitation types shown in section 2), it is mandatory that a MAGE-TAB IDF and SDRF are included in the import.
 * If the file passes validation, then the data values for the appropriate quantitation types (see section 2) are stored and associated to probes.
 * If the file fails validation, the file ends up in the Import Failed state.
 
