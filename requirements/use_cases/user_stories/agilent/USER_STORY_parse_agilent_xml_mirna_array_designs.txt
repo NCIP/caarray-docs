@@ -40,7 +40,7 @@ As a Curator or Data Owner, I want to import an Agilent miRNA array design in "G
   </biosequence>
   + The control probes don't have any annotation. Ignore all biosequence elements with control_type="pos" or "neg".
   + A non-control probe may have annotations describing its accession number in the "mir" database.
-  + The system stores the mir accession numbers in miRNAProbeAnnotation (new class). (TODO: Need to search caDSR for reusable CDE for miRNA information.)
+  + The system stores the mir accession numbers in miRNAProbeAnnotation (new class).
 * The import fails if the file fails any of the validation rules above.
 * If the import passes, the features, probes and probe groups are successfully stored in the database.
 
