@@ -1,0 +1,11 @@
+USER STORY: Retrofit imported-not-parsed files
+
+As a System Administrator, I want to parse previously imported but not parsed data files and array designs so that parsed values can be stored and retrieved using programmatic APIs.
+
+Now that new parsers are available for Agilent xml array designs and Agilent raw TXT data files, older files that are in the IMPORTED NOT PARSED state must be handled.
+
+* A new UI will be available for the user with the "systemadministrator" role. This UI will show the files in the system that are eligible for import (the file types for which parsers are now available).
+* The systemadministrator will be able to select files and start the import process.
+* The systemadministrator will be able to see the status of the import, and also any errors encountered.
+* If a file cannot be parsed due to its not being in the right format, the file will be left in the IMPORTED NOT PARSED state, and an error log will be available to the systemadministrator.
+* If an Agilent raw TXT file from a 2-colour gene expression experiment or an aCGH experiment is found to be associated with a _single_ hybridization (as opposed to 2 hybridizations), the system will display a warning in the error log. (The quantitation types within the TXT file will determine whether it is a 2-colour gene expression / aCGH experiment or not.)
