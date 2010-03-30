@@ -47,6 +47,6 @@ As a Data Owner, I want to import an Agilent raw data file in TXT format and ass
 
 Example files are under example_files/raw_txt/gene_expression/:
 * Ramaciotti_251485050163_S01_GE2-v5_10_Apr08_1_1.txt is a raw TXT file from a two colour experiment. It uses the array design "Whole Human Genome Microarray 4x44K.xml".
-* US80603148_251535410319_S01_GE1-v5_10_Apr08_1_1 is a raw TXT file from a single colour experiment. (Note: Still waiting for the Garvan Institute to provide the corresponding array design xml file.)
+* US80603148_251535410319_S01_GE1-v5_10_Apr08_1_1 is a raw TXT file from a single colour experiment. It uses the custom array design "024656_D_F_20090719.xml".
 
 
