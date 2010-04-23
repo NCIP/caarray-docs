@@ -48,10 +48,12 @@ As a Curator or Data Owner, I want to import an Agilent gene expression array de
   + The system stores the first GenBank accession number in ExpressionProbeAnnotation->Gene.genbankAccession.
   + The system stores the first Ensembl accession number in ExpressionProbeAnnotation->Gene.ensemblgeneID.
   + The model needs to be augmented to store other accession numbers. Suggest making this generic by allowing a number of accession + database combinations. (These would store additional GenBank accession numbers, additional Ensembl accession numbers, and also other accession numbers we find in the array design file - e.g., from databases "ref" and "thc".)
-  + Note: It is not clear if any chromosome information can be present in gene expression array design files. We don't have a 2-colour gene expression example file yet. If chromosome information is present, it should be handled in the same way as described in the User Story: Parse Agilent xml aCGH array designs.
 * The import fails if the file fails any of the validation rules above.
 * If the import passes, the features, probes and probe groups are successfully stored in the database.
 
 3. Example files:
 
-Sample Agilent GEML/xml files are under agilent/example_files/array_design/gene_expression/*.xml.
+Sample Agilent GEML/xml files are under agilent/example_files/array_design/gene_expression/*.xml:
+* "Whole Human Genome Microarray 4x44K.xml" is a two colour array design.
+* "024656_D_F_20090719.xml" is a custom single colour array design.
+
