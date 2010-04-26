@@ -1,4 +1,4 @@
-USER STORY: Support Affymetrix multi-channel files
+USER STORY: Support Affymetrix multi-channel files (DEFERRED)
 
 As a Curator or Data Owner, I want to import Affymetrix multi-channel CDF, CEL and CHP files into caArray so that data from multi-channel experiments can be parsed and associated with probe sets.
 Note that this user story may be deferred from release 2.4.0 because this is a new format that was introduced in late 2009, and example files are hard to come by yet.
