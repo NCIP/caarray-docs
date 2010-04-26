@@ -1,0 +1,37 @@
+USER STORY: Parse MAGE-TAB Data Matrix Copy Number Files
+
+As a Data Owner, I want to import copy number data in MAGE-TAB data matrix format so that I can associate the data to hybridizations and probes.
+
+1. Flow:
+
+* The user (Data Owner) uploads a file into an experiment and changes the file type to "Copy Number (MAGE-TAB Data Matrix)". This is basically a matrix where the rows represent probes and the columns represent hybridizations.
+* The user chooses to import the file (possibly along with other files).
+* The system parses the file to make sure the following rules are obeyed:
+  + There is a MAGE-TAB IDF and SDRF included with the import.
+  + It is a plain text file with tab-separated values.
+  + The first header row contains Hybridization REFs. E.g.:
+Hybridization REF		<hyb_name_1>	<hyb_name_2>	<hyb_name_3>
+  + The second header row contains the following column names (all case-insensitive, all mandatory):
+    o Reporter REF    (String)
+    o Chromosome      (usually integer, but have to account for chromosome X and chromosome Y)
+    o Position        (long)
+    o Log2Ratio       (float)
+  + There may be additional columns, but the system ignores them, and generates a validation warning indicating the columns that are being ignored.
+  + The columns can be in any order.
+  + Every hybridization (first header row) must have a Log2Ratio column (second header row) and every Log2Ratio must be associated with a hybridization. E.g.:
+Hybridization REF			<hyb_name_1>	<hyb_name_2>	<hyb_name_3>
+Reporter REF	Chromosome	Position	Log2Ratio	Log2Ratio	Log2Ratio
+A_757625	8	12866872	0.0611482555065607	-0.224900610421464	0.0142831491643091
+
+
+2. Storing chromosome information:
+
+Copy number data contains chromosome annotations for probes. Even though we have a model for probe annotations, it would not be appropriate to overwrite an array design's probe annotations every time someone imports a copy number data file. An array design is intended to be used by multiple experiments, and the array design file should stay the definitive source of probe annotations.
+
+This means that the chromosome number and position found in the copy number data files need to be stored at the ArrayData level. Chromosome and Position can be modeled as quantitation types just like Log2Ratio. This has the disadvantage that the values for these quantitation types are going to be the same for all hybridizations in that ArrayData, but it fits most closely with our existing model.
+
+
+3. Example files:
+
+Sample Copy Number MAGE-TAB data matrix files are under example_files/*.data.txt:
+sample_copy_number.data.txt is copy number data in MAGE-TAB data matrix format, and uses the array design 022522_D_F_20090107.xml.

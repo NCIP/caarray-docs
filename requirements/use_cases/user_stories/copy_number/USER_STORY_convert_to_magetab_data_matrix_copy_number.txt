@@ -1,0 +1,48 @@
+USER STORY: Convert to MAGE-TAB Data Matrix Copy Number Format
+
+As a Data Owner, I want to convert copy number data into a MAGE-TAB data matrix format so that I can import the data into caArray and have it parsed.
+
+1. Flow:
+
+* The user (typically Data Owner) runs a command-line utility and provides the following information:
+  + full path of the file that contains copy number data as TSV (tab-separated-values) (in a format that is not parsed by caArray)
+  + header of the column that contains probe name values
+  + header of the column that contains chromosome identifiers
+  + header of the column that contains chromosome position values
+  + header of the column that contains log2ratio values
+  + whether the hybridization name is specified as a prefix or suffix, or if it will be provided explicitly
+  + (if prefix/suffix) the delimiter that is used to separate the hybridization name from the log2ratio column header
+  + (if hyb name specified explicitly) the hybridization name (This makes sense only if the file contains data for a single hybridization)
+* Note that probe name and log2ratio columns are mandatory, but the chromosome columns (chromosome id and chromosome position) are not mandatory.
+* The command-line utility parses the given file according to the information provided by the user, and produces a MAGE-TAB data matrix file containing the relevant data.
+* The user saves the generated MAGE-TAB data matrix file and can then choose to upload it into caArray.
+
+2. Examples of Conversion:
+
+---------------
+* Input: (hyb name = "my_hybridization_1" explicitly specified)
+ID	Chromosome	Physical.Position	log2 lowess normalized(cy5/cy3)
+A_16_P37638626	6	62964904	-0.447480618012438
+
+* Output:
+Hybridization REF			my_hybridization_1
+Reporter REF	Chromosome	Position	Log2Ratio
+A_16_P37638626	6	62964904	-0.447480618012438
+
+---------------
+* Input: (hyb names are in the data file itself)
+Name	Chromosome	Position	log2ratio_AdCA10	loss_AdCA10	normal_AdCA10	gain_AdCA10	log2ratio_SCC27	loss_SCC27	normal_SCC27	gain_SCC27
+RP11-465B22	1	986153	-0.1850384	4.639416e-07	4.482618e-06	0.999995	0.5984648	4.883237e-14	2.771675e-17	1
+
+* Output:
+Hybridization REF			AdCA10	SCC27
+Reporter REF	Chromosome	Position	Log2Ratio	Log2Ratio
+RP11-465B22	1	986153	-0.1850384	0.5984648
+
+---------------
+3. Example files:
+
+Sample copy number files are under example_files/:
+US22502676_252252210158_S01_CGH_105_Dec08_1_4.MN.txt is the copy number data in a format that caArray does not support.  It uses the array design 022522_D_F_20090107.xml.
+
+
