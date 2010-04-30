@@ -32,7 +32,7 @@ As a Data Owner, I want to import a Nimblegen data file in the "pair report" tex
 * Case is unimportant in the column names.
 * The order of columns is unimportant.
 * Additional columns not described in this section may be present and should be ignored while parsing.
-* The values for the quantitation types should be associated with PhysicalProbes.
+* The values for the quantitation types should be associated with PhysicalProbes, by matching the probe name to "<GENE_EXPR_OPTION>|<SEQ_ID>|<PROBE_ID>".
 * Note: A combined pair report is also a .pair file, but this is not supported, and will currently throw a validation error. A combined pair report provides signal intensity information for all arrays that utilize a specific array design.
 
 3. Example files:
@@ -43,5 +43,5 @@ Example files are under example_files/gene_expression/*pair.txt and example_file
 * Why is MATCH_INDEX modeled as a float instead of as an integer?
 * If GENE_EXPR_OPTION turns out to be "WHOLE ARRAY" instead of CONTAINER names, then what happens? We won't be able to match up to probes in the array design.
 * Why are X and Y in the Pair files treated as quantitation types? Why are these values even present in Pair files?
-* How will the user enter the various types of text files that we don't parse? E.g., combined pair report, calls txt files etc. We should bring back the unparsed Nimblegen TXT file type.
+
 
