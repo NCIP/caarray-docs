@@ -42,4 +42,8 @@ once for each hybridization:
   Avg_NBEADS
   Detection or Detection Pval or DetectionPval       **** mandatory ****
 
-Example files are provided.
+Example files are provided:
+* GEO_GSE12459_with_external_probe_ids.txt uses the HumanRef-8_V2_0_R1_11223162_A.bgx array design and should pass validation.
+* GEO_GSE12459_with_internal_probe_ids.txt uses the HumanRef-8_V2_0_R1_11223162_A.bgx array design, but should fail validation saying that the probe_ids in the ID column don't match the unique Probe_ids in the array design.
+* Sample_Probe_Profile.txt uses the MouseRef-8_V1_1_R2_11234312_A.bgx array design, but should fail validation saying that the data file does not contain the unique Probe_ids that are necessary to match to the array design probes.
+
