@@ -40,8 +40,8 @@ As a Data Owner, I want to import a Nimblegen data file in the "pair report" tex
 Example files are under example_files/gene_expression/*pair.txt and example_files/cgh/*pair.txt.
 
 4. Issues:
-* Why is MATCH_INDEX modeled as a float instead of as an integer?
-* If GENE_EXPR_OPTION turns out to be "WHOLE ARRAY" instead of CONTAINER names, then what happens? We won't be able to match up to probes in the array design.
-* Why are X and Y in the Pair files treated as quantitation types? Why are these values even present in Pair files?
+* If GENE_EXPR_OPTION turns out to be "WHOLE ARRAY" instead of CONTAINER names, then what happens? We won't be able to match up to probes in the array design. --- Spoke to Jim McCusker and Kyle Munn, and we should never encounter this situation.
+* Why are X and Y in the Pair files treated as quantitation types? Why are these values even present in Pair files? --- Not sure about this, but our current approach of storing them as quantitation types is sufficient.
+* Why is CONTAINER (block), SEQ_ID (gene) and PROBE_ID used to identify probes? This is not typical in other types of arrays. --- Spoke to Jim McCusker and Kyle Munn, and the reason is that PROBE_IDs are not guaranteed to be unique, e.g., in tiling arrays with mixed density.
 
 
