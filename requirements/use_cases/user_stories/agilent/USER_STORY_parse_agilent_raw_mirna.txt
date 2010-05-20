@@ -19,7 +19,8 @@ As a Data Owner, I want to import an Agilent raw data file in TXT format and ass
 * The FEATURES section itself has 3 header rows: TYPE, FEATURES and DATA.
 * Ignore the TYPE header row. For our purposes, the data type of each quantitation type is predefined and static.
 * The columns we are interested in are:
-  ProbeName             (String)
+  ProbeName             (String)  ..... use this to match against probe names in array design
+  SystematicName        (String)  ..... if ProbeName has no match in array design, then try matching this against probe names in array design
   gTotalProbeSignal     (float)
   gTotalProbeError      (float)
   gTotalGeneSignal      (float)
@@ -27,6 +28,7 @@ As a Data Owner, I want to import an Agilent raw data file in TXT format and ass
   gIsGeneDetected       (boolean: 0 or 1)
 * The ProbeName and gTotalProbeSignal columns are mandatory, and must have non-null, non-empty values.
 * The same ProbeName will be present in multiple rows since probes are replicated. But it is safe to assume that the values for all quantitation types (gTotalProbeSignal etc.) will be the same for all replicates. (This is because these are values that are rolled up / averaged across the multiple replicates.)
+* If ProbeName value cannot be matched up with a probe from the array design, try to use the SystematicName value to match.
 * Case is unimportant in the column names.
 * The order of columns is unimportant.
 * Additional columns not described in this section will be present and should be ignored while parsing.

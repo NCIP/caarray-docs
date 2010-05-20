@@ -20,7 +20,8 @@ As a Data Owner, I want to import an Agilent raw data file in TXT format and ass
 * The FEATURES section itself has 3 header rows: TYPE, FEATURES and DATA.
 * Ignore the TYPE header row. For our purposes, the data type of each quantitation type is predefined and static.
 * The columns we are interested in are:
-  ProbeName             (String)
+  ProbeName             (String)  ..... use this to match against probe names in array design
+  SystematicName        (String)  ..... if ProbeName has no match in array design, then try matching this against probe names in array design
   LogRatio              (float)
   LogRatioError         (float)
   PValueLogRatio        (float)
@@ -32,6 +33,7 @@ As a Data Owner, I want to import an Agilent raw data file in TXT format and ass
   rMedianSignal         (float)
 * The ProbeName and LogRatio columns are mandatory, and must have non-null, non-empty values.
 * The same ProbeName may be present in multiple rows since probes are replicated. But it is safe to assume that the values for all quantitation types will be the same for all replicates.
+* If ProbeName value cannot be matched up with a probe from the array design, try to use the SystematicName value to match.
 * Case is unimportant in the column names.
 * The order of columns is unimportant.
 * Additional columns not described in this section will be present and should be ignored while parsing.
