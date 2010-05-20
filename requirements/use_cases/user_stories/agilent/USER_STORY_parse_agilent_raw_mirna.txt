@@ -37,5 +37,5 @@ As a Data Owner, I want to import an Agilent raw data file in TXT format and ass
 3. Example files:
 
 Example files are under example_files/raw_txt/miRNA/:
-* miRNA_251911812798_S01_miRNA-v1_10_Apr08_1_2.txt uses the "Human miRNA Microarray 3.0.xml" array design.
+* miRNA_251911812798_S01_miRNA-v1_10_Apr08_1_2.txt uses the "019118_D_20080214.xml" array design.
 * miRNA_252182810120_S01_miRNA-v1_10_Apr08_1_1.txt uses the "Mouse miRNA Microarray 2.0.xml" array design.
