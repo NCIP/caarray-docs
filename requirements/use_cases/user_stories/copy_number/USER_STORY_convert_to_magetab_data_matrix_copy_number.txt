@@ -13,7 +13,7 @@ As a Data Owner, I want to convert copy number data into a MAGE-TAB data matrix 
   + whether the hybridization name is specified as a prefix or suffix, or if it will be provided explicitly
   + (if prefix/suffix) the delimiter that is used to separate the hybridization name from the log2ratio column header
   + (if hyb name specified explicitly) the hybridization name (This makes sense only if the file contains data for a single hybridization)
-* Note that probe name and log2ratio columns are mandatory, but the chromosome columns (chromosome id and chromosome position) are not mandatory.
+* The probe name, log2ratio, chromosome id and chromosome position columns are all mandatory.
 * The command-line utility parses the given file according to the information provided by the user, and produces a MAGE-TAB data matrix file containing the relevant data.
 * The user saves the generated MAGE-TAB data matrix file and can then choose to upload it into caArray.
 
