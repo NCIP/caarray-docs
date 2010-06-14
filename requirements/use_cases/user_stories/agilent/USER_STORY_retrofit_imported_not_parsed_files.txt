@@ -4,8 +4,18 @@ As a System Administrator, I want to parse previously imported but not parsed da
 
 Now that new parsers are available for Agilent xml array designs and Agilent raw TXT data files, older files that are in the IMPORTED NOT PARSED state must be handled.
 
-* A new UI will be available for the user with the "systemadministrator" role. This UI will show the files in the system that are eligible for import (the file types for which parsers are now available).
-* The systemadministrator will be able to select files and start the import process.
-* The systemadministrator will be able to see the status of the import, and also any errors encountered.
-* If a file cannot be parsed due to its not being in the right format, the file will be left in the IMPORTED NOT PARSED state, and an error log will be available to the systemadministrator.
-* If an Agilent raw TXT file from a 2-colour gene expression experiment or an aCGH experiment is found to be associated with a _single_ hybridization (as opposed to 2 hybridizations), the system will display a warning in the error log. (The quantitation types within the TXT file will determine whether it is a 2-colour gene expression / aCGH experiment or not.)
+There are 3 tasks involved:
+1. Show which experiments have files eligible for import:   2 POINTS
+* A new page will be available for users with the "systemadministrator" role. This page will show a list of experiments that have data files eligible for re-import (the file types for which parsers are now available). It will also show a list of array designs eligible for re-import. The systemadministrator will be able to click on an experiment and navigate to that experiment's Manage Data Files page.
+* The "My Experiment Workspace" page will now have an extra column that calls out experiments that have data files eligible for re-import. The Data Owner can then go to the Imported Data Files tab and re-import data files.
+
+2. Allow re-import of array designs:     3 POINTS
+* On the Manage Array Designs page, there will be an extra icon that allows re-import of an array design. This icon will be available only for eligible array designs (ones which are in the Imported, Not Parsed state, and for which parsers are now available).
+* When the user chooses to re-import an array design, the system parses the array design file associated with that design and creates the necessary features and probes.
+* If a re-import fails, the array design will end up in the IMPORT FAILED state. An error log will be stored and available for display.
+
+3. Allow re-import of data files:     3 POINTS
+* The Data -> Imported Data Files page will now allow the Data Owner to select eligible files and re-import them.
+* The system parses the data file, validates it against the array design and creates the parsed data values.
+* If a file cannot be parsed due to errors, the file will be left in the IMPORTED NOT PARSED state, but the error log will be stored and available for display.
+* If an Agilent raw TXT file from a 2-colour gene expression experiment or an aCGH experiment is found to be associated with a _single_ hybridization (as opposed to 2 hybridizations), the system will include a warning in the error log. (The quantitation types within the TXT file will determine whether it is a 2-colour gene expression / aCGH experiment or not. See Agilent import user stories for details.)
