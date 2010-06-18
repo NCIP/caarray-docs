@@ -16,6 +16,10 @@ There are 3 tasks involved:
 
 3. Allow re-import of data files:     3 POINTS
 * The Data -> Imported Data Files page will now allow the Data Owner to select eligible files and re-import them.
-* The system parses the data file, validates it against the array design and creates the parsed data values.
-* If a file cannot be parsed due to errors, the file will be left in the IMPORTED NOT PARSED state, but the error log will be stored and available for display.
-* If an Agilent raw TXT file from a 2-colour gene expression experiment or an aCGH experiment is found to be associated with a _single_ hybridization (as opposed to 2 hybridizations), the system will include a warning in the error log. (The quantitation types within the TXT file will determine whether it is a 2-colour gene expression / aCGH experiment or not. See Agilent import user stories for details.)
+* The system first checks the array designs associated with the experiment. If none of them is in a format that is parseable, the system abandons the re-import and leaves the data files in the IMPORTED, NOT PARSED state. A warning will be available to the user.
+  + An example of the above scenario is the TCGA Agilent experiments which have array designs in the MAGE-TAB ADF (unparsed) format, and not in the Agilent GEML/xml (parsed) format. If a user selects one of the Agilent TXT data files that are in the IMPORTED, NOT PARSED state and tries to re-import them, the system should deduce that since there are no parseable array designs to validate the data file against, the re-import should be abandoned, and the data file should be left in the IMPORTED, NOT PARSED state.
+* If the re-import can proceed, the system parses the data files, and tries to validate them.
+  + If the validation fails, the data files go into the VALIDATION FAILED state, but the data file is still associated to its Hybridization(s), ArrayData and DataSet objects.
+  + If the validation succeeds, the system removes the old ArrayData, DataSet objects and does the import.
+  + If the import fails, the file will be left in the IMPORT FAILED state, and will no longer be associated to the Hybridization(s) it was associated with originally.
+* Special validation for an Agilent raw TXT file from a 2-colour gene expression experiment or an aCGH experiment: If such a file is found to be associated with a _single_ hybridization (as opposed to 2 hybridizations), the file will be successfully imported, but the system will include a warning about this. (The quantitation types within the TXT file will determine whether it is a 2-colour gene expression / aCGH experiment or not. See Agilent import user stories for details.)
