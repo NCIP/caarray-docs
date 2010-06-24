@@ -6,8 +6,8 @@ The model being submitted for review (caArray Internal 2.4) differs from an alre
 2. Added the association array.AbstractArrayData.hybridizations to class hybridization.Hybridization.
 3. Added association array.Gene.accessions to class array.Accession.
 4. Added a new class gov.nih.nci.caarray.domain.array.Accession CONCEPT C25402 (Accession Number)
-   * Attribute databaseName CONCEPT = C15426 (Database)
-   * Attribute accessionNumber CONCEPT = C25337 (Number)
+   * Attribute databaseName CONCEPT = Database Name
+   * Attribute accessionNumber CONCEPT = Identifier
 5. Added the following new attributes to gov.nih.nci.caarray.domain.array.Feature:
    * x_Coordinate   CONCEPT = C44477  (X-Coordinate)
    * y_Coordinate   CONCEPT = C44478 (Y-Coordinate)
