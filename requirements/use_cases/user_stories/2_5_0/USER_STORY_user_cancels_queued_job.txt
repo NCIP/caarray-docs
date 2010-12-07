@@ -1,0 +1,23 @@
+USER STORY: User Cancels Queued Job
+
+As a Data Owner or a Collaborator with Read+Write access to an experiment, or as a Systemadministrator, I want to cancel a validation or import job in the queued state.
+
+1. Flow:
+
+* On the Job Queue page, for every "eligible" (see below) job, the user sees a Cancel button or link.
+  + An "eligible" job is one for which the user has permissions to cancel the job, i.e., the user is either the Data Owner for that experiment, or is a Collaborator with Read+Write access to the experiment, or is a systemadministrator.
+  + An "eligible" job must also be in the "In Queue" state, i.e., the validation/import has not been started by the system yet.
+* When the user clicks on the Cancel button or link for a particular job, the system checks to make sure that the job is still eligible for cancellation (is still In Queue).
+  + If the job has already been started by the time the system gets the Cancel request, the system reports an error message saying that it could not cancel the job because it is already running.
+  + When a job is cancelled, the system removes the job from the queue, and cancels the Validation/Import job. This implies that the corresponding files go back into the "Uploaded" state.
+
+2. Acceptance Criteria:
+
+2.1 There should be no Cancel button for a job that is already running.
+2.2 If logged in as a systemadministrator, there should be a Cancel button for every job that is in the "In Queue" state.
+2.3 If logged in as a non-systemadministrator user, there should be a Cancel button for only those jobs that are in the "In Queue" state, and that the user has Write access to (either as the Data Owner or as a Collaborator with full Read+Write access to the experiment).
+2.4 If the job has already been started by the time the system gets the Cancel request, the system reports an error message saying that it could not cancel the job because it is already running. The queue is updated to show the latest status.
+2.5 When a job is cancelled, the system removes the job from the queue, and cancels the Validation/Import job. This implies that the corresponding files go back into the "Uploaded" state.
+
+3. UI Mockups / Wireframes:
+
