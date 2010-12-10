@@ -8,6 +8,7 @@ As a logged-in User, I want to view the status of validation and import jobs in 
 * When the user clicks on the Job Queue menu item, the system displays a page that shows the current queue of validation and import jobs in the system.
   + For experiments for which the user is the Data Owner or a Collaborator with Read or Read/Write access, the jobs will appear in full detail (queue position, user ID doing the import/validation, experiment public identifier, job type -- Validation or Import, time started, and status -- Running or In Queue).
   + For all other experiments, the jobs will appear in partial detail (queue position, "Private User", "Private Experiment", job type -- Validation or Import, time started, and status -- Running or In Queue).
+  + If the user clicks on the experiment public identifier, the system takes the user to the Manage Data page for that experiment.
 * The system will automatically refresh the Job Queue page contents every 30 seconds. (Note: Revisit this requirement if the performance is not acceptable.)
 
 2. Acceptance Criteria:
