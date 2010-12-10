@@ -12,15 +12,18 @@ As a logged-in User, I want to view the status of validation and import jobs in 
 
 2. Acceptance Criteria:
 
-2.1 Log in as d user with the systemadministrator user with the systemadministrator role. There should be a Job Queue menu item under Experiment Management in the left navigation pane.
+2.1 Log in as a user with a non-systemadministrator role. There should be a Job Queue menu item under Experiment Management in the left navigation pane.
 2.2 Clicking on the Job Queue menu item should take the user to a Job Queue page.
 2.3 If no validation or import jobs are running, the Job Queue page should show an empty table.
 2.4 If 'n' validation/import jobs have been initiated (by any number of users in the system), the Job Queue page should show a table with 'n' entries, ordered by increasing queue position. The top entry should show a status of "Running", a queue position of 1, and the correct "Time Started" value. The remaining entries should show a status of "In Queue", the appropriate job type ("Validation" or "Import"), and should appear in the order in which they were initiated.
 2.5 If one of the jobs in the queue corresponds to an experiment for which the logged-in user does not have full Read or Read+Write privileges, then the "User" column entry should be "Private User", and the Experiment column entry should be "Private Experiment".
-2.6 If one of the jobs in the queue corresponds to an experiment that is owned by the logged-in user, the User column entry should show the owner's user ID, and the Experiment column entry should show the experiment's public identifier.
-2.7 Clicking on the experiment public identifier should take the user to the Manage Data page for that experiment.
-2.8 When a job finishes, the Job Queue page should automatically refresh within 30 seconds to show the updated table with the finished job gone.
-2.9 When the system starts a new job, the Job Queue page should automatically refresh within 30 seconds to show the new job in queue position = 1 and status = Running. the queue position of all other jobs in the table should be updated.
+2.6 If one of the jobs in the queue corresponds to an experiment that is owned by the logged-in user, the User column entry should show the logged-in user's user ID, and the Experiment column entry should show the experiment's public identifier.
+2.7 If one of the jobs in the queue corresponds to an experiment that is owned by a different user, but the logged-in user has full Read access to that experiment, the User column entry should show the user ID of the user doing the import/validation, and the Experiment column entry should show the experiment's public identifier.
+2.8 Clicking on the experiment public identifier should take the user to the Manage Data page for that experiment.
+2.9 When a job finishes, the Job Queue page should automatically refresh within 30 seconds to show the updated table with the finished job gone.
+2.10 When the system starts a new job, the Job Queue page should automatically refresh within 30 seconds to show the new job in queue position = 1 and status = Running. the queue position of all other jobs in the table should be updated.
 
 3. UI Mockups / Wireframes:
+
+Job_Queue_User.png
 
