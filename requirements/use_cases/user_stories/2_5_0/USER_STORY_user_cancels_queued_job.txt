@@ -21,3 +21,5 @@ As a Data Owner or a Collaborator with Read+Write access to an experiment, or as
 
 3. UI Mockups / Wireframes:
 
+Cancel_Job_User.png
+Cancel_Job_Sysadmin.png

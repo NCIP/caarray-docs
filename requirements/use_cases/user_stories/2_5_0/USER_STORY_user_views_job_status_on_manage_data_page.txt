@@ -21,3 +21,4 @@ As a Data Owner or a Collaborator with Read or Read/Write access to an experimen
 
 3. UI Mockups / Wireframes:
 
+Job_Status_On_Manage_Data_Page.png
