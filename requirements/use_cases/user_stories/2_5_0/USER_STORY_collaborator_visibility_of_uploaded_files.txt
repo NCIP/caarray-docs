@@ -1,0 +1,43 @@
+USER STORY: Collaborator Visibility of Uploaded Files
+
+As a collaborator with the appropriate level of access to the experiment, I want to be able to view/modify uploaded but not yet imported files.
+
+1. Current (incorrect) Functionality:
+Only the Data Owner can see uploaded (not yet imported) files on the Manage Data page. A collaborator cannot see uploaded files no matter what level of access they have to the experiment (even if that collaborator uploaded the file himself).
+
+2. Correct Functionality:
+   * A. Anyone who has read access to an experiment (through a collaboration group or through the Public group) should be able to see uploaded files on the Manage Data page, no matter who uploaded them.
+
+   * B. Anyone who has write access to an experiment should be able to upload files, validate/import files, delete files etc., no matter who uploaded the files originally.
+
+   * C. Anyone who has only Read-Selective access to an experiment should be able to see only the files associated with the samples that he/she has been given access to. This means that he will NOT be able to see uploaded files (since they are not associated with a sample). It is not acceptable for users with read-selective access to be able to view uploaded files uploaded by someone else.
+
+   * D. Anyone who has Read-Write-Selective access to an experiment should be able to view and edit only the files associated with the samples that he/she has been given access to. This means that he will NOT be able to see uploaded files (since they are not associated with a sample).
+
+Once uploaded files are imported, the access to the files is controlled in the usual way where the Data Owner decides which group is allowed to see which samples.
+
+3. Implementation Details:
+Current CSM Implementation:
+* A group with read-selective access to an experiment gets READ privilege to that experiment plus READ privilege to each sample they were given access to.
+* A group with read access to an experiment gets READ privilege to that experiment plus READ privilege to all samples. (There is code in place that automatically gives it READ privilege to any new sample that gets created.)
+
+Proposed CSM Implementation:
+* Split the current READ privilege for experiments into two privileges - PARTIAL_READ and FULL_READ.
+* Split the current WRITE privilege for experiments into two privileges - PARTIAL_WRITE and FULL_WRITE.
+* A user needs FULL_READ privileges to be able to see uploaded files, and needs FULL_WRITE privileges to be able to upload new files.
+* The granularity of access should be experiments, samples, and uploaded (unimported) files.
+* Read access to experiment => FULL_READ access to experiment (includes uploaded files) + FULL_READ access to all samples
+* Read-selective access to experiment => PARTIAL_READ access to experiment (can't see uploaded files) + FULL_READ access to a subset of samples
+* Read-write access to experiment => FULL_WRITE access to experiment (includes uploaded files) + FULL_WRITE access to all samples
+* Read-write-selective access to experiment => PARTIAL_WRITE access to experiment (can't see uploaded files) + FULL_WRITE access to a subset of samples
+
+4. Note: 
+We discussed allowing users with Read-Write-Selective access to upload files. But this scenario leads to some problems. E.g., consider the following scenario:
+   * The Data Owner has given the TJU collaboration group read-write-selective access to the experiment which restricts them to viewing/modifying samples 1-10.
+   * John Doe from TJU uploads a file. Only John Doe and people with full Read access to the experiment can see that file on the Manage Data tab. Only John Doe and people with full Write access to the experiment can validate, import or delete that file. The rest of the TJU group cannot see the uploaded file.
+   * John Doe then imports the file, and the import results in a new sample S being created. Only people with full Read access to the experiment can see this sample S. Only people with full Write access to the experiment can modify this sample S. The TJU group cannot see the sample.
+   * PROBLEM: Should John Doe be allowed to see sample S?
+     + If no, then the Data Owner somehow has to know that sample S was newly created by someone at TJU, and the Data Owner has to go and add sample S to the set of samples that can be viewed/modified by the TJU collaboration group, and John Doe cannot see the sample until all this has happened.
+     + If yes, then John Doe can now see a sample that nobody else in his group can see. If the Data Owner later decides that sample S should not be viewable by anyone at TJU, John Doe still has this special access to that sample, and this is not apparent to the Data Owner anywhere in the application.
+
+In order to avoid these problems, users with Read-Write-Selective access will not be allowed to upload files. Further requirements analysis is needed in order to figure out the appropriate user roles and permissions that will allow a collaborator like John Doe to upload files and control their visibility within his group.
