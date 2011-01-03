@@ -1,8 +1,0 @@
-USER STORY: Retrofit already-imported Illumina data files
-
-This is a backend administrative task to upgrade support for Illumina data files.
-
-1. Flow:
-
-* The user (Data Owner) upgrades his/her caArray installation to version 2.4.0.
-* The system inspects every "Illumina Data TXT" file that has been imported into an experiment so far and changes the file type to "Illumina Derived Data TXT".
