@@ -12,13 +12,4 @@
 	<classpathentry kind="lib" path="lib/mockito-all-1.8.1.jar"/>
 	<classpathentry kind="lib" path="lib/oro-2.0.8.jar"/>
 	<classpathentry kind="lib" path="lib/plugin.jar"/>
-    <classpathentry kind="lib" path="lib/ant/ant-contrib.jar"/>
-	<classpathentry kind="lib" path="src/site/resources/jakarta-commons-net.jar"/>
-	<classpathentry kind="lib" path="src/site/resources/jakarta-commons-oro.jar"/>
-	<classpathentry kind="lib" path="src/site/resources/plugin.jar"/>
-	<classpathentry kind="lib" path="src/site/resources/WEB-INF/lib/commons-fileupload-1.0.jar"/>
-	<classpathentry kind="lib" path="src/site/resources/WEB-INF/lib/commons-fileupload.jar"/>
-	<classpathentry kind="lib" path="src/site/resources/WEB-INF/lib/commons-io.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="output" path="bin"/>
 </classpath>
