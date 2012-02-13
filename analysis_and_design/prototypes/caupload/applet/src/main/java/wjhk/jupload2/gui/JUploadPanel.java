@@ -57,6 +57,11 @@ public interface JUploadPanel {
     public void showOrHideLogWindow();
 
     /**
+     * Select files to be used by external caller.
+     */
+    public void doSelectFiles();
+
+    /**
      * Reaction to a click on the browse button.
      */
     public void doBrowse();

@@ -83,6 +83,9 @@ public class JUploadPanelTestHelper implements JUploadPanel {
 				+ ".copyLogWindow() is not implemented in tests cases");
 	}
 
+    public void doSelectFiles() {
+    }
+
 	/**
 	 * @see wjhk.jupload2.gui.JUploadPanel#doBrowse()
 	 */

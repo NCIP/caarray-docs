@@ -370,4 +370,8 @@ public interface JUploadContext {
 	 *         {@link JavascriptHandler} javadoc.
 	 */
 	public String startUpload();
+
+    public void selectFiles();
+
+    public String[] getFileNames();
 }

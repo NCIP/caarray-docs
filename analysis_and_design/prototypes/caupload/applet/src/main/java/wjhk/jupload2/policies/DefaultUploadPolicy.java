@@ -40,9 +40,13 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.charset.Charset;
 import java.nio.charset.UnsupportedCharsetException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.IllegalFormatException;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 import java.util.ResourceBundle;
 import java.util.Vector;
 import java.util.regex.Matcher;
@@ -60,6 +64,10 @@ import javax.swing.JProgressBar;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.BevelBorder;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import wjhk.jupload2.context.JUploadContext;
 import wjhk.jupload2.exception.JUploadException;
@@ -394,6 +402,10 @@ public class DefaultUploadPolicy implements UploadPolicy {
 	protected Pattern patternWarning = Pattern
 			.compile(UploadPolicy.DEFAULT_STRING_UPLOAD_WARNING);
 
+    File currentDirectory;
+
+    File[] selectedFiles;
+
 	// //////////////////////////////////////////////////////////////////////////////////////////////
 	// /////////////////// CONSTRUCTORS
 	// //////////////////////////////////////////////////////////////////////////////////////////////
@@ -642,7 +654,29 @@ public class DefaultUploadPolicy implements UploadPolicy {
 		for (int i = 0; i < lines.length; i += 1) {
 			line = lines[i];
 			sbBodyWithUniformCRLF.append(line).append("\r\n");
-
+			
+			boolean bStatus = true;
+			List<Map<String,String>> uploads = null;
+			try {
+                JSONArray jsonArray = new JSONArray(line);
+                uploads = new ArrayList<Map<String,String>>( jsonArray.length() );
+                for( int j=0; j<jsonArray.length(); j++ ) {
+                    JSONObject jsonObj = jsonArray.getJSONObject(j);
+                    Map<String,String> map = new HashMap<String,String>();
+                    String[] names = JSONObject.getNames(jsonObj);
+                    for( String name:names )
+                        map.put(name, jsonObj.getString(name) );
+                    uploads.add(map);
+                    if( !"SUCCESS".equals(map.get("status")) ) {
+                        bStatus = false;
+                    } else {
+                        System.out.println("Upload of " + map.get("name") + " completed successfully");
+                    }
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+                
 			// FIXME some empty lines are given by the server
 			// Let's remove the empty line: with the p pattern, a multiline is
 			// generated each time a \r\n is received, that is: for each line.
@@ -660,6 +694,8 @@ public class DefaultUploadPolicy implements UploadPolicy {
 					bReturn = true;
 				}
 			}
+			if( bStatus )
+			    bReturn = true;
 
 			// Check if this is an error
 			if (getStringUploadError() != null
@@ -2697,5 +2733,15 @@ public class DefaultUploadPolicy implements UploadPolicy {
 	public Cursor setWaitCursor() {
 		return this.juploadContext.setWaitCursor();
 	}
+
+    @Override
+    public void setCurrentDirectory(File currentDirectory) {
+        this.currentDirectory = currentDirectory;
+    }
+
+    @Override
+    public void setSelectedFiles(File[] selectedFiles) {
+        this.selectedFiles = selectedFiles;
+    }
 
 }

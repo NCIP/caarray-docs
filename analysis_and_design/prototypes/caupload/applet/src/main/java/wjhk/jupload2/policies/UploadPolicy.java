@@ -2640,4 +2640,8 @@ public interface UploadPolicy {
 	 *         error regex matches, the parsed error message.
 	 */
 	public String getLastResponseMessage();
+
+    public void setCurrentDirectory(File currentDirectory);
+
+    public void setSelectedFiles(File[] selectedFiles);
 }

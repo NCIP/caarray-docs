@@ -452,4 +452,15 @@ public class JUploadContextTestHelper implements JUploadContext {
 		throw new UnsupportedOperationException(this.getClass()
 				+ ".getFrame() is not implemented in tests cases");
 	}
+
+    @Override
+    public void selectFiles() {
+        // TODO Auto-generated method stub
+    }
+
+    @Override
+    public String[] getFileNames() {
+        // TODO Auto-generated method stub
+        return null;
+    }
 }

@@ -21,6 +21,8 @@
 package wjhk.jupload2;
 
 import java.lang.reflect.InvocationTargetException;
+import java.security.AccessController;
+import java.security.PrivilegedAction;
 
 import javax.swing.JApplet;
 import javax.swing.JOptionPane;
@@ -214,6 +216,27 @@ public class JUploadApplet extends JApplet {
 	 */
 	public String getAppletInfo() {
 		return "JUpload applet, available at http://jupload.sourceforge.net";
+	}
+
+	public void selectFiles() {
+        System.out.println("******************************************************");
+        System.out.println("** JavaScript to Applet bridge created successfully **");
+        System.out.println("******************************************************");
+	    
+        AccessController.doPrivileged( new PrivilegedAction<Void>(){
+            public Void run() {
+                juploadContext.selectFiles();
+                return null;
+            }
+        });
+	}
+	
+	public String[] getFileNames() {
+        return AccessController.doPrivileged( new PrivilegedAction<String[]>(){
+            public String[] run() {
+                return juploadContext.getFileNames();
+            }
+        });
 	}
 
 }

@@ -38,6 +38,7 @@ import javax.swing.RootPaneContainer;
 import javax.swing.SwingUtilities;
 
 import wjhk.jupload2.exception.JUploadException;
+import wjhk.jupload2.filedata.FileData;
 import wjhk.jupload2.gui.JUploadPanel;
 import wjhk.jupload2.gui.JUploadPanelImpl;
 import wjhk.jupload2.gui.JUploadTextArea;
@@ -865,4 +866,18 @@ public class DefaultJUploadContext implements JUploadContext {
 		throw new UnsupportedOperationException(
 				"DefaultJUploadContext.showStatus()");
 	}
+
+    @Override
+    public void selectFiles() {
+        jUploadPanel.doSelectFiles();
+    }
+
+    @Override
+    public String[] getFileNames() {
+        FileData[] filedatas = jUploadPanel.getFilePanel().getFiles();
+        String[] names = new String[ filedatas.length ];
+        for( int i=0; i<filedatas.length; i++ )
+            names[i] = filedatas[i].getFileName();
+        return names;
+    }
 }

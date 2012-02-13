@@ -21,6 +21,9 @@
 
 package wjhk.jupload2.gui;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
 import javax.swing.JFileChooser;
 
 import wjhk.jupload2.policies.UploadPolicy;
@@ -83,6 +86,9 @@ public class JUploadFileChooser extends JFileChooser {
             // should be allowed.
             setAcceptAllFileFilterUsed(false);
         }
+        
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        setPreferredSize( new Dimension( screenSize.width/2, screenSize.height/2 ));
     }
 
     /**

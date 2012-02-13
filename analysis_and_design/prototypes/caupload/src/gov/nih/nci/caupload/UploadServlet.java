@@ -56,6 +56,7 @@ public class UploadServlet extends HttpServlet {
 					item.write(file);
 					
 					Map<String,String> map = new HashMap<String,String>();
+					map.put("status", "SUCCESS");
 					map.put("name", item.getName());
 					map.put("type", item.getContentType());
 					map.put("size", Long.toString(item.getSize()));

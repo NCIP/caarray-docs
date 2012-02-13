@@ -287,6 +287,34 @@ public class JUploadPanelImpl extends JPanel implements ActionListener,
 	// ///////////////// Action methods
 	// ///////////////////////////////////////////////////////////////////////////////
 
+    /** {@inheritDoc} */
+    public void doSelectFiles() {
+        if (null == this.fileChooser) {
+            try {
+                this.fileChooser = this.uploadPolicy.createFileChooser();
+            } catch (Exception e) {
+                this.uploadPolicy.displayErr(e);
+            }
+
+        }
+
+        if (null != this.fileChooser) {
+            try {
+                int ret = this.fileChooser.showOpenDialog(new Frame());
+                if (JFileChooser.APPROVE_OPTION == ret)
+                    this.filePanel.addFiles(
+                            this.fileChooser.getSelectedFiles(),
+                            this.fileChooser.getCurrentDirectory());
+                this.uploadPolicy.setCurrentBrowsingDirectory(this.fileChooser.getCurrentDirectory().getAbsolutePath());
+                this.uploadPolicy.setCurrentDirectory(this.fileChooser.getCurrentDirectory());
+                this.uploadPolicy.setSelectedFiles(this.fileChooser.getSelectedFiles());
+                this.fileChooser.shutdownNow();
+            } catch (Exception ex) {
+                this.uploadPolicy.displayErr(ex);
+            }
+        }
+    }
+
 	/** {@inheritDoc} */
 	public void doBrowse() {
 		// If the file chooser was not created, we create it now.

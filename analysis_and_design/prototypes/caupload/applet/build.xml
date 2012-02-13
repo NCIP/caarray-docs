@@ -12,7 +12,7 @@
 
     <path id="caUploadApplet.classpath">
         <pathelement location="bin"/>
-        <pathelement location="lib/commons-lang-2.5.jar"/>
+        <pathelement location="lib/commons-lang-2.6.jar"/>
         <pathelement location="lib/commons-net-1.4.1.jar"/>
         <pathelement location="lib/junit-4.5.jar"/>
         <pathelement location="lib/log4j-1.2.13.jar"/>
@@ -20,35 +20,25 @@
         <pathelement location="lib/mockito-all-1.8.1.jar"/>
         <pathelement location="lib/oro-2.0.8.jar"/>
         <pathelement location="lib/plugin.jar"/>
-        <pathelement location="lib/ant/ant-contrib.jar"/>
-        <pathelement location="src/site/resources/jakarta-commons-net.jar"/>
-        <pathelement location="src/site/resources/jakarta-commons-oro.jar"/>
-        <pathelement location="src/site/resources/plugin.jar"/>
-        <pathelement location="src/site/resources/WEB-INF/lib/commons-fileupload-1.0.jar"/>
-        <pathelement location="src/site/resources/WEB-INF/lib/commons-fileupload.jar"/>
-        <pathelement location="src/site/resources/WEB-INF/lib/commons-io.jar"/>
     </path>
 	
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src/main/java">
-                <exclude name="**/*.java"/>
+                <!-- <exclude name="**/*.java"/>    -->
             </fileset>
         </copy>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src/main/resources">
-                <exclude name="**/*.java"/>
             </fileset>
         </copy>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src/test/java">
-                <exclude name="**/*.java"/>
             </fileset>
         </copy>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src/test/resources">
-                <exclude name="**/*.java"/>
             </fileset>
         </copy>
     </target>
@@ -64,19 +54,19 @@
 
     <target name="build-project" depends="init">
         <echo message="${ant.project.name}: ${ant.file}"/>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
             <src path="src/main/java"/>
             <classpath refid="caUploadApplet.classpath"/>
         </javac>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
             <src path="src/main/resources"/>
             <classpath refid="caUploadApplet.classpath"/>
         </javac>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
             <src path="src/test/java"/>
             <classpath refid="caUploadApplet.classpath"/>
         </javac>
-        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
             <src path="src/test/resources"/>
             <classpath refid="caUploadApplet.classpath"/>
         </javac>
