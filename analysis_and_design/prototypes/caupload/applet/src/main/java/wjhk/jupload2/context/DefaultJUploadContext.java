@@ -873,11 +873,7 @@ public class DefaultJUploadContext implements JUploadContext {
     }
 
     @Override
-    public String[] getFileNames() {
-        FileData[] filedatas = jUploadPanel.getFilePanel().getFiles();
-        String[] names = new String[ filedatas.length ];
-        for( int i=0; i<filedatas.length; i++ )
-            names[i] = filedatas[i].getFileName();
-        return names;
+    public String getSelectedFilesInfoJSON() {
+        return uploadPolicy.getSelectedFilesInfoJSON();
     }
 }

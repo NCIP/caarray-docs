@@ -217,26 +217,21 @@ public class JUploadApplet extends JApplet {
 	public String getAppletInfo() {
 		return "JUpload applet, available at http://jupload.sourceforge.net";
 	}
+	
 
-	public void selectFiles() {
+	public String selectFiles() {
         System.out.println("******************************************************");
         System.out.println("** JavaScript to Applet bridge created successfully **");
         System.out.println("******************************************************");
 	    
-        AccessController.doPrivileged( new PrivilegedAction<Void>(){
-            public Void run() {
+        String filesInfoJSON = (String) AccessController.doPrivileged( new PrivilegedAction<Object>(){
+            public Object run() {
                 juploadContext.selectFiles();
-                return null;
+                return juploadContext.getSelectedFilesInfoJSON();
             }
         });
+        
+        return filesInfoJSON;
 	}
 	
-	public String[] getFileNames() {
-        return AccessController.doPrivileged( new PrivilegedAction<String[]>(){
-            public String[] run() {
-                return juploadContext.getFileNames();
-            }
-        });
-	}
-
 }

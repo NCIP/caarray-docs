@@ -455,12 +455,10 @@ public class JUploadContextTestHelper implements JUploadContext {
 
     @Override
     public void selectFiles() {
-        // TODO Auto-generated method stub
     }
 
     @Override
-    public String[] getFileNames() {
-        // TODO Auto-generated method stub
-        return null;
+    public String getSelectedFilesInfoJSON() {
+        return "";
     }
 }

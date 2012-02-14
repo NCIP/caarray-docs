@@ -804,15 +804,17 @@ public class UploadPolicyTestHelper implements UploadPolicy {
 		// No action here
 	}
 
+	
     @Override
     public void setCurrentDirectory(File currentDirectory) {
-        // TODO Auto-generated method stub
-        
     }
 
     @Override
     public void setSelectedFiles(File[] selectedFiles) {
-        // TODO Auto-generated method stub
-        
+    }
+
+    @Override
+    public String getSelectedFilesInfoJSON() {
+        return "";
     }
 }

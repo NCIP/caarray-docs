@@ -371,7 +371,8 @@ public interface JUploadContext {
 	 */
 	public String startUpload();
 
-    public void selectFiles();
 
-    public String[] getFileNames();
+	public void selectFiles();
+
+    public String getSelectedFilesInfoJSON();
 }

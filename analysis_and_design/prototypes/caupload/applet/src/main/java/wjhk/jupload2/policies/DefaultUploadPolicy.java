@@ -2734,7 +2734,8 @@ public class DefaultUploadPolicy implements UploadPolicy {
 		return this.juploadContext.setWaitCursor();
 	}
 
-    @Override
+
+	@Override
     public void setCurrentDirectory(File currentDirectory) {
         this.currentDirectory = currentDirectory;
     }
@@ -2742,6 +2743,24 @@ public class DefaultUploadPolicy implements UploadPolicy {
     @Override
     public void setSelectedFiles(File[] selectedFiles) {
         this.selectedFiles = selectedFiles;
+    }
+
+    @Override
+    public String getSelectedFilesInfoJSON() {
+        JSONArray jsonArray = new JSONArray();
+        for( int i=0; i<selectedFiles.length; i++ ) {
+            JSONObject jsonObj = new JSONObject();
+            try {
+                jsonObj.put("name",selectedFiles[i].getName());
+                jsonObj.put("size",selectedFiles[i].length());
+            } catch (JSONException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            jsonArray.put(jsonObj);
+        }
+        String sRet = jsonArray.toString();
+        return sRet;
     }
 
 }

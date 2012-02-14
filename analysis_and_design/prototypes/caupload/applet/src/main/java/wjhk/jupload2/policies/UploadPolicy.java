@@ -2644,4 +2644,6 @@ public interface UploadPolicy {
     public void setCurrentDirectory(File currentDirectory);
 
     public void setSelectedFiles(File[] selectedFiles);
+
+    public String getSelectedFilesInfoJSON();
 }

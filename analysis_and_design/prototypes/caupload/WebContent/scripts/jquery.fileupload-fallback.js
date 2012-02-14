@@ -4,7 +4,7 @@
 (function($) {
     $(function() {
         
-        if ( $.browser.msie ) {	
+        if ( true || $.browser.msie ) {	
 
 /*
             $('#ie_marker').html('Called from Internet Explorer ' + $.browser.version );
@@ -43,7 +43,9 @@ codebase='../target/classes'                                                    
 
 
             $('#button_add').live('click',function (e) {
-                $("#ca_upload_applet")[0].selectFiles();
+                var ret = $("#ca_upload_applet")[0].selectFiles();
+                var files = $.parseJSON(ret);
+                $("#fileupload").fileupload("add", {'files': files});
                 e.preventDefault();
             });
 
@@ -52,6 +54,7 @@ codebase='../target/classes'                                                    
                 e.preventDefault();
             });
 
+            
         } else {
             $('#button_add').append('<input type="file" name="files[]" multiple>');
         }
