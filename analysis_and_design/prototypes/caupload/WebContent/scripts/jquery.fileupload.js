@@ -143,7 +143,8 @@
             // The following are jQuery ajax settings required for the file uploads:
             processData: false,
             contentType: false,
-            cache: false
+            cache: false,
+            externallyManaged: false
         },
 
         // A list of options that require a refresh after assigning a new value:
@@ -514,7 +515,9 @@
             if (this._active === 0) {
                 // The stop callback is triggered when all uploads have
                 // been completed, equivalent to the global ajaxStop event:
-                this._trigger('stop');
+                if( !options.externallyManaged ) {
+                    this._trigger('stop');
+                }
                 // Reset the global progress values:
                 this._loaded = this._total = 0;
             }
@@ -824,8 +827,42 @@
                 }
             }
             return this._getXHRPromise(false, data && data.context);
-        }
+        },
 
+        // This method is exposed to the widget API and allows for externally managed 
+        // upload progress. 
+        progress: function (data) {
+            if (!data || this.options.disabled) {
+                return;
+            }
+/*            
+            $.each( data.files, function(index, value) {
+                var loaded = data.progress.bytes_loaded_for_current_file;
+                if( index < data.progress.num_sent_files ) {
+                    loaded = value.size;
+                } else if( index > data.progress.num_sent_files ) {
+                    loaded = 0;
+                }
+                this._trigger('progress', null, {
+                    index: index,
+                    loaded: loaded,
+                    total: value.size 
+                });
+            });
+*/
+            this._trigger('progressall', null, {
+                loaded: data.progress.all_bytes_loaded,
+                total: data.progress.all_bytes_total
+            });
+        },
+        
+        progress_init: function(data) {
+            this._trigger('start');
+        },
+
+        progress_destroy: function(data) {
+            this._trigger('stop');
+        }
     });
 
 }(jQuery));

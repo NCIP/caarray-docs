@@ -2641,7 +2641,8 @@ public interface UploadPolicy {
 	 */
 	public String getLastResponseMessage();
 
-    public void setCurrentDirectory(File currentDirectory);
+
+	public void setCurrentDirectory(File currentDirectory);
 
     public void setSelectedFiles(File[] selectedFiles);
 

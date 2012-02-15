@@ -38,7 +38,6 @@ import javax.swing.RootPaneContainer;
 import javax.swing.SwingUtilities;
 
 import wjhk.jupload2.exception.JUploadException;
-import wjhk.jupload2.filedata.FileData;
 import wjhk.jupload2.gui.JUploadPanel;
 import wjhk.jupload2.gui.JUploadPanelImpl;
 import wjhk.jupload2.gui.JUploadTextArea;
@@ -875,5 +874,15 @@ public class DefaultJUploadContext implements JUploadContext {
     @Override
     public String getSelectedFilesInfoJSON() {
         return uploadPolicy.getSelectedFilesInfoJSON();
+    }
+
+    @Override
+    public String getProgressInfoJSON() {
+        return jUploadPanel.getProgressInfoJSON();
+    }
+
+    @Override
+    public boolean isUploadFinished() {
+        return jUploadPanel.isUploadFinished();
     }
 }

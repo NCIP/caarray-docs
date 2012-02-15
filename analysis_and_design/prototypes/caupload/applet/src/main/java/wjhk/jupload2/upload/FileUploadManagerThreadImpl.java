@@ -490,4 +490,10 @@ public class FileUploadManagerThreadImpl extends Thread implements
             }
         }
     }
+
+    
+    @Override
+    public String getProgressInfoJSON( FileData[] fileDatas ) {
+        return progressBarManager.getProgressInfoJSON( fileDatas );
+    }
 }

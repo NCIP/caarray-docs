@@ -375,4 +375,8 @@ public interface JUploadContext {
 	public void selectFiles();
 
     public String getSelectedFilesInfoJSON();
+
+    public String getProgressInfoJSON();
+
+    public boolean isUploadFinished();
 }

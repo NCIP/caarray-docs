@@ -26,6 +26,7 @@
 package wjhk.jupload2.testhelpers;
 
 import wjhk.jupload2.exception.JUploadException;
+import wjhk.jupload2.filedata.FileData;
 import wjhk.jupload2.upload.FileUploadManagerThread;
 import wjhk.jupload2.upload.UploadFileData;
 import wjhk.jupload2.upload.UploadFilePacket;
@@ -135,4 +136,9 @@ public class FileUploadManagerThreadTestHelper extends Thread implements
 		throw new UnsupportedOperationException(this.getClass()
 				+ ".stopUpload() is not implemented in tests cases");
 	}
+
+    @Override
+    public String getProgressInfoJSON( FileData[] fileDatas ) {
+        return "";
+    }
 }

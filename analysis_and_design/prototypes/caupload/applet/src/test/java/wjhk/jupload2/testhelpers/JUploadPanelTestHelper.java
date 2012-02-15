@@ -281,4 +281,15 @@ public class JUploadPanelTestHelper implements JUploadPanel {
 				+ ".updateButtonState() is not implemented in tests cases");
 	}
 
+
+	@Override
+    public String getProgressInfoJSON() {
+        return "";
+    }
+
+    @Override
+    public boolean isUploadFinished() {
+        return false;
+    }
+
 }

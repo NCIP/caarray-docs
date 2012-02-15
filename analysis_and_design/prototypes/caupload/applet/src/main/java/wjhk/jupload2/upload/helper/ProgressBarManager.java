@@ -31,7 +31,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JProgressBar;
 import javax.swing.Timer;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import wjhk.jupload2.exception.JUploadException;
+import wjhk.jupload2.filedata.FileData;
 import wjhk.jupload2.gui.JUploadPanel;
 import wjhk.jupload2.gui.filepanel.SizeRenderer;
 import wjhk.jupload2.policies.UploadPolicy;
@@ -547,5 +551,25 @@ public class ProgressBarManager implements ActionListener {
 		// Let's start the update process.
 		this.timer.start();
 	}
+
+	
+    public String getProgressInfoJSON( FileData[] fileDatas ) {
+        long totalBytes = 0;
+        for( FileData fd:fileDatas )
+            totalBytes += fd.getFileLength();
+        JSONObject jsonObj = new JSONObject();
+        try {
+            jsonObj.put("bytes_loaded_for_current_file", nbBytesUploadedForCurrentFile);
+            jsonObj.put("num_sent_files", nbSentFiles);
+            jsonObj.put("all_bytes_loaded", nbUploadedBytes);
+            jsonObj.put("all_bytes_total", totalBytes);
+            
+        } catch (JSONException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        String sRet = jsonObj.toString();
+        return sRet;
+    }
 
 }

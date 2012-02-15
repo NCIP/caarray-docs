@@ -4,7 +4,7 @@
 (function($) {
     $(function() {
         
-        if ( true || $.browser.msie ) {	
+        if ( $.browser.msie ) {	
 
 /*
             $('#ie_marker').html('Called from Internet Explorer ' + $.browser.version );
@@ -24,8 +24,8 @@ id='ca_upload_applet'                                                           
 name='ca_upload_applet'                                                                 \
 archive='caUploadApplet.jar'                                                            \
 code='wjhk.jupload2.JUploadApplet'                                                      \
-width='640'                                                                               \
-height='480'                                                                              \
+width='1'                                                                               \
+height='1'                                                                              \
 mayscript='true'                                                                        \
 alt='The java pugin must be installed.'>                                                \
     <!-- param name='CODE'    value='wjhk.jupload2.JUploadApplet' / -->                 \
@@ -41,16 +41,32 @@ codebase='../target/classes'                                                    
 -->                                                                                     \
             ");
 
+            $('#fileupload').fileupload('option', {
+                externallyManaged: true
+            });
 
             $('#button_add').live('click',function (e) {
                 var ret = $("#ca_upload_applet")[0].selectFiles();
                 var files = $.parseJSON(ret);
-                $("#fileupload").fileupload("add", {'files': files});
+                if( files.length > 0 ) {
+                    $("#fileupload").fileupload("add", {'files': files});
+                }
                 e.preventDefault();
             });
 
             $('#button_start').live('click',function (e) {
                 $("#ca_upload_applet")[0].startUpload();
+                $("#fileupload").fileupload("progress_init");
+                var interval = setInterval( function(){
+                    var ret = $("#ca_upload_applet")[0].trackProgress();
+                    var progress = $.parseJSON(ret);
+                    $("#fileupload").fileupload("progress", {'progress': progress});
+                    if( $("#ca_upload_applet")[0].isUploadFinished() ) {
+                        clearInterval(interval);
+                        $("#fileupload").fileupload("progress_destroy");
+                    } 
+                }, 500 );
+
                 e.preventDefault();
             });
 

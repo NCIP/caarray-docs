@@ -649,4 +649,15 @@ public class JUploadPanelImpl extends JPanel implements ActionListener,
 		return fileUploadManagerThread;
 	}
 
+	
+    @Override
+    public String getProgressInfoJSON() {
+        return fileUploadManagerThread.getProgressInfoJSON( filePanel.getFiles() );
+    }
+
+    @Override
+    public boolean isUploadFinished() {
+        return fileUploadManagerThread.isUploadFinished();
+    }
+
 }

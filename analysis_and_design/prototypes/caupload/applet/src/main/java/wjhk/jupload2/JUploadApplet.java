@@ -234,4 +234,24 @@ public class JUploadApplet extends JApplet {
         return filesInfoJSON;
 	}
 	
+    public String trackProgress() {
+        String progressInfoJSON = (String) AccessController.doPrivileged( new PrivilegedAction<Object>(){
+            public Object run() {
+                return juploadContext.getProgressInfoJSON();
+            }
+        });
+        
+        return progressInfoJSON;
+    }
+    
+    public boolean isUploadFinished() {
+        Boolean bUploadFinished = (Boolean) AccessController.doPrivileged( new PrivilegedAction<Object>(){
+            public Object run() {
+                return juploadContext.isUploadFinished();
+            }
+        });
+        
+        return bUploadFinished;
+    }
+
 }

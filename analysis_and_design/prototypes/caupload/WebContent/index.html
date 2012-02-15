@@ -153,7 +153,7 @@ var fileUploadErrors = {
 <script id="template-download" type="text/html">
 {% for (var i=0, files=o.files, l=files.length, file=files[0]; i<l; file=files[++i]) { %}
     <tr class="template-download fade">
-        {% if (file.error) { %}
+        {% if (false && file.error) { %}
             <td></td>
             <td class="name">{%=file.name%}</td>
             <td class="size">{%=o.formatFileSize(file.size)%}</td>

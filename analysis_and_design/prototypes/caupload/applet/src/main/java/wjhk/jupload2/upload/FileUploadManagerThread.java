@@ -26,6 +26,7 @@
 package wjhk.jupload2.upload;
 
 import wjhk.jupload2.exception.JUploadException;
+import wjhk.jupload2.filedata.FileData;
 
 /**
  * @author etienne_sf
@@ -197,4 +198,6 @@ public interface FileUploadManagerThread {
 	public void currentRequestIsFinished(UploadFilePacket packet)
 			throws JUploadException;
 
+	
+    public String getProgressInfoJSON( FileData[] fileDatas );
 }

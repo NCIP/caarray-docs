@@ -453,6 +453,7 @@ public class JUploadContextTestHelper implements JUploadContext {
 				+ ".getFrame() is not implemented in tests cases");
 	}
 
+	
     @Override
     public void selectFiles() {
     }
@@ -460,5 +461,15 @@ public class JUploadContextTestHelper implements JUploadContext {
     @Override
     public String getSelectedFilesInfoJSON() {
         return "";
+    }
+
+    @Override
+    public String getProgressInfoJSON() {
+        return "";
+    }
+
+    @Override
+    public boolean isUploadFinished() {
+        return false;
     }
 }
