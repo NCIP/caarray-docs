@@ -5,7 +5,7 @@
     <property name="target" value="1.6"/>
     <property name="source" value="1.6"/>
 
-	<property name="caupload.keystore.alias" value="caupload"/>
+    <property name="caupload.keystore.alias" value="caupload"/>
     <property name="caupload.keystore.storepass" value="caupload123"/>
     <property name="caupload.keystore.filename" value="ks/keystore"/>
     <!-- <property name="caupload.keystore.keypass" value="caupload123"/> -->
@@ -102,5 +102,5 @@
                  verbose="true" />
     </target>
 
-	<target name="package" depends="export, sign_jar" />
+    <target name="package" depends="export, sign_jar" />
 </project>
