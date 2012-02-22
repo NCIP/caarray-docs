@@ -21,7 +21,7 @@
         <pathelement location="lib/oro-2.0.8.jar"/>
         <pathelement location="lib/plugin.jar"/>
     </path>
-	
+    
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
@@ -42,14 +42,14 @@
             </fileset>
         </copy>
     </target>
-	
+    
     <target name="clean">
         <delete dir="bin"/>
     </target>
-	
+    
     <target name="cleanall" depends="clean"/>
 
-	<target name="build-subprojects"/>
+    <target name="build-subprojects"/>
     <target name="build-refprojects" description="Build all projects which reference this project. Useful to propagate changes."/>
 
     <target name="build-project" depends="init">
@@ -71,7 +71,7 @@
             <classpath refid="caUploadApplet.classpath"/>
         </javac>
     </target>
-	
+    
     <target name="build" depends="build-subprojects,build-project"/>
 
     <target name="export" depends="build">
@@ -80,9 +80,9 @@
              index="false"
              basedir="bin"
              excludes="**/package.html" />
-	</target>
+    </target>
 
-	<target name="sign_jar"
+    <target name="sign_jar"
             depends="sign_jar_without_keypass, sign_jar_with_keypass" />
     <target name="sign_jar_without_keypass" unless="jupload.keystore.keypass">
         <echo message="../WebContent/${ant.project.name}.jar" level="info" />
