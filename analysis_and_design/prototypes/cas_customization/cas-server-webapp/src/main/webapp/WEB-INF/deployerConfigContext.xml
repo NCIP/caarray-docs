@@ -91,6 +91,12 @@
 					+-->
 				<bean
 					class="org.jasig.cas.authentication.handler.support.SimpleTestUsernamePasswordAuthenticationHandler" />
+
+                <bean class="org.jasig.cas.adaptors.ldap.BindLdapAuthenticationHandler">
+                    <property name="filter" value="cn=%u" />                            <!-- "mail=%u" -->
+                    <property name="searchBase" value="dc=nci,dc=nih,dc=gov" />         <!-- "ou=people,dc=example,dc=com" -->
+                    <property name="contextSource" ref="contextSource" />
+                </bean>
 			</list>
 		</property>
 	</bean>
@@ -169,4 +175,21 @@
         </bean>
 
     <bean id="auditTrailManager" class="com.github.inspektr.audit.support.Slf4jLoggingAuditTrailManager" />
+    
+	<bean id="contextSource" class="org.springframework.ldap.core.support.LdapContextSource">
+		<property name="pooled" value="false" />
+		<property name="url" value="ldap://localhost:1389" />
+<!--
+		<property name="userDn" value="cn=Directory Manager" />
+		<property name="password" value="**********" />
+-->
+		<property name="baseEnvironmentProperties">
+			<map>
+				<entry key="com.sun.jndi.ldap.connect.timeout" value="3000" />
+				<entry key="com.sun.jndi.ldap.read.timeout" value="3000" />
+				<entry key="java.naming.security.authentication" value="simple" />
+			</map>
+		</property>
+	</bean>
+
 </beans>
