@@ -3,7 +3,7 @@ Release Notes
  
   #Product:#	caArray
   #Version:#	2.5.0
-  #Date:#	July 2012 (Anticipated)
+  #Date:#	July 2012
 
 Contents
 --------
@@ -34,7 +34,7 @@ library of assay management.
 
 Release History
 ------------------------
-    * caArray v2.5.0		-- July      2012  (Anticipated)
+    * caArray v2.5.0		-- July      2012
     * caArray v2.4.1		-- May       2011 
     * caArray v2.4.0.2		-- February  2011 
     * caArray v2.4.0.1		-- January   2011 
@@ -106,6 +106,9 @@ The following issues are highlighted.
 * Multiple MAGE-TAB imports can result in duplicate persons in the database.
 
 * GUI installer suddenly quits when illegal characters present in password fields.
+
+* The Affymetrix CDF array design parser does not connect probes to features correctly. API clients should be
+  aware of this limitation.
 
 
 Bug Reports, Feature Requests, And Support
