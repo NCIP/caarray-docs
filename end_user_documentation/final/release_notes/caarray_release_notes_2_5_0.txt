@@ -35,7 +35,7 @@ library of assay management.
 Release History
 ------------------------
     * caArray v2.5.0		-- July      2012
-    * caArray v2.4.1		-- May       2011 
+    * caArray v2.4.1		-- September 2011 
     * caArray v2.4.0.2		-- February  2011 
     * caArray v2.4.0.1		-- January   2011 
     * caArray v2.4.0		-- September 2010 
@@ -128,10 +128,10 @@ Documentation And Files
 -----------------------
 Wiki-based guides are available at the following locations:
 
-   caArray 2.5.0 User's Guide: https://wiki.nci.nih.gov/display/caArray2doc/caArray+2.5+User%27s+Guide
-   caArray 2.5.0 Installation Guide: https://wiki.nci.nih.gov/display/caArray2doc/caArray+2.5.0+Data+Portal+Local+Installation+Guide+Wiki+Main+Page
-   caArray 2.5.0 Technical Guide: https://wiki.nci.nih.gov/display/caArray2doc/caArray+2.5.0+Technical+Guide+Wiki+Main+Page
-   caArray 2.5.0 API Guide (unchanged for this release): https://wiki.nci.nih.gov/display/caArray2doc/caArray+2.5.0+API+Guide
+   caArray 2.5.0 User's Guide: https://wiki.nci.nih.gov/x/LBo9Ag
+   caArray 2.5.0 Installation Guide: https://wiki.nci.nih.gov/x/H5iTAw
+   caArray 2.5.0 Technical Guide: https://wiki.nci.nih.gov/x/kAA2Ag
+   caArray 2.5.0 API Guide (unchanged for this release): https://wiki.nci.nih.gov/x/Jg-RB
 
 Links to all other documentation and files can be found at: 
 
