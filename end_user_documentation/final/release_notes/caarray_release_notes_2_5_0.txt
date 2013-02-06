@@ -92,6 +92,22 @@ https://tracker.nci.nih.gov/browse/ARRAY
 
 The following issues are highlighted. 
 
+* If you encounter the following error during installation:
+  caarray_install_2_5_0_1/build.xml:353: liquibase.exception.ValidationFailedException: Validation Failed:
+  1 change sets check sum db-env-specific.xml::env-specific::dkokotov::(MD5Sum:51e2bc917ac47f91358979db9edcee5)
+  at liquibase.ant.DatabaseUpdateTask.execute(DatabaseUpdateTask.java:52)
+
+  Please use the following workaround:
+  Delete the following entry in the database and try the install again.
+  delete from DATABASECHANGELOG where id='env-specific';
+
+* If caArray is installed using the GUI installer, jboss may not start up correctly due to a port binding
+  property being set incorrectly in the start_jboss script.
+
+  Please use the following workaround:
+  Open the file $JBOSS_HOME/bin/start_jboss, find the string "ports-01" (line 39), replace it with "ports-default".
+  Try the install again.
+
 * If you are still using the Legacy API and your query results in >10,000 results, your transaction
   may time out. The workaround is to modify your query into multiple queries that return smaller result sets.
 
